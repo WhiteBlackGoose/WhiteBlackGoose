@@ -17,7 +17,7 @@ I wrote a few articles, maybe some people will be interested in them:
 <details><summary><strong>My old projects</strong></summary><p>
 
 There're a few projects that I decided to upload to GitHub:
-1. 2016. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a>
-2. 2017. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a>
+1. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
+2. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
 
 </p></details>
