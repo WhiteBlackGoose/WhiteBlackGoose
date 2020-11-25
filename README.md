@@ -12,6 +12,7 @@ I wrote a few articles, maybe some people will be interested in them:
 3. <a href="https://habr.com/en/post/486496/">Symbolic algrebra in C#</a> (quite outdated though, written at the very beginning of AngouriMath)
 4. <a href="https://gist.github.com/WhiteBlackGoose/5b84b2237704a91ffe7f34372196df32">Generic tensors in C#</a>
 5. <a href="https://habr.com/en/post/528816/">Jupyter in .NET</a>
+6. <a href="https://gist.github.com/WhiteBlackGoose/a468aea025dcea34bbed3a196cbd1e77">Parameterless methods are bad for immutable objects</a>
 
 </p></details>
 
