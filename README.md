@@ -20,8 +20,9 @@ I wrote a few articles, maybe some people will be interested in them:
 
 There're a few projects that I decided to upload to GitHub:
 1. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
-2. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
-3. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2019)
+2. <a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
+3. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
+4. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2019)
 
 </p></details>
 
