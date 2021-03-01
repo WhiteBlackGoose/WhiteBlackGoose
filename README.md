@@ -26,8 +26,9 @@ Sorted from the most important to the least:
 2. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020)
 3. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
 4. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (2020)
-5. <a href="https://github.com/WhiteBlackGoose/hgt2png">Hgt to png</a> (2021)
-6. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
+5. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
+6. <a href="https://github.com/WhiteBlackGoose/hgt2png">Hgt to png</a> (2021)
+7. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
 
 </p>
 
