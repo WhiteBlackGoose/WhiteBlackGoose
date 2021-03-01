@@ -19,7 +19,7 @@ I wrote a few articles, maybe some people will be interested in them:
 
 </p></details>
 
-<details><summary><strong>My projects</strong><p>
+<details><summary><strong>My projects</strong></summary><p>
 
 Sorted from the most important to the least:
 1. <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
