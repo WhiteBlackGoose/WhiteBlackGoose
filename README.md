@@ -15,7 +15,8 @@ I wrote a few articles, maybe some people will be interested in them:
 4. <a href="https://gist.github.com/WhiteBlackGoose/5b84b2237704a91ffe7f34372196df32">Generic tensors in C#</a>
 5. <a href="https://habr.com/en/post/528816/">Jupyter in .NET</a>
 6. <a href="https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/">Math in Jupyter for .NET</a>
-7. <a href="https://habr.com/ru/post/545936/">Lazy properties in C#</a>
+7. <a href="https://habr.com/en/post/545936/">Lazy properties in C#</a>
+8. <a href="https://habr.com/en/post/546926/">Compilation of symbolic expressions into Linq.Expression</a>
 
 </p></details>
 
