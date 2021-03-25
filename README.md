@@ -6,7 +6,7 @@ I'm the author of symbolic algebra library <a href="https://am.angouri.org">Ango
 
 I'm a member of <a href="https://angouri.org">Angouri</a>.
 
-<details><summary><strong>My articles</strong></summary><p>
+<details open><summary><strong>My articles</strong></summary><p>
 
 I wrote a few articles, maybe some people will be interested in them:
 1. <a href="https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction">Simple simulation of custom physical interactions with particles</a>
@@ -20,7 +20,7 @@ I wrote a few articles, maybe some people will be interested in them:
 
 </p></details>
 
-<details><summary><strong>My projects</strong></summary><p>
+<details open><summary><strong>My projects</strong></summary><p>
 
 Sorted from the most important to the least:
 1. <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
