@@ -23,7 +23,7 @@ I wrote a few articles, maybe some people will be interested in them:
 <details open><summary><strong>My projects</strong></summary><p>
 
 Sorted from the most important to the least:
-1. <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
+1. :star: <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
 2. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020)
 3. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
 4. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (2020)
