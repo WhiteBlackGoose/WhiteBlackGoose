@@ -6,7 +6,7 @@ I'm the author of symbolic algebra library <a href="https://am.angouri.org">Ango
 
 I'm a member of <a href="https://angouri.org">Angouri</a>.
 
-<details open><summary><strong>My articles</strong></summary><p>
+<details><summary><strong>My articles</strong></summary><p>
 
 I wrote a few articles, maybe some people will be interested in them:
 1. <a href="https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction">Simple simulation of custom physical interactions with particles</a>
@@ -20,19 +20,26 @@ I wrote a few articles, maybe some people will be interested in them:
 
 </p></details>
 
-<details open><summary><strong>My projects</strong></summary><p>
+<details open><summary><strong>Major projects I'm involved in</strong></summary><p>
 
 Sorted from the most important to the least:
-1. :star: <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
-2. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020)
-3. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
-4. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (2020)
-5. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
-6. <a href="https://github.com/WhiteBlackGoose/hgt2png">Hgt to png</a> (2021)
-7. <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">Quantum almanac</a> (2021)
-8. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (2021)
-9. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
-10. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
+1. <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
+2. <a href="https://github.com/dotnet/interactive/">Interactive</a> (2021)
+3. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020-2021)
+</p>
+
+</details>
+
+<details><summary><strong>Other projects I'm involved in</strong></summary><p>
+  
+1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
+2. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (2020)
+3. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
+4. <a href="https://github.com/WhiteBlackGoose/hgt2png">Hgt to png</a> (2021)
+5. <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">Quantum almanac</a> (2021)
+6. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (2021)
+7. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
+8. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
 
 </p>
 
