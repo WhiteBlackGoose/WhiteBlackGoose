@@ -48,6 +48,7 @@ Sorted from the most important to the least:
 <details><summary><strong>My old projects</strong></summary><p>
 
 There're a few projects that I decided to upload to GitHub, starting from the newest:
+
 6. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
 5. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
 4. <a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
