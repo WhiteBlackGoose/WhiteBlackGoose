@@ -49,12 +49,12 @@ Sorted from the most important to the least:
 
 There're a few projects that I decided to upload to GitHub, starting from the newest:
 
-6. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
-5. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
-4. <a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
-3. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
-2. <a href="https://github.com/WhiteBlackGoose/BounceMan">BounceMan</a> (2015)
-1. <a href="https://github.com/WhiteBlackGoose/MyProgram">MyProgram</a> (2014)
+1. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
+2. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
+3. <a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
+4. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
+5. <a href="https://github.com/WhiteBlackGoose/BounceMan">BounceMan</a> (2015)
+6. <a href="https://github.com/WhiteBlackGoose/MyProgram">MyProgram</a> (2014)
 
 
 </p></details>
