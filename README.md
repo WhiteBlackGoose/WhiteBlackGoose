@@ -48,10 +48,11 @@ Sorted from the most important to the least:
 <details><summary><strong>My old projects</strong></summary><p>
 
 There're a few projects that I decided to upload to GitHub:
-1. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
-2. <a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
-3. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
-4. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
+1. <a href="https://github.com/WhiteBlackGoose/BounceMan">BounceMan</a> (2015)
+2. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
+3. <a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
+4. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
+5. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
 
 </p></details>
 
