@@ -23,9 +23,12 @@ I wrote a few articles, maybe some people will be interested in them:
 <details open><summary><strong>Major projects I'm involved in</strong></summary><p>
 
 Sorted from the most important to the least:
-1. <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
-2. <a href="https://github.com/dotnet/interactive/">Interactive</a> (2021)
-3. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020-2021)
+|       | Project |  Year  |
+|:-----:|:-------:|:------:|
+| <img src="https://raw.githubusercontent.com/asc-community/AngouriMath/4e097da9d582c257fedd4aa90b067c3164b24a77/.github/additional/readme/icon_white.png" width="30"> | <a href="https://am.angouri.org">AngouriMath</a> | 2019-2021| 
+| <img src="https://user-images.githubusercontent.com/31178401/118245149-1a617780-b4a9-11eb-94f5-acbba15e5167.png" width="25"> | <a href="https://github.com/dotnet/interactive/">Interactive</a> | 2021 |
+| | <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> | 2020-2021 |
+
 </p>
 
 </details>
