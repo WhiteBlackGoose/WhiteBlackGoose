@@ -25,9 +25,7 @@ I wrote a few articles, maybe some people will be interested in them:
 Sorted from the most important to the least:
 |       | Project |  Year  |
 |:-----:|:-------:|:------:|
-| <img src="https://raw.githubusercontent.com/asc-community/AngouriMath/4e097da9d582c257fedd4aa90b067c3164b24a77/.github/additional/readme/icon_white.png" width="30"> | <a href="https://am.angouri.org">AngouriMath</a> | 2019-2021| 
-| <img src="https://user-images.githubusercontent.com/31178401/118245149-1a617780-b4a9-11eb-94f5-acbba15e5167.png" width="25"> | <a href="https://github.com/dotnet/interactive/">Interactive</a> | 2021 |
-| <img src="https://raw.githubusercontent.com/asc-community/GenericTensor/b55518f64352a347544b417f49a3c83eb070592f/ico1.png" width="30"> | <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> | 2020-2021 |
+| <img src="https://raw.githubusercontent.com/asc-community/AngouriMath/4e097da9d582c257fedd4aa90b067c3164b24a77/.github/additional/readme/icon_white.png" width="30"> | <a href="https://am.angouri.org">**AngouriMath**</a> | 2019-2021| 
 
 </p>
 
@@ -43,6 +41,8 @@ Sorted from the most important to the least:
 6. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (2021)
 7. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
 8. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
+9. <a href="https://github.com/dotnet/interactive">Interactive</a> (2021)
+10. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
 
 </p>
 
