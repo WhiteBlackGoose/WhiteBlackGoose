@@ -25,7 +25,7 @@ I wrote a few articles, maybe some people will be interested in them:
 Sorted from the most important to the least:
 |       | Project |  Year  |
 |:-----:|:-------:|:------:|
-| <img src="https://raw.githubusercontent.com/asc-community/AngouriMath/4e097da9d582c257fedd4aa90b067c3164b24a77/.github/additional/readme/icon_white.png" width="30"> | <a href="https://am.angouri.org">**AngouriMath**</a> | 2019-2021| 
+| <img src="https://raw.githubusercontent.com/asc-community/AngouriMath/4e097da9d582c257fedd4aa90b067c3164b24a77/.github/additional/readme/icon_white.png" width="45"> | <a href="https://am.angouri.org">**AngouriMath**</a> | 2019-2021| 
 
 </p>
 
