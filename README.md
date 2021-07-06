@@ -45,7 +45,8 @@ Sorted from the most important to the least:
 8. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
 9. <a href="https://github.com/dotnet/interactive">Interactive</a> (2021)
 10. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
-11. <a href="https://github.com/WhiteBlackGoose/FunConsoleGame">Fun console game</a> (2021)
+11. <a href="https://whiteblackgoose.github.io/TypeInfo/">.NET type inspector</a> (2021)
+12. <a href="https://github.com/WhiteBlackGoose/FunConsoleGame">Fun console game</a> (2021)
   
 </p>
 
