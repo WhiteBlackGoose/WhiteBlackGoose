@@ -4,7 +4,7 @@ I'm WhiteBlackGoose. Who cares about my bio?
 
 I'm the author of symbolic algebra library <a href="https://am.angouri.org">AngouriMath</a> (under MIT). I also work on some minor projects along the way, see below. I'm <a href="https://github.com/MomoDeve">MomoDeve's</a> friend, so you may want to check his cool projects too.
 
-I'm a member of <a href="https://angouri.org">Angouri</a>.
+I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://dotnetfoundation.org">.NET Foundation</a>.
 
 <details><summary><strong>My articles</strong></summary><p>
 
