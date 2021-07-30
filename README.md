@@ -36,11 +36,11 @@ Sorted from the most important to the least:
 <details><summary><strong>Other projects I'm involved in</strong></summary><p>
   
 1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
-2. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (2020)
+2. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (2020) (deprecated, moved to Honk#)
 3. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
 4. <a href="https://github.com/WhiteBlackGoose/hgt2png">Hgt to png</a> (2021)
 5. <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">Quantum almanac</a> (2021)
-6. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (2021)
+6. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (2021) (deprecated, moved to AngouriMath)
 7. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
 8. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
 9. <a href="https://github.com/dotnet/interactive">Interactive</a> (2021)
