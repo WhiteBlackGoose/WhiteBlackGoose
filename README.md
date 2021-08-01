@@ -1,5 +1,13 @@
 ### Hi there 👋
 
+```
+                  ___                           _      _
+                 / _ \   _   _    __ _    ___  | | __ | |
+                | | | | | | | |  / _` |  / __| | |/ / | |
+                | |_| | | |_| | | (_| | | (__  |   <  |_|
+                 \__\_\  \__,_|  \__,_|  \___| |_|\_\ (_)
+```
+
 I'm WhiteBlackGoose. Who cares about my bio?
 
 I'm the author of symbolic algebra library <a href="https://am.angouri.org">AngouriMath</a> (under MIT). I also work on some minor projects along the way, see below. I'm <a href="https://github.com/MomoDeve">MomoDeve's</a> friend, so you may want to check his cool projects too.
