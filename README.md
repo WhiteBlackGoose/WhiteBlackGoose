@@ -1,12 +1,4 @@
-### Hi there 👋
-
-```
-                  ___                           _      _
-                 / _ \   _   _    __ _    ___  | | __ | |
-                | | | | | | | |  / _` |  / __| | |/ / | |
-                | |_| | | |_| | | (_| | | (__  |   <  |_|
-                 \__\_\  \__,_|  \__,_|  \___| |_|\_\ (_)
-```
+### Hi there
 
 I'm **WhiteBlackGoose**.
 
@@ -14,14 +6,18 @@ I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**,
 
 I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://dotnetfoundation.org">.NET Foundation</a>. See all my contributions in the next expander.
 
+<hr>
+
 <details><summary><strong><img src="./media/merged-pr.svg"> My pull requests</strong> (click)</summary><p>
   
 |        | [**All**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=created&type=Issues) |
 |:------:|:-----:|
-| <img src="https://avatars.githubusercontent.com/u/60462721?s=200&v=4" width="45"> | [**Angouri**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&s=created&type=Issues) |
-| <img src="https://avatars.githubusercontent.com/u/9141961?s=200&v=4" width="40"> | [**.NET**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&s=created&type=Issues) |
+| <img src="https://avatars.githubusercontent.com/u/60462721?s=200&v=4" width="30"> | [**Angouri**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&s=created&type=Issues) |
+| <img src="https://avatars.githubusercontent.com/u/9141961?s=200&v=4" width="27"> | [**.NET**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&s=created&type=Issues) |
 | | [Other](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet&s=created&type=Issues) |
 </p></details>
+
+<hr>
 
 <details><summary><strong>📚 My articles</strong> (click)</summary><p>
 
@@ -38,17 +34,21 @@ I wrote a few articles, maybe some people will be interested in them:
 
 </p></details>
 
+<hr>
+
 <details><summary><strong>🧪 Major projects I'm involved in</strong> (click)</summary><p>
 
 Sorted from the most important to the least:
 |       | Project |  Year  |
 |:-----:|:-------:|:------:|
-| <img src="https://raw.githubusercontent.com/asc-community/AngouriMath/4e097da9d582c257fedd4aa90b067c3164b24a77/.github/additional/readme/icon_white.png" width="45"> | <a href="https://am.angouri.org">**AngouriMath**</a> | 2019-2021| 
-| <img src="https://github.com/WhiteBlackGoose/HonkSharp/blob/bf17b2a3ae38917b8d73bb1c980650cb54e79a5b/HonkSharp/logo256.png?raw=true" width="45"> | <a href="https://github.com/WhiteBlackGoose/HonkSharp">**Honk#**</a> | 2021 |
+| <img src="https://raw.githubusercontent.com/asc-community/AngouriMath/4e097da9d582c257fedd4aa90b067c3164b24a77/.github/additional/readme/icon_white.png" width="30"> | <a href="https://am.angouri.org">**AngouriMath**</a> | 2019-2021| 
+| <img src="https://github.com/WhiteBlackGoose/HonkSharp/blob/bf17b2a3ae38917b8d73bb1c980650cb54e79a5b/HonkSharp/logo256.png?raw=true" width="30"> | <a href="https://github.com/WhiteBlackGoose/HonkSharp">**Honk#**</a> | 2021 |
 
 </p>
 
 </details>
+
+<hr>
 
 <details><summary><strong>Other projects I'm involved in</strong> (click)</summary><p>
   
@@ -67,6 +67,8 @@ Sorted from the most important to the least:
   
 </p>
 
+<hr>
+  
 <details><summary><strong>My old projects</strong></summary><p>
 
 There're a few projects that I decided to upload to GitHub, starting from the newest:
@@ -83,6 +85,6 @@ There're a few projects that I decided to upload to GitHub, starting from the ne
   
 </details>
 
-
+<hr>
 
 If you want to support me, you can support <a href="https://patreon.com/AngouriMath">AngouriMath</a> instead.
