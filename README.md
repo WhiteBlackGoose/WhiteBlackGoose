@@ -14,16 +14,16 @@ I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**,
 
 I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://dotnetfoundation.org">.NET Foundation</a>. See all my contributions in the next expander.
 
-<details><summary><strong><img src="./media/merged-pr.svg"> My pull requests</strong></summary><p>
+<details><summary><strong><img src="./media/merged-pr.svg"> My pull requests</strong> (click)</summary><p>
   
-| [**All**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=created&type=Issues) |
-|:------:|
-| [**Angouri**](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&type=Issues) |
-| [**.NET**](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&type=Issues) |
-| [Other](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet&type=Issues) |
+|        | [**All**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=created&type=Issues) |
+|:------:|:-----:|
+| <img src="https://avatars.githubusercontent.com/u/60462721?s=200&v=4" width="45"> | [**Angouri**](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&type=Issues) |
+| <img src="https://avatars.githubusercontent.com/u/9141961?s=200&v=4" width="40"> | [**.NET**](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&type=Issues) |
+| | [Other](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet&type=Issues) |
 </p></details>
 
-<details><summary><strong>📚 My articles</strong></summary><p>
+<details><summary><strong>📚 My articles</strong> (click)</summary><p>
 
 I wrote a few articles, maybe some people will be interested in them:
 1. <a href="https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction">Simple simulation of custom physical interactions with particles</a>
@@ -38,7 +38,7 @@ I wrote a few articles, maybe some people will be interested in them:
 
 </p></details>
 
-<details><summary><strong>🧪 Major projects I'm involved in</strong></summary><p>
+<details><summary><strong>🧪 Major projects I'm involved in</strong> (click)</summary><p>
 
 Sorted from the most important to the least:
 |       | Project |  Year  |
@@ -50,7 +50,7 @@ Sorted from the most important to the least:
 
 </details>
 
-<details><summary><strong>Other projects I'm involved in</strong></summary><p>
+<details><summary><strong>Other projects I'm involved in</strong> (click)</summary><p>
   
 1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
 2. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (2020) (deprecated, moved to Honk#)
