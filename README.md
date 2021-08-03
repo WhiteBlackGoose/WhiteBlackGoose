@@ -20,7 +20,7 @@ Each project is either maintained by me or I contributed to it. I ⭐-ed the pro
 1. ⭐ <a href="https://github.com/plotly/Plotly.NET">Plotly.NET</a> (2021)
 1. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
 1. ⭐ <a href="https://github.com/jonsequitur/dotnet-repl">dotnet-repl</a> (2021)
-1. <a href="https://github.com/ZacharyPattern/Towel">Towel</a> (2020)
+1. <a href="https://github.com/ZacharyPatten/Towel">Towel</a> (2020)
 1. <a href="https://whiteblackgoose.github.io/TypeInfo/">.NET type inspector</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">Quantum almanac</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
