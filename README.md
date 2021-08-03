@@ -8,6 +8,45 @@ I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://do
 
 <hr>
 
+<details><summary><strong>🧪 Projects I'm involved in</strong> (click)</summary><p>
+
+Starting from the most important ones:
+|       | Project |  Year  |
+|:-----:|:-------|:------|
+| <img src="https://raw.githubusercontent.com/asc-community/AngouriMath/4e097da9d582c257fedd4aa90b067c3164b24a77/.github/additional/readme/icon_white.png" width="30"> | <a href="https://am.angouri.org">**AngouriMath**</a> | 2019-2021| 
+| <img src="https://github.com/WhiteBlackGoose/HonkSharp/blob/bf17b2a3ae38917b8d73bb1c980650cb54e79a5b/HonkSharp/logo256.png?raw=true" width="30"> | <a href="https://github.com/WhiteBlackGoose/HonkSharp">**Honk#**</a> | 2021 |
+|   | <a href="https://github.com/asc-community/dotnet-benchmarks">**DotnetBenchmarks**</a> | 2020-2021 |
+|   | <a href="https://github.com/WhiteBlackGoose/Yadg.NET">**Yadg.NET**</a> | 2021 |
+|   | <a href="https://github.com/dotnet/interactive">**Interactive**</a> | 2021 |
+|   | <a href="https://github.com/dotnet/runtime">**Runtime**</a> | 2021 |
+|   | <a href="https://whiteblackgoose.github.io/TypeInfo/">**.NET type inspector**</a> | 2021 |
+|   | <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">**Quantum almanac**</a> | 2021 |
+|   | <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">**Template for one-page website**</a> | 2021 |
+|   | <a href="https://github.com/WhiteBlackGoose/hgt2png">**Hgt2png**</a> | 2021 |
+|   | <a href="https://github.com/WhiteBlackGoose/FunConsoleGame">**Fun console game**</a> | 2021 |
+|   | <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">**Code snippets**</a> | 2021 |
+|   | <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">**AngouriMath.Terminal**</a> (deprecated, moved to AngouriMath) | 2021 |
+|   | <a href="https://github.com/WhiteBlackGoose/FieldCache">**FieldCache**</a> (deprecated, moved to Honk#) | 2020 |
+  
+<details><summary><strong>Old projects</strong></summary><p>
+  
+1. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
+2. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
+3. <a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
+4. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
+5. <a href="https://github.com/WhiteBlackGoose/BounceMan">BounceMan</a> (2015)
+6. <a href="https://github.com/WhiteBlackGoose/MyProgram">MyProgram</a> (2014)
+  
+</p></details>
+  
+Others:
+  
+</p>
+
+</details>
+
+<hr>
+
 <details><summary><strong><img src="./media/merged-pr.svg"> My pull requests</strong> (click)</summary><p>
   
 |        | [**All**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=created&type=Issues) |
@@ -36,55 +75,6 @@ I wrote a few articles, maybe some people will be interested in them:
 
 <hr>
 
-<details><summary><strong>🧪 Major projects I'm involved in</strong> (click)</summary><p>
 
-Sorted from the most important to the least:
-|       | Project |  Year  |
-|:-----:|:-------:|:------:|
-| <img src="https://raw.githubusercontent.com/asc-community/AngouriMath/4e097da9d582c257fedd4aa90b067c3164b24a77/.github/additional/readme/icon_white.png" width="30"> | <a href="https://am.angouri.org">**AngouriMath**</a> | 2019-2021| 
-| <img src="https://github.com/WhiteBlackGoose/HonkSharp/blob/bf17b2a3ae38917b8d73bb1c980650cb54e79a5b/HonkSharp/logo256.png?raw=true" width="30"> | <a href="https://github.com/WhiteBlackGoose/HonkSharp">**Honk#**</a> | 2021 |
-
-</p>
-
-</details>
-
-<hr>
-
-<details><summary><strong>Other projects I'm involved in</strong> (click)</summary><p>
-  
-1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
-2. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (2020) (deprecated, moved to Honk#)
-3. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
-4. <a href="https://github.com/WhiteBlackGoose/hgt2png">Hgt to png</a> (2021)
-5. <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">Quantum almanac</a> (2021)
-6. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (2021) (deprecated, moved to AngouriMath)
-7. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
-8. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
-9. <a href="https://github.com/dotnet/interactive">Interactive</a> (2021)
-10. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
-11. <a href="https://whiteblackgoose.github.io/TypeInfo/">.NET type inspector</a> (2021)
-12. <a href="https://github.com/WhiteBlackGoose/FunConsoleGame">Fun console game</a> (2021)
-  
-</p>
-
-<hr>
-  
-<details><summary><strong>My old projects</strong></summary><p>
-
-There're a few projects that I decided to upload to GitHub, starting from the newest:
-
-1. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
-2. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
-3. <a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
-4. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
-5. <a href="https://github.com/WhiteBlackGoose/BounceMan">BounceMan</a> (2015)
-6. <a href="https://github.com/WhiteBlackGoose/MyProgram">MyProgram</a> (2014)
-
-
-</p></details>
-  
-</details>
-
-<hr>
 
 If you want to support me, you can support <a href="https://patreon.com/AngouriMath">AngouriMath</a> instead.
