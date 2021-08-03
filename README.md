@@ -14,7 +14,7 @@ I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**,
 
 I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://dotnetfoundation.org">.NET Foundation</a>. See all my contributions in the next expander.
 
-<details open><summary><strong>My contributions <img src="./media/merged-pr.svg"> </strong></summary><p>
+<details><summary><strong><img src="./media/merged-pr.svg"> My pull requests</strong></summary><p>
   
 | [**All**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=created&type=Issues) |
 |:------:|
@@ -23,7 +23,7 @@ I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://do
 | [Other](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet&type=Issues) |
 </p></details>
 
-<details><summary><strong>My articles</strong></summary><p>
+<details><summary><strong>📚 My articles</strong></summary><p>
 
 I wrote a few articles, maybe some people will be interested in them:
 1. <a href="https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction">Simple simulation of custom physical interactions with particles</a>
@@ -38,7 +38,7 @@ I wrote a few articles, maybe some people will be interested in them:
 
 </p></details>
 
-<details open><summary><strong>Major projects I'm involved in</strong></summary><p>
+<details><summary><strong>🧪 Major projects I'm involved in</strong></summary><p>
 
 Sorted from the most important to the least:
 |       | Project |  Year  |
@@ -67,8 +67,6 @@ Sorted from the most important to the least:
   
 </p>
 
-</details>
-
 <details><summary><strong>My old projects</strong></summary><p>
 
 There're a few projects that I decided to upload to GitHub, starting from the newest:
@@ -82,5 +80,9 @@ There're a few projects that I decided to upload to GitHub, starting from the ne
 
 
 </p></details>
+  
+</details>
+
+
 
 If you want to support me, you can support <a href="https://patreon.com/AngouriMath">AngouriMath</a> instead.
