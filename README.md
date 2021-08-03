@@ -8,11 +8,20 @@
                  \__\_\  \__,_|  \__,_|  \___| |_|\_\ (_)
 ```
 
-I'm WhiteBlackGoose. Who cares about my bio?
+I'm **WhiteBlackGoose**.
 
-I'm the author of symbolic algebra library <a href="https://am.angouri.org">AngouriMath</a> (under MIT). I also work on some minor projects along the way, see below. I'm <a href="https://github.com/MomoDeve">MomoDeve's</a> friend, so you may want to check his cool projects too.
+I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**, to be precise, **C#** and **F#**, trying to make .NET greater and more suitable for scientific purposes.
 
-I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://dotnetfoundation.org">.NET Foundation</a>. All my contributions can be found [here](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=created&type=Issues).
+I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://dotnetfoundation.org">.NET Foundation</a>. See all my contributions in the next expander.
+
+<details open><summary><strong>My contributions</strong></summary><p>
+  
+| [**All**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=created&type=Issues) |
+|:------:|
+| [**Angouri**](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&type=Issues) |
+| [**.NET**](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&type=Issues) |
+| [Other](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet&type=Issues) |
+</p></details>
 
 <details><summary><strong>My articles</strong></summary><p>
 
