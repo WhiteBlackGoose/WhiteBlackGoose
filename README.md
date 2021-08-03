@@ -13,7 +13,7 @@ I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://do
 Each project is either maintained by me or I contributed to it. I ⭐-ed the projects which I find awesome and best in their areas.
 
 1. ⭐ <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
-1. ⭐ <a href="https://github.com/WhiteBlackGoose/HonkSharp">Honk#</a> (2021)
+1. <a href="https://github.com/WhiteBlackGoose/HonkSharp">Honk#</a> (2021)
 1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
 1. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
 1. ⭐ <a href="https://github.com/dotnet/interactive">Interactive</a> (2021)
