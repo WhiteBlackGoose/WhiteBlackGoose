@@ -18,9 +18,9 @@ I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://do
   
 |        | [**All**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=created&type=Issues) |
 |:------:|:-----:|
-| <img src="https://avatars.githubusercontent.com/u/60462721?s=200&v=4" width="45"> | [**Angouri**](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&type=Issues) |
-| <img src="https://avatars.githubusercontent.com/u/9141961?s=200&v=4" width="40"> | [**.NET**](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&type=Issues) |
-| | [Other](https://github.com/search?q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet&type=Issues) |
+| <img src="https://avatars.githubusercontent.com/u/60462721?s=200&v=4" width="45"> | [**Angouri**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&s=created&type=Issues) |
+| <img src="https://avatars.githubusercontent.com/u/9141961?s=200&v=4" width="40"> | [**.NET**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&s=created&type=Issues) |
+| | [Other](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet&s=created&type=Issues) |
 </p></details>
 
 <details><summary><strong>📚 My articles</strong> (click)</summary><p>
