@@ -4,7 +4,7 @@ I'm **WhiteBlackGoose**.
 
 I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**, to be precise, **C#** and **F#**, trying to make .NET greater and more suitable for scientific purposes.
 
-I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://dotnetfoundation.org">.NET Foundation</a>. See all my contributions in the next expander.
+I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://dotnetfoundation.org">.NET Foundation</a>. See all my contributions in the next expanders.
 
 <hr>
 
@@ -20,13 +20,16 @@ Starting from the most important ones:
 |   | <a href="https://github.com/dotnet/interactive">**Interactive**</a> | 2021 |
 |   | <a href="https://github.com/dotnet/runtime">**Runtime**</a> | 2021 |
 |   | <a href="https://whiteblackgoose.github.io/TypeInfo/">**.NET type inspector**</a> | 2021 |
-|   | <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">**Quantum almanac**</a> | 2021 |
-|   | <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">**Template for one-page website**</a> | 2021 |
-|   | <a href="https://github.com/WhiteBlackGoose/hgt2png">**Hgt2png**</a> | 2021 |
-|   | <a href="https://github.com/WhiteBlackGoose/FunConsoleGame">**Fun console game**</a> | 2021 |
-|   | <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">**Code snippets**</a> | 2021 |
-|   | <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">**AngouriMath.Terminal**</a> (deprecated, moved to AngouriMath) | 2021 |
-|   | <a href="https://github.com/WhiteBlackGoose/FieldCache">**FieldCache**</a> (deprecated, moved to Honk#) | 2020 |
+
+Not so important/deprecated:
+  
+1. <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">**Quantum almanac**</a> ( 2021 )
+1. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">**Template for one-page website**</a> ( 2021 )
+1. <a href="https://github.com/WhiteBlackGoose/hgt2png">**Hgt2png**</a> ( 2021 )
+1. <a href="https://github.com/WhiteBlackGoose/FunConsoleGame">**Fun console game**</a> ( 2021 )
+1. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">**Code snippets**</a> ( 2021 )
+1. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">**AngouriMath.Terminal**</a> (deprecated, moved to AngouriMath) ( 2021 )
+1. <a href="https://github.com/WhiteBlackGoose/FieldCache">**FieldCache**</a> (deprecated, moved to Honk#) ( 2020 )
   
 <details><summary><strong>Old projects</strong></summary><p>
   
