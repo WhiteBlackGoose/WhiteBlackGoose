@@ -14,7 +14,7 @@ I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**,
 
 I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="http://dotnetfoundation.org">.NET Foundation</a>. See all my contributions in the next expander.
 
-<details open><summary><strong>My contributions</strong></summary><p>
+<details open><summary><strong>My contributions <img src="./media/merged-pr.svg"> </strong></summary><p>
   
 | [**All**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=created&type=Issues) |
 |:------:|
