@@ -79,3 +79,5 @@ I wrote a few articles, maybe some people will be interested in them:
 
 
 If you want to support me, you can support <a href="https://patreon.com/AngouriMath">AngouriMath</a> instead.
+
+My twitter: [@WhiteBlackGoose](https://twitter.com/WhiteBlackGoose), where I post some news about the projects I'm working on.
