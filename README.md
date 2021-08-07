@@ -71,6 +71,7 @@ I wrote a few articles, maybe some people will be interested in them:
 7. <a href="https://habr.com/en/post/545936/">Lazy properties in C#</a>
 8. <a href="https://habr.com/en/post/546926/">Compilation of symbolic expressions into Linq.Expression</a>
 9. <a href="https://whiteblackgoose.medium.com/parsing-a-math-expression-from-string-in-c-b2b48e2ac2e6">Parsing a math expression in C#</a>
+10. <a href="https://am.angouri.org/research/">AngouriMath for Research with F#</a>
 
 </p></details>
 
