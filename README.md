@@ -6,6 +6,8 @@ I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**,
 
 I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http://dotnetfoundation.org">**.NET Foundation**</a>, and author of [**AngouriMath**](http://github.com/asc-community/AngouriMath). See all my contributions in the next expanders.
 
+<img align="right" width="400" src="https://miro.medium.com/max/1400/1*qsDGIrTG4TKlnmfsrfdqOw.jpeg">
+
 <hr>
 
 <details><summary><strong>🧪 Projects I'm involved in</strong> (click)</summary><p>
