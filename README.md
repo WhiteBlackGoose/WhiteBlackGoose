@@ -14,25 +14,35 @@ I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http:
 
 Each project is either maintained by me or I contributed to it. I ⭐-ed the projects which I find awesome and best in their areas.
 
+#### Science/Theory
+  
 1. ⭐ <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
-1. <a href="https://github.com/WhiteBlackGoose/HonkSharp">Honk#</a> (2021)
-1. <a href="https://github.com/WhiteBlackGoose/LambdaCalculusFSharp">λ calculus calculator</a>  (2021)
-1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
-1. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
-1. ⭐ <a href="https://github.com/dotnet/interactive">Interactive</a> (2021)
+1. <a href="https://github.com/WhiteBlackGoose/LambdaCalculusFSharp">λ calculus calculator</a>  (2021)  
 1. ⭐ <a href="https://github.com/plotly/Plotly.NET">Plotly.NET</a> (2021)
-1. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
-1. ⭐ <a href="https://github.com/jonsequitur/dotnet-repl">dotnet-repl</a> (2021)
-1. <a href="https://github.com/ZacharyPatten/Towel">Towel</a> (2020)
 1. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020-2021)
-1. <a href="https://whiteblackgoose.github.io/TypeInfo/">.NET type inspector</a> (2021)
+1. <a href="https://github.com/WhiteBlackGoose/SetSystem">SetSystem</a> (2021)
+1. ⭐ <a href="https://github.com/dotnet/interactive">Interactive</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">Quantum almanac</a> (2021)
+  
+#### General purpose libraries / collections
+1. <a href="https://github.com/WhiteBlackGoose/HonkSharp">Honk#</a> (2021)
+1. <a href="https://github.com/ZacharyPatten/Towel">Towel</a> (2020)
+1. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
-1. <a href="https://github.com/WhiteBlackGoose/hgt2png">Hgt2png</a> (2021)
-1. <a href="https://github.com/WhiteBlackGoose/FunConsoleGame">Fun console game</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
-1. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (deprecated, moved to AngouriMath) (2021)
 1. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (deprecated, moved to Honk#) (2020)
+  
+#### Tools/apps/games
+1. <a href="https://github.com/WhiteBlackGoose/FunConsoleGame">Fun console game</a> (2021)
+1. ⭐ <a href="https://github.com/jonsequitur/dotnet-repl">dotnet-repl</a> (2021)
+1. <a href="https://github.com/WhiteBlackGoose/hgt2png">Hgt2png</a> (2021)
+1. <a href="https://whiteblackgoose.github.io/TypeInfo/">.NET type inspector</a> (2021)
+1. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (deprecated, moved to AngouriMath) (2021)
+
+  
+#### Other  
+1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
+1. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
   
 <details><summary><strong>Old projects</strong></summary><p>
   
