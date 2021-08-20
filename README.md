@@ -34,6 +34,7 @@ Each project is either maintained by me or I contributed to it.
 1. <a href="https://github.com/ZacharyPatten/Towel">Towel</a> (2020)
 1. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
+1. <a href="https://github.com/WhiteBlackGoose/WebAppMinimalTemplate">Web app template</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (deprecated, moved to Honk#) (2020)
   
