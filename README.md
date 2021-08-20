@@ -68,11 +68,14 @@ Each project is either maintained by me or I contributed to it.
 
 <details><summary><strong><img src="./media/merged-pr.svg"> My merged pull requests</strong> (click)</summary><p>
   
-|        | [**All**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=updated&type=Issues) |
-|:------:|:-----:|
-| <img src="https://avatars.githubusercontent.com/u/60462721?s=200&v=4" width="30"> | [**Angouri**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&s=updated&type=Issues) |
-| <img src="https://avatars.githubusercontent.com/u/9141961?s=200&v=4" width="27"> | [**.NET**](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&s=updated&type=Issues) |
-| | [Other](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet&s=updated&type=Issues) |
+I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs from its parent node.
+  
+- [All](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=updated&type=Issues) 
+  - [Angouri](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&s=updated&type=Issues)
+  - [.NET](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&s=updated&type=Issues)
+  - [Plotly](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aplotly&s=updated&type=Issues)
+  - [Other](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet+-org%3Aplotly&s=updated&type=Issues)
+  
 </p></details>
 
 <hr>
