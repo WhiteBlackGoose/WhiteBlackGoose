@@ -12,7 +12,9 @@ jobs:
     - uses: actions/checkout@v2
           
     - name: Open expanders (the details tag)
-      run: sed -i "s/<details>/<details open>/g" README.md
+      run: |
+        sed -i "s/<details><summary><strong>/<h2>/g" README.md
+        sed -i "s/<\/strong> (click)<\/summary><p>/<\/h2>/g" README.md
     
     - name: Rename readme to index
       run: mv README.md index.md
