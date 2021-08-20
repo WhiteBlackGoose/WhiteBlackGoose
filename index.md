@@ -50,7 +50,7 @@ Each project is either maintained by me or I contributed to it.
 1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
 1. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
   
-<details open><summary><strong>Old projects</strong></summary><p>
+<details ><summary><strong>Old projects</strong></summary><p>
   
 1. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
 2. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
@@ -59,7 +59,7 @@ Each project is either maintained by me or I contributed to it.
 5. <a href="https://github.com/WhiteBlackGoose/BounceMan">BounceMan</a> (2015)
 6. <a href="https://github.com/WhiteBlackGoose/MyProgram">MyProgram</a> (2014)
   
-</p></details>
+</p></details >
   
 </p>
 
@@ -120,3 +120,5 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 If you want to support me, you can support <a href="https://patreon.com/AngouriMath">AngouriMath</a> instead.
 
 My twitter: [@WhiteBlackGoose](https://twitter.com/WhiteBlackGoose), where I post some news about the projects I'm working on.
+
+This text is mirrored to a personal [web-page](https://whiteblackgoose.github.io/WhiteBlackGoose/).
