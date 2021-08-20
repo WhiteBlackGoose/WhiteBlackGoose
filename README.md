@@ -20,7 +20,7 @@ Each project is either maintained by me or I contributed to it.
 #### Science/Theory
   
 1. <a href="https://am.angouri.org">AngouriMath</a> (2019-2021) 🦆⭐
-1. <a href="https://github.com/WhiteBlackGoose/LambdaCalculusFSharp">λ calculus calculator</a>  (2021) 🦆
+1. <a href="https://github.com/WhiteBlackGoose/LambdaCalculusFSharp">λ calculus calculator</a> (2021)
 1. <a href="https://github.com/plotly/Plotly.NET">Plotly.NET</a> (2021) ⭐
 1. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020-2021) 🦆
 1. <a href="https://github.com/WhiteBlackGoose/SetSystem">SetSystem</a> (2021) 🦆
