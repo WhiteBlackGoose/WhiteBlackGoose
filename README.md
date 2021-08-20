@@ -1,12 +1,14 @@
 ### Hi there
 
+<img align="right" width="300" src="https://miro.medium.com/max/1400/1*qsDGIrTG4TKlnmfsrfdqOw.jpeg">
+
 I'm **WhiteBlackGoose**.
 
 I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**, to be precise, **C#** and **F#**, trying to make .NET greater and more suitable for scientific purposes.
 
 I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http://dotnetfoundation.org">**.NET Foundation**</a>, and author of [**AngouriMath**](http://github.com/asc-community/AngouriMath). See all my contributions in the next expanders.
 
-<img align="right" width="400" src="https://miro.medium.com/max/1400/1*qsDGIrTG4TKlnmfsrfdqOw.jpeg">
+
 
 <hr>
 
