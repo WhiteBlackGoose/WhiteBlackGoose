@@ -95,12 +95,14 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 1. [ EN ] <a href="https://habr.com/en/post/546926/">Compilation of symbolic expressions into Linq.Expression</a>
 1. [ RU ] [Компилируем математические выражения](https://habr.com/ru/post/546622/)
 1. [ EN ] [Lazy Properties Are Good. That Is How You Are to Use Them](https://habr.com/en/post/545936/)
+1. [ RU ] [Методы без аргументов — зло в ООП, и вот как его полечить](https://habr.com/ru/post/529454/)
 1. [ EN ] <a href="https://whiteblackgoose.medium.com/parsing-a-math-expression-from-string-in-c-b2b48e2ac2e6">Parsing a math expression in C#</a>
 1. [ EN ] <a href="https://habr.com/en/post/486496/">Symbolic algrebra in C#</a> (quite outdated though, written at the very beginning of AngouriMath)
 1. [ EN ] <a href="https://gist.github.com/WhiteBlackGoose/5b84b2237704a91ffe7f34372196df32">Generic tensors in C#</a>
 
 #### Jupyter/F#
 1. [ EN ] <a href="https://habr.com/en/post/528816/">Jupyter in .NET</a>
+1. [ RU ] [Jupyter для .NET. «Как в питоне»](https://habr.com/ru/post/528730/)
 1. [ EN ] <a href="https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/">Math in Jupyter for .NET</a>
 1. [ EN ] <a href="https://am.angouri.org/research/">AngouriMath for Research with F#</a>
   
