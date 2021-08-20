@@ -51,13 +51,27 @@ Each project is either maintained by me or I contributed to it.
 1. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
   
 <details ><summary><strong>Old projects</strong></summary><p>
-  
-1. <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
-2. <a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
-3. <a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
-4. <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
-5. <a href="https://github.com/WhiteBlackGoose/BounceMan">BounceMan</a> (2015)
-6. <a href="https://github.com/WhiteBlackGoose/MyProgram">MyProgram</a> (2014)
+
+<ul>
+  <li>
+<a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
+  </li>
+  <li>
+<a href="https://github.com/WhiteBlackGoose/LogicSchemeEmulator">Logic Scheme Emulator</a> (2017)
+  </li>
+  <li>
+<a href="https://github.com/WhiteBlackGoose/GunsVsMonsters">Guns vs Monsters</a> (2016)
+  </li>
+  <li>
+<a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
+  </li>
+  <li>
+<a href="https://github.com/WhiteBlackGoose/BounceMan">BounceMan</a> (2015)
+  </li>
+  <li>
+<a href="https://github.com/WhiteBlackGoose/MyProgram">MyProgram</a> (2014)
+  </li>
+</ul>
   
 </p></details >
   
