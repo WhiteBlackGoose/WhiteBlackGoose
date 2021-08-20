@@ -61,9 +61,7 @@ Each project is either maintained by me or I contributed to it.
   
 </p></details >
   
-</p>
-
-</details>
+</p></details>
 
 <hr>
 
