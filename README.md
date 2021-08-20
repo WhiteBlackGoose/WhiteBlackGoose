@@ -2,7 +2,7 @@
 
 <img align="right" width="300" src="https://miro.medium.com/max/1400/1*qsDGIrTG4TKlnmfsrfdqOw.jpeg">
 
-I'm **WhiteBlackGoose**.
+I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
 
 I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**, to be precise, **C#** and **F#**, trying to make .NET greater and more suitable for scientific purposes. I've been into this area for **2** years.
 
