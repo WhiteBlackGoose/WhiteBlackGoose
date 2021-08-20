@@ -13,6 +13,9 @@ jobs:
           
     - name: Open expanders (the details tag)
       run: sed -i "s/<details>/<details open>/g" README.md
+    
+    - name: Rename readme to index
+      run: mv README.md index.md
       
     - name: Add theme file
       run: |
