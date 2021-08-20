@@ -85,17 +85,28 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <details><summary><strong>📚 My articles</strong> (click)</summary><p>
 
-I wrote a few articles, maybe some people will be interested in them:
-1. <a href="https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction">Simple simulation of custom physical interactions with particles</a>
-2. <a href="https://habr.com/en/post/465523/">Yet another snake with Kivy, Python</a> (might be irrelevant, avoid following this guide)
-3. <a href="https://habr.com/en/post/486496/">Symbolic algrebra in C#</a> (quite outdated though, written at the very beginning of AngouriMath)
-4. <a href="https://gist.github.com/WhiteBlackGoose/5b84b2237704a91ffe7f34372196df32">Generic tensors in C#</a>
-5. <a href="https://habr.com/en/post/528816/">Jupyter in .NET</a>
-6. <a href="https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/">Math in Jupyter for .NET</a>
-7. <a href="https://habr.com/en/post/545936/">Lazy properties in C#</a>
-8. <a href="https://habr.com/en/post/546926/">Compilation of symbolic expressions into Linq.Expression</a>
-9. <a href="https://whiteblackgoose.medium.com/parsing-a-math-expression-from-string-in-c-b2b48e2ac2e6">Parsing a math expression in C#</a>
-10. <a href="https://am.angouri.org/research/">AngouriMath for Research with F#</a>
+#### Projects/News
+1. [ EN ] [AngouriMath 1.3 update](https://habr.com/en/post/565996/)
+1. [ EN ] [What's new in AngouriMath 1.2?](https://habr.com/en/post/545436/)
+1. [ RU ] [Что нового в AngouriMath 1.2?](https://habr.com/en/post/545190/)
+  
+#### C#/.NET
+1. [ RU ] [Хостим WASM-приложения на github pages в два клика](https://habr.com/ru/post/566286/)
+1. [ EN ] <a href="https://habr.com/en/post/546926/">Compilation of symbolic expressions into Linq.Expression</a>
+1. [ RU ] [Компилируем математические выражения](https://habr.com/ru/post/546622/)
+1. [ EN ] [Lazy Properties Are Good. That Is How You Are to Use Them](https://habr.com/en/post/545936/)
+1. [ EN ] <a href="https://whiteblackgoose.medium.com/parsing-a-math-expression-from-string-in-c-b2b48e2ac2e6">Parsing a math expression in C#</a>
+1. [ EN ] <a href="https://habr.com/en/post/486496/">Symbolic algrebra in C#</a> (quite outdated though, written at the very beginning of AngouriMath)
+1. [ EN ] <a href="https://gist.github.com/WhiteBlackGoose/5b84b2237704a91ffe7f34372196df32">Generic tensors in C#</a>
+
+#### Jupyter/F#
+1. [ EN ] <a href="https://habr.com/en/post/528816/">Jupyter in .NET</a>
+1. [ EN ] <a href="https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/">Math in Jupyter for .NET</a>
+1. [ EN ] <a href="https://am.angouri.org/research/">AngouriMath for Research with F#</a>
+  
+#### Other
+1. [ EN ] <a href="https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction">Simple simulation of custom physical interactions with particles</a>
+1. [ EN ] <a href="https://habr.com/en/post/465523/">Yet another snake with Kivy, Python</a> (might be irrelevant, avoid following this guide)
 
 </p></details>
 
