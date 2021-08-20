@@ -1,0 +1,25 @@
+name: Website mirror
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+          
+    - name: Open expanders (the details tag)
+      run: sed -i "s/<details>/<details open>/g" README.md
+      
+    - name: Add theme file
+      run: echo 'theme: jekyll-theme-architect' > _config.yml
+      
+    - uses: JamesIves/github-pages-deploy-action@4.1.4
+      name: gh-pages publish
+      with:
+        branch: gh-pages
+        folder: .
+
