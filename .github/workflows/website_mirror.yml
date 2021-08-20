@@ -15,7 +15,8 @@ jobs:
       run: sed -i "s/<details>/<details open>/g" README.md
       
     - name: Add theme file
-      run: echo 'theme: jekyll-theme-architect' > _config.yml
+      run: |
+        echo "theme: jekyll-theme-architect" > _config.yml
       
     - uses: JamesIves/github-pages-deploy-action@4.1.4
       name: gh-pages publish
