@@ -3,7 +3,7 @@ name: Website mirror
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deployment:
