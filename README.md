@@ -12,20 +12,23 @@ I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http:
 
 <details><summary><strong>🧪 Projects I'm involved in</strong> (click)</summary><p>
 
-Each project is either maintained by me or I contributed to it. I ⭐-ed the projects which I find awesome and best in their areas.
+Each project is either maintained by me or I contributed to it.
+  
+- I ⭐-ed the projects which I find awesome and best in their areas.
+- I 🦆-ed the projects which I created and maintain up to date.
 
 #### Science/Theory
   
-1. ⭐ <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
-1. <a href="https://github.com/WhiteBlackGoose/LambdaCalculusFSharp">λ calculus calculator</a>  (2021)  
+1. 🦆⭐ <a href="https://am.angouri.org">AngouriMath</a> (2019-2021)
+1. 🦆 <a href="https://github.com/WhiteBlackGoose/LambdaCalculusFSharp">λ calculus calculator</a>  (2021)  
 1. ⭐ <a href="https://github.com/plotly/Plotly.NET">Plotly.NET</a> (2021)
-1. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020-2021)
-1. <a href="https://github.com/WhiteBlackGoose/SetSystem">SetSystem</a> (2021)
+1. 🦆 <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020-2021)
+1. 🦆 <a href="https://github.com/WhiteBlackGoose/SetSystem">SetSystem</a> (2021)
 1. ⭐ <a href="https://github.com/dotnet/interactive">Interactive</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">Quantum almanac</a> (2021)
   
 #### General purpose libraries / collections
-1. <a href="https://github.com/WhiteBlackGoose/HonkSharp">Honk#</a> (2021)
+1. 🦆 <a href="https://github.com/WhiteBlackGoose/HonkSharp">Honk#</a> (2021)
 1. <a href="https://github.com/ZacharyPatten/Towel">Towel</a> (2020)
 1. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
