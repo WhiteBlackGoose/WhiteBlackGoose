@@ -61,7 +61,7 @@ Each project is either maintained by me or I contributed to it.
   
 </p></details >
   
-</p></details>
+<!--Quack-->
 
 <hr>
 
@@ -78,7 +78,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
     - [Plotly.NET](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aplotly+repo%3Aplotly%2FPlotly.NET&s=updated&type=Issues)
   - [*Other*](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet+-org%3Aplotly&s=updated&type=Issues)
   
-</p></details>
+<!--Quack-->
 
 <hr>
 
@@ -109,7 +109,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 1. [ EN ] <a href="https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction">Simple simulation of custom physical interactions with particles</a>
 1. [ EN ] <a href="https://habr.com/en/post/465523/">Yet another snake with Kivy, Python</a> (might be irrelevant, avoid following this guide)
 
-</p></details>
+<!--Quack-->
 
 <hr>
 
