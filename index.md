@@ -12,7 +12,7 @@ I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http:
 
 <hr>
 
-<details open><summary><strong>🧪 Projects I'm involved in</strong> (click)</summary><p>
+<h2>🧪 Projects I'm involved in</h2>
 
 Each project is either maintained by me or I contributed to it.
   
@@ -67,7 +67,7 @@ Each project is either maintained by me or I contributed to it.
 
 <hr>
 
-<details open><summary><strong><img src="./media/merged-pr.svg"> My merged pull requests</strong> (click)</summary><p>
+<h2><img src="./media/merged-pr.svg"> My merged pull requests</h2>
   
 I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs from its parent node.
   
@@ -84,7 +84,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <hr>
 
-<details open><summary><strong>📚 My articles</strong> (click)</summary><p>
+<h2>📚 My articles</h2>
 
 #### Projects/News
 1. [ EN ] [AngouriMath 1.3 update](https://habr.com/en/post/565996/)
