@@ -15,7 +15,7 @@ I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http:
 Each project is either maintained by me or I contributed to it.
   
 - I ⭐-ed the projects which I find awesome and best in their areas.
-- I 🦆-ed the projects which I created and maintain up to date.
+- I 🦆-ed the projects which I created and actively maintain up to date.
 
 #### Science/Theory
   
