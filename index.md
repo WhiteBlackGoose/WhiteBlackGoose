@@ -1,10 +1,15 @@
 ### Hi there
 
+<details>
 <style>
 a {
-  color: #FFAAAA;
+  color: #99FF99;
+}
+body {
+  font-family: monospace;
 }
 </style>
+</details>
 
 <img align="right" width="300" src="https://miro.medium.com/max/1400/1*qsDGIrTG4TKlnmfsrfdqOw.jpeg">
 
