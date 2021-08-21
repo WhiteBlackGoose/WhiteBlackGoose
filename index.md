@@ -1,15 +1,6 @@
 ### Hi there
 
-<details>
-<style>
-a {
-  color: #99FF99;
-}
-body {
-  font-family: monospace;
-}
-</style>
-</details>
+<link rel="stylesheet" href="styles.css">
 
 <img align="right" width="300" src="https://miro.medium.com/max/1400/1*qsDGIrTG4TKlnmfsrfdqOw.jpeg">
 
