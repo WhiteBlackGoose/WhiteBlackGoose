@@ -1,5 +1,11 @@
 ### Hi there
 
+<style>
+a {
+  color: #FFAAAA;
+}
+</style>
+
 <img align="right" width="300" src="https://miro.medium.com/max/1400/1*qsDGIrTG4TKlnmfsrfdqOw.jpeg">
 
 I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
