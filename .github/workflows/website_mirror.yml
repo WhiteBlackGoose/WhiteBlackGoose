@@ -20,10 +20,6 @@ jobs:
     - name: Rename readme to index
       run: mv README.md index.md
       
-    - name: Add theme file
-      run: |
-        echo "theme: jekyll-theme-architect" > _config.yml
-      
     - uses: JamesIves/github-pages-deploy-action@4.1.4
       name: gh-pages publish
       with:
