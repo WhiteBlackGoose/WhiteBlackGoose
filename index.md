@@ -13,7 +13,7 @@ I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http:
 
 
 
-<hr>
+<!--QuackQuack-->
 
 <h2>🧪 Projects I'm involved in</h2>
 
@@ -80,7 +80,7 @@ Each project is either maintained by me or I contributed to it.
   
 <!--Quack-->
 
-<hr>
+<!--QuackQuack-->
 
 <h2><img src="./media/merged-pr.svg"> My merged pull requests</h2>
   
@@ -97,7 +97,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
   
 <!--Quack-->
 
-<hr>
+<!--QuackQuack-->
 
 <h2>📚 My articles</h2>
 
@@ -128,7 +128,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <!--Quack-->
 
-<hr>
+<!--QuackQuack-->
 
 #### You can
 - Follow [my twitter](https://twitter.com/WhiteBlackGoose) and [github](https://github.com/WhiteBlackGoose)
