@@ -1,6 +1,7 @@
 ### Hi there
 
-<link rel="stylesheet" href="styles.css">
+<!--this comment is auto-replaced on deployment-->
+<!--styles-->
 
 <img align="right" width="300" src="https://miro.medium.com/max/1400/1*qsDGIrTG4TKlnmfsrfdqOw.jpeg">
 
