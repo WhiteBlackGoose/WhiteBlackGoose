@@ -137,10 +137,23 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 *This text is mirrored to a personal [web-page](https://whiteblackgoose.github.io/WhiteBlackGoose/).*
 <style>
-a {
-  color: #339933;
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #63C963;
+  }
+  img {
+    background: none;
+  }
+  body {
+    background: #26292F;
+    color: lightgray;
+  }
 }
-body {
-  font-family: monospace;
+
+  
+@media (prefers-color-scheme: light) { 
+  a {
+    color: #339933;
+  }
 }
 </style>
