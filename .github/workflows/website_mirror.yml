@@ -17,7 +17,7 @@ jobs:
         sed -i "s/<\/strong> (click)<\/summary><p>/<\/h2>/g" README.md
         sed -i "s/<\/p><\/details>/<!--Quack-->/g" README.md
         styles=$(<styles.css)
-        sed -i "s/<!--styles-->/<style>$styles<\/styles>/g" README.md
+        sed -i "s/<!--styles-->/<style>$styles<\/style>/g" README.md
     
     - name: Rename readme to index
       run: mv README.md index.md
