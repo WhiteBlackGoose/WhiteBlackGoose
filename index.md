@@ -138,7 +138,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 *This text is mirrored to a personal [web-page](https://whiteblackgoose.github.io/WhiteBlackGoose/).*
 <style>
 a {
-  color: #66CC66;
+  color: #33BB33;
 }
 body {
   font-family: monospace;
