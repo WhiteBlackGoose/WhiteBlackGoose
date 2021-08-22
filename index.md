@@ -141,7 +141,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
   a {
     color: #63C963;
   }
-  img {
+  .markdown-body img {
     background: none;
   }
   body {
