@@ -136,3 +136,11 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 - Contact me via e-mail (wbg@angouri.org) or Telegram (the same username as that on GH).
 
 *This text is mirrored to a personal [web-page](https://whiteblackgoose.github.io/WhiteBlackGoose/).*
+<style>
+a {
+  color: #66CC66;
+}
+body {
+  font-family: monospace;
+}
+</style>
