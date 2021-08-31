@@ -46,6 +46,7 @@ Each project is either maintained by me or I contributed to it.
 1. <a href="https://github.com/jonsequitur/dotnet-repl">dotnet-repl</a> (2021) ⭐
 1. <a href="https://github.com/WhiteBlackGoose/hgt2png">Hgt2png</a> (2021)
 1. <a href="https://whiteblackgoose.github.io/TypeInfo/">.NET type inspector</a> (2021)
+1. <a href="https://github.com/WhiteBlackGoose/NaiveCSharpFSharpEval">Simple C#/F# evaluator</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (deprecated, moved to AngouriMath) (2021)
 
   
