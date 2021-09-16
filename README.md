@@ -1,11 +1,9 @@
-### Hi there
-
 <!--this comment is auto-replaced on deployment-->
 <!--styles-->
 
-<img align="right" width="300" src="https://miro.medium.com/max/1400/1*qsDGIrTG4TKlnmfsrfdqOw.jpeg">
+![E0A22B50-BAC5-44C2-A64D-006F2CF1A3B9](https://user-images.githubusercontent.com/31178401/133685389-f1126fc5-d278-4f99-9adb-3d98120f2e8c.jpeg)
 
-I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
+### Hi there. I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
 
 I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**, to be precise, **C#** and **F#**, trying to make .NET greater and more suitable for scientific purposes. I've been into this area for **2** years.
 
