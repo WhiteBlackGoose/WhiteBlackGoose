@@ -15,6 +15,8 @@ I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http:
 
 <details><summary><strong>🧪 Projects I'm involved in</strong> (click)</summary><p>
 
+My NuGet profile: [![The number of downloads on nuget](https://img.shields.io/badge/dynamic/json?url=https%3A//morebadges.tk/%3fbadge=nugetdownloads%26user%3dWhiteBlackGoose&query=Short&label=NuGet&logo=nuget&color=lightblue)](https://www.nuget.org/profiles/WhiteBlackGoose)
+  
 Each project is either maintained by me or I contributed to it.
   
 - I ⭐-ed the projects which I find awesome and best in their areas.
