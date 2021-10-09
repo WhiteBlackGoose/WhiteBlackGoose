@@ -34,6 +34,7 @@ Each project is either maintained by me or I contributed to it.
   
 #### General purpose libraries / collections
 1. <a href="https://github.com/WhiteBlackGoose/HonkSharp">Honk#</a> (2021) 🦆⭐
+1. <a href="https://github.com/WhiteBlackGoose/HonkPerf.NET">HonkPerf.NET</a> (2021) 🦆
 1. <a href="https://github.com/ZacharyPatten/Towel">Towel</a> (2020)
 1. <a href="https://github.com/WhiteBlackGoose/Yadg.NET">Yadg.NET</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/MinimalismSinglePageWebsiteTemplate">Template for one-page website</a> (2021)
