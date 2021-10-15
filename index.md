@@ -137,7 +137,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 #### You can
 - Follow [my twitter](https://twitter.com/WhiteBlackGoose) and [github](https://github.com/WhiteBlackGoose)
-- Support <a href="https://patreon.com/AngouriMath">AngouriMath</a>
+- Support me on <a href="https://patreon.com/WhiteBlackGoose">Patreon</a>
 - Contact me via e-mail (wbg@angouri.org) or Telegram (the same username as that on GH).
 
 *This text is mirrored to a personal [web-page](https://whiteblackgoose.github.io/WhiteBlackGoose/).*
