@@ -50,6 +50,7 @@ Each project is either maintained by me or I contributed to it.
 1. <a href="https://github.com/WhiteBlackGoose/NaiveCSharpFSharpEval">Simple C#/F# evaluator</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (deprecated, moved to AngouriMath) (2021)
 1. <a href="https://github.com/WhiteBlackGoose/GuessBigO">Guess Big O</a> 🦆
+1. <a href="https://github.com/WhiteBlackGoose/MoreBadges">More badges</a> 🦆
 
   
 #### Other  
