@@ -54,6 +54,7 @@ Each project is either maintained by me or I contributed to it.
 
   
 #### Other  
+1. <a href="https://github.com/dotnet/Silk.NET">Silk.NET</a> (2021) ⭐
 1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
 1. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
   
