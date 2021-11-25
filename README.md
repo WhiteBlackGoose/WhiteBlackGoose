@@ -1,7 +1,8 @@
 <!--this comment is auto-replaced on deployment-->
 <!--styles-->
 
-![E0A22B50-BAC5-44C2-A64D-006F2CF1A3B9](https://user-images.githubusercontent.com/31178401/133685389-f1126fc5-d278-4f99-9adb-3d98120f2e8c.jpeg)
+![Beyond the sky](https://user-images.githubusercontent.com/31178401/133685389-f1126fc5-d278-4f99-9adb-3d98120f2e8c.jpeg#gh-light-mode-only)
+![Sunset](https://user-images.githubusercontent.com/31178401/135977941-f15f2ca1-dc29-46e1-93ef-929ee0467f00.jpg#gh-dark-mode-only)
 
 ## Hi there. I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
 
