@@ -120,6 +120,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 1. [ RU ] [Что нового в AngouriMath 1.2?](https://habr.com/en/post/545190/)
   
 #### C#/.NET
+1. [ EN ] [Stay safe with your units! Advanced units of measure in .NET.](https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e)
 1. [ EN ] [Making loop "foreach" as fast as "for"](https://habr.com/en/post/575916/)
 1. [ RU ] [Ускоряем цикл foreach до for](https://habr.com/ru/post/575664/)
 1. [ RU ] [Хостим WASM-приложения на github pages в два клика](https://habr.com/ru/post/566286/)
