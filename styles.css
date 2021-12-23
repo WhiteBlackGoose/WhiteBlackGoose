@@ -10,7 +10,7 @@
     color: lightgray;
   }
   
-  only-light {
+  light-only {
     display: none;
   }
 }
@@ -21,7 +21,7 @@
     color: #339933;
   }
   
-  only-dark {
+  dark-only {
     display: none;
   }
 }
