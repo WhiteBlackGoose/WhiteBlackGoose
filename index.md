@@ -166,7 +166,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
     color: lightgray;
   }
   
-  light-only {
+  .light-only {
     display: none;
   }
 }
@@ -177,7 +177,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
     color: #339933;
   }
   
-  dark-only {
+  .dark-only {
     display: none;
   }
 }
