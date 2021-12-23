@@ -165,12 +165,20 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
     background: #26292F;
     color: lightgray;
   }
+  
+  only-light {
+    display: none;
+  }
 }
 
   
 @media (prefers-color-scheme: light) { 
   a {
     color: #339933;
+  }
+  
+  only-dark {
+    display: none;
   }
 }
 </style>
