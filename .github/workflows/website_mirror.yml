@@ -22,8 +22,8 @@ jobs:
         sed -i "s/<hr>/<!--QuackQuack-->/g" README.md
         
         # Dark and light pictures to depend on the theme
-        sed -i "s/#gh-light-mode-only\"/\" class=\"light-only\"" README.md
-        sed -i "s/#gh-dark-mode-only\"/\" class=\"dark-only\"" README.md
+        sed -i "s/#gh-light-mode-only\"/\" class=\"light-only\"/g" README.md
+        sed -i "s/#gh-dark-mode-only\"/\" class=\"dark-only\"/g" README.md
         
         # Add styles
         echo '<style>' > beginning
