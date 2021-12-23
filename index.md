@@ -148,8 +148,8 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 <!--QuackQuack-->
 
 #### You can
-- Follow [my twitter](https://twitter.com/WhiteBlackGoose) and [github](https://github.com/WhiteBlackGoose)
-- Support me on <a href="https://patreon.com/WhiteBlackGoose">Patreon</a>
+- Checkout my [twitter](https://twitter.com/WhiteBlackGoose), [github](https://github.com/WhiteBlackGoose), [medium](https://whiteblackgoose.medium.com/), [habr.com](https://habr.com/en/users/WhiteBlackGoose/posts/).
+- Support me on <a href="https://patreon.com/WhiteBlackGoose">Patreon</a>.
 - Contact me via e-mail (wbg@angouri.org) or Telegram (the same username as that on GH).
 
 *This text is mirrored to a personal [web-page](https://whiteblackgoose.github.io/WhiteBlackGoose/).*
