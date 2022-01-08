@@ -25,9 +25,9 @@ Each project is either maintained by me or I contributed to it.
 
 #### Science/Theory
   
-1. <a href="https://am.angouri.org">AngouriMath</a> (2019-2021) 🦆⭐
-1. <a href="https://github.com/plotly/Plotly.NET">Plotly.NET</a> (2021) ⭐
-1. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020-2021) 🦆
+1. <a href="https://am.angouri.org">AngouriMath</a> (2019-2022) 🦆⭐
+1. <a href="https://github.com/plotly/Plotly.NET">Plotly.NET</a> (2021-2022) ⭐
+1. <a href="https://github.com/asc-community/GenericTensor">GenericTensor</a> (2020-2022) 🦆
 1. <a href="https://github.com/dotnet/interactive">Interactive</a> (2021) ⭐
 1. <a href="https://github.com/WhiteBlackGoose/QuantumComputingMatrices">Quantum almanac</a> (2021)
   
@@ -40,6 +40,7 @@ Each project is either maintained by me or I contributed to it.
 1. <a href="https://github.com/WhiteBlackGoose/WebAppMinimalTemplate">Web app template</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/UsefulCodeSnippets">Code snippets</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/FieldCache">FieldCache</a> (deprecated, moved to Honk#) (2020)
+1. <a href="https://github.com/WhiteBlackGoose/MoreFuncUI">MoreFuncUI</a> (2022)
   
 #### Tools/apps/games
 1. <a href="https://github.com/WhiteBlackGoose/FunConsoleGame">Fun console game</a> (2021)
@@ -49,7 +50,7 @@ Each project is either maintained by me or I contributed to it.
 1. <a href="https://github.com/WhiteBlackGoose/NaiveCSharpFSharpEval">Simple C#/F# evaluator</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/AngouriMath.Terminal">AngouriMath.Terminal</a> (deprecated, moved to AngouriMath) (2021)
 1. <a href="https://github.com/WhiteBlackGoose/MoreBadges">More badges</a> 🦆
-1. <a href="https://github.com/WhiteBlackGoose/CodegenAnalysis">CodegenAnalysis</a> (2021) 🦆
+1. <a href="https://github.com/WhiteBlackGoose/CodegenAnalysis">CodegenAnalysis</a> (2021-2022) 🦆
 
 #### Conceptual projects
 That is, they are not ready-to-use libraries, instead, some theoretical concepts, that may or may not be implemented.
@@ -60,7 +61,7 @@ That is, they are not ready-to-use libraries, instead, some theoretical concepts
 1. <a href="https://github.com/WhiteBlackGoose/GuessBigO">Guess Big O</a> 🦆
   
 #### Other  
-1. <a href="https://github.com/dotnet/Silk.NET">Silk.NET</a> (2021) ⭐
+1. <a href="https://github.com/dotnet/Silk.NET">Silk.NET</a> (2021-2022) ⭐
 1. <a href="https://github.com/asc-community/dotnet-benchmarks">DotnetBenchmarks</a> (2020-2021)
 1. <a href="https://github.com/dotnet/runtime">Runtime</a> (2021)
   
