@@ -55,11 +55,11 @@ Each project is either maintained by me or I contributed to it.
 
 #### Conceptual projects
 That is, they are not ready-to-use libraries, instead, some theoretical concepts, that may or may not be implemented.
-  
+1. <a href="https://github.com/WhiteBlackGoose/InductiveVariadics">InductiveVariadics</a> (2022) 🦆
 1. <a href="https://github.com/WhiteBlackGoose/LambdaCalculusFSharp">λ calculus calculator</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/SetSystem">SetSystem</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/UnitsOfMeasure">UnitsOfMeasure</a> (2021)
-1. <a href="https://github.com/WhiteBlackGoose/GuessBigO">Guess Big O</a> 🦆
+1. <a href="https://github.com/WhiteBlackGoose/GuessBigO">Guess Big O</a> (2021) 🦆
   
 #### Other  
 1. <a href="https://github.com/dotnet/Silk.NET">Silk.NET</a> (2021-2022) ⭐
