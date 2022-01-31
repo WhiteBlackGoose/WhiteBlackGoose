@@ -122,6 +122,8 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 1. [ RU ] [Что нового в AngouriMath 1.2?](https://habr.com/en/post/545190/)
   
 #### C#/.NET
+1. [ EN ] [This is how Variadic Arguments could work in C#](https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241)
+1. [ RU ] [Как LINQ, только быстрый и без аллокаций](https://habr.com/ru/post/648529/)
 1. [ EN ] [Like Regular LINQ, but Faster and Without Allocations: Is It Possible?](https://whiteblackgoose.medium.com/3d4724632e2a)
 1. [ EN ] [Stay safe with your units! Advanced units of measure in .NET.](https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e)
 1. [ RU ] [Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET](https://habr.com/ru/post/597437/)
