@@ -145,6 +145,10 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 1. [ RU, C#, F# ] [Что нового в AngouriMath 1.2?](https://habr.com/en/post/545190/)
 1. [ RU, C# ] [Методы без аргументов — зло в ООП, и вот как его полечить](https://habr.com/ru/post/529454/)
 1. [ RU, F# ] [Jupyter для .NET. «Как в питоне»](https://habr.com/ru/post/528730/)
+1. [ RU, C# ] [Тензоры для C#. И матрицы, и векторы, и кастомный тип, и сравнительно быстро](https://habr.com/ru/post/512856/)
+1. [ RU, Py ] [Играемся с комплексными числами](https://habr.com/ru/post/468781/)
+1. [ RU, Py ] [Генератор простых арифметических примеров для чайников и не только](https://habr.com/ru/post/468457/)
+1. [ RU, Py ] [Элементарная симуляция кастомного физического взаимодействия на python + matplotlib](https://habr.com/ru/post/467803/)
   
 <!--Quack-->
 
