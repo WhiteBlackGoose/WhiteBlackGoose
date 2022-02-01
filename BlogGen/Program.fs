@@ -33,23 +33,48 @@ let articles = [
 let page = html [] <| seq {
     title [] "WhiteBlackGoose' blog"
     header [] [
+        link ["rel", "stylesheet"; "type", "text/css"; "href", "https://fonts.googleapis.com/css?family=Overpass+Mono"]
         style [] [
             cssClass "card" [
                 "padding", "10px"
                 "margin", "20px"
                 "border", "solid 1px lightgray"
-                "height", "300px"
+                "height", "1.5wv"
+                "position", "relative"
+                "overflow", "hidden"
+            ]
+            cssClass "mainBody" [
+                "width", "60%"
+                "margin", "20%"
+                "display", "grid"
+                "grid-template-columns", "45% 45%"
+                "font-family", "Overpass Mono"
+            ]
+            cssClass "cardTitle" [
+                "bottom", "0"
+                "position", "absolute"
+            ]
+            cssClass "previewImg" [
+                "position", "absolute"
+                "width", "auto"
+                "height", "60%"
+                "left", "-5%"
+                "top", "0%"
+            ]
+            cssFilter "a" [
+                "color", "black"
+                "text-decoration", "none"
             ]
         ]
     ]
     body [] <| seq {
-        div [inplaceStyle ["width", "60%"; "margin", "20%"; "display", "grid"; "grid-template-columns", "30% 30% 30%"]] <| seq {
-            yield! seq {
-                for { lang = lang; tags = tags; title = title; link = link } in articles do
-                    div ["class", "card"; inplaceStyle ["background",  $"url({getPreviewImage link})"]] [
-                        a [] link (h3 [] title)
-                    ]
-            }
+        h1 [] "Blog of WhiteBlackGoose"
+        div ["class", "mainBody"] <| seq {
+            for { lang = lang; tags = tags; title = title; link = link } in articles do
+                div ["class", "card"] [
+                    img ["class", "previewImg"] (getPreviewImage link)
+                    a ["class", "cardTitle"] link (h3 [] title)
+                ]
         }
     }
 }

@@ -3,40 +3,81 @@
 WhiteBlackGoose' blog
 </title>
 <header>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono" />
+<style>
+.card {
+padding: 10px;
+margin: 20px;
+border: solid 1px lightgray;
+height: 1.5wv;
+position: relative;
+overflow: hidden;
+}
+.mainBody {
+width: 60%;
+margin: 20%;
+display: grid;
+grid-template-columns: 45% 45%;
+font-family: Overpass Mono;
+}
+.cardTitle {
+bottom: 0;
+position: absolute;
+}
+.previewImg {
+position: absolute;
+width: auto;
+height: 60%;
+left: -5%;
+top: 0%;
+}
+a {
+color: black;
+text-decoration: none;
+}
 
+</style>
 </header>
 <body>
-<div style="width: 60%;margin: 20%;display: grid;grid-template-columns: 30% 30% 30%;">
-<div style="padding: 10px;margin: 20px;border: solid 1px lightgray;background: url(https://miro.medium.com/max/1022/1*Mcbnb1PKgyKXzUB2Frj66A.png);">
-<a href="https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241">
+<h3>
+Blog of WhiteBlackGoose
+</h3>
+<div class="mainBody">
+<div class="card">
+<img src="https://miro.medium.com/max/1022/1*Mcbnb1PKgyKXzUB2Frj66A.png" class="previewImg" />
+<a href="https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" class="cardTitle">
 <h3>
 This is how Variadic Arguments could work in C#
 </h3>
 </a>
 </div>
-<div style="padding: 10px;margin: 20px;border: solid 1px lightgray;background: url(https://habrastorage.org/getpro/habr/upload_files/d0b/e87/f38/d0be87f386e2e860533efcac2c8aa613.png);">
-<a href="https://habr.com/ru/post/648529">
+<div class="card">
+<img src="https://habrastorage.org/getpro/habr/upload_files/d0b/e87/f38/d0be87f386e2e860533efcac2c8aa613.png" class="previewImg" />
+<a href="https://habr.com/ru/post/648529" class="cardTitle">
 <h3>
 Как LINQ, только быстрый и без аллокаций
 </h3>
 </a>
 </div>
-<div style="padding: 10px;margin: 20px;border: solid 1px lightgray;background: url(https://miro.medium.com/max/1194/1*vjzCXRSmBoRBjm3ANP2iTA.png);">
-<a href="https://whiteblackgoose.medium.com/3d4724632e2a">
+<div class="card">
+<img src="https://miro.medium.com/max/1194/1*vjzCXRSmBoRBjm3ANP2iTA.png" class="previewImg" />
+<a href="https://whiteblackgoose.medium.com/3d4724632e2a" class="cardTitle">
 <h3>
 Like Regular LINQ, but Faster and Without Allocations: Is It Possible?
 </h3>
 </a>
 </div>
-<div style="padding: 10px;margin: 20px;border: solid 1px lightgray;background: url(https://habrastorage.org/getpro/habr/upload_files/502/438/5a0/5024385a0fd8cfddb89ff3822f1f2428.png);">
-<a href="https://habr.com/ru/post/597437/">
+<div class="card">
+<img src="https://habrastorage.org/getpro/habr/upload_files/502/438/5a0/5024385a0fd8cfddb89ff3822f1f2428.png" class="previewImg" />
+<a href="https://habr.com/ru/post/597437/" class="cardTitle">
 <h3>
 Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET
 </h3>
 </a>
 </div>
-<div style="padding: 10px;margin: 20px;border: solid 1px lightgray;background: url(https://miro.medium.com/max/719/1*IZ1lFDyOld1etNTvm5Wxuw.png);">
-<a href="https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e">
+<div class="card">
+<img src="https://miro.medium.com/max/719/1*IZ1lFDyOld1etNTvm5Wxuw.png" class="previewImg" />
+<a href="https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" class="cardTitle">
 <h3>
 Stay safe with your units! Advanced units of measure in .NET.
 </h3>

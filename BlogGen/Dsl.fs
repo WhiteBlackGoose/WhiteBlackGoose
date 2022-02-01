@@ -40,6 +40,10 @@ let img (attrs : Attributes) (src : string) =
     |> Seq.append [ "src", src ]
     |> tagEmpty "img"
 
+let h1 attrs contents = tag "h3" attrs contents
+
+let h2 attrs contents = tag "h3" attrs contents
+
 let h3 attrs contents = tag "h3" attrs contents
 
 let style attrs (classes : string seq) = tag "style" attrs (String.concat "" classes)
@@ -56,9 +60,13 @@ let a (attrs : Attributes) href =
     |> Seq.append [ "href", href ]
     |> tag "a"
 
-let cssClass name attrs =
+let link (attrs : Attributes) = tagEmpty "link" attrs
+
+let cssFilter filter attrs =
     let inner =
         attrs
         |> Seq.map (fun (a, b) -> $"{a}: {b};")
         |> String.concat "\n"
-    $".{name} {{\n{inner}\n}}\n"
+    $"{filter} {{\n{inner}\n}}\n"
+
+let cssClass name attrs = cssFilter $".{name}" attrs
