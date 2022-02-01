@@ -128,7 +128,7 @@ let page = html [] <| seq {
                 "line-height", "1.8"
             ]
             cssClass "card" [
-                "box-shadow", "0 0 5px rgba(0, 0, 0, 0.1)"
+                "box-shadow", "0 0 15px rgba(0, 0, 0, 0.1)"
                 "background", "white"
             ]
             cssClass "card_title_container" [
@@ -144,8 +144,7 @@ let page = html [] <| seq {
             cssFilter "a" [
                 "color", "black"
                 "text-decoration-line", "underline"
-                "text-decoration-style", "wavy"
-                "text-decoration-thickness", "0"
+                "text-decoration-style", "solid"
                 "text-decoration-color", "gray"
             ]
             cssFilter ".card_title" [
@@ -165,8 +164,9 @@ let page = html [] <| seq {
                         Hi. I'm WhiteBlackGoose. I write articles about F#, C#, .NET (and sometimes other things).
                         """
                     p [] $"""
-                        With the same username you can find me on {auto "github.com"}, 
-                        {auto "reddit.com"}, {auto "twitter.com"}, {auto "medium.com"},
+                        With the same username you can find me on {a [] "https://github.com/WhiteBlackGoose" "github"}, 
+                        {a [] "https://twitter.com/WhiteBlackGoose" "twitter"}, {a [] "https://whiteblackgoose.medium.com" "medium"}, 
+                        {a [] "https://reddit.com/u/WhiteBlackGoose" "reddit"}.
                         """
                     p [] "This website is made via F#, my custom tiny DSL."
                     p [] $"""{auto "wbg.angouri.org"}"""
@@ -174,7 +174,7 @@ let page = html [] <| seq {
             ]
             for { tags = tags; title = title; link = link } in articles |> Seq.filter (fun c -> match c.lang with RU -> false | EN -> true ) do
                 div ["class", "card"] [
-                    img ["class", "card_image"] (getPreviewImage link)
+                    a [] link (img ["class", "card_image"] (getPreviewImage link))
                     div ["class", "card_title_container"] [
                         a ["class", "card_title"] link (h3 [] title)
                         span ["class", "tags"] [
@@ -189,13 +189,14 @@ let page = html [] <| seq {
                 h1 [] "А здесь статьи на русском"
                 span [] [
                     p [] $"""
-                        Здесь я добавляю еще две ссылки: {auto "habr.com"}, {auto "pikabu.ru"}.
+                        Здесь я добавляю еще две ссылки: {a [] "https://habr.com/users/WhiteBlackGoose/" "habr"},
+                        {a [] "https://pikabu.ru/@WhiteBlackGoose" "pikabu"}.
                         """
                 ]
             ]
             for { tags = tags; title = title; link = link } in articles |> Seq.filter (fun c -> match c.lang with RU -> true | EN -> false ) do
                 div ["class", "card"] [
-                    img ["class", "card_image"] (getPreviewImage link)
+                    a [] link (img ["class", "card_image"] (getPreviewImage link))
                     div ["class", "card_title_container"] [
                         a ["class", "card_title"] link (h3 [] title)
                         span ["class", "tags"] [
