@@ -33,7 +33,9 @@ jobs:
         cat end >> README.md
     
     - name: Rename readme to index
-      run: mv README.md index.md
+      run: |
+        mv README.md index.md
+        mv BlogGen/blog/index.html blog/index.html
       
     - uses: JamesIves/github-pages-deploy-action@4.1.4
       name: gh-pages publish
