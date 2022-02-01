@@ -48,9 +48,6 @@ let articles = [
     { lang = EN; tags = [ "C#"; "oop" ];  title = "Lazy Properties Are Good. That Is How You Are to Use Them";
         link = "https://habr.com/en/post/545936/" }
     
-    { lang = EN; tags = [ "Jupyter"; ".NET" ]; title = "Math in Jupyter for .NET";
-        link = "https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/" }
-    
     { lang = EN; tags = [ "F#"; "AngouriMath" ]; title = "AngouriMath for Research with F#";
         link = "https://am.angouri.org/research" }
     
@@ -149,12 +146,15 @@ let page = html [] <| seq {
             cssClass "cards" [
                 "margin", "0 auto"
                 "max-width", "1650px"
-                "display", "grid"
-                "grid-template-columns", "repeat(auto-fill, minmax(500px, 1fr))"
                 "column-gap", "20px"
-                "row-gap", "60px"
                 "font-family", "Overpass Mono"
                 "line-height", "1.8"
+                "column-count", "3"
+            ]
+            cssClass "card" [
+                "margin-top", "20px"
+                "min-width", "100%"
+                "display", "inline-block"
             ]
             cssClass "card_title_container" [
                 "padding", "20px"
