@@ -111,6 +111,9 @@ let page = html [] <| seq {
     header [] [
         link ["rel", "stylesheet"; "type", "text/css"; "href", "https://fonts.googleapis.com/css?family=Overpass+Mono"]
         style [] [
+            cssFilter "body" [
+                "background", "rgb(230, 230, 230)"
+            ]
             cssFilter ".header h1" [
                 "margin", "0 auto"
             ]
@@ -126,7 +129,7 @@ let page = html [] <| seq {
             ]
             cssClass "card" [
                 "box-shadow", "0 0 5px rgba(0, 0, 0, 0.1)"
-                
+                "background", "white"
             ]
             cssClass "card_title_container" [
                 "padding", "20px"
