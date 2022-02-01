@@ -35,24 +35,27 @@ let page = html [] <| seq {
     header [] [
         link ["rel", "stylesheet"; "type", "text/css"; "href", "https://fonts.googleapis.com/css?family=Overpass+Mono"]
         style [] [
-            cssClass "card" [
-                "padding", "10px"
-                "margin", "20px"
-                "border", "solid 1px lightgray"
-                "height", "1.5wv"
-                "position", "relative"
-                "overflow", "hidden"
-            ]
             cssClass "mainBody" [
-                "width", "60%"
-                "margin", "20%"
+                // "width", "60%"
+                // "margin", "20%"
                 "display", "grid"
-                "grid-template-columns", "45% 45%"
+                "grid-template-columns", "repeat(3, 1fr)"
+                "grid-auto-rows", "auto"
+                "grid-gap", "1rem"
                 "font-family", "Overpass Mono"
             ]
+            cssClass "card" [
+                // "padding", "10px"
+                // "margin", "20px"
+                "border", "solid 1px lightgray"
+                // "height", "1.5wv"
+                // "position", "relative"
+                // "overflow", "hidden"
+                // "border-radius", "4px"
+            ]
             cssClass "cardTitle" [
-                "bottom", "0"
-                "position", "absolute"
+                // "bottom", "0"
+                // "position", "absolute"
             ]
             cssClass "previewImg" [
                 "position", "absolute"
@@ -72,7 +75,7 @@ let page = html [] <| seq {
         div ["class", "mainBody"] <| seq {
             for { lang = lang; tags = tags; title = title; link = link } in articles do
                 div ["class", "card"] [
-                    img ["class", "previewImg"] (getPreviewImage link)
+                    // img ["class", "previewImg"] (getPreviewImage link)
                     a ["class", "cardTitle"] link (h3 [] title)
                 ]
         }
