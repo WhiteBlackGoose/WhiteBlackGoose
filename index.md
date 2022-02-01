@@ -114,43 +114,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <!--QuackQuack-->
 
-<h2>📚 My articles</h2>
-
-### In English
-  
-1. [ EN, C# ] [This is how Variadic Arguments could work in C#](https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241)
-1. [ EN, C# ] [Like Regular LINQ, but Faster and Without Allocations: Is It Possible?](https://whiteblackgoose.medium.com/3d4724632e2a)
-1. [ EN, C# ] [Stay safe with your units! Advanced units of measure in .NET.](https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e)
-1. [ EN, C# ] [Making loop "foreach" as fast as "for"](https://habr.com/en/post/575916/)
-1. [ EN, C#, F# ] [AngouriMath 1.3 update](https://habr.com/en/post/565996/)
-1. [ EN, C# ] <a href="https://habr.com/en/post/546926/">Compilation of symbolic expressions into Linq.Expression</a>
-1. [ EN, C# ] [Lazy Properties Are Good. That Is How You Are to Use Them](https://habr.com/en/post/545936/)
-1. [ EN, F# ] <a href="https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/">Math in Jupyter for .NET</a>
-1. [ EN, F# ] <a href="https://am.angouri.org/research/">AngouriMath for Research with F#</a>
-1. [ EN, C# ] <a href="https://whiteblackgoose.medium.com/parsing-a-math-expression-from-string-in-c-b2b48e2ac2e6">Parsing a math expression in C#</a>
-1. [ EN, F# ] <a href="https://habr.com/en/post/528816/">Jupyter in .NET</a>
-1. [ EN, C# ] <a href="https://habr.com/en/post/486496/">Symbolic algrebra in C#</a> (quite outdated though, written at the very beginning of AngouriMath)
-1. [ EN, C# ] <a href="https://gist.github.com/WhiteBlackGoose/5b84b2237704a91ffe7f34372196df32">Generic tensors in C#</a>
-1. [ EN, C#, F# ] [What's new in AngouriMath 1.2?](https://habr.com/en/post/545436/)
-1. [ EN, Py ] <a href="https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction">Simple simulation of custom physical interactions with particles</a>
-1. [ EN, Py ] <a href="https://habr.com/en/post/465523/">Yet another snake with Kivy, Python</a> (might be irrelevant, avoid following this guide)
-
-### In Russian
-  
-1. [ RU, C# ] [Как LINQ, только быстрый и без аллокаций](https://habr.com/ru/post/648529/)
-1. [ RU, C# ] [Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET](https://habr.com/ru/post/597437/)
-1. [ RU, C# ] [Ускоряем цикл foreach до for](https://habr.com/ru/post/575664/)
-1. [ RU, C# ] [Хостим WASM-приложения на github pages в два клика](https://habr.com/ru/post/566286/)
-1. [ RU, C# ] [Компилируем математические выражения](https://habr.com/ru/post/546622/)
-1. [ RU, C#, F# ] [Что нового в AngouriMath 1.2?](https://habr.com/en/post/545190/)
-1. [ RU, C# ] [Методы без аргументов — зло в ООП, и вот как его полечить](https://habr.com/ru/post/529454/)
-1. [ RU, F# ] [Jupyter для .NET. «Как в питоне»](https://habr.com/ru/post/528730/)
-1. [ RU, C# ] [Тензоры для C#. И матрицы, и векторы, и кастомный тип, и сравнительно быстро](https://habr.com/ru/post/512856/)
-1. [ RU, Py ] [Играемся с комплексными числами](https://habr.com/ru/post/468781/)
-1. [ RU, Py ] [Генератор простых арифметических примеров для чайников и не только](https://habr.com/ru/post/468457/)
-1. [ RU, Py ] [Элементарная симуляция кастомного физического взаимодействия на python + matplotlib](https://habr.com/ru/post/467803/)
-  
-<!--Quack-->
+<a href="https://whiteblackgoose.github.io/WhiteBlackGoose/blog/index.html"><strong>📚 My articles (click)</strong></a>
 
 <!--QuackQuack-->
 
