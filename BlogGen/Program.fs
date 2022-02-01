@@ -186,7 +186,7 @@ let page = html [] <| seq {
             div [inplaceStyle ["padding", "20px"]] [
                 h1 [] "А здесь статьи на русском"
                 span [] [
-                    p [] """
+                    p [] $"""
                         Здесь я добавляю еще две ссылки: {auto "habr.com"}, {auto "pikabu.ru"}.
                         """
                 ]
