@@ -38,12 +38,15 @@
             .cards {
             margin: 0 auto;
             max-width: 1650px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
             column-gap: 20px;
-            row-gap: 60px;
             font-family: Overpass Mono;
             line-height: 1.8;
+            column-count: 3;
+            }
+            .card {
+            margin-top: 20px;
+            min-width: 100%;
+            display: inline-block;
             }
             .card_title_container {
             padding: 20px;
@@ -100,10 +103,6 @@
                 <div class="card_title_container"><a href="https://habr.com/en/post/545936/" class="card_title"><h3>Lazy Properties Are Good. That Is How You Are to Use Them</h3></a>
                     <span class="tags">Tags: 
                         C#, oop</span></div></div>
-            <div class="card"><a href="https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/"><img src="https://external-preview.redd.it/7kcUFdwYu-_yqB-uxy2TrXN1O0cIhUFlQMByLff1qhg.jpg?auto=webp&amp;s=fd81feee78b28fb5cb43b36358d885284673a671" class="card_image" /></a>
-                <div class="card_title_container"><a href="https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/" class="card_title"><h3>Math in Jupyter for .NET</h3></a>
-                    <span class="tags">Tags: 
-                        Jupyter, .NET</span></div></div>
             <div class="card"><a href="https://am.angouri.org/research"><img src="https://user-images.githubusercontent.com/31178401/135977941-f15f2ca1-dc29-46e1-93ef-929ee0467f00.jpg" class="card_image" /></a>
                 <div class="card_title_container"><a href="https://am.angouri.org/research" class="card_title"><h3>AngouriMath for Research with F#</h3></a>
                     <span class="tags">Tags: 
