@@ -169,6 +169,7 @@ let page = html [] <| seq {
                         {auto "reddit.com"}, {auto "twitter.com"}, {auto "medium.com"},
                         """
                     p [] "This website is made via F#, my custom tiny DSL."
+                    p [] $"""{auto "wbg.angouri.org"}"""
                 ]
             ]
             for { tags = tags; title = title; link = link } in articles |> Seq.filter (fun c -> match c.lang with RU -> false | EN -> true ) do
