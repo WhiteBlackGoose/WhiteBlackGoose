@@ -35,6 +35,7 @@ jobs:
     - name: Rename readme to index
       run: |
         mv README.md index.md
+        mkdir blog
         mv BlogGen/blog/index.html blog/index.html
       
     - uses: JamesIves/github-pages-deploy-action@4.1.4
