@@ -1,9 +1,38 @@
 <html><title>WhiteBlackGoose' blog</title>
     <header><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono" />
-        <style>body {
+        <style>@media (prefers-color-scheme: light) {
+            body {
             background: rgb(230, 230, 230);
+            color: #333;
             }
-            .header h1 {
+            .card {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background: white;
+            }
+            .tags {
+            color: gray;
+            }
+            a {
+            color: #333;
+            }
+            
+            }@media (prefers-color-scheme: dark) {
+            body {
+            background: rgb(30, 30, 30);
+            color: #BBB;
+            }
+            .card {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background: #333;
+            }
+            .tags {
+            color: gray;
+            }
+            a {
+            color: #BBB;
+            }
+            
+            }.header h1 {
             margin: 0 auto;
             }
             .cards {
@@ -16,31 +45,20 @@
             font-family: Overpass Mono;
             line-height: 1.8;
             }
-            .card {
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            background: white;
-            }
             .card_title_container {
             padding: 20px;
             }
             .card_title {
-            
+            text-decoration: none;
             }
             .card_image {
             width: 100%;
             display: block;
             }
             a {
-            color: black;
             text-decoration-line: underline;
             text-decoration-style: solid;
             text-decoration-color: gray;
-            }
-            .card_title {
-            text-decoration: none;
-            }
-            .tags {
-            color: gray;
             }
             </style></header>
     <body><div class="cards"><div style="padding: 20px;"><h1>Blog of WhiteBlackGoose</h1>

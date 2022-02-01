@@ -111,8 +111,37 @@ let page = html [] <| seq {
     header [] [
         link ["rel", "stylesheet"; "type", "text/css"; "href", "https://fonts.googleapis.com/css?family=Overpass+Mono"]
         style [] [
-            cssFilter "body" [
-                "background", "rgb(230, 230, 230)"
+            lightTheme [
+                cssFilter "body" [
+                    "background", "rgb(230, 230, 230)"
+                    "color", "#333"
+                ]
+                cssClass "card" [
+                    "box-shadow", "0 0 15px rgba(0, 0, 0, 0.1)"
+                    "background", "white"
+                ]
+                cssClass "tags" [
+                    "color", "gray"
+                ]
+                cssFilter "a" [
+                    "color", "#333"
+                ]
+            ]
+            darkTheme [
+                cssFilter "body" [
+                    "background", "rgb(30, 30, 30)"
+                    "color", "#BBB"
+                ]
+                cssClass "card" [
+                    "box-shadow", "0 0 15px rgba(0, 0, 0, 0.1)"
+                    "background", "#333"
+                ]
+                cssClass "tags" [
+                    "color", "gray"
+                ]
+                cssFilter "a" [
+                    "color", "#BBB"
+                ]
             ]
             cssFilter ".header h1" [
                 "margin", "0 auto"
@@ -127,32 +156,22 @@ let page = html [] <| seq {
                 "font-family", "Overpass Mono"
                 "line-height", "1.8"
             ]
-            cssClass "card" [
-                "box-shadow", "0 0 15px rgba(0, 0, 0, 0.1)"
-                "background", "white"
-            ]
             cssClass "card_title_container" [
                 "padding", "20px"
             ]
             cssClass "card_title" [
-                
+                "text-decoration", "none"
             ]
             cssClass "card_image" [
                 "width", "100%"
                 "display", "block"
             ]
             cssFilter "a" [
-                "color", "black"
                 "text-decoration-line", "underline"
                 "text-decoration-style", "solid"
                 "text-decoration-color", "gray"
             ]
-            cssFilter ".card_title" [
-                "text-decoration", "none"
-            ]
-            cssClass "tags" [
-                "color", "gray"
-            ]
+            
         ]
     ]
     body [] <| seq {
