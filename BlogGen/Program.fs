@@ -1,5 +1,5 @@
 ﻿open Dsl
-open TagListBuilder
+open System.IO
 
 type Lang = EN | RU
 
@@ -29,16 +29,21 @@ let articles = [
         link = "https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" }
 ]
 
-// For more information see https://aka.ms/fsharp-console-apps
-printfn "Hello from F#"
 
 let page = html [] <| seq {
     title [] "WhiteBlackGoose' blog"
     header [] []
-    yield! seq {
-        for { lang = lang; tags = tags; title = title; link = link } in articles do
-            div [style ["width", "30%"; "padding", "10px"; "border", "solid 1px gray"]] [
-                h3 [] title
-            ]
+    body [] <| seq {
+        div [style ["width", "60%"; "margin", "20%"; "display", "grid"; "grid-template-columns", "30% 30% 30%"]] <| seq {
+            yield! seq {
+                for { lang = lang; tags = tags; title = title; link = link } in articles do
+                    div [style ["padding", "10px"; "margin", "20px"; "border", "solid 1px lightgray"]] [
+                        a [] link (h3 [] title)
+                    ]
+            }
+        }
     }
 }
+
+Directory.CreateDirectory "blog" |> ignore
+File.WriteAllText("blog/index.html", page)
