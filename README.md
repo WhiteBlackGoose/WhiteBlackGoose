@@ -114,7 +114,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <hr>
 
-<a href="https://whiteblackgoose.github.io/WhiteBlackGoose/blog/index.html"><strong>📚 My articles (click)</strong></a>
+<a href="https://wbg.angouri.org/blog/index.html"><strong>📚 My articles (click)</strong></a>
 
 <hr>
 
@@ -123,4 +123,4 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 - Support me on <a href="https://patreon.com/WhiteBlackGoose">Patreon</a>.
 - Contact me via e-mail (wbg@angouri.org) or Telegram (the same username as that on GH).
 
-*This text is mirrored to a personal [web-page](https://whiteblackgoose.github.io/WhiteBlackGoose/).*
+*This text is mirrored to a personal [web-page](https://wbg.angouri.org).*
