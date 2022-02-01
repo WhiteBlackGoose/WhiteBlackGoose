@@ -10,7 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-          
+    
+    - name: Setup .NET 6
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.100'
+
     - name: Open expanders (the details tag)
       run: |
         # Expand spoilers & add headers
@@ -31,6 +36,11 @@ jobs:
         cat styles.css >> README.md
         echo '</style>' > end
         cat end >> README.md
+    
+    - name: Run blog generator
+      run: |
+        cd BlogGen
+        dotnet run
     
     - name: Rename readme to index
       run: |
