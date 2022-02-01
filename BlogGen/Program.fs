@@ -182,7 +182,9 @@ let page = html [] <| seq {
                             tags |> String.concat ", "
                         ]
                     ]
-                ]
+                ]   
+        }
+        div ["class", "cards"; inplaceStyle ["margin-top", "60px"]] <| seq {
             div [inplaceStyle ["padding", "20px"]] [
                 h1 [] "А здесь статьи на русском"
                 span [] [
