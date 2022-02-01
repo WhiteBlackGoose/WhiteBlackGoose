@@ -75,3 +75,11 @@ let cssFilter filter attrs =
     $"{filter} {{\n{inner}\n}}\n"
 
 let cssClass name attrs = cssFilter $".{name}" attrs
+
+let theme themeName attrs =
+    let inner = attrs |> String.concat ""
+    $"@media (prefers-color-scheme: {themeName}) {{\n{inner}\n}}"
+
+let lightTheme attrs = theme "light" attrs
+
+let darkTheme attrs = theme "dark" attrs
