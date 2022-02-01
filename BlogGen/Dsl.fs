@@ -10,11 +10,12 @@ let tagEmpty name attrs =
     $"<{name}{attrsToString} />"
 
 let tag (name : string) (attrs : Attributes) (content : string) : string =
+    let indented = content.Replace("\n", "\n    ")
     let attrsToString =
         attrs
         |> Seq.map (fun (a, b) -> $" {a}=\"{b}\"")
         |> String.concat ""
-    $"<{name}{attrsToString}>\n{content}\n</{name}>"
+    $"\n<{name}{attrsToString}>\n{indented}\n</{name}>"
 
 let tagList name attrs (list : string seq) =
     let inner = list |> String.concat "\n"

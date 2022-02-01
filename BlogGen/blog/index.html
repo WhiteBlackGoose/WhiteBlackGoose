@@ -1,77 +1,121 @@
+
 <html>
-<title>
-WhiteBlackGoose' blog
-</title>
-<header>
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono" />
-<style>
-.mainBody {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-auto-rows: auto;
-grid-gap: 1rem;
-font-family: Overpass Mono;
-}
-.card {
-border: solid 1px lightgray;
-}
-.cardTitle {
 
-}
-.previewImg {
-position: absolute;
-width: auto;
-height: 60%;
-left: -5%;
-top: 0%;
-}
-a {
-color: black;
-text-decoration: none;
-}
-
-</style>
-</header>
-<body>
-<h3>
-Blog of WhiteBlackGoose
-</h3>
-<div class="mainBody">
-<div class="card">
-<a href="https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" class="cardTitle">
-<h3>
-This is how Variadic Arguments could work in C#
-</h3>
-</a>
-</div>
-<div class="card">
-<a href="https://habr.com/ru/post/648529" class="cardTitle">
-<h3>
-Как LINQ, только быстрый и без аллокаций
-</h3>
-</a>
-</div>
-<div class="card">
-<a href="https://whiteblackgoose.medium.com/3d4724632e2a" class="cardTitle">
-<h3>
-Like Regular LINQ, but Faster and Without Allocations: Is It Possible?
-</h3>
-</a>
-</div>
-<div class="card">
-<a href="https://habr.com/ru/post/597437/" class="cardTitle">
-<h3>
-Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET
-</h3>
-</a>
-</div>
-<div class="card">
-<a href="https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" class="cardTitle">
-<h3>
-Stay safe with your units! Advanced units of measure in .NET.
-</h3>
-</a>
-</div>
-</div>
-</body>
+    <title>
+    WhiteBlackGoose' blog
+    </title>
+    
+    <header>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono" />
+        
+        <style>
+        .cards {
+            margin: 0 auto;
+            max-width: 1500px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+            row-gap: 40px;
+            font-family: Overpass Mono;
+            }
+            .card {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+            .card_title_container {
+            padding: 20px;
+            }
+            .card_title {
+            
+            }
+            .card_image {
+            width: 100%;
+            display: block;
+            }
+            a {
+            color: black;
+            text-decoration: none;
+            }
+            
+        </style>
+    </header>
+    
+    <body>
+    
+        <h3>
+        Blog of WhiteBlackGoose
+        </h3>
+        
+        <div class="cards">
+        
+            <div class="card">
+            <img src="https://miro.medium.com/max/1022/1*Mcbnb1PKgyKXzUB2Frj66A.png" class="card_image" />
+                
+                <div class="card_title_container">
+                
+                    <a href="https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" class="card_title">
+                    
+                        <h3>
+                        This is how Variadic Arguments could work in C#
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card">
+            <img src="https://habrastorage.org/getpro/habr/upload_files/d0b/e87/f38/d0be87f386e2e860533efcac2c8aa613.png" class="card_image" />
+                
+                <div class="card_title_container">
+                
+                    <a href="https://habr.com/ru/post/648529" class="card_title">
+                    
+                        <h3>
+                        Как LINQ, только быстрый и без аллокаций
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card">
+            <img src="https://miro.medium.com/max/1194/1*vjzCXRSmBoRBjm3ANP2iTA.png" class="card_image" />
+                
+                <div class="card_title_container">
+                
+                    <a href="https://whiteblackgoose.medium.com/3d4724632e2a" class="card_title">
+                    
+                        <h3>
+                        Like Regular LINQ, but Faster and Without Allocations: Is It Possible?
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card">
+            <img src="https://habrastorage.org/getpro/habr/upload_files/502/438/5a0/5024385a0fd8cfddb89ff3822f1f2428.png" class="card_image" />
+                
+                <div class="card_title_container">
+                
+                    <a href="https://habr.com/ru/post/597437/" class="card_title">
+                    
+                        <h3>
+                        Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET
+                        </h3>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card">
+            <img src="https://miro.medium.com/max/719/1*IZ1lFDyOld1etNTvm5Wxuw.png" class="card_image" />
+                
+                <div class="card_title_container">
+                
+                    <a href="https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" class="card_title">
+                    
+                        <h3>
+                        Stay safe with your units! Advanced units of measure in .NET.
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

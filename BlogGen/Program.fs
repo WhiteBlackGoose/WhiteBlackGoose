@@ -11,8 +11,6 @@ type Article = {
     title : string
 }
 
-
-
 let articles = [
     { lang = EN; tags = [ "C#" ];       title = "This is how Variadic Arguments could work in C#";
         link = "https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" }
@@ -35,34 +33,28 @@ let page = html [] <| seq {
     header [] [
         link ["rel", "stylesheet"; "type", "text/css"; "href", "https://fonts.googleapis.com/css?family=Overpass+Mono"]
         style [] [
-            cssClass "mainBody" [
-                // "width", "60%"
-                // "margin", "20%"
+            cssClass "cards" [
+                "margin", "0 auto"
+                "max-width", "1500px"
                 "display", "grid"
-                "grid-template-columns", "repeat(3, 1fr)"
-                "grid-auto-rows", "auto"
-                "grid-gap", "1rem"
+                "grid-template-columns", "repeat(2, 1fr)"
+                "column-gap", "20px"
+                "row-gap", "40px"
                 "font-family", "Overpass Mono"
             ]
             cssClass "card" [
-                // "padding", "10px"
-                // "margin", "20px"
-                "border", "solid 1px lightgray"
-                // "height", "1.5wv"
-                // "position", "relative"
-                // "overflow", "hidden"
-                // "border-radius", "4px"
+                "box-shadow", "0 0 5px rgba(0, 0, 0, 0.1)"
+                
             ]
-            cssClass "cardTitle" [
-                // "bottom", "0"
-                // "position", "absolute"
+            cssClass "card_title_container" [
+                "padding", "20px"
             ]
-            cssClass "previewImg" [
-                "position", "absolute"
-                "width", "auto"
-                "height", "60%"
-                "left", "-5%"
-                "top", "0%"
+            cssClass "card_title" [
+                
+            ]
+            cssClass "card_image" [
+                "width", "100%"
+                "display", "block"
             ]
             cssFilter "a" [
                 "color", "black"
@@ -72,11 +64,13 @@ let page = html [] <| seq {
     ]
     body [] <| seq {
         h1 [] "Blog of WhiteBlackGoose"
-        div ["class", "mainBody"] <| seq {
+        div ["class", "cards"] <| seq {
             for { lang = lang; tags = tags; title = title; link = link } in articles do
                 div ["class", "card"] [
-                    // img ["class", "previewImg"] (getPreviewImage link)
-                    a ["class", "cardTitle"] link (h3 [] title)
+                    img ["class", "card_image"] (getPreviewImage link)
+                    div ["class", "card_title_container"] [
+                        a ["class", "card_title"] link (h3 [] title)
+                    ]
                 ]
         }
     }
