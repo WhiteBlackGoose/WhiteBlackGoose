@@ -1,5 +1,6 @@
 ﻿open Dsl
 open System.IO
+open PreviewImage
 
 type Lang = EN | RU
 
@@ -14,7 +15,7 @@ type Article = {
 
 let articles = [
     { lang = EN; tags = [ "C#" ];       title = "This is how Variadic Arguments could work in C#";
-        link = "(https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" }
+        link = "https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" }
     
     { lang = RU; tags = [ "F#"; "C#" ]; title = "Как LINQ, только быстрый и без аллокаций";
         link = "https://habr.com/ru/post/648529";  }
@@ -38,6 +39,7 @@ let page = html [] <| seq {
             yield! seq {
                 for { lang = lang; tags = tags; title = title; link = link } in articles do
                     div [style ["padding", "10px"; "margin", "20px"; "border", "solid 1px lightgray"]] [
+                        img [] (getPreviewImage link)
                         a [] link (h3 [] title)
                     ]
             }
