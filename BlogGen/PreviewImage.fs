@@ -19,29 +19,15 @@ let private setCache cache =
 
 let private getPreviewImageActive link : string Option =
     let html = Http.RequestString link
-    let xmlDoc = XDocument.Load html
-    
-    let rec findOgImage (node : XElement) =
-        let goOverChildren (node : XElement) =
-            node.Descendants ()
-                |> Seq.map findOgImage
-                |> Seq.choose id
-                |> Seq.tryHead
+    let magicString = "property=\"og:image\" content=\""
+    let index = html.IndexOf magicString + magicString.Length
+    let lastIndex = html.IndexOf("\"", index)
+    if index = -1 || lastIndex = -1 then
+        None
+    else
+        let res = html[index .. lastIndex - 1]
+        res |> Some
 
-        if node.Name.LocalName = "meta" then
-            let isOgImage =
-                node.Attributes "property"
-                |> Seq.exists (fun c -> c.Value = "og:image")
-            if isOgImage then
-                node.Attributes "content"
-                |> Seq.map (fun c -> c.Value)
-                |> Seq.tryHead
-            else
-                goOverChildren node
-        else
-            goOverChildren node
-    
-    findOgImage xmlDoc.Root
 
 let getPreviewImage link =
     let cache = getCache ()

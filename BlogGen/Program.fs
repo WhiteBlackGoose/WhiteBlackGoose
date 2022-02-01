@@ -30,16 +30,23 @@ let articles = [
         link = "https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" }
 ]
 
-
 let page = html [] <| seq {
     title [] "WhiteBlackGoose' blog"
-    header [] []
+    header [] [
+        style [] [
+            cssClass "card" [
+                "padding", "10px"
+                "margin", "20px"
+                "border", "solid 1px lightgray"
+                "height", "300px"
+            ]
+        ]
+    ]
     body [] <| seq {
-        div [style ["width", "60%"; "margin", "20%"; "display", "grid"; "grid-template-columns", "30% 30% 30%"]] <| seq {
+        div [inplaceStyle ["width", "60%"; "margin", "20%"; "display", "grid"; "grid-template-columns", "30% 30% 30%"]] <| seq {
             yield! seq {
                 for { lang = lang; tags = tags; title = title; link = link } in articles do
-                    div [style ["padding", "10px"; "margin", "20px"; "border", "solid 1px lightgray"]] [
-                        img [] (getPreviewImage link)
+                    div ["class", "card"; inplaceStyle ["background",  $"url({getPreviewImage link})"]] [
                         a [] link (h3 [] title)
                     ]
             }

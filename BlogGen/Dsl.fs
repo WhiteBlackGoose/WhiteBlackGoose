@@ -42,7 +42,9 @@ let img (attrs : Attributes) (src : string) =
 
 let h3 attrs contents = tag "h3" attrs contents
 
-let style (attrs : Attributes) =
+let style attrs (classes : string seq) = tag "style" attrs (String.concat "" classes)
+
+let inplaceStyle (attrs : Attributes) =
     let inner =
         attrs
         |> Seq.map (fun (a, b) -> $"{a}: {b};")
@@ -53,3 +55,10 @@ let a (attrs : Attributes) href =
     attrs
     |> Seq.append [ "href", href ]
     |> tag "a"
+
+let cssClass name attrs =
+    let inner =
+        attrs
+        |> Seq.map (fun (a, b) -> $"{a}: {b};")
+        |> String.concat "\n"
+    $".{name} {{\n{inner}\n}}\n"
