@@ -15,7 +15,7 @@ let tag (name : string) (attrs : Attributes) (content : string) : string =
         attrs
         |> Seq.map (fun (a, b) -> $" {a}=\"{b}\"")
         |> String.concat ""
-    $"\n<{name}{attrsToString}>\n{indented}\n</{name}>"
+    $"<{name}{attrsToString}>{indented}</{name}>"
 
 let tagList name attrs (list : string seq) =
     let inner = list |> String.concat "\n"
@@ -41,11 +41,15 @@ let img (attrs : Attributes) (src : string) =
     |> Seq.append [ "src", src ]
     |> tagEmpty "img"
 
-let h1 attrs contents = tag "h3" attrs contents
+let h1 attrs contents = tag "h1" attrs contents
 
-let h2 attrs contents = tag "h3" attrs contents
+let h2 attrs contents = tag "h2" attrs contents
 
 let h3 attrs contents = tag "h3" attrs contents
+
+let span attrs list = tagList "span" attrs list
+
+let p attrs contents = tag "p" attrs contents
 
 let style attrs (classes : string seq) = tag "style" attrs (String.concat "" classes)
 

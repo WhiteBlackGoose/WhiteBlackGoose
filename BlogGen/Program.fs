@@ -28,11 +28,16 @@ let articles = [
         link = "https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" }
 ]
 
+let auto src = a [] $"https://{src}" src
+
 let page = html [] <| seq {
     title [] "WhiteBlackGoose' blog"
     header [] [
         link ["rel", "stylesheet"; "type", "text/css"; "href", "https://fonts.googleapis.com/css?family=Overpass+Mono"]
         style [] [
+            cssFilter ".header h1" [
+                "margin", "0 auto"
+            ]
             cssClass "cards" [
                 "margin", "0 auto"
                 "max-width", "1500px"
@@ -41,6 +46,7 @@ let page = html [] <| seq {
                 "column-gap", "20px"
                 "row-gap", "40px"
                 "font-family", "Overpass Mono"
+                "line-height", "1.8"
             ]
             cssClass "card" [
                 "box-shadow", "0 0 5px rgba(0, 0, 0, 0.1)"
@@ -58,13 +64,32 @@ let page = html [] <| seq {
             ]
             cssFilter "a" [
                 "color", "black"
+                "text-decoration-line", "underline"
+                "text-decoration-style", "wavy"
+                "text-decoration-thickness", "0"
+                "text-decoration-color", "gray"
+            ]
+            cssFilter ".card_title" [
                 "text-decoration", "none"
             ]
         ]
     ]
     body [] <| seq {
-        h1 [] "Blog of WhiteBlackGoose"
         div ["class", "cards"] <| seq {
+            div [inplaceStyle ["padding", "20px"]] [
+                h1 [] "Blog of WhiteBlackGoose"
+                span [] [
+                    p [] """
+                        Hi. I'm WhiteBlackGoose. I write articles about F#, C#, .NET (and sometimes other things).
+                        """
+                    p [] $"""
+                        With the same username you can find me on {auto "github.com"}, 
+                        {auto "reddit.com"}, {auto "twitter.com"}, {auto "medium.com"},
+                        {auto "habr.com"}, {auto "pikabu.ru"}
+                        """
+                    p [] "This website is made via F#, my custom tiny DSL."
+                ]
+            ]
             for { lang = lang; tags = tags; title = title; link = link } in articles do
                 div ["class", "card"] [
                     img ["class", "card_image"] (getPreviewImage link)
@@ -78,3 +103,5 @@ let page = html [] <| seq {
 
 Directory.CreateDirectory "blog" |> ignore
 File.WriteAllText("blog/index.html", page)
+
+printfn $"Done."
