@@ -229,6 +229,10 @@ let page = html [] <| seq {
 }
 
 Directory.CreateDirectory "blog" |> ignore
-File.WriteAllText("blog/index.html", page)
+
+let path = "blog/index.html"
+
+printfn $"Writing to ... {Path.GetFullPath(path)}"
+File.WriteAllText(path, page)
 
 printfn $"Done. {List.length articles}"
