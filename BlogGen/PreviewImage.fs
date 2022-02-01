@@ -20,13 +20,17 @@ let private setCache cache =
 let private getPreviewImageActive link : string Option =
     let html = Http.RequestString link
     let magicString = "property=\"og:image\" content=\""
-    let index = html.IndexOf magicString + magicString.Length
-    let lastIndex = html.IndexOf("\"", index)
-    if index = -1 || lastIndex = -1 then
+    let index = html.IndexOf magicString
+    if index = -1 then
         None
     else
-        let res = html[index .. lastIndex - 1]
-        res |> Some
+        let start = index + magicString.Length
+        let lastIndex = html.IndexOf("\"", start)
+        if lastIndex = -1 then
+            None
+        else
+            let res = html[start .. lastIndex - 1]
+            res |> Some
 
 
 let getPreviewImage link =
@@ -40,6 +44,6 @@ let getPreviewImage link =
             setCache cache
             url
         | None ->
-            cache[link] <- "Not found!"
+            cache[link] <- "https://user-images.githubusercontent.com/31178401/135977941-f15f2ca1-dc29-46e1-93ef-929ee0467f00.jpg"
             setCache cache
-            "Not found!"
+            "https://user-images.githubusercontent.com/31178401/135977941-f15f2ca1-dc29-46e1-93ef-929ee0467f00.jpg"
