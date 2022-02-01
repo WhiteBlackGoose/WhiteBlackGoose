@@ -5,11 +5,11 @@
             }
             .cards {
             margin: 0 auto;
-            max-width: 1500px;
+            max-width: 1650px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
             column-gap: 20px;
-            row-gap: 40px;
+            row-gap: 60px;
             font-family: Overpass Mono;
             line-height: 1.8;
             }
@@ -36,6 +36,9 @@
             .card_title {
             text-decoration: none;
             }
+            .tags {
+            color: gray;
+            }
             </style></header>
     <body><div class="cards"><div style="padding: 20px;"><h1>Blog of WhiteBlackGoose</h1>
                 <span><p>
@@ -44,16 +47,129 @@
                     <p>
                                                 With the same username you can find me on <a href="https://github.com">github.com</a>, 
                                                 <a href="https://reddit.com">reddit.com</a>, <a href="https://twitter.com">twitter.com</a>, <a href="https://medium.com">medium.com</a>,
-                                                <a href="https://habr.com">habr.com</a>, <a href="https://pikabu.ru">pikabu.ru</a>
                                                 </p>
                     <p>This website is made via F#, my custom tiny DSL.</p></span></div>
             <div class="card"><img src="https://miro.medium.com/max/1022/1*Mcbnb1PKgyKXzUB2Frj66A.png" class="card_image" />
-                <div class="card_title_container"><a href="https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" class="card_title"><h3>This is how Variadic Arguments could work in C#</h3></a></div></div>
-            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/d0b/e87/f38/d0be87f386e2e860533efcac2c8aa613.png" class="card_image" />
-                <div class="card_title_container"><a href="https://habr.com/ru/post/648529" class="card_title"><h3>Как LINQ, только быстрый и без аллокаций</h3></a></div></div>
+                <div class="card_title_container"><a href="https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" class="card_title"><h3>This is how Variadic Arguments could work in C#</h3></a>
+                    <span class="tags">Tags: 
+                        C#</span></div></div>
             <div class="card"><img src="https://miro.medium.com/max/1194/1*vjzCXRSmBoRBjm3ANP2iTA.png" class="card_image" />
-                <div class="card_title_container"><a href="https://whiteblackgoose.medium.com/3d4724632e2a" class="card_title"><h3>Like Regular LINQ, but Faster and Without Allocations: Is It Possible?</h3></a></div></div>
-            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/502/438/5a0/5024385a0fd8cfddb89ff3822f1f2428.png" class="card_image" />
-                <div class="card_title_container"><a href="https://habr.com/ru/post/597437/" class="card_title"><h3>Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET</h3></a></div></div>
+                <div class="card_title_container"><a href="https://whiteblackgoose.medium.com/3d4724632e2a" class="card_title"><h3>Like Regular LINQ, but Faster and Without Allocations: Is It Possible?</h3></a>
+                    <span class="tags">Tags: 
+                        C#</span></div></div>
             <div class="card"><img src="https://miro.medium.com/max/719/1*IZ1lFDyOld1etNTvm5Wxuw.png" class="card_image" />
-                <div class="card_title_container"><a href="https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" class="card_title"><h3>Stay safe with your units! Advanced units of measure in .NET.</h3></a></div></div></div></body></html>
+                <div class="card_title_container"><a href="https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" class="card_title"><h3>Stay safe with your units! Advanced units of measure in .NET.</h3></a>
+                    <span class="tags">Tags: 
+                        C#, F#</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/29c/ef1/eed/29cef1eed2a3b30458bb599f3d95c32e.png" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/en/post/575916/" class="card_title"><h3>Making loop "foreach" as fast as "for"</h3></a>
+                    <span class="tags">Tags: 
+                        C#, perf</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/169/36b/3fc/16936b3fcab2e2c445e0aa79261c96dd.png" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/en/post/565996/" class="card_title"><h3>AngouriMath 1.3 update</h3></a>
+                    <span class="tags">Tags: 
+                        C#, F#, AngouriMath</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/f27/348/333/f273483338a6fe05ce78548b90eb018c.png" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/en/post/546926/" class="card_title"><h3>Compilation of symbolic expressions into Linq.Expression</h3></a>
+                    <span class="tags">Tags: 
+                        C#</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/2a2/ea6/556/2a2ea65569be8f6b81146805cbd7bcfb.jpg" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/en/post/545936/" class="card_title"><h3>Lazy Properties Are Good. That Is How You Are to Use Them</h3></a>
+                    <span class="tags">Tags: 
+                        C#, oop</span></div></div>
+            <div class="card"><img src="https://external-preview.redd.it/7kcUFdwYu-_yqB-uxy2TrXN1O0cIhUFlQMByLff1qhg.jpg?auto=webp&amp;s=fd81feee78b28fb5cb43b36358d885284673a671" class="card_image" />
+                <div class="card_title_container"><a href="https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/" class="card_title"><h3>Math in Jupyter for .NET</h3></a>
+                    <span class="tags">Tags: 
+                        Jupyter, .NET</span></div></div>
+            <div class="card"><img src="https://user-images.githubusercontent.com/31178401/135977941-f15f2ca1-dc29-46e1-93ef-929ee0467f00.jpg" class="card_image" />
+                <div class="card_title_container"><a href="https://am.angouri.org/research" class="card_title"><h3>AngouriMath for Research with F#</h3></a>
+                    <span class="tags">Tags: 
+                        F#, AngouriMath</span></div></div>
+            <div class="card"><img src="https://miro.medium.com/max/1200/1*3mqFwJ5ewsPtFZx9QK4CWw.png" class="card_image" />
+                <div class="card_title_container"><a href="https://whiteblackgoose.medium.com/parsing-a-math-expression-from-string-in-c-b2b48e2ac2e6" class="card_title"><h3>Parsing a math expression in C#</h3></a>
+                    <span class="tags">Tags: 
+                        C#</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/528816/582c32b46b6e002e2eedebcb5329c567/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/en/post/528816" class="card_title"><h3>Jupyter in .NET</h3></a>
+                    <span class="tags">Tags: 
+                        .NET, Jupyter</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/580/212/e20/580212e20734d8eaa6f98243b6edc8eb.PNG" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/en/post/545436" class="card_title"><h3>What's new in AngouriMath 1.2?</h3></a>
+                    <span class="tags">Tags: 
+                        C#, F#</span></div></div>
+            <div class="card"><img src="https://github.githubassets.com/images/modules/gists/gist-og-image.png" class="card_image" />
+                <div class="card_title_container"><a href="https://gist.github.com/WhiteBlackGoose/5b84b2237704a91ffe7f34372196df32" class="card_title"><h3>Generic tensors in C#</h3></a>
+                    <span class="tags">Tags: 
+                        C#, perf</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/486496/20891568c4870e8b57a73a9ce74f37d5/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/en/post/486496" class="card_title"><h3>Symbolic algrebra in C#</h3></a>
+                    <span class="tags">Tags: 
+                        C#</span></div></div>
+            <div class="card"><img src="https://dz2cdn3.dzone.com/storage/article-thumb/12559734-thumb.jpg" class="card_image" />
+                <div class="card_title_container"><a href="https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction" class="card_title"><h3>Simple simulation of custom physical interactions with particles</h3></a>
+                    <span class="tags">Tags: 
+                        python</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/465523/9a8716eb62e422f804451a428873c8dd/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/en/post/465523" class="card_title"><h3>Yet another snake with Kivy, Python</h3></a>
+                    <span class="tags">Tags: 
+                        python</span></div></div>
+            <div style="padding: 20px;"><h1>А здесь статьи на русском</h1>
+                <span><p>
+                                                Здесь я добавляю еще две ссылки: {auto "habr.com"}, {auto "pikabu.ru"}.
+                                                </p></span></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/d0b/e87/f38/d0be87f386e2e860533efcac2c8aa613.png" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/648529" class="card_title"><h3>Как LINQ, только быстрый и без аллокаций</h3></a>
+                    <span class="tags">Tags: 
+                        F#, C#</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/502/438/5a0/5024385a0fd8cfddb89ff3822f1f2428.png" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/597437/" class="card_title"><h3>Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET</h3></a>
+                    <span class="tags">Tags: 
+                        C#, F#</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/aee/5a0/175/aee5a0175edb2c93e1059e35c6b37bf9.png" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/575664/" class="card_title"><h3>Ускоряем цикл foreach до for</h3></a>
+                    <span class="tags">Tags: 
+                        C#, perf</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/69e/3ff/2ad/69e3ff2ad85a56f793dd9f5fba0399d6.png" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/566286/" class="card_title"><h3>Хостим WASM-приложения на github pages в два клика</h3></a>
+                    <span class="tags">Tags: 
+                        C#, wasm</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/3e6/e2b/5ba/3e6e2b5ba313b3e22e59cb45e1ac9bf4.png" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/546622/" class="card_title"><h3>Компилируем математические выражения</h3></a>
+                    <span class="tags">Tags: 
+                        C#</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/529454/a07bc18b3e38fbad05c9b78f111300ad/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/529454/" class="card_title"><h3>Методы без аргументов — зло в ООП, и вот как его полечить</h3></a>
+                    <span class="tags">Tags: 
+                        C#</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/webt/pt/-w/jw/pt-wjwicbtpcozkv46nhzmjoi0u.png" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/528730/" class="card_title"><h3>Jupyter для .NET. «Как в питоне»</h3></a>
+                    <span class="tags">Tags: 
+                        .NET, Jupyter</span></div></div>
+            <div class="card"><img src="https://habrastorage.org/getpro/habr/upload_files/19e/ed1/d23/19eed1d2329b7a7ddc868069b624c6d8.PNG" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/en/post/545190/" class="card_title"><h3>Что нового в AngouriMath 1.2?</h3></a>
+                    <span class="tags">Tags: 
+                        C#, F#</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/512856/fcedf4d99a99135a84557921732358c5/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/512856/" class="card_title"><h3>Тензоры для C#. И матрицы, и векторы, и кастомный тип, и сравнительно быстро</h3></a>
+                    <span class="tags">Tags: 
+                        C#, perf</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/483294/ceefb0200d7a1f6dcf01f7eedc55e8a7/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/483294/" class="card_title"><h3>Пишем «калькулятор». Часть II. Решаем уравнения, рендерим в LaTeX, ускоряем функции до сверхсветовой</h3></a>
+                    <span class="tags">Tags: 
+                        C#</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/482228/c841fe42662c1c602aa27b8538c0bfd4/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/482228/" class="card_title"><h3>Пишем «калькулятор» на C#. Часть I. Вычисление значения, производная, упрощение, и другие гуси</h3></a>
+                    <span class="tags">Tags: 
+                        C#</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/467803/762381688f1a95ac0bafdc1673b11a9f/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/467803/" class="card_title"><h3>Элементарная симуляция кастомного физического взаимодействия на python + matplotlib</h3></a>
+                    <span class="tags">Tags: 
+                        python</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/468781/c066cbfc2a741e5323f9beb785be5b33/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/468781/" class="card_title"><h3>Играемся с комплексными числами</h3></a>
+                    <span class="tags">Tags: 
+                        python</span></div></div>
+            <div class="card"><img src="https://habr.com/share/publication/468457/c8f2fe61222a2b227a3b53145ad31c76/" class="card_image" />
+                <div class="card_title_container"><a href="https://habr.com/ru/post/468457/" class="card_title"><h3>Генератор простых арифметических примеров для чайников и не только</h3></a>
+                    <span class="tags">Tags: 
+                        python</span></div></div></div></body></html>

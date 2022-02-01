@@ -51,8 +51,8 @@ let articles = [
     { lang = EN; tags = [ "Jupyter"; ".NET" ]; title = "Math in Jupyter for .NET";
         link = "https://www.reddit.com/r/dotnet/comments/jv7qqt/net_jupyter_math_looks_awesome/" }
     
-    { lang = EN; tags = [ "F#"; "AngouriMath" ]; title = "https://am.angouri.org/research";
-        link = "AngouriMath for Research with F#" }
+    { lang = EN; tags = [ "F#"; "AngouriMath" ]; title = "AngouriMath for Research with F#";
+        link = "https://am.angouri.org/research" }
     
     { lang = EN; tags = [ "C#" ]; title = "Parsing a math expression in C#";
         link = "https://whiteblackgoose.medium.com/parsing-a-math-expression-from-string-in-c-b2b48e2ac2e6" }
@@ -77,6 +77,15 @@ let articles = [
     
     { lang = EN; tags = [ "C#"; "perf" ]; title = "Generic tensors in C#";
         link = "https://gist.github.com/WhiteBlackGoose/5b84b2237704a91ffe7f34372196df32" }
+
+    { lang = EN; tags = [ "C#" ]; title = "Symbolic algrebra in C#";
+        link = "https://habr.com/en/post/486496" }
+    
+    { lang = RU; tags = [ "C#" ]; title = "Пишем «калькулятор». Часть II. Решаем уравнения, рендерим в LaTeX, ускоряем функции до сверхсветовой";
+        link = "https://habr.com/ru/post/483294/" }
+    
+    { lang = RU; tags = [ "C#" ]; title = "Пишем «калькулятор» на C#. Часть I. Вычисление значения, производная, упрощение, и другие гуси";
+        link = "https://habr.com/ru/post/482228/" }
     
     { lang = EN; tags = [ "python" ]; title = "Simple simulation of custom physical interactions with particles";
         link = "https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction" }
@@ -107,11 +116,11 @@ let page = html [] <| seq {
             ]
             cssClass "cards" [
                 "margin", "0 auto"
-                "max-width", "1500px"
+                "max-width", "1650px"
                 "display", "grid"
-                "grid-template-columns", "repeat(2, 1fr)"
+                "grid-template-columns", "repeat(auto-fill, minmax(500px, 1fr))"
                 "column-gap", "20px"
-                "row-gap", "40px"
+                "row-gap", "60px"
                 "font-family", "Overpass Mono"
                 "line-height", "1.8"
             ]
@@ -139,6 +148,9 @@ let page = html [] <| seq {
             cssFilter ".card_title" [
                 "text-decoration", "none"
             ]
+            cssClass "tags" [
+                "color", "gray"
+            ]
         ]
     ]
     body [] <| seq {
@@ -152,16 +164,38 @@ let page = html [] <| seq {
                     p [] $"""
                         With the same username you can find me on {auto "github.com"}, 
                         {auto "reddit.com"}, {auto "twitter.com"}, {auto "medium.com"},
-                        {auto "habr.com"}, {auto "pikabu.ru"}
                         """
                     p [] "This website is made via F#, my custom tiny DSL."
                 ]
             ]
-            for { lang = lang; tags = tags; title = title; link = link } in articles do
+            for { tags = tags; title = title; link = link } in articles |> Seq.filter (fun c -> match c.lang with RU -> false | EN -> true ) do
                 div ["class", "card"] [
                     img ["class", "card_image"] (getPreviewImage link)
                     div ["class", "card_title_container"] [
                         a ["class", "card_title"] link (h3 [] title)
+                        span ["class", "tags"] [
+                            "Tags: "
+                            tags |> String.concat ", "
+                        ]
+                    ]
+                ]
+            div [inplaceStyle ["padding", "20px"]] [
+                h1 [] "А здесь статьи на русском"
+                span [] [
+                    p [] """
+                        Здесь я добавляю еще две ссылки: {auto "habr.com"}, {auto "pikabu.ru"}.
+                        """
+                ]
+            ]
+            for { tags = tags; title = title; link = link } in articles |> Seq.filter (fun c -> match c.lang with RU -> true | EN -> false ) do
+                div ["class", "card"] [
+                    img ["class", "card_image"] (getPreviewImage link)
+                    div ["class", "card_title_container"] [
+                        a ["class", "card_title"] link (h3 [] title)
+                        span ["class", "tags"] [
+                            "Tags: "
+                            tags |> String.concat ", "
+                        ]
                     ]
                 ]
         }
@@ -171,4 +205,4 @@ let page = html [] <| seq {
 Directory.CreateDirectory "blog" |> ignore
 File.WriteAllText("blog/index.html", page)
 
-printfn $"Done."
+printfn $"Done. {List.length articles}"
