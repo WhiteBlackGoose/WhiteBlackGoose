@@ -80,6 +80,14 @@ let theme themeName attrs =
     let inner = attrs |> String.concat ""
     $"@media (prefers-color-scheme: {themeName}) {{\n{inner}\n}}"
 
+let sizeNoBiggerThan size attrs =
+    let inner = attrs |> String.concat ""
+    $"@media only screen and (max-width: {size}px) {{\n{inner}\n}}"
+
 let lightTheme attrs = theme "light" attrs
 
 let darkTheme attrs = theme "dark" attrs
+
+let phoneDevice attrs = sizeNoBiggerThan 1000 attrs
+
+let tabletDevice attrs = sizeNoBiggerThan 1600 attrs

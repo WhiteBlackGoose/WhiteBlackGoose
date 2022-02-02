@@ -145,14 +145,23 @@ let page = html [] <| seq {
             ]
             cssClass "cards" [
                 "margin", "0 auto"
-                "max-width", "1650px"
-                "column-gap", "20px"
+                "column-gap", "25px"
                 "font-family", "Overpass Mono"
                 "line-height", "1.8"
-                "column-count", "3"
+                "column-count", "4"
+            ]
+            tabletDevice [
+                cssClass "cards" [
+                    "column-count", "3"
+                ]
+            ]
+            phoneDevice [
+                cssClass "cards" [
+                    "column-count", "1"
+                ]
             ]
             cssClass "card" [
-                "margin-top", "20px"
+                "margin-top", "25px"
                 "min-width", "100%"
                 "display", "inline-block"
             ]
@@ -232,7 +241,7 @@ Directory.CreateDirectory "blog" |> ignore
 
 let path = "blog/index.html"
 
-printfn $"Writing to ... {Path.GetFullPath(path)}"
+printfn $"Writing to {Path.GetFullPath(path)}"
 File.WriteAllText(path, page)
 
 printfn $"Done. {List.length articles}"
