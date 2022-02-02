@@ -208,8 +208,8 @@ let page = html [] <| seq {
                 h1 [] "А здесь статьи на русском"
                 span [] [
                     p [] $"""
-                        Здесь я добавляю еще две ссылки: {a [] "https://habr.com/users/WhiteBlackGoose/" "habr"},
-                        {a [] "https://pikabu.ru/@WhiteBlackGoose" "pikabu"}.
+                        В рунете меня можно найти еще на двух ресурсах: {a [] "https://habr.com/users/WhiteBlackGoose/" "habr"},
+                        {a [] "https://pikabu.ru/@WhiteBlackGoose" "pikabu"}. И в чате @pro.net в телеграме.
                         """
                 ]
             ]
