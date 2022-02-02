@@ -37,14 +37,23 @@
             }
             .cards {
             margin: 0 auto;
-            max-width: 1650px;
-            column-gap: 20px;
+            column-gap: 25px;
             font-family: Overpass Mono;
             line-height: 1.8;
+            column-count: 4;
+            }
+            @media only screen and (max-width: 1600px) {
+            .cards {
             column-count: 3;
             }
-            .card {
-            margin-top: 20px;
+            
+            }@media only screen and (max-width: 1000px) {
+            .cards {
+            column-count: 1;
+            }
+            
+            }.card {
+            margin-top: 25px;
             min-width: 100%;
             display: inline-block;
             }
