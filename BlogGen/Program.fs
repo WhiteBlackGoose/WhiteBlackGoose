@@ -105,7 +105,8 @@ let auto src = a [] $"https://{src}" src
 
 let page = html [] <| seq {
     title [] "WhiteBlackGoose' blog"
-    header [] [
+    head [] [
+        link ["rel", "icon"; "type", "image/png"; "href", "https://avatars.githubusercontent.com/u/31178401"]
         link ["rel", "stylesheet"; "type", "text/css"; "href", "https://fonts.googleapis.com/css?family=Overpass+Mono"]
         style [] [
             lightTheme [
