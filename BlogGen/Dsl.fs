@@ -28,7 +28,7 @@ let html attrs list = tagList "html" attrs list
 
 let body attrs list = tagList "body" attrs list
 
-let header attrs list = tagList "header" attrs list
+let head attrs list = tagList "head" attrs list
 
 let div attrs list = tagList "div" attrs list
 
