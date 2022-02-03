@@ -1,6 +1,8 @@
-﻿open Dsl
-open System.IO
+﻿open System.IO
 open PreviewImage
+open Giraffe.ViewEngine
+open ListBuilder
+open Css
 
 type Lang = EN | RU
 
@@ -101,14 +103,14 @@ let articles = [
     
 ]
 
-let auto src = a [] $"https://{src}" src
+// let auto src = a [] $"https://{src}" src
 
-let page = html [] <| seq {
-    title [] "WhiteBlackGoose' blog"
+let page = html [] <| lst() {
+    title [] [ Text "WhiteBlackGoose' blog" ]
     head [] [
-        link ["rel", "icon"; "type", "image/png"; "href", "https://avatars.githubusercontent.com/u/31178401"]
-        link ["rel", "stylesheet"; "type", "text/css"; "href", "https://fonts.googleapis.com/css?family=Overpass+Mono"]
-        style [] [
+        link [_rel "icon"; _type "image/png"; _href "https://avatars.githubusercontent.com/u/31178401"]
+        link [_rel "stylesheet"; _type "text/css"; _href "https://fonts.googleapis.com/css?family=Overpass+Mono"]
+        makeStyle [] [
             lightTheme [
                 cssFilter "body" [
                     "background", "rgb(230, 230, 230)"
@@ -184,53 +186,66 @@ let page = html [] <| seq {
             
         ]
     ]
-    body [] <| seq {
-        div ["class", "cards"] <| seq {
+    body [] <| lst() {
+        div [_class "cards"] <| lst() {
             div [inplaceStyle ["padding", "20px"]] [
-                h1 [] "Blog of WhiteBlackGoose"
+                h1 [] [ Text "Blog of WhiteBlackGoose" ]
                 span [] [
-                    p [] """
+                    p [] [ Text """
                         Hi. I'm WhiteBlackGoose. I write articles about F#, C#, .NET (and sometimes other things).
-                        """
-                    p [] $"""
-                        With the same username you can find me on {a [] "https://github.com/WhiteBlackGoose" "github"}, 
-                        {a [] "https://twitter.com/WhiteBlackGoose" "twitter"}, {a [] "https://whiteblackgoose.medium.com" "medium"}, 
-                        {a [] "https://reddit.com/u/WhiteBlackGoose" "reddit"}.
-                        """
-                    p [] "This website is made via F#, my custom tiny DSL."
-                    p [] $"""{auto "wbg.angouri.org"}"""
+                        """ ]
+                    p [] [
+                        Text $"""With the same username you can find me on """
+                        a [_href "https://github.com/WhiteBlackGoose"] [ Text "github" ]
+                        Text ", "
+                        a [_href "https://twitter.com/WhiteBlackGoose"] [ Text "twitter" ]
+                        Text ", "
+                        a [_href "https://whiteblackgoose.medium.com"]  [ Text "medium" ]
+                        Text ", "
+                        a [_href "https://reddit.com/u/WhiteBlackGoose"] [ Text "reddit" ]
+                    ]
+                    p [] [ 
+                        Text "This website is made via F#'s "
+                        a [_href "https://github.com/giraffe-fsharp/Giraffe.ViewEngine"] [ Text "Giraffe.ViewEngine" ]
+                        Text "."
+                    ]
+
+                    p [] [ a [ _href "wbg.angouri.org" ] [ Text "wbg.angouri.org" ] ]
                 ]
             ]
             for { tags = tags; title = title; link = link } in articles |> Seq.filter (fun c -> match c.lang with RU -> false | EN -> true ) do
-                div ["class", "card"] [
-                    a [] link (img ["class", "card_image"] (getPreviewImage link))
-                    div ["class", "card_title_container"] [
-                        a ["class", "card_title"] link (h3 [] title)
-                        span ["class", "tags"] [
-                            "Tags: "
-                            tags |> String.concat ", "
+                div [_class "card"] [
+                    a [_href link] [img [_class "card_image"; _src (getPreviewImage link)]]
+                    div [_class "card_title_container"] [
+                        a [_class "card_title"; _href link] [h3 [] [ Text title ]]
+                        span [_class "tags"] [
+                            Text "Tags: "
+                            Text (tags |> String.concat ", ")
                         ]
                     ]
                 ]   
         }
-        div ["class", "cards"; inplaceStyle ["margin-top", "60px"]] <| seq {
+        div [_class "cards"; inplaceStyle ["margin-top", "60px"]] <| lst() {
             div [inplaceStyle ["padding", "20px"]] [
-                h1 [] "А здесь статьи на русском"
+                h1 [] [ Text "А здесь статьи на русском" ]
                 span [] [
-                    p [] $"""
-                        В рунете меня можно найти еще на двух ресурсах: {a [] "https://habr.com/users/WhiteBlackGoose/" "habr"},
-                        {a [] "https://pikabu.ru/@WhiteBlackGoose" "pikabu"}. И в чате @pro.net в телеграме.
-                        """
+                    p [] [
+                        Text $"""В рунете меня можно найти еще на двух ресурсах: """
+                        a [_href "https://habr.com/users/WhiteBlackGoose/"] [ Text "habr" ]
+                        Text ", "
+                        a [_href "https://pikabu.ru/@WhiteBlackGoose"] [ Text "pikabu" ]
+                        Text ". И в чате @pro.net в телеграме."
+                    ]
                 ]
             ]
             for { tags = tags; title = title; link = link } in articles |> Seq.filter (fun c -> match c.lang with RU -> true | EN -> false ) do
-                div ["class", "card"] [
-                    a [] link (img ["class", "card_image"] (getPreviewImage link))
-                    div ["class", "card_title_container"] [
-                        a ["class", "card_title"] link (h3 [] title)
-                        span ["class", "tags"] [
-                            "Tags: "
-                            tags |> String.concat ", "
+                div [_class "card"] [
+                    a [_href link] [img [_class "card_image"; _src (getPreviewImage link)]]
+                    div [_class "card_title_container"] [
+                        a [_class "card_title"; _href link] [h3 [] [ Text title ]]
+                        span [_class "tags"] [
+                            Text "Tags: "
+                            Text (tags |> String.concat ", ")
                         ]
                     ]
                 ]
@@ -238,11 +253,14 @@ let page = html [] <| seq {
     }
 }
 
+
+<@ lst<int>() { 1; 2; 3 } @> |> printfn "%A"
+
 Directory.CreateDirectory "blog" |> ignore
 
 let path = "blog/index.html"
 
 printfn $"Writing to {Path.GetFullPath(path)}"
-File.WriteAllText(path, page)
+File.WriteAllText(path, page |> RenderView.AsString.htmlNode)
 
 printfn $"Done. {List.length articles}"
