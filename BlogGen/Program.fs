@@ -108,8 +108,8 @@ let articles = [
 let page = html [] <| lst() {
     title [] [ Text "WhiteBlackGoose' blog" ]
     head [] [
-        link [attr "rel" "icon"; attr "type" "image/png"; attr "href" "https://avatars.githubusercontent.com/u/31178401"]
-        link [attr "rel" "stylesheet"; attr "type" "text/css"; attr "href" "https://fonts.googleapis.com/css?family=Overpass+Mono"]
+        link [_rel "icon"; _type "image/png"; _href "https://avatars.githubusercontent.com/u/31178401"]
+        link [_rel "stylesheet"; _type "text/css"; _href "https://fonts.googleapis.com/css?family=Overpass+Mono"]
         makeStyle [] [
             lightTheme [
                 cssFilter "body" [
@@ -187,50 +187,63 @@ let page = html [] <| lst() {
         ]
     ]
     body [] <| lst() {
-        div [attr "class" "cards"] <| lst() {
+        div [_class "cards"] <| lst() {
             div [inplaceStyle ["padding", "20px"]] [
                 h1 [] [ Text "Blog of WhiteBlackGoose" ]
                 span [] [
                     p [] [ Text """
                         Hi. I'm WhiteBlackGoose. I write articles about F#, C#, .NET (and sometimes other things).
                         """ ]
-                    p [] [ Text $"""
-                        With the same username you can find me on {a [attr "href" "https://github.com/WhiteBlackGoose"] [ Text "github" ]}, 
-                        {a [attr "href" "https://twitter.com/WhiteBlackGoose"] [ Text "twitter" ]}, {a [attr "href" "https://whiteblackgoose.medium.com"]  [ Text "medium" ]}, 
-                        {a [attr "href" "https://reddit.com/u/WhiteBlackGoose"] [ Text "reddit" ]}.
-                        """ ]
-                    p [] [ Text "This website is made via F#, my custom tiny DSL." ]
-                    p [] [ Text $"""{a [attr "href" "wbg.angouri.org"] [ Text "wbg.angouri.org" ]}""" ]
+                    p [] [
+                        Text $"""With the same username you can find me on """
+                        a [_href "https://github.com/WhiteBlackGoose"] [ Text "github" ]
+                        Text ", "
+                        a [_href "https://twitter.com/WhiteBlackGoose"] [ Text "twitter" ]
+                        Text ", "
+                        a [_href "https://whiteblackgoose.medium.com"]  [ Text "medium" ]
+                        Text ", "
+                        a [_href "https://reddit.com/u/WhiteBlackGoose"] [ Text "reddit" ]
+                    ]
+                    p [] [ 
+                        Text "This website is made via F#'s "
+                        a [_href "https://github.com/giraffe-fsharp/Giraffe.ViewEngine"] [ Text "Giraffe.ViewEngine" ]
+                        Text "."
+                    ]
+
+                    p [] [ a [ _href "wbg.angouri.org" ] [ Text "wbg.angouri.org" ] ]
                 ]
             ]
             for { tags = tags; title = title; link = link } in articles |> Seq.filter (fun c -> match c.lang with RU -> false | EN -> true ) do
-                div [attr "class" "card"] [
-                    a [attr "href" link] [img [attr "class" "card_image"; attr "src" (getPreviewImage link)]]
-                    div [attr "class" "card_title_container"] [
-                        a [attr "class" "card_title"; attr "href" link] [h3 [] [ Text title]]
-                        span [attr "class" "tags"] [
+                div [_class "card"] [
+                    a [_href link] [img [_class "card_image"; _src (getPreviewImage link)]]
+                    div [_class "card_title_container"] [
+                        a [_class "card_title"; _href link] [h3 [] [ Text title ]]
+                        span [_class "tags"] [
                             Text "Tags: "
                             Text (tags |> String.concat ", ")
                         ]
                     ]
                 ]   
         }
-        div [attr "class" "cards"; inplaceStyle ["margin-top", "60px"]] <| lst() {
+        div [_class "cards"; inplaceStyle ["margin-top", "60px"]] <| lst() {
             div [inplaceStyle ["padding", "20px"]] [
                 h1 [] [ Text "А здесь статьи на русском" ]
                 span [] [
-                    p [] [ Text $"""
-                        В рунете меня можно найти еще на двух ресурсах: {a [attr "href" "https://habr.com/users/WhiteBlackGoose/"] [ Text "habr" ]},
-                        {a [attr "href" "https://pikabu.ru/@WhiteBlackGoose"] [ Text "pikabu" ]}. И в чате @pro.net в телеграме.
-                        """ ]
+                    p [] [
+                        Text $"""В рунете меня можно найти еще на двух ресурсах: """
+                        a [_href "https://habr.com/users/WhiteBlackGoose/"] [ Text "habr" ]
+                        Text ", "
+                        a [_href "https://pikabu.ru/@WhiteBlackGoose"] [ Text "pikabu" ]
+                        Text ". И в чате @pro.net в телеграме."
+                    ]
                 ]
             ]
             for { tags = tags; title = title; link = link } in articles |> Seq.filter (fun c -> match c.lang with RU -> true | EN -> false ) do
-                div [attr "class" "card"] [
-                    a [attr "href" link] [img [attr "class" "card_image"; attr "src" (getPreviewImage link)]]
-                    div [attr "class" "card_title_container"] [
-                        a [attr "class" "card_title"; attr "href" link] [h3 [] [ Text title ]]
-                        span [attr "class" "tags"] [
+                div [_class "card"] [
+                    a [_href link] [img [_class "card_image"; _src (getPreviewImage link)]]
+                    div [_class "card_title_container"] [
+                        a [_class "card_title"; _href link] [h3 [] [ Text title ]]
+                        span [_class "tags"] [
                             Text "Tags: "
                             Text (tags |> String.concat ", ")
                         ]
@@ -248,6 +261,6 @@ Directory.CreateDirectory "blog" |> ignore
 let path = "blog/index.html"
 
 printfn $"Writing to {Path.GetFullPath(path)}"
-File.WriteAllText(path, page.ToString())
+File.WriteAllText(path, page |> RenderView.AsString.htmlNode)
 
 printfn $"Done. {List.length articles}"
