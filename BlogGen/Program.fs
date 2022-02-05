@@ -14,6 +14,9 @@ type Article = {
 }
 
 let articles = [
+    { lang = EN; tags = [ "F#"; "asm" ];  title = "Inline Assembly in F#! How does it work?";
+        link = "https://blog.devgenius.io/inline-assembly-in-f-net-language-6d70ab9f58c1" }
+
     { lang = EN; tags = [ "C#" ];         title = "This is how Variadic Arguments could work in C#";
         link = "https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" }
     
@@ -253,8 +256,6 @@ let page = html [] <| lst() {
     }
 }
 
-
-<@ lst<int>() { 1; 2; 3 } @> |> printfn "%A"
 
 Directory.CreateDirectory "blog" |> ignore
 
