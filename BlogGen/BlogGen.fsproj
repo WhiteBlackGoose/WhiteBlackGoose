@@ -8,6 +8,9 @@
   <ItemGroup>
     <Compile Include="Css.fs" />
     <Compile Include="PreviewImage.fs" />
+    <Compile Include="Articles.fs" />
+    <Compile Include="Pages.fs" />
+    <Compile Include="View.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
