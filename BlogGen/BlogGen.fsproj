@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <Compile Include="Css.fs" />
-    <Compile Include="ListBuilder.fs" />
     <Compile Include="PreviewImage.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

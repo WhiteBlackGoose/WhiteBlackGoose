@@ -1,7 +1,6 @@
 ﻿open System.IO
 open PreviewImage
 open Giraffe.ViewEngine
-open ListBuilder
 open Css
 
 type Lang = EN | RU
@@ -108,7 +107,7 @@ let articles = [
 
 // let auto src = a [] $"https://{src}" src
 
-let page = html [] <| lst() {
+let page = html [] [
     title [] [ Text "WhiteBlackGoose' blog" ]
     head [] [
         link [_rel "icon"; _type "image/png"; _href "https://avatars.githubusercontent.com/u/31178401"]
@@ -189,8 +188,8 @@ let page = html [] <| lst() {
             
         ]
     ]
-    body [] <| lst() {
-        div [_class "cards"] <| lst() {
+    body [] [
+        div [_class "cards"] [
             div [inplaceStyle ["padding", "20px"]] [
                 h1 [] [ Text "Blog of WhiteBlackGoose" ]
                 span [] [
@@ -228,8 +227,8 @@ let page = html [] <| lst() {
                         ]
                     ]
                 ]   
-        }
-        div [_class "cards"; inplaceStyle ["margin-top", "60px"]] <| lst() {
+        ]
+        div [_class "cards"; inplaceStyle ["margin-top", "60px"]] [
             div [inplaceStyle ["padding", "20px"]] [
                 h1 [] [ Text "А здесь статьи на русском" ]
                 span [] [
@@ -253,9 +252,9 @@ let page = html [] <| lst() {
                         ]
                     ]
                 ]
-        }
-    }
-}
+        ]
+    ]
+]
 
 
 Directory.CreateDirectory "blog" |> ignore
