@@ -206,6 +206,7 @@ let page = html [] <| lst() {
                         a [_href "https://whiteblackgoose.medium.com"]  [ Text "medium" ]
                         Text ", "
                         a [_href "https://reddit.com/u/WhiteBlackGoose"] [ Text "reddit" ]
+                        Text "."
                     ]
                     p [] [ 
                         Text "This website is made via F#'s "
