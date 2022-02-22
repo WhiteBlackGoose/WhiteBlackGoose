@@ -10,6 +10,9 @@ type Article = {
 }
 
 let articles = [
+    { lang = EN; tags = [ "recursion" ]; title = "Don’t underestimate Recursion: it’s far more powerful, than most people think";
+        link = "https://whiteblackgoose.medium.com/dont-underestimate-recursion-it-s-far-more-powerful-than-most-people-think-130a1077f3a6" }
+
     { lang = EN; tags = [ "F#"; "asm"; "perf" ];  title = "Inline Assembly in F#! How does it work?";
         link = "https://blog.devgenius.io/inline-assembly-in-f-net-language-6d70ab9f58c1" }
 
