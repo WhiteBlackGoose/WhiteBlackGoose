@@ -9,8 +9,14 @@ type FilterPage = {
     title : string
 }
 
+type TextPage = {
+    title : string
+    contents : XmlNode list
+}
+
 type Page =
     | FilterPage of FilterPage
+    | TextPage of TextPage
 
 type PageInfo = {
     page : Page
@@ -119,6 +125,15 @@ let pages : PageInfo list = [
                     Text "Articles in English"
                 ]
                 back
+            ]
+        }
+    }
+    {
+        name = "about"
+        page = TextPage {
+            title = "About WhiteBlackGoose"
+            contents = [
+                p [] []
             ]
         }
     }
