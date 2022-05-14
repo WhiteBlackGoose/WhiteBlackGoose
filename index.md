@@ -1,8 +1,11 @@
 <!--this comment is auto-replaced on deployment-->
 <!--styles-->
 
-<img src="https://user-images.githubusercontent.com/31178401/133685389-f1126fc5-d278-4f99-9adb-3d98120f2e8c.jpeg" class="light-only">
-<img src="https://user-images.githubusercontent.com/31178401/135977941-f15f2ca1-dc29-46e1-93ef-929ee0467f00.jpg" class="dark-only">
+<img src="https://user-images.githubusercontent.com/31178401/168423988-7c0653eb-fee9-4a28-94f0-e3beee716d55.png" class="light-only">
+<img src="https://user-images.githubusercontent.com/31178401/168423988-7c0653eb-fee9-4a28-94f0-e3beee716d55.png" class="dark-only">
+
+
+*Peace is key*
 
 ## Hi there. I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
 
