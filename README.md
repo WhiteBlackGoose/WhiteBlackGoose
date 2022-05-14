@@ -1,8 +1,8 @@
 <!--this comment is auto-replaced on deployment-->
 <!--styles-->
 
-<img src="https://user-images.githubusercontent.com/31178401/168423988-7c0653eb-fee9-4a28-94f0-e3beee716d55.png#gh-light-mode-only">
-<img src="https://user-images.githubusercontent.com/31178401/168423988-7c0653eb-fee9-4a28-94f0-e3beee716d55.png#gh-dark-mode-only">
+<img src="https://user-images.githubusercontent.com/31178401/168426001-192385ea-8dbe-4f7f-952a-9cca2ec42c19.png#gh-light-mode-only">
+<img src="https://user-images.githubusercontent.com/31178401/168426001-192385ea-8dbe-4f7f-952a-9cca2ec42c19.png#gh-dark-mode-only">
 
 
 *Peace is key*
