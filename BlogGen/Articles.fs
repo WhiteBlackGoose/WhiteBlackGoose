@@ -103,4 +103,6 @@ let articles = [
     { lang = RU; tags = [ "python"; "math" ]; title = "Генератор простых арифметических примеров для чайников и не только";
         link = "https://habr.com/ru/post/468457/" }
     
+    { lang = EN; tags = [ "python"; "investing" ]; title = "20 Random Stocks Investment Strategy";
+        link = "/media/20_random_stocks.html" }
 ]
