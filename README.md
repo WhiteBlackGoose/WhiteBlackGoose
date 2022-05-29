@@ -40,11 +40,21 @@ Finally, since I started doing F#, I was also interested in functional programmi
 
 I also like economics and finances, trying to learn and explain how things work in today's world. Same relates to history and politics.
 
+In the end, my favourite sciences are: logic, symbolic algebra, computer science, type theory, and economics.
+
 ### Me on society
 
 I'm not very open in real life. I don't even often see people irl. I mostly exist online. I even think people can exist fully online. It sounds a bit dystopian... but yeah.
 
-You can find me on twitter, reddit, and discord.
+You can find me on twitter, reddit, and discord. I love talking, and there are many topics I can talk about. Lately it's mostly been society (I've become much more progressive), science (type theory), and art.
+
+I write quite a lot. I have a page (see in the end) where I keep all articles I ever wrote in one place. Those articles are mostly about software developing, however, I plan to extend it (e. g. I recently wrote about investments, and I soon hope to write about FOSS).
+
+### Other hobbies
+
+Turned out that I love drawing polandball. It's a special community, worth checking out!
+
+I also like learning languages. Well... not so much learning, but the result. I'm learning :de: ( :ru: is my native language, :en: is C1-C2). 
   
   </p></details>
 
