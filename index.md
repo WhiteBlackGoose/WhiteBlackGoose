@@ -54,7 +54,7 @@ I write quite a lot. I have a page (see in the end) where I keep all articles I 
 
 Turned out that I love drawing polandball. It's a special community, worth checking out!
 
-I also like learning languages. Well... not so much learning, but the result. I'm learning :de: ( :ru: is my native language, :en: is C1-C2). 
+I also like learning languages. Well... not so much learning, but the result. I'm learning :de: ( :ru: is my native language, :us: is C1-C2). 
   
   <!--Quack-->
 
