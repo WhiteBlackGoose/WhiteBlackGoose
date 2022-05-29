@@ -12,7 +12,41 @@ I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**,
 
 I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http://dotnetfoundation.org">**.NET Foundation**</a>, and author of [**AngouriMath**](http://github.com/asc-community/AngouriMath). See all my contributions in the next expanders.
 
+<hr>
 
+<details><summary><strong>🤓 More about me</strong> (click)</summary><p>
+  
+### Coding
+
+Back in childhood I started programming with Delphi, with which I created a few nice programs, that I enjoyed back then. My next major programming language was python, I worked with neural networks, in particular, HI-19 (see link below), which analyzes handwriting by photo. Eventually though I started learning C# ... and that's the first language I *actually* learned. I started with basic console apps, tried to make a website. In 2019 found myself in need for a symbolic algebra library, and that's when I started working on AngouriMath.
+  
+AngouriMath is the first FOSS project I made. In 2020 AngouriMath's repo gets visited by Happypig375, who finds bugs, makes suggestions, and opens pull requests. Thanks to him I immersed myself into the wonders of FOSS. In that year I also create GenericTensor and a few small projects.
+  
+In 2021 I started realizing that C# is not as expressive as I wish it was, despite that I know it almost perfectly. I finally try F#. My world changes again, now I learn it from a different point of view. In that year I create a whole number of different projects, contribute to others as well, such as Silk.NET, and more. I also join .NET Foundation and set up my patreon page.
+  
+In the same year I was helping with programming language Fresh as well as planned many rewrites of GenericTensor, Plotly.NET, AngouriMath, and more.
+
+In 2022 I decided to try something new and to learn UI in MVU via F#, so I do a few things related to it. Then, on [24 Feb - 30 May] I basically didn't code.
+  
+### Science
+
+I've always loved math. I'm not a professional mathematician, however, I definitely enjoy it and understand some of it.
+
+My main project I made in .NET is a math library AngouriMath. It relates to algebra and symbolic computations. It is supplied by another library, GenericTensor, which is a *linear algebra* library.
+
+I absolutely enjoy fundamental math and logic. For me it's something that describes it all.
+
+Finally, since I started doing F#, I was also interested in functional programming, proof oriented programming, and finally, type theory. For proof oriented programming I even started learning F* and made a few hello worlds.
+
+I also like economics and finances, trying to learn and explain how things work in today's world. Same relates to history and politics.
+
+### Me on society
+
+I'm not very open in real life. I don't even often see people irl. I mostly exist online. I even think people can exist fully online. It sounds a bit dystopian... but yeah.
+
+You can find me on twitter, reddit, and discord.
+  
+  </p></details>
 
 <hr>
 
