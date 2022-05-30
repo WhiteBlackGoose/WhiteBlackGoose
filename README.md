@@ -102,7 +102,7 @@ Each project is either maintained by me or I contributed to it.
 
 #### Conceptual projects
 That is, they are not ready-to-use libraries, instead, some theoretical concepts, that may or may not be implemented.
-1. <a href="https://github.com/LanguageDev/Fresh-Language-suggestions"></a> (2021-2022)
+1. <a href="https://github.com/LanguageDev/Fresh-Language-suggestions">Fresh</a> (2021-2022)
 1. <a href="https://github.com/WhiteBlackGoose/InductiveVariadics">InductiveVariadics</a> (2022) 🦆
 1. <a href="https://github.com/WhiteBlackGoose/LambdaCalculusFSharp">λ calculus calculator</a> (2021)
 1. <a href="https://github.com/WhiteBlackGoose/SetSystem">SetSystem</a> (2021)
