@@ -1,3 +1,7 @@
+body {
+   font-family: "Overpass Mono";
+}
+
 @media (prefers-color-scheme: dark) {
   a {
     color: #63C963;
