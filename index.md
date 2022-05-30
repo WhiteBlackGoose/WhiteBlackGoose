@@ -173,6 +173,10 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 *This text is mirrored to a personal [web-page](https://wbg.angouri.org).*
 <style>
+body {
+   font-family: "Overpass Mono";
+}
+
 @media (prefers-color-scheme: dark) {
   a {
     color: #63C963;
