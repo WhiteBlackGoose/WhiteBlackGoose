@@ -15,7 +15,9 @@ let private getCache () =
         Dictionary<_, _> ()
 
 let private setCache cache =
-    File.WriteAllText(cachePath, JsonSerializer.Serialize cache)
+    let options = JsonSerializerOptions()
+    options.WriteIndented <- true
+    File.WriteAllText(cachePath, JsonSerializer.Serialize(cache, options))
 
 let private getPreviewImageActive link : string Option =
     let html = Http.RequestString link

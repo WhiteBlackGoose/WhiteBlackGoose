@@ -175,6 +175,16 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 <style>
 body {
    font-family: "Overpass Mono";
+   padding: 60px;
+   padding-left: 100px;
+   padding-right: 100px;
+   line-height: 1.7;
+}
+
+hr {
+  width: 20%;
+  background-color: gray;
+  border: 0.5px solid gray;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -187,21 +197,55 @@ body {
   body {
     background: #26292F;
     color: lightgray;
+    box-shadow: 0px 0px 12px 1px #1c1e23;
   }
   
   .light-only {
     display: none;
   }
 }
-
   
 @media (prefers-color-scheme: light) { 
   a {
     color: #339933;
   }
   
+  body {
+      color: #555;
+      box-shadow: 0px 0px 12px 1px #57575733;
+  }
+  
   .dark-only {
     display: none;
   }
 }
-</style>
+
+@media (min-width: 768px) {
+    body {
+        width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 1140px;
+    }
+}
+
+
+body {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    margin-right: auto;
+    margin-left: auto;
+}</style>
