@@ -10,6 +10,9 @@ type Article = {
 }
 
 let articles = [
+    { lang = EN; tags = [ "politics"; "philosophy" ]; title = "What the World could be Like";
+        link = "https://wbg.angouri.org/media/eqty.html" }
+
     { lang = EN; tags = [ "python"; "investing" ]; title = "20 Random Stocks Investment Strategy";
         link = "https://wbg.angouri.org/media/20_random_stocks.html" }
 
