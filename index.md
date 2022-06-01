@@ -228,14 +228,20 @@ hr {
 
 @media (min-width: 992px) {
     body {
-        width: 940px;
+        width: 840px;
     }
 }
 
 @media (min-width: 1200px) {
     body {
-        width: 1140px;
+        width: 1000px;
     }
+}
+
+@media (min-width: 1600px) {
+   body {
+      width: 1140px;
+   }
 }
 
 
@@ -248,4 +254,5 @@ body {
 h1 {
     margin-right: auto;
     margin-left: auto;
-}</style>
+}
+</style>
