@@ -184,6 +184,9 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
   body {
     background: #26292F;
     color: lightgray;
+  }
+  
+  .shadow-container {
     box-shadow: 0px 0px 12px 1px #1c1e23;
   }
   
@@ -199,7 +202,10 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
   
   body {
       color: #555;
-      box-shadow: 0px 0px 12px 1px #57575733;
+  }
+  
+  .shadow-container {
+    box-shadow: 0px 0px 12px 1px #57575733;
   }
   
   .dark-only {
