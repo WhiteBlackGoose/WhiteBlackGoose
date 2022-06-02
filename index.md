@@ -174,20 +174,6 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 *This text is mirrored to a personal [web-page](https://wbg.angouri.org).*
 <style>
-body {
-   font-family: "Overpass Mono";
-   padding: 60px;
-   padding-left: 100px;
-   padding-right: 100px;
-   line-height: 1.7;
-}
-
-hr {
-  width: 20%;
-  background-color: gray;
-  border: 0.5px solid gray;
-}
-
 @media (prefers-color-scheme: dark) {
   a {
     color: #63C963;
@@ -219,41 +205,5 @@ hr {
   .dark-only {
     display: none;
   }
-}
-
-@media (min-width: 768px) {
-    body {
-        width: 768px;
-    }
-}
-
-@media (min-width: 992px) {
-    body {
-        width: 840px;
-    }
-}
-
-@media (min-width: 1200px) {
-    body {
-        width: 1000px;
-    }
-}
-
-@media (min-width: 1600px) {
-   body {
-      width: 1140px;
-   }
-}
-
-
-body {
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-h1 {
-    margin-right: auto;
-    margin-left: auto;
 }
 </style>
