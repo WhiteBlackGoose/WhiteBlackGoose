@@ -167,6 +167,14 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <!--QuackQuack-->
 
+<h2>:chart_with_upwards_trend: Activity</h2>
+
+![Graph with my activity](./github-metrics.svg)
+
+<!--Quack-->
+
+<!--QuackQuack-->
+
 #### You can
 - Checkout my [**twitter**](https://twitter.com/WhiteBlackGoose), [**github**](https://github.com/WhiteBlackGoose), [**blog**](https://wbg.angouri.org/blog).
 - ~~Support me on <a href="https://patreon.com/WhiteBlackGoose">**Patreon**</a>.~~
