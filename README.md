@@ -167,6 +167,14 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <hr>
 
+<details><summary><strong>:chart_with_upwards_trend: Activity</strong> (click)</summary><p>
+
+![Graph with my activity](./github-metrics.svg)
+
+</p></details>
+
+<hr>
+
 #### You can
 - Checkout my [**twitter**](https://twitter.com/WhiteBlackGoose), [**github**](https://github.com/WhiteBlackGoose), [**blog**](https://wbg.angouri.org/blog).
 - ~~Support me on <a href="https://patreon.com/WhiteBlackGoose">**Patreon**</a>.~~
