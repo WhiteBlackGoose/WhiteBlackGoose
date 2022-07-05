@@ -16,3 +16,10 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           plugin_activity: yes
+          plugin_notable: yes
+          plugin_achievements: yes
+          plugin_achievements_only: member, maintainer, developer
+          base: repositories
+          plugin_lines: yes
+
+
