@@ -163,7 +163,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <!--QuackQuack-->
 
-<h2>📚 My articles (click)</strong></summary><p>
+<h2>📚 My articles</h2>
 
 Most notable ones:
 - `[2022-02-05]` [**Inline Assembly in F#! How does it work?**](https://blog.devgenius.io/inline-assembly-in-f-net-language-6d70ab9f58c1)
