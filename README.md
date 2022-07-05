@@ -172,6 +172,8 @@ Most notable ones:
 - `[2021-12-22]` [**Stay safe with your units! Advanced units of measure in .NET**](https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e)
 - `[2021-09-02]` [**Making loop "foreach" as fast as "for"**](https://habr.com/en/post/575916/)
 - `[2021-03-14]` [**Compilation of symbolic expressions into Linq.Expression**](https://habr.com/en/post/546926/)
+- `[2020-11-12]` [**Jupyter in .NET**](https://habr.com/en/post/528816)
+- `[2020-02-02]` [**Symbolic algebra in C#**](https://habr.com/en/post/486496)
 
 [**All of them**](https://wbg.angouri.org/blog/)
 
