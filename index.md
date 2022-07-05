@@ -167,7 +167,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <!--QuackQuack-->
 
-<h2>:chart_with_upwards_trend: Activity</h2>
+<h2>📈 Activity</h2>
 
 ![Graph with my activity](./github-metrics.svg)
 
