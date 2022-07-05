@@ -167,7 +167,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <hr>
 
-<details><summary><strong>:chart_with_upwards_trend: Activity</strong> (click)</summary><p>
+<details><summary><strong>📈 Activity</strong> (click)</summary><p>
 
 ![Graph with my activity](./github-metrics.svg)
 
