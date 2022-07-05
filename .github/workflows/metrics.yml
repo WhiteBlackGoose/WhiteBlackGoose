@@ -19,7 +19,8 @@ jobs:
           plugin_activity: yes
           plugin_notable: yes
           plugin_achievements: yes
-          plugin_achievements_only: member, worker, maintainer, maintainer, inspirer, contributor, reviewer
+          plugin_achievements_only: member, worker, maintainer, maintainer, influencer, contributor, reviewer
           plugin_lines: yes
+          plugin_followup: yes
 
 
