@@ -166,14 +166,14 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 <h2>📚 My articles</h2>
 
 Most notable ones:
-- `[2022-02-05]` [**Inline Assembly in F#! How does it work?**](https://blog.devgenius.io/inline-assembly-in-f-net-language-6d70ab9f58c1)
-- `[2022-01-31]` [**This is how Variadic Arguments could work in C#**](https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241)
-- `[2022-01-03]` [**Like regular LINQ, but faster and without allocations**](https://whiteblackgoose.medium.com/3d4724632e2a)
-- `[2021-12-22]` [**Stay safe with your units! Advanced units of measure in .NET**](https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e)
-- `[2021-09-02]` [**Making loop "foreach" as fast as "for"**](https://habr.com/en/post/575916/)
-- `[2021-03-14]` [**Compilation of symbolic expressions into Linq.Expression**](https://habr.com/en/post/546926/)
-- `[2020-11-12]` [**Jupyter in .NET**](https://habr.com/en/post/528816)
-- `[2020-02-02]` [**Symbolic algebra in C#**](https://habr.com/en/post/486496)
+- `[2022-02-22]	👁️‍🗨️  3k` [**Don’t underestimate Recursion: it’s far more powerful, than most people think**](https://itnext.io/dont-underestimate-recursion-it-s-far-more-powerful-than-most-people-think-130a1077f3a6)
+- `[2022-02-05]	👁️‍🗨️	11k` [**Inline Assembly in F#! How does it work?**](https://blog.devgenius.io/inline-assembly-in-f-net-language-6d70ab9f58c1)
+- `[2022-01-31] 👁️‍🗨️	 2k` [**This is how Variadic Arguments could work in C#**](https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241)
+- `[2022-01-03]	👁️‍🗨️	12k` [**Like regular LINQ, but faster and without allocations**](https://whiteblackgoose.medium.com/3d4724632e2a)
+- `[2021-12-22]	👁️‍🗨️	 5k` [**Stay safe with your units! Advanced units of measure in .NET**](https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e)
+- `[2021-09-02]	👁️‍🗨️	13k` [**Making loop "foreach" as fast as "for"**](https://habr.com/en/post/575916/)
+- `[2021-03-14]	👁️‍🗨️  4k` [**Compilation of symbolic expressions into Linq.Expression**](https://habr.com/en/post/546926/)
+- `[2020-02-02] 👁️‍🗨️  5k` [**Symbolic algebra in C#**](https://habr.com/en/post/486496)
 
 [**All of them**](https://wbg.angouri.org/blog/)
 
