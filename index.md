@@ -15,7 +15,7 @@ I'm a member of <a href="https://angouri.org">**Angouri**</a> and <a href="http:
 
 <!--QuackQuack-->
 
-<h2>🤓 More about me</h2>
+<h2>🤓 Biography</h2>
   
 ### Coding
 
