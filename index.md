@@ -146,6 +146,17 @@ That is, they are not ready-to-use libraries, instead, some theoretical concepts
 
 <h2><img src="./media/merged-pr.svg"> My merged pull requests</h2>
   
+Most notable ones:
+- [SIMD for Silk.NET.Math #3](https://github.com/dotnet/Silk.NET/pull/684)
+- [SIMD for Silk.NET.Math #2](https://github.com/dotnet/Silk.NET/pull/670)
+- [SIMD for Silk.NET.Math](https://github.com/dotnet/Silk.NET/pull/665)
+- [Scalar bitwise implementation](https://github.com/dotnet/Silk.NET/pull/667)
+- [Generic Math impl](https://github.com/asc-community/AngouriMath/pull/509)
+- [C# Interop improvements](https://github.com/plotly/Plotly.NET/pull/161)
+- [Immutable dynamic object](https://github.com/CSBiology/DynamicObj/pull/4)
+- [Lambdas and functions](https://github.com/asc-community/AngouriMath/pull/496)
+- [Add RFC-1112 - "Obsolete allowed to use Obsolete"](https://github.com/fsharp/fslang-design/pull/617)
+  
 I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs from its parent node.
   
 - [All](https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=updated&type=Issues) 
