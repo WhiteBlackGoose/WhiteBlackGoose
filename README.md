@@ -165,7 +165,7 @@ I groupped my PRs into hierarchy. Each subgroup is exhaustive and covers all PRs
 
 <details><summary><strong>📚 My articles</strong> (click)</summary><p>
 
-Most notable ones:
+Most notable ones in 🇺🇸:
 - `[2022-02-22]	👁️‍🗨️  3k` [**Don’t underestimate Recursion: it’s far more powerful, than most people think**](https://itnext.io/dont-underestimate-recursion-it-s-far-more-powerful-than-most-people-think-130a1077f3a6)
 - `[2022-02-05]	👁️‍🗨️	11k` [**Inline Assembly in F#! How does it work?**](https://blog.devgenius.io/inline-assembly-in-f-net-language-6d70ab9f58c1)
 - `[2022-01-31] 👁️‍🗨️	 2k` [**This is how Variadic Arguments could work in C#**](https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241)
@@ -175,6 +175,12 @@ Most notable ones:
 - `[2021-03-14]	👁️‍🗨️  4k` [**Compilation of symbolic expressions into Linq.Expression**](https://habr.com/en/post/546926/)
 - `[2020-02-02] 👁️‍🗨️  5k` [**Symbolic algebra in C#**](https://habr.com/en/post/486496)
 
+Most notable ones in 🇷🇺:
+- `[2022-01-30] 👁️‍🗨️ 20k` [**Как LINQ, только быстрый и без аллокаций**](https://habr.com/ru/post/648529/)
+- `[2021-09-01] 👁️‍🗨️ 15k` [**Ускоряем цикл foreach до for**](https://habr.com/ru/post/575664/)
+- `[2020-11-18] 👁️‍🗨️ 7k` [**Jupyter для .NET. «Как в питоне»**](https://habr.com/ru/post/528730/)
+- `[2020-01-03] 👁️‍🗨️ 53k` Пишем «калькулятор» на C# [**Часть I**](https://habr.com/ru/post/482228/) [**Часть II**](https://habr.com/ru/post/483294/)
+  
 [**All of them**](https://wbg.angouri.org/blog/)
 
 </p></details>
