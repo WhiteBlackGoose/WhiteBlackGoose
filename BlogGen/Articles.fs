@@ -10,6 +10,9 @@ type Article = {
 }
 
 let articles = [
+    { lang = EN; tags = [ "web"; "F#" ]; title = "Create static website yourself. No 3rd party services";
+        link = "https://dev.to/whiteblackgoose/create-static-website-yourself-no-3rd-party-services-1314" }
+
     { lang = EN; tags = [ "politics"; "philosophy" ]; title = "What the World could be Like";
         link = "https://wbg.angouri.org/media/eqty.html" }
 
