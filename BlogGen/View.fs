@@ -15,7 +15,7 @@ let commonHead font =
     head [] [
         link [_rel "icon"; _type "image/png"; _href "https://avatars.githubusercontent.com/u/31178401"]
         link [_rel "stylesheet"; _type "text/css"; _href "https://fonts.googleapis.com/css?family=Overpass+Mono"]
-        link [_rel "stylesheet"; _type "text/css"; _href "https://fonts.googleapis.com/css?family=Ububntu+Mono"]
+        link [_rel "stylesheet"; _type "text/css"; _href "https://fonts.googleapis.com/css?family=Ubuntu+Mono"]
         makeStyle [] [
             lightTheme [
                 cssFilter "body" [
