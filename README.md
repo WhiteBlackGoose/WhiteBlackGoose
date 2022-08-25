@@ -7,6 +7,8 @@
 
 *Peace is key*
 
+[![996.icu](https://img.shields.io/static/v1?label=996&message=ICU&color=red&style=flat-square)](https://996.icu)
+
 ## Hi there. I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
 
 I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**, to be precise, **C#** and **F#**, trying to make .NET greater and more suitable for scientific purposes. I've been into this area for **2** years.
