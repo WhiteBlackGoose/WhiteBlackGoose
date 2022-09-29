@@ -120,6 +120,12 @@ That is, they are not ready-to-use libraries, instead, some theoretical concepts
 <details ><summary><strong>Old projects</strong></summary><p>
 
 <ul>
+<li>
+<a href="https://github.com/WhiteBlackGoose/Crystals">Crystals game</a> (2019)
+  </li>
+  <li>
+<a href="https://github.com/WhiteBlackGoose/fill2">Fill game</a> (2019)
+  </li>
   <li>
 <a href="https://github.com/WhiteBlackGoose/HI19">HI19 handwriting recognition system</a> (2018-2019)
   </li>
@@ -131,6 +137,9 @@ That is, they are not ready-to-use libraries, instead, some theoretical concepts
   </li>
   <li>
 <a href="https://github.com/WhiteBlackGoose/leostudio">Leo Studio</a> (2016)
+  </li>
+      <li>
+<a href="https://github.com/WhiteBlackGoose/old_projects">Other old projects</a> (2015-2016)
   </li>
   <li>
 <a href="https://github.com/WhiteBlackGoose/BounceMan">BounceMan</a> (2015)
