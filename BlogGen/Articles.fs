@@ -13,6 +13,9 @@ let articles = [
     { lang = EN; tags = [ "cybersecurity"; "linux" ]; title = "Cheatshit on configuring fully FOSS highly secure pass with sync-ing";
         link = "https://gist.github.com/WhiteBlackGoose/8ffb7123b991dcc4cdafcdd574bdc3c6" }
 
+    { lang = EN; tags = [ "life" ]; title = "Why YYYY-MM-DD is the best date format?";
+        link = "https://wbg.angouri.org/media/yyyy-mm-dd.html" }
+
     { lang = EN; tags = [ "web"; "F#" ]; title = "Create static website yourself. No 3rd party services";
         link = "https://dev.to/whiteblackgoose/create-static-website-yourself-no-3rd-party-services-1314" }
 
