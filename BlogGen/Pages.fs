@@ -55,6 +55,7 @@ let pages : PageInfo list = [
                     Text "Filters: "
                     a [_href "./en"] [ Text "en" ]; Text ", "
                     a [_href "./ru"] [ Text "ru" ]; Text ", "
+                    a [_href "./best"] [ Text "Best" ]
                     a [_href "./csharp"] [ Text "C#" ]; Text ", "
                     a [_href "./fsharp"] [ Text "F#" ]; Text ", "
                     a [_href "./perf"] [ Text "Performance" ]
@@ -123,6 +124,19 @@ let pages : PageInfo list = [
             description = [
                 p [] [
                     Text "Articles in English"
+                ]
+                back
+            ]
+        }
+    }
+    {
+        name = "best"
+        page = FilterPage {
+            title = "My best articles"
+            articleFilter = (fun { tags = tags } -> List.contains "best" tags)
+            description = [
+                p [] [
+                    Text "Out of all mine, these articles in my opinion deserve the most attention"
                 ]
                 back
             ]
