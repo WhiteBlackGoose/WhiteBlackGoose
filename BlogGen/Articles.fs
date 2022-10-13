@@ -10,7 +10,7 @@ type Article = {
 }
 
 let articles = [
-    { lang = EN; tags = [ "cybersecurity"; "linux" ]; title = "Cheatshit on configuring fully FOSS highly secure pass with sync-ing";
+    { lang = EN; tags = [ "cybersecurity"; "linux" ]; title = "Cheatsheet on configuring fully FOSS highly secure pass with sync-ing";
         link = "https://gist.github.com/WhiteBlackGoose/8ffb7123b991dcc4cdafcdd574bdc3c6" }
 
     { lang = EN; tags = [ "life" ]; title = "Why YYYY-MM-DD is the best date format?";
