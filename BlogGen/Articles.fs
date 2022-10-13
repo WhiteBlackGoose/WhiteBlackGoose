@@ -26,31 +26,31 @@ let articles = [
     { lang = EN; date = "2022-05-28"; tags = [ "python"; "investing" ]; title = "20 Random Stocks Investment Strategy";
         link = "https://wbg.angouri.org/media/20_random_stocks.html" }
 
-    { lang = EN; date = "2022-02-22"; tags = [ "recursion" ]; title = "Don’t underestimate Recursion: it’s far more powerful, than most people think";
+    { lang = EN; date = "2022-02-22"; tags = [ "best"; "recursion" ]; title = "Don’t underestimate Recursion: it’s far more powerful, than most people think";
         link = "https://whiteblackgoose.medium.com/dont-underestimate-recursion-it-s-far-more-powerful-than-most-people-think-130a1077f3a6" }
 
-    { lang = EN; date = "2022-02-06"; tags = [ "F#"; "asm"; "perf" ];  title = "Inline Assembly in F#! How does it work?";
+    { lang = EN; date = "2022-02-06"; tags = [ "best"; "F#"; "asm"; "perf" ];  title = "Inline Assembly in F#! How does it work?";
         link = "https://blog.devgenius.io/inline-assembly-in-f-net-language-6d70ab9f58c1" }
 
-    { lang = EN; date = "2022-01-31"; tags = [ "C#"; "perf" ];         title = "This is how Variadic Arguments could work in C#";
+    { lang = EN; date = "2022-01-31"; tags = [ "best"; "C#"; "perf" ];         title = "This is how Variadic Arguments could work in C#";
         link = "https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" }
     
-    { lang = RU; date = "2022-01-30"; tags = [ "C#"; "perf" ];   title = "Как LINQ, только быстрый и без аллокаций";
+    { lang = RU; date = "2022-01-30"; tags = [ "best"; "C#"; "perf" ];   title = "Как LINQ, только быстрый и без аллокаций";
         link = "https://habr.com/ru/post/648529";  }
     
-    { lang = EN; date = "2022-01-03"; tags = [ "C#"; "perf" ];         title = "Like Regular LINQ, but Faster and Without Allocations: Is It Possible?";
+    { lang = EN; date = "2022-01-03"; tags = [ "best"; "C#"; "perf" ];         title = "Like Regular LINQ, but Faster and Without Allocations: Is It Possible?";
         link = "https://whiteblackgoose.medium.com/3d4724632e2a" }
     
-    { lang = RU; date = "2021-12-23"; tags = [ "C#"; "F#" ];   title = "Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET";
+    { lang = RU; date = "2021-12-23"; tags = [ "best"; "C#"; "F#" ];   title = "Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET";
         link = "https://habr.com/ru/post/597437/" }
     
-    { lang = EN; date = "2021-12-22"; tags = [ "C#"; "F#" ];   title = "Stay safe with your units! Advanced units of measure in .NET.";
+    { lang = EN; date = "2021-12-22"; tags = [ "best"; "C#"; "F#" ];   title = "Stay safe with your units! Advanced units of measure in .NET.";
         link = "https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" }
     
-    { lang = EN; date = "2021-09-02"; tags = [ "C#"; "perf" ]; title = "Making loop \"foreach\" as fast as \"for\"";
+    { lang = EN; date = "2021-09-02"; tags = [ "best"; "C#"; "perf" ]; title = "Making loop \"foreach\" as fast as \"for\"";
         link = "https://habr.com/en/post/575916/" }
     
-    { lang = RU; date = "2021-09-01"; tags = [ "C#"; "perf" ]; title = "Ускоряем цикл foreach до for";
+    { lang = RU; date = "2021-09-01"; tags = [ "best"; "C#"; "perf" ]; title = "Ускоряем цикл foreach до for";
         link = "https://habr.com/ru/post/575664/" }
     
     { lang = RU; date = "2021-07-05"; tags = [ "C#"; "wasm" ]; title = "Хостим WASM-приложения на github pages в два клика";
@@ -59,7 +59,7 @@ let articles = [
     { lang = EN; date = "2021-07-04"; tags = [ "C#"; "F#"; "math" ]; title = "AngouriMath 1.3 update";
         link = "https://habr.com/en/post/565996/" }
         
-    { lang = EN; date = "2021-03-14"; tags = [ "C#" ]; title = "Compilation of symbolic expressions into Linq.Expression";
+    { lang = EN; date = "2021-03-14"; tags = [ "best"; "C#" ]; title = "Compilation of symbolic expressions into Linq.Expression";
         link = "https://habr.com/en/post/546926/" }
         
     { lang = RU; date = "2021-03-13"; tags = [ "C#" ]; title = "Компилируем математические выражения";
