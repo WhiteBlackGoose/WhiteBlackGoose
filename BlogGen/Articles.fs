@@ -7,50 +7,51 @@ type Article = {
     tags : string list
     link : string
     title : string
+    date : string
 }
 
 let articles = [
-    { lang = EN; tags = [ "cybersecurity"; "linux" ]; title = "Cheatsheet on configuring fully FOSS highly secure pass with sync-ing";
+    { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "linux" ]; title = "Cheatsheet on configuring fully FOSS highly secure pass with sync-ing";
         link = "https://gist.github.com/WhiteBlackGoose/8ffb7123b991dcc4cdafcdd574bdc3c6" }
 
-    { lang = EN; tags = [ "life" ]; title = "Why YYYY-MM-DD is the best date format?";
+    { lang = EN; date = "2022-10-10"; tags = [ "life" ]; title = "Why YYYY-MM-DD is the best date format?";
         link = "https://wbg.angouri.org/media/yyyy-mm-dd.html" }
 
-    { lang = EN; tags = [ "web"; "F#" ]; title = "Create static website yourself. No 3rd party services";
+    { lang = EN; date = "2022-07-20"; tags = [ "web"; "F#" ]; title = "Create static website yourself. No 3rd party services";
         link = "https://dev.to/whiteblackgoose/create-static-website-yourself-no-3rd-party-services-1314" }
 
-    { lang = EN; tags = [ "politics"; "philosophy" ]; title = "What the World could be Like";
+    { lang = EN; date = "2022-06-02"; tags = [ "politics"; "philosophy" ]; title = "What the World could be Like";
         link = "https://wbg.angouri.org/media/eqty.html" }
 
-    { lang = EN; tags = [ "python"; "investing" ]; title = "20 Random Stocks Investment Strategy";
+    { lang = EN; date = "2022-05-28"; tags = [ "python"; "investing" ]; title = "20 Random Stocks Investment Strategy";
         link = "https://wbg.angouri.org/media/20_random_stocks.html" }
 
-    { lang = EN; tags = [ "recursion" ]; title = "Don’t underestimate Recursion: it’s far more powerful, than most people think";
+    { lang = EN; date = "2022-02-22"; tags = [ "recursion" ]; title = "Don’t underestimate Recursion: it’s far more powerful, than most people think";
         link = "https://whiteblackgoose.medium.com/dont-underestimate-recursion-it-s-far-more-powerful-than-most-people-think-130a1077f3a6" }
 
-    { lang = EN; tags = [ "F#"; "asm"; "perf" ];  title = "Inline Assembly in F#! How does it work?";
+    { lang = EN; date = "2022-02-06"; tags = [ "F#"; "asm"; "perf" ];  title = "Inline Assembly in F#! How does it work?";
         link = "https://blog.devgenius.io/inline-assembly-in-f-net-language-6d70ab9f58c1" }
 
-    { lang = EN; tags = [ "C#"; "perf" ];         title = "This is how Variadic Arguments could work in C#";
+    { lang = EN; date = "2022-01-31"; tags = [ "C#"; "perf" ];         title = "This is how Variadic Arguments could work in C#";
         link = "https://whiteblackgoose.medium.com/this-is-how-variadic-arguments-could-work-in-c-e2034a9c241" }
     
-    { lang = RU; tags = [ "C#"; "perf" ];   title = "Как LINQ, только быстрый и без аллокаций";
+    { lang = RU; date = "2022-01-30"; tags = [ "C#"; "perf" ];   title = "Как LINQ, только быстрый и без аллокаций";
         link = "https://habr.com/ru/post/648529";  }
     
-    { lang = EN; tags = [ "C#"; "perf" ];         title = "Like Regular LINQ, but Faster and Without Allocations: Is It Possible?";
+    { lang = EN; date = "2022-01-03"; tags = [ "C#"; "perf" ];         title = "Like Regular LINQ, but Faster and Without Allocations: Is It Possible?";
         link = "https://whiteblackgoose.medium.com/3d4724632e2a" }
     
-    { lang = RU; tags = [ "C#"; "F#" ];   title = "Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET";
+    { lang = RU; date = "2022-12-23"; tags = [ "C#"; "F#" ];   title = "Очень типобезопасно! Концепт продвинутой расширяемой системы единиц измерения с generic math для .NET";
         link = "https://habr.com/ru/post/597437/" }
     
-    { lang = EN; tags = [ "C#"; "F#" ];   title = "Stay safe with your units! Advanced units of measure in .NET.";
+    { lang = EN; date = "2022-12-22"; tags = [ "C#"; "F#" ];   title = "Stay safe with your units! Advanced units of measure in .NET.";
         link = "https://whiteblackgoose.medium.com/stay-safe-with-your-units-advanced-units-of-measure-in-net-f7d8b02af87e" }
     
-    { lang = RU; tags = [ "C#"; "perf" ]; title = "Ускоряем цикл foreach до for";
-        link = "https://habr.com/ru/post/575664/" }
-    
-    { lang = EN; tags = [ "C#"; "perf" ]; title = "Making loop \"foreach\" as fast as \"for\"";
+    { lang = EN; date = "2022-09-02"; tags = [ "C#"; "perf" ]; title = "Making loop \"foreach\" as fast as \"for\"";
         link = "https://habr.com/en/post/575916/" }
+    
+    { lang = RU; date = "2022-09-01"; tags = [ "C#"; "perf" ]; title = "Ускоряем цикл foreach до for";
+        link = "https://habr.com/ru/post/575664/" }
     
     { lang = RU; tags = [ "C#"; "wasm" ]; title = "Хостим WASM-приложения на github pages в два клика";
         link = "https://habr.com/ru/post/566286/" }
