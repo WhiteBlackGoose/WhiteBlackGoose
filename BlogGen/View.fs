@@ -104,10 +104,11 @@ let genPage = function
                         h1 [] [ Text "Blog of WhiteBlackGoose" ]
                         span [] description
                     ]
-                    for { tags = tags; title = title; link = link } in articles |> Seq.filter articleFilter do
+                    for { tags = tags; title = title; link = link; date = date } in articles |> Seq.filter articleFilter do
                         div [_class "card"] [
                             a [_href link] [img [_class "card_image"; _src (getPreviewImage link)]]
                             div [_class "card_title_container"] [
+                                span [_class "tags"] [ Text date ]
                                 a [_class "card_title"; _href link] [h3 [] [ Text title ]]
                                 span [_class "tags"] [
                                     Text "Tags: "
