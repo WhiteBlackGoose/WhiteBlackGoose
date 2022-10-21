@@ -217,6 +217,16 @@ Most notable ones in 🇷🇺:
 
 <hr>
 
+<details><summary><strong>🎓 Stack</strong> (click)</summary><p>
+
+Some things I'm learning, some things I know, some I just like.
+
+<img src="https://raw.githubusercontent.com/WhiteBlackGoose/WhiteBlackGoose/da3585124a9f0d585fedcec542570e38e016df4e/media/neovim.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/rust.svg?response-content-disposition=attachment%3Bfilename%3Drust.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/debian.svg?response-content-disposition=attachment%3Bfilename%3Ddebian.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/terminal.svg?response-content-disposition=attachment%3Bfilename%3Dterminal.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/c-sharp.svg?response-content-disposition=attachment%3Bfilename%3Dc-sharp.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/fsharp.svg?response-content-disposition=attachment%3Bfilename%3Dfsharp.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/dotnet.svg?response-content-disposition=attachment%3Bfilename%3Ddotnet.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/linux-tux.svg?response-content-disposition=attachment%3Bfilename%3Dlinux-tux.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/opensource.svg?response-content-disposition=attachment%3Bfilename%3Dopensource.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/visual-studio-code.svg?response-content-disposition=attachment%3Bfilename%3Dvisual-studio-code.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/git-icon.svg?response-content-disposition=attachment%3Bfilename%3Dgit-icon.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/github-icon.svg?response-content-disposition=attachment%3Bfilename%3Dgithub-icon.svg" width=60 height=60 />
+
+</p></details>
+
+<hr>
+
 #### You can
 - Checkout my [**twitter**](https://twitter.com/WhiteBlackGoose), [**github**](https://github.com/WhiteBlackGoose), [**blog**](https://wbg.angouri.org/blog).
 - ~~Support me on <a href="https://patreon.com/WhiteBlackGoose">**Patreon**</a>.~~
