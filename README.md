@@ -13,7 +13,7 @@
 
 I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**, to be precise, **C#** and **F#**, trying to make .NET greater and more suitable for scientific purposes. I've been into this area for **2** years.
 
-I'm a member of <a href="https://angouri.org">**Angouri**</a>, <a href="http://dotnetfoundation.org">**.NET Foundation**</a>, and <a href="https://www.fsf.org">Free Software Foundation</a>, and author of [**AngouriMath**](http://github.com/asc-community/AngouriMath). See all my contributions in the next expanders.
+I'm a member of <a href="https://angouri.org">**Angouri**</a>, <a href="http://dotnetfoundation.org">**.NET Foundation**</a>, and <a href="https://www.fsf.org">**Free Software Foundation**</a>, and author of [**AngouriMath**](http://github.com/asc-community/AngouriMath). See all my contributions in the next expanders.
 
 <hr>
 
