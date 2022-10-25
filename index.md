@@ -244,7 +244,7 @@ Some things I'm learning, some things I know, some I just like.
 #### You can
 - Checkout my [**twitter**](https://twitter.com/WhiteBlackGoose), [**github**](https://github.com/WhiteBlackGoose), [**blog**](https://wbg.angouri.org/blog).
 - ~~Support me on <a href="https://patreon.com/WhiteBlackGoose">**Patreon**</a>.~~
-- Contact me via e-mail (wbg@angouri.org) or Telegram (the same username as that on GH).
+- Contact me via e-mail (wbg@angouri.org, wbg@member.fsf.org) or Telegram (the same username as that on GH).
 
 *This text is mirrored to a personal [web-page](https://wbg.angouri.org).*
 <style>
