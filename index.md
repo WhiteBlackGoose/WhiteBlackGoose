@@ -8,7 +8,7 @@
 *Peace is key*
 
 [![Personal page](https://img.shields.io/static/v1?label=personal+page&message=%2F&color=yellow&style=flat-square)](https://wbg.angouri.org)
-[![Blog](https://img.shields.io/static/v1?label=blog&message=%2Fblog&color=yellow&style=flat-square)](https://wbg.angouri.org)
+[![Blog](https://img.shields.io/static/v1?label=blog&message=%2Fblog&color=yellow&style=flat-square)](https://wbg.angouri.org/blog)
 
 ## Hi there. I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
 
