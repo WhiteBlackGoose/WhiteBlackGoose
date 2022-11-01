@@ -7,11 +7,12 @@
 
 *Peace is key*
 
-[![996.icu](https://img.shields.io/static/v1?label=996&message=ICU&color=red&style=flat-square)](https://996.icu)
+[![Personal page](https://img.shields.io/static/v1?label=personal+page&message=%2F&color=yellow&style=flat-square)](https://wbg.angouri.org)
+[![Blog](https://img.shields.io/static/v1?label=blog&message=%2Fblog&color=yellow&style=flat-square)](https://wbg.angouri.org)
 
 ## Hi there. I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
 
-I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**, to be precise, **C#** and **F#**, trying to make .NET greater and more suitable for scientific purposes. I've been into this area for **2** years.
+~~I work on **FOSS** (Free Open Source Software) projects in the area of **.NET**, to be precise, **C#** and **F#**, trying to make .NET greater and more suitable for scientific purposes. I've been into this area for **2** years.~~ Having a break as of right now.
 
 I'm a member of <a href="https://angouri.org">**Angouri**</a>, <a href="http://dotnetfoundation.org">**.NET Foundation**</a>, and <a href="https://www.fsf.org">**Free Software Foundation**</a>, and author of [**AngouriMath**](http://github.com/asc-community/AngouriMath). See all my contributions in the next expanders.
 
