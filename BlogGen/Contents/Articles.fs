@@ -2,7 +2,7 @@ module Articles
 
 type Lang = EN | RU
 
-type Article = {
+type ArticleTile = {
     lang : Lang
     tags : string list
     link : string

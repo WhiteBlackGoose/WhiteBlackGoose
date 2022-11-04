@@ -4,6 +4,7 @@ open Articles
 open Pages
 
 Directory.CreateDirectory "blog" |> ignore
+Directory.CreateDirectory "projects" |> ignore
 
 let rootPath = "./blog"
 

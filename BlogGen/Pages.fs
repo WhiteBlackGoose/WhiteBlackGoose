@@ -3,8 +3,12 @@ module Pages
 open Articles
 open Giraffe.ViewEngine
 
+type ContentType =
+    | Article ArticleTile
+    | Project ProjectTile
+
 type FilterPage = {
-    articleFilter : Article -> bool
+    articleFilter : ContentType -> bool
     description : XmlNode list
     title : string
 }
