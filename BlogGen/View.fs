@@ -104,7 +104,7 @@ let octiButton url actionVerb action oci =
         _data "aria-label" $"{actionVerb} {url} on github"
     ] [ Text actionVerb ]
 
-let genPage = function
+let genPage contents = function
     | FilterPage { contentFilter = contentFilter; description = description; title = pageTitle } ->
         html [] [
             title [] [ Text pageTitle ]

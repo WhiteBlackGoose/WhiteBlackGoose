@@ -6,6 +6,10 @@ open Pages
 Directory.CreateDirectory "blog" |> ignore
 Directory.CreateDirectory "projects" |> ignore
 
+let contents =
+    List.concat (articles :> List<IDated>) (projects :> List<IDated>)
+    |> List.sort (fun d -> d.date)
+
 let rootPath = "./blog"
 
 for { page = page; name = name } in pages do

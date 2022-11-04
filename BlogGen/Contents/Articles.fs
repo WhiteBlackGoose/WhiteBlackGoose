@@ -9,6 +9,7 @@ type ArticleTile = {
     title : string
     date : string
 }
+    interface IDated
 
 let articles = [
     { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "linux" ]; title = "Cheatsheet on configuring fully FOSS highly secure pass with sync-ing";

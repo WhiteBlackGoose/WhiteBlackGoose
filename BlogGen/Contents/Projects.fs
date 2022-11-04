@@ -8,6 +8,7 @@ type ProjectTile = {
     lang : ProgrammingLanguage
     date : string
 }
+    interface IDated
 
 let projects = {
     { name = "CodegenAnalysis"; url = "https://github.com/WhiteBlackGoose/CodegenAnalysis"
