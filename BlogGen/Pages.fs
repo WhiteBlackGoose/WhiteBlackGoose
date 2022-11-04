@@ -3,12 +3,12 @@ module Pages
 open Articles
 open Giraffe.ViewEngine
 
-type ContentType =
+type Content =
     | Article ArticleTile
     | Project ProjectTile
 
 type FilterPage = {
-    articleFilter : ContentType -> bool
+    contentFilter : ContentType -> bool
     description : XmlNode list
     title : string
 }
@@ -28,6 +28,17 @@ type PageInfo = {
 }
 
 let back = a [_href ".."] [ Text "🏠 Home" ]
+
+let filterArticle func = function
+    | Article art -> func art
+    | _ -> false
+
+let filterArticleByTag tag =
+    filterArticle (fun { tags = tags } -> List.contains tag tags)
+
+let filterArticleByLang langr =
+    filterArticle (fun { lang = lang } -> lang == langr)
+
 
 let pages : PageInfo list = [
     {
@@ -72,7 +83,7 @@ let pages : PageInfo list = [
         name = "csharp"
         page = FilterPage {
             title = "Articles about C#"
-            articleFilter = (fun { tags = tags } -> List.contains "C#" tags)
+            articleFilter = filterArticleByTag "C#"
             description = [
                 p [] [ Text "C# is the first programming language I learned well." ]
                 back
@@ -83,7 +94,7 @@ let pages : PageInfo list = [
         name = "fsharp"
         page = FilterPage {
             title = "Articles about F#"
-            articleFilter = (fun { tags = tags } -> List.contains "F#" tags)
+            articleFilter = filterArticleByTag "F#"
             description = [
                 p [] [
                     Text "I started doing awesome language F# thanks to" 
@@ -98,7 +109,7 @@ let pages : PageInfo list = [
         name = "perf"
         page = FilterPage {
             title = "Performance-related articles"
-            articleFilter = (fun { tags = tags } -> List.contains "perf" tags)
+            articleFilter = filterArticleByTag "perf"
             description = [
                 p [] [
                     Text "These articles are related to performance/efficiency of the code"
@@ -111,7 +122,7 @@ let pages : PageInfo list = [
         name = "ru"
         page = FilterPage {
             title = "Статьи на русском"
-            articleFilter = (fun { lang = lang } -> match lang with RU -> true | EN -> false)
+            articleFilter = filterArticleByLang RU
             description = [
                 p [] [
                     Text "Статьи на русском."
@@ -124,7 +135,7 @@ let pages : PageInfo list = [
         name = "en"
         page = FilterPage {
             title = "Articles in English"
-            articleFilter = (fun { lang = lang } -> match lang with RU -> false | EN -> true)
+            articleFilter = filterArticleByLang EN
             description = [
                 p [] [
                     Text "Articles in English"
@@ -137,7 +148,7 @@ let pages : PageInfo list = [
         name = "best"
         page = FilterPage {
             title = "My best articles"
-            articleFilter = (fun { tags = tags } -> List.contains "best" tags)
+            articleFilter = filterArticleByTag "best"
             description = [
                 p [] [
                     Text "Out of all mine, these articles in my opinion deserve the most attention"
