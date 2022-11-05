@@ -1,11 +1,12 @@
 module Pages
 
 open Articles
+open Projects
 open Giraffe.ViewEngine
 
 type Content =
-    | Article ArticleTile
-    | Project ProjectTile
+    | Article of ArticleTile
+    | Project of ProjectTile
 
 type FilterPage = {
     contentFilter : ContentType -> bool

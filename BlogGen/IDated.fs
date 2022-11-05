@@ -1,2 +1,2 @@
 type IDated =
-    abstract date: unit -> string
+    abstract date: string
