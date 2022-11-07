@@ -8,6 +8,7 @@
   <ItemGroup>
     <Compile Include="Css.fs" />
     <Compile Include="PreviewImage.fs" />
+    <Compile Include="IDated.fs" />
     <Compile Include="./Contents/Articles.fs" />
     <Compile Include="./Contents/Projects.fs" />
     <Compile Include="Pages.fs" />

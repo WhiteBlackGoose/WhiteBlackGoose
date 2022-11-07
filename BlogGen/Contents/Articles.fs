@@ -8,7 +8,7 @@ type ArticleTile =
       link : string
       title : string
       date : string }
-    interface IDated with
+    interface Wbg.IDated with
         member self.date = self.date
 
 let articles = [

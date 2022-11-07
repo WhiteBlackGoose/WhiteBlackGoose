@@ -7,10 +7,10 @@ type ProjectTile =
       url : string
       lang : ProgrammingLanguage
       date : string }
-    interface IDated with
+    interface Wbg.IDated with
         member self.date = self.date
 
-let projects = {
-    { name = "CodegenAnalysis"; url = "https://github.com/WhiteBlackGoose/CodegenAnalysis"
+let projects = [
+    { name = "CodegenAnalysis"; url = "https://github.com/WhiteBlackGoose/CodegenAnalysis";
     lang = CSharp; date = "2022-08-19" }
-}
+]
