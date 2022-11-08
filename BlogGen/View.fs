@@ -97,7 +97,7 @@ let commonHead font =
 let octiButton url actionVerb action oci = 
     a [
         _class "github-button"
-        _href $"url/{action}"
+        _href $"{url}/{action}"
         _data "color-scheme" "no-preference: dark; light: light; dark: dark;"
         _data "icon" $"icon-{oci}"
         _data "size" "large"
