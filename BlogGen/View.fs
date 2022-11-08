@@ -130,15 +130,17 @@ let genPage contents = function
                                     ]
                                 ]
                             ]   
-                        | Project { name = name; url = url; lang = lang; date = date; } ->
+                        | Project { name = name; url = url; langs = langs; date = date; } ->
                             div [_class "card"] [
                                 a [_href url] [img [_class "card_image"; _src (getPreviewImage url)]]
                                 div [_class "card_title_container"] [
                                     span [_class "tags"] [ Text date ]
                                     a [_class "card_title"; _href url] [h3 [] [ Text name ]]
-                                    span [] [
+                                    div [_style "text-align: center;"] [
                                         octiButton url "Star" "" "star"
+                                        Text "\n"
                                         octiButton url "Watch" "subscription" "eye"
+                                        Text "\n"
                                         octiButton url "Fork" "fork" "forked"
                                     ]
                                 ]
