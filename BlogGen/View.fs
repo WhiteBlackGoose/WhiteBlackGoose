@@ -113,7 +113,7 @@ let genPage contents = function
             body [] [
                 div [_class "cards"] [
                     div [inplaceStyle ["padding", "20px"]] [
-                        h1 [] [ Text "Blog of WhiteBlackGoose" ]
+                        h1 [] [ Text "WhiteBlackGoose webpage" ]
                         span [] description
                     ]
                     for content in contents |> Seq.filter contentFilter do
@@ -134,7 +134,34 @@ let genPage contents = function
                             div [_class "card"] [
                                 a [_href url] [img [_class "card_image"; _src (getPreviewImage url)]]
                                 div [_class "card_title_container"] [
-                                    span [_class "tags"] [ Text date ]
+                                    span [_class "tags"] [ 
+                                        Text date
+                                        Text " "
+                                        for lang in langs do
+                                            let (color, name) =
+                                                match lang with
+                                                | Projects.ProgrammingLanguage.CSharp -> ("#178600", "C#")
+                                                | Projects.ProgrammingLanguage.FSharp -> ("#b845fc", "F#")
+                                                | Projects.ProgrammingLanguage.FStar  -> ("#572e30", "F*")
+                                                | Projects.ProgrammingLanguage.Bash   -> ("#89e051", "Sh")
+                                                | Projects.ProgrammingLanguage.Rust   -> ("#dea584", "Rs")
+                                            span [
+                                                _style $"""
+                                                background-color: {color};
+                                                position: relative;
+                                                top: 1px;
+                                                display: inline-block;
+                                                width: 12px;
+                                                height: 12px;
+                                                border: 1px solid var(--color-primer-border-contrast);
+                                                border-radius: 50%%;
+                                                """
+                                            ] []
+                                            Text " "
+                                            Text name
+                                            Text " "
+                                            
+                                    ]
                                     a [_class "card_title"; _href url] [h3 [] [ Text name ]]
                                     div [_style "text-align: center;"] [
                                         octiButton url "Star" "" "star"

@@ -242,3 +242,33 @@ let projectPages : PageInfo list = [
         }
     }
 ]
+
+let allPage =
+    {
+        name = "."
+        page = FilterPage {
+            title = "Projects & articles"
+            contentFilter = (fun _ -> true)
+            description = [
+                p [] [ Text """
+                    Hi. I'm WhiteBlackGoose. Here's a list of articles and projects.
+                    """ ]
+                p [] [
+                    Text $"""With the same username you can find me on """
+                    a [_href "https://github.com/WhiteBlackGoose"] [ Text "github" ]
+                    Text ", "
+                    a [_href "https://twitter.com/WhiteBlackGoose"] [ Text "twitter" ]
+                    Text ", "
+                    a [_href "https://whiteblackgoose.medium.com"]  [ Text "medium" ]
+                    Text ", "
+                    a [_href "https://reddit.com/u/WhiteBlackGoose"] [ Text "reddit" ]
+                    Text "."
+                ]
+                p [] [ 
+                    Text "This website is made via F#'s "
+                    a [_href "https://github.com/giraffe-fsharp/Giraffe.ViewEngine"] [ Text "Giraffe.ViewEngine" ]
+                    Text "."
+                ]
+            ]
+        }
+    }
