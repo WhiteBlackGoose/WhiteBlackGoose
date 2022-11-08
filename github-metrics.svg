@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1291" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1217" class="">
     <defs>
         <style/>
     </defs>
@@ -19,7 +19,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            4708 Commits
+                            4711 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -141,7 +141,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                     </svg>
-                                    322 Stargazers
+                                    323 Stargazers
                                 </div>
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -337,6 +337,62 @@
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 1 commit in
+                                        <span class="repo">WhiteBlackGoose/WhiteBlackGoose</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">adding-projects</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#764c34e</div>
+                                        <div class="message">wip</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 1 commit in
+                                        <span class="repo">WhiteBlackGoose/nix-utils</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">master</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#682cbce</div>
+                                        <div class="message">upd</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Created new
+                      branch
+                                        <span class="code">master</span>
+                                        in
+                                        <span class="repo">WhiteBlackGoose/nix-utils</span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
                                     </svg>
                                     <div class="content">
@@ -363,64 +419,6 @@
                                     <div class="comment">
                                         Thanks!
                                         <img class="gemoji" src="data:image/png;base64,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" height="16" width="16" alt="" />
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Commented on
-                                        <span class="issue">#2227 [BUG] Multi-key encryption does not work, if the keys have the same email</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened by WhiteBlackGoose in <span class="repo">android-password-store/Android-Password-Store</span></div>
-                                    <div class="comment">Workaround 1: create another key with a unique email and export public key to your phone
-Workaround 2: create another key with a unique email, but without exporting: then OpenKeyChain will be confused about list of recepients and you will be able to check all recepients</div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Pushed 1 commit in
-                                        <span class="repo">WhiteBlackGoose/WhiteBlackGoose</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>on branch <span class="code">adding-projects</span></div>
-                                    <div class="commit">
-                                        <div class="sha">#fedc03c</div>
-                                        <div class="message">wip</div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Pushed 1 commit in
-                                        <span class="repo">WhiteBlackGoose/pass-check-health</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>on branch <span class="code">master</span></div>
-                                    <div class="commit">
-                                        <div class="sha">#e9d3eaf</div>
-                                        <div class="message">minor</div>
                                     </div>
                                 </div>
                             </section>
@@ -480,7 +478,7 @@ Workaround 2: create another key with a unique email, but without exporting: the
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="0.8062970568104078 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="0.8487337440109548 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -595,7 +593,7 @@ Workaround 2: create another key with a unique email, but without exporting: the
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="93.46733668341707 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="92.68844221105527 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g transform="translate(4 4)" stroke-width="2" fill="none" fill-rule="evenodd">
@@ -632,9 +630,9 @@ Workaround 2: create another key with a unique email, but without exporting: the
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Influencer
-                                    <span class="gh">ranked 61.4k out of 101m users</span>
+                                    <span class="gh">ranked 62.1k out of 101m users</span>
                                 </div>
-                                <div class="text">Followed by 121 users</div>
+                                <div class="text">Followed by 120 users</div>
                             </div>
                         </div>
                         <div class="achievement c largeable-width-half">
