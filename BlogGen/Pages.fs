@@ -7,6 +7,10 @@ open Giraffe.ViewEngine
 type Content =
     | Article of ArticleTile
     | Project of ProjectTile
+    
+let dateOfContent = function
+    | Article a -> a.date
+    | Project p -> p.date 
 
 type FilterPage = {
     contentFilter : Content -> bool
@@ -38,14 +42,14 @@ let filterArticleByTag tag =
     filterArticle (fun { tags = tags } -> List.contains tag tags)
 
 let filterArticleByLang langr =
-    filterArticle (fun { lang = lang } -> lang == langr)
+    filterArticle (fun { lang = lang } -> lang = langr)
 
 let filterProject func = function
     | Project prj -> func prj
     | _ -> false
 
 let filterProjectByLang langr =
-    filterProject (fun { lang = lang } -> lang == langr)
+    filterProject (fun { lang = lang } -> lang = langr)
 
 
 let articlePages : PageInfo list = [
@@ -176,7 +180,7 @@ let articlePages : PageInfo list = [
     }
 ]
 
-let projectPages = [
+let projectPages : PageInfo list = [
     {
         name = "."
         page = FilterPage {

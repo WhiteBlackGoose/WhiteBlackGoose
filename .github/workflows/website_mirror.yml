@@ -46,6 +46,7 @@ jobs:
       run: |
         mv README.md index.md
         mv BlogGen/blog blog
+        mv BlogGen/projects projects
       
     - uses: JamesIves/github-pages-deploy-action@4.1.4
       name: gh-pages publish

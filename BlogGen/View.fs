@@ -131,7 +131,7 @@ let genPage contents = function
                             ]   
                         | Project { name = name; url = url; lang = lang; date = date; } ->
                             div [_class "card"] [
-                                a [_href link] [img [_class "card_image"; _src (getPreviewImage url)]]
+                                a [_href url] [img [_class "card_image"; _src (getPreviewImage url)]]
                                 div [_class "card_title_container"] [
                                     span [_class "tags"] [ Text date ]
                                     a [_class "card_title"; _href url] [h3 [] [ Text name ]]
