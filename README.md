@@ -9,8 +9,8 @@
 
 [![Personal page](https://img.shields.io/static/v1?label=personal+page&message=%2F&color=yellow&style=flat-square)](https://wbg.angouri.org)
 [![Blog](https://img.shields.io/static/v1?label=blog&message=%2Fblog&color=yellow&style=flat-square)](https://wbg.angouri.org/blog)
-[![Projects](https://img.shields.io/static/v1?label=projects&message=%2Fblog&color=yellow&style=flat-square)](https://wbg.angouri.org/projects)
-[![All](https://img.shields.io/static/v1?label=all&message=%2Fblog&color=yellow&style=flat-square)](https://wbg.angouri.org/all)
+[![Projects](https://img.shields.io/static/v1?label=projects&message=%2Fprojects&color=yellow&style=flat-square)](https://wbg.angouri.org/projects)
+[![All](https://img.shields.io/static/v1?label=all&message=%2Fall&color=yellow&style=flat-square)](https://wbg.angouri.org/all)
 
 ## Hi there. I'm [**WhiteBlackGoose**](https://github.com/WhiteBlackGoose).
 
