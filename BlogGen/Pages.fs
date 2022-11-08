@@ -49,7 +49,7 @@ let filterProject func = function
     | _ -> false
 
 let filterProjectByLang langr =
-    filterProject (fun { lang = lang } -> lang = langr)
+    filterProject (fun { langs = langs } -> List.contains langr langs)
 
 
 let articlePages : PageInfo list = [
