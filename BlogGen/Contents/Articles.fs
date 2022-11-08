@@ -2,13 +2,14 @@ module Articles
 
 type Lang = EN | RU
 
-type Article = {
-    lang : Lang
-    tags : string list
-    link : string
-    title : string
-    date : string
-}
+type ArticleTile = 
+    { lang : Lang
+      tags : string list
+      link : string
+      title : string
+      date : string }
+    interface Wbg.IDated with
+        member self.date = self.date
 
 let articles = [
     { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "linux" ]; title = "Cheatsheet on configuring fully FOSS highly secure pass with sync-ing";
