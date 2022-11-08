@@ -93,8 +93,19 @@ let commonHead font =
         ]
     ]
 
-let genPage = function
-    | FilterPage { articleFilter = articleFilter; description = description; title = pageTitle } ->
+let octiButton url actionVerb action oci = 
+    a [
+        _class "github-button"
+        _href $"url/{action}"
+        _data "color-scheme" "no-preference: dark; light: light; dark: dark;"
+        _data "icon" $"icon-{oci}"
+        _data "size" "large"
+        _data "show-count" "true"
+        _data "aria-label" $"{actionVerb} {url} on github"
+    ] [ Text actionVerb ]
+
+let genPage contents = function
+    | FilterPage { contentFilter = contentFilter; description = description; title = pageTitle } ->
         html [] [
             title [] [ Text pageTitle ]
             commonHead "Ubuntu Mono"
@@ -104,18 +115,33 @@ let genPage = function
                         h1 [] [ Text "Blog of WhiteBlackGoose" ]
                         span [] description
                     ]
-                    for { tags = tags; title = title; link = link; date = date } in articles |> Seq.filter articleFilter do
-                        div [_class "card"] [
-                            a [_href link] [img [_class "card_image"; _src (getPreviewImage link)]]
-                            div [_class "card_title_container"] [
-                                span [_class "tags"] [ Text date ]
-                                a [_class "card_title"; _href link] [h3 [] [ Text title ]]
-                                span [_class "tags"] [
-                                    Text "Tags: "
-                                    Text (tags |> String.concat ", ")
+                    for content in contents |> Seq.filter contentFilter do
+                        match content with
+                        | Article { tags = tags; title = title; link = link; date = date } ->
+                            div [_class "card"] [
+                                a [_href link] [img [_class "card_image"; _src (getPreviewImage link)]]
+                                div [_class "card_title_container"] [
+                                    span [_class "tags"] [ Text date ]
+                                    a [_class "card_title"; _href link] [h3 [] [ Text title ]]
+                                    span [_class "tags"] [
+                                        Text "Tags: "
+                                        Text (tags |> String.concat ", ")
+                                    ]
                                 ]
-                            ]
-                        ]   
+                            ]   
+                        | Project { name = name; url = url; lang = lang; date = date; } ->
+                            div [_class "card"] [
+                                a [_href url] [img [_class "card_image"; _src (getPreviewImage url)]]
+                                div [_class "card_title_container"] [
+                                    span [_class "tags"] [ Text date ]
+                                    a [_class "card_title"; _href url] [h3 [] [ Text name ]]
+                                    span [] [
+                                        octiButton url "Star" "" "star"
+                                        octiButton url "Watch" "subscription" "eye"
+                                        octiButton url "Fork" "fork" "forked"
+                                    ]
+                                ]
+                            ]   
                 ]
             ]
         ]
