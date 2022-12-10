@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1213" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1667" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;color:#777}h2,h3{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400}h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3,svg{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.no-wrap{white-space:nowrap}#metrics-end,.fill-width{width:100%}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.organization.avatar{border-radius:15%}.organization.name{white-space:nowrap}.organization.contributions{margin:0 8px;flex-wrap:wrap}.contribution.organization{display:flex;border:1px solid #959da5;border-radius:6px;padding:2px 6px 2px 0;margin:2px;font-size:12px;background-color:#959da520}.contribution.organization.s{color:#eb355e;background-color:#eb355e26;border-color:#eb355e}.contribution.organization.a{color:#d79533;background-color:#e7bd6926;border-color:#e7bd69}.contribution.organization.b{color:#9d8fff;background-color:#9e91ff26;border-color:#9e91ff}.contribution.organization.c{color:#58a6ff;background-color:#58a6ff26;border-color:#58a6ff}.contribution .gauge-arc,.contribution .gauge-base{stroke:currentColor;stroke-width:4}.contribution .gauge text{fill:currentColor;font-size:13px}.contribution .gauge{margin:0 6px;color:inherit;transform:scale(1.4) translateY(1px)}.contribution .icon{fill:currentColor;width:10px;height:10px;margin-left:-9px;margin-top:8px;color:inherit;filter:brightness(.5)}.contribution.organization .avatar{margin:0 4px}svg.bar{margin:4px 0}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.chartist .ct-post{fill:rgba(127,127,127,.8)!important;color:rgba(127,127,127,.8)!important;font-size:9px;text-anchor:middle}.gauge{stroke-linecap:round;fill:none}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.repository{display:flex;flex-direction:column;width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .commit .sha,.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,span.code{background-color:#7777771f;padding:1px 5px;font-size:80%;border-radius:6px;color:#777;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;margin:0 4px -3px}.activity .details{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .commit{display:flex;align-items:center}.activity .commit .sha,code{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .commit .sha{margin-right:4px}.activity .commit .message{overflow:hidden;text-overflow:ellipsis;width:360px;white-space:nowrap}.activity .details&gt;.comment{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-top:6px;border-left:3px solid #777777b2;padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.added{color:#3fb950}.field.license.details,.field.license.details small{display:flex;justify-content:space-between}.field.license.details small{color:#666;text-align:right}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement .gh{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}code{background-color:#7777771f;display:inline-block;border-radius:6px;color:#777;padding:1px 5px;font-size:80%}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}svg.large .largeable{width:474px}svg.large .largeable&gt;.row{width:100%}svg.large .column.largeable,svg.large .largeable-inline-flex,svg.large .row.largeable{display:inline-flex}svg.large .largeable-flex-wrap{display:flex;flex-wrap:wrap}svg.large .largeable-width-half{width:50%}h2,h3{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400}h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.field.warning{color:#d79533}.field.warning svg{fill:#d79533}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.no-wrap{white-space:nowrap}#metrics-end,.fill-width{width:100%}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.organization.avatar{border-radius:15%}.organization.name{white-space:nowrap}.organization.contributions{margin:0 8px;flex-wrap:wrap}.contribution.organization{display:flex;border:1px solid #959da5;border-radius:6px;padding:2px 6px 2px 0;margin:2px;font-size:12px;background-color:#959da520}.contribution.organization.s{color:#eb355e;background-color:#eb355e26;border-color:#eb355e}.contribution.organization.a{color:#d79533;background-color:#e7bd6926;border-color:#e7bd69}.contribution.organization.b{color:#9d8fff;background-color:#9e91ff26;border-color:#9e91ff}.contribution.organization.c{color:#58a6ff;background-color:#58a6ff26;border-color:#58a6ff}.contribution .gauge-arc,.contribution .gauge-base{stroke:currentColor;stroke-width:4}.contribution .gauge text{fill:currentColor;font-size:13px}.contribution .gauge{margin:0 6px;color:inherit;transform:scale(1.4) translateY(1px)}.contribution .icon{fill:currentColor;width:10px;height:10px;margin-left:-9px;margin-top:8px;color:inherit;filter:brightness(.5)}.contribution.organization .avatar{margin:0 4px}svg.bar{margin:4px 0}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.chartist .ct-post{fill:rgba(127,127,127,.8)!important;color:rgba(127,127,127,.8)!important;font-size:9px;text-anchor:middle}.gauge{stroke-linecap:round;fill:none}.gauge.high{color:#18b663}.gauge.average{color:#fb8c00}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.post{align-items:flex-start}.repository{display:flex;flex-direction:column;width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .commit .sha,.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,span.code{background-color:#7777771f;padding:1px 5px;font-size:80%;border-radius:6px;color:#777;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;margin:0 4px -3px}.activity .user{font-weight:600}.activity .details{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .commit{display:flex;align-items:center}.activity .commit .sha,code{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .commit .sha{margin-right:4px}.activity .commit .message{overflow:hidden;text-overflow:ellipsis;width:360px;white-space:nowrap}.activity .details&gt;.comment{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-top:6px;border-left:3px solid #777777b2;padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}svg.large .activity .field{max-width:900px}.added{color:#3fb950}.people{padding:0 10px}.people .avatar{margin:0 2px}.field.license.details,.field.license.details small{display:flex;justify-content:space-between}.field.license.details small{color:#666;text-align:right}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement .gh{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}code{background-color:#7777771f;display:inline-block;border-radius:6px;color:#777;padding:1px 5px;font-size:80%}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -19,7 +19,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            4888 Commits
+                            4891 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -44,7 +44,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
                             </svg>
-                            1108 issue comments
+                            1115 issue comments
                         </div>
                     </section>
                     <section>
@@ -127,7 +127,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V4.664a.25.25 0 00-.073-.177l-2.914-2.914a.25.25 0 00-.177-.073H2.75zM1 1.75C1 .784 1.784 0 2.75 0h7.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V1.75zm7 1.5a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0V7h-1.5a.75.75 0 010-1.5h1.5V4A.75.75 0 018 3.25zm-3 8a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75z"/>
                                     </svg>
-                                    0 added, 0 removed
+                                    3.20k added, 14 removed
                                 </div>
                             </section>
                             <section>
@@ -345,18 +345,240 @@
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
                                     </svg>
                                     <div class="content">
-                                        Pushed 1 commit in
-                                        <span class="repo">WhiteBlackGoose/dotfiles</span>
+                                        Commented on
+                                        <span class="issue">#21342 Follow-up to "Neovim built-in options survey"</span>
                                     </div>
                                 </div>
                                 <div class="details">
-                                    <div>on branch <span class="code">main</span></div>
+                                    <div>opened by echasnovski in <span class="repo">neovim/neovim</span></div>
+                                    <div class="comment">
+                                        Hey there, a bit of my input on this. I think this is a great survey, but I suspect quite a big bias here due to the selection of of the respondents.
+                                        <i>Possible sampling bias due survey procedure (user needed to download script, execute it, and post results), which might poorly represent not so tech-savvy users</i>
+                                        Not just that - people who take such serveys are already active &amp; involved users of nvim. The survey was posted on reddit, on a subreddit dedicated to neovim - it's a very specific audience, not representing your average nvim user. No way 59% of regular nvim users - or, honestly, even 20 - use relativenumber. (although I don't have any data to prove my suspicion).
+FWIW, last point I'd like to make, is that I think there are two kinds of people
+
+Those who use the default config or just have a couple of lines in it
+Those who extensively tweak nvim
+And imo, the first group is rather conservative, so they'd be annoyed by a sudden change of behaviour, while the second group can tweak it all either way, regarldess of the defaults.
+
+Again, I have no data, these are my thoughts
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 61 commits in
+                                        <span class="repo">WhiteBlackGoose/neovim-goose</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#f3cb403</div>
-                                        <div class="message">upd</div>
+                                        <div class="sha">#a069e88</div>
+                                        <div class="message">docs(lua): correct vim.spell.check example (#21311)</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#73ddb6d</div>
+                                        <div class="message">ci(news): fetch full history (#21312)
+
+We seem to need the parent commit of the earliest PR commit in order to
+perform common git functionality to check which files were changed.</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#9628348</div>
+                                        <div class="message">vim-patch:9.0.1017: test for srand() fails on MS-Windows (#21308)
+
+Problem:    Test for srand() fails on MS-Windows.
+Solution:   Do not expect the same result a second time.
+
+https://github.com/vim/vim/commit/9dacdb1d56ee0f9272f3fc956a12f15f84ffb205
+
+Co-authored-by: Bram Moolenaar &lt;Bram@vim.org&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#d82e56d</div>
+                                        <div class="message">vim-patch:8.2.1622: loop to handle keys for the command line is too long (#21307)
+
+Problem:    Loop to handle keys for the command line is too long.
+Solution:   Move code to functions. (Yegappan Lakshmanan, closes vim/vim#6880)
+
+https://github.com/vim/vim/commit/2f3cd2e4ec5617e3697ec4f4c6e1c9449061ad30
+
+Use the command line state as only argument instead.</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#6d7b94e</div>
+                                        <div class="message">vim-patch:8.2.4393: possible number overflow with nested folds (#21305)
+
+Problem:    Possible number overflow with nested folds.
+Solution:   Avoid a negative line number.
+
+https://github.com/vim/vim/commit/6b43471da4516e8f6c17e5dc2eccbb9d0ba2e0a4
+
+Co-authored-by: Bram Moolenaar &lt;Bram@vim.org&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#9a6f481</div>
+                                        <div class="message">version.c: update [skip ci] (#20958)
+
+Co-authored-by: marvim &lt;marvim@users.noreply.github.com&gt;
+
+N/A patches:
+vim-patch:8.1.0820: test for sending large data over channel sometimes fails
+vim-patch:8.1.1133: compiler warning for uninitialized struct member
+vim-patch:8.1.1699: highlight_ga can be local instead of global</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#5199c33</div>
+                                        <div class="message">vim-patch:9.0.1015: without /dev/urandom srand() seed is too predictable (#21303)
+
+Problem:    Without /dev/urandom srand() seed is too predictable.
+Solution:   Use micro seconds and XOR with process ID. (Yasuhiro Matsumoto,
+            closes vim/vim#11656)
+
+https://github.com/vim/vim/commit/f0a9c004825ab686270ee57260652cce25e61049
+
+Co-authored-by: Yasuhiro Matsumoto &lt;mattn.jp@gmail.com&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#54a1cc0</div>
+                                        <div class="message">Merge pull request #21302 from zeertzjq/vim-8.2.3193
+
+vim-patch:8.2.{3193,4204,4389},9.0.{1011,1016}: screenpos() fixes</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#52b3e8b</div>
+                                        <div class="message">vim-patch:9.0.1016: screenpos() does not count filler lines for diff mode
+
+Problem:    screenpos() does not count filler lines for diff mode.
+Solution:   Add filler lines. (closes 11658)
+
+https://github.com/vim/vim/commit/1cb16c3a20a9d17df1a8dc3813ef64dc98e42637
+
+Co-authored-by: Bram Moolenaar &lt;Bram@vim.org&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#0909d98</div>
+                                        <div class="message">vim-patch:9.0.1011: ml_get error when using screenpos()
+
+Problem:    ml_get error when using screenpos().
+Solution:   Give an error for the line number. (closes vim/vim#11661)
+
+https://github.com/vim/vim/commit/99d19438cabaf13074229d9a32e3a4af9ce98744
+
+Co-authored-by: Bram Moolenaar &lt;Bram@vim.org&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#10af054</div>
+                                        <div class="message">vim-patch:8.2.4389: screenpos() does not handle a position in a closed fold
+
+Problem:    screenpos() does not handle a position in a closed fold.
+Solution:   Check if the position is inside a closed fold. (closes vim/vim#9778)
+
+https://github.com/vim/vim/commit/4556a2e8681c5c98fb4c7ca0a016924a69b4452a
+
+Co-authored-by: Bram Moolenaar &lt;Bram@vim.org&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#6f9cda0</div>
+                                        <div class="message">vim-patch:8.2.4204: screenpos() has non-zero row for invisible text
+
+Problem:    screenpos() has non-zero row for invisible text.
+Solution:   Only add the window row when the text is visible. (closes vim/vim#9618)
+
+https://github.com/vim/vim/commit/7924a17791217d50be5a91989a9641bf68e7a735
+
+Co-authored-by: Bram Moolenaar &lt;Bram@vim.org&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#e120a04</div>
+                                        <div class="message">fix(float): fix ml_get error with bufpos</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#11d2704</div>
+                                        <div class="message">vim-patch:8.2.3193: screenpos() is wrong when 'display' is "lastline"
+
+Problem:    screenpos() is wrong when the last line is partially visible and
+            'display' is "lastline".
+Solution:   Also compute the position for a partially visible line.
+            (closes vim/vim#8599)
+
+https://github.com/vim/vim/commit/189663bdac1156237c49925f77bd197c1bdea12c
+
+Co-authored-by: Bram Moolenaar &lt;Bram@vim.org&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#0ff9131</div>
+                                        <div class="message">vim-patch:9.0.1014: zir files are not recognized (#21301)
+
+Problem:    Zir files are not recognized.
+Solution:   Add a pattern for Zir files. (closes vim/vim#11664)
+
+https://github.com/vim/vim/commit/25201016d5043954689a4c9f7833935294149404
+
+Co-authored-by: Bram Moolenaar &lt;Bram@vim.org&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#f3bf1fb</div>
+                                        <div class="message">fix(secure): crash when hitting escape in prompt (#21283)
+
+- use pcall when calling vim.secure.read from C
+- catch keyboard interrupts in vim.secure.read, rethrow other errors
+- selecting "view" in prompt runs :view command
+- simplify lua stack cleanup with lua_gettop and lua_settop
+
+Co-authored-by: ii14 &lt;ii14@users.noreply.github.com&gt;</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#707df88</div>
+                                        <div class="message">docs: add missing docs from some Vim patches (#21296)
+
+This is cherry-picked from these Vim patches:
+
+Only applicable change outside vi_diff.txt in patch 8.1.1226:
+https://github.com/vim/vim/commit/6c60f47fb9251e686217d51cf81847e14d0dd26d
+
+Most changes outside starting.txt and vi_diff.txt in patch 8.1.1280:
+https://github.com/vim/vim/commit/25c9c680ec4dfbb51f4ef21c3460a48d3c67ffc8
+
+Missing docs for 'mousemoveevent':
+https://github.com/vim/vim/commit/cbaff5e06ec525d31dc44093125c42029e01d508</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#6c285a6</div>
+                                        <div class="message">ci: create CI job to check if news needs to be updated (#21142)
+
+If any commit message in the PR is either of type "feat" or is a
+breaking change, then there's a high probability that news.txt should be
+updated. Give an error if news.txt hasn't been updated in that case.
+
+This workflow cannot 100% correctly determine if news.txt should be
+updated even if the commit messages were exactly correct. The entries in
+news.txt is determined by changes between releases, while the commit
+messages are based on the master branch. While it is an approximation,
+it is still a useful enough one that it's still valuable to have this
+job as a reminder even if it gives an error if it shouldn't. In these
+cases it is perfectly fine to ignore the failure for this job.</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#5c52971</div>
+                                        <div class="message">ci: use shell script to deduplicate workflow (#21079)</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#9d8dbd9</div>
+                                        <div class="message">ci: use local action to make make cache keys consistent (#20538)
+
+The advantages of using an action is that it reduces boilerplate and
+repetition from the main ci.yml workflow.</div>
                                     </div>
                                 </div>
                             </section>
@@ -369,24 +591,15 @@
                                     </svg>
                                     <div class="content">
                                         Commented on
-                                        <span class="issue">#112 Colour is messed up/lost after formatting</span>
+                                        <span class="issue">#21297 Window tearing</span>
                                     </div>
                                 </div>
                                 <div class="details">
-                                    <div>opened by wutianjun5858 in <span class="repo">p00f/nvim-ts-rainbow</span></div>
-                                    <div class="comment">Same for me in LaTeX</div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Starred
-                                        <span class="repo">p00f/nvim-ts-rainbow</span>
+                                    <div>opened by WhiteBlackGoose in <span class="repo">neovim/neovim</span></div>
+                                    <div class="comment">
+                                        @zeertzjq hey, last commit on
+                                        <code>zeertzjq/winscrolled-float</code>
+                                        worked!
                                     </div>
                                 </div>
                             </section>
@@ -395,29 +608,33 @@
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
                                     </svg>
                                     <div class="content">
-                                        Starred
-                                        <span class="repo">wspr/breqn</span>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
-                                        <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Opened
-                                        <span class="issue">#17 surround</span>
+                                        Commented on
+                                        <span class="issue">#21297 Window tearing</span>
                                     </div>
                                 </div>
                                 <div class="details">
-                                    <div>opened  in <span class="repo">WhiteBlackGoose/dotfiles</span></div>
+                                    <div>opened by WhiteBlackGoose in <span class="repo">neovim/neovim</span></div>
+                                    <div class="comment">Okay I finally reproduced it haha, jeez</div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Commented on
+                                        <span class="issue">#21297 Window tearing</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>opened by WhiteBlackGoose in <span class="repo">neovim/neovim</span></div>
+                                    <div class="comment">Damn... can't even reproduce on the commit from the issue. I guess there's some non-clean state</div>
                                 </div>
                             </section>
                         </div>
@@ -476,7 +693,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="0.8487337440109548 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="0.8911704312115019 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -628,7 +845,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Influencer
-                                    <span class="gh">ranked 60.9k out of 103m users</span>
+                                    <span class="gh">ranked 61k out of 103m users</span>
                                 </div>
                                 <div class="text">Followed by 124 users</div>
                             </div>
