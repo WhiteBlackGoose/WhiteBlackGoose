@@ -247,7 +247,7 @@ Some things I'm learning, some things I know, some I just like.
 #### You can
 - 🌍 Checkout my [**twitter**](https://twitter.com/WhiteBlackGoose), [**github**](https://github.com/WhiteBlackGoose), [**blog**](https://wbg.angouri.org/blog).
 - 📪 Contact me via e-mail (wbg@angouri.org, wbg@member.fsf.org) or Telegram (the same username as that on GH).
-- 🔒 Verify my signature by fingerprint: 640BEDDE9734310ABFA3B25752EDAE6A3995AFAB (stored on keys.openpgp.org).
+- 🔒 Verify my signature by fingerprint: 640BEDDE9734310ABFA3B25752EDAE6A3995AFAB (stored on [keys.openpgp.org](https://keys.openpgp.org/search?q=640BEDDE9734310ABFA3B25752EDAE6A3995AFAB)).
 
 *This text is mirrored to a personal [web-page](https://wbg.angouri.org).*
 
