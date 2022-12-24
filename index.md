@@ -226,7 +226,7 @@ Some things I'm learning, some things I know, some I just like.
 
 <img src="https://cdn.svgporn.com/logos/debian.svg?response-content-disposition=attachment%3Bfilename%3Ddebian.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/linux-tux.svg?response-content-disposition=attachment%3Bfilename%3Dlinux-tux.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/ubuntu.svg?response-content-disposition=attachment%3Bfilename%3Dubuntu.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/freebsd.svg?response-content-disposition=attachment%3Bfilename%3Dfreebsd.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/archlinux.svg?response-content-disposition=attachment%3Bfilename%3Darchlinux.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/fedora.svg?response-content-disposition=attachment%3Bfilename%3Dfedora.svg" width=60 height=60 />
 
-<img src="https://raw.githubusercontent.com/WhiteBlackGoose/WhiteBlackGoose/da3585124a9f0d585fedcec542570e38e016df4e/media/neovim.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/vim.svg?response-content-disposition=attachment%3Bfilename%3Dvim.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/visual-studio-code.svg?response-content-disposition=attachment%3Bfilename%3Dvisual-studio-code.svg" width=60 height=60 /> 
+<img src="https://raw.githubusercontent.com/WhiteBlackGoose/WhiteBlackGoose/da3585124a9f0d585fedcec542570e38e016df4e/media/neovim.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/vim.svg?response-content-disposition=attachment%3Bfilename%3Dvim.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/visual-studio-code.svg?response-content-disposition=attachment%3Bfilename%3Dvisual-studio-code.svg" width=60 height=60 /> <img src="https://user-images.githubusercontent.com/31178401/209452465-57d86bc4-e02d-4a10-9acd-f52a1e5c6062.png" width=60 height=60 /> 
 
 <img src="https://cdn.svgporn.com/logos/rust.svg?response-content-disposition=attachment%3Bfilename%3Drust.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/c-sharp.svg?response-content-disposition=attachment%3Bfilename%3Dc-sharp.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/fsharp.svg?response-content-disposition=attachment%3Bfilename%3Dfsharp.svg" width=60 height=60 /> <img src="https://cdn.svgporn.com/logos/dotnet.svg?response-content-disposition=attachment%3Bfilename%3Ddotnet.svg" width=60 height=60 />
 
@@ -250,6 +250,7 @@ Some things I'm learning, some things I know, some I just like.
 - 🔒 Verify my signature by fingerprint: 640BEDDE9734310ABFA3B25752EDAE6A3995AFAB (stored on keys.openpgp.org).
 
 *This text is mirrored to a personal [web-page](https://wbg.angouri.org).*
+
 <style>
 @media (prefers-color-scheme: dark) {
   a {
