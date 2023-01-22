@@ -9,8 +9,13 @@
     <Compile Include="Css.fs" />
     <Compile Include="PreviewImage.fs" />
     <Compile Include="IDated.fs" />
-    <Compile Include="./Contents/Articles.fs" />
+    <Compile Include="./Contents/ExternalArticles.fs" />
     <Compile Include="./Contents/Projects.fs" />
+
+    <Compile Include="./ArticleContent.fs" />
+    <Compile Include="./Contents/Articles/**.fs" />
+    <Compile Include="./ArticleView.fs" />
+
     <Compile Include="Pages.fs" />
     <Compile Include="View.fs" />
     <Compile Include="Program.fs" />
