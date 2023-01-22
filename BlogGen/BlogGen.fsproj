@@ -11,6 +11,10 @@
     <Compile Include="IDated.fs" />
     <Compile Include="./Contents/Articles.fs" />
     <Compile Include="./Contents/Projects.fs" />
+
+    <Compile Include="./InternalArticleDef.fs" />
+    <Compile Include="./Contents/InternalArticles/what-the-world-could-be-like.fs" />
+
     <Compile Include="Pages.fs" />
     <Compile Include="View.fs" />
     <Compile Include="Program.fs" />
