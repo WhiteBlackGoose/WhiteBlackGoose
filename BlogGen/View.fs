@@ -90,7 +90,18 @@ let commonHead font =
                 "text-decoration-style", "solid"
                 "text-decoration-color", "gray"
             ]
-            
+            cssClass "article-body" [
+                "font-family", "Overpass Mono"
+                "padding", "60px"
+                "padding-left", "100px"
+                "padding-right", "100px"
+                "line-height", "1.7"
+            ]
+            cssFilter "hr" [
+                "width", "20%"
+                "background-color", "gray"
+                "border", "0.5px solid gray"
+            ]
         ]
     ]
 
@@ -179,7 +190,7 @@ let genPage contents = function
         html [] [
             title [] [ Text pageTitle ]
             commonHead "sans-seriff"
-            body [inplaceStyle [ "max_width", "1000px" ]] [
+            body [_class "article-body"] [
                 h1 [] [ Text pageTitle ]
                 yield! contents
             ]

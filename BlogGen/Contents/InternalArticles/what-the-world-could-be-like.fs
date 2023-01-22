@@ -41,5 +41,46 @@ let page = {
             people differ by hair color.
             "
         ]
+        p [] [
+            Text "
+            How would that work? Basically, besides accepting queer people and equal roles of genders, people of the world will be constantly
+            moving around. The further away to the future - the more people will be travelling all around, performing culture exchange, and eventually
+            investing best strategies of living. In the end, genders' roles will fade away. Races will mix with each other, forming some \"average\"
+            race. orientation won't be perceived as some difference between groups of people. Rather, each person will have their own \"taste\", just
+            like people today prefer some food, color, hobby or job.
+            "
+        ]
+        br []
+        hr []
+        br []
+        p [] [
+            Text "
+            You may oppose making us all equal, by saying that it somehow makes our lives boring. It does not! Our lives are interesting mainly not
+            because we're of different colors or genders. It's interesting because of our interests, family, friends, jobs, nature, technology.
+            We're abandoning something, that existed <i>just because</i> people didn't have a way to remove it: they lived in different parts of the
+            world and couldn't communicate and move as easily as we can. Now we can.
+            "
+        ]
+        p [] [
+            Text "
+            The benefit of removing such bias is huge too. The reason is because in today's world, inefficiencies dominate: people from poor countries
+            may be just as talented as people from developed countries, however, most high-paid jobs are occupied by the latter. Yes, people are still
+            constained by moving around, education, jobs. All due to two things: society's (subconscious) belief in difference between people and the
+            fact that the social differences still exist.
+            "
+        ]
+        p [] [
+            Text "
+            In my world, there's no difference between people. There are 7 billion of human beings, and each of existing job, I believe, can be done
+            <i>much</i> more efficiently than it is done today, just because there will be a much longer list of candidates for it. Moreover, due to the
+            reduced or eliminated inefficiencies, each person would be much happier doing what they like to do.
+            "
+        ]
+        p [] [
+            Text "
+            Okay, so that's just my thoughts. I'm not sure who's going to read this letter to the humanity. So I'm just leaving it here. And I probably
+            will rewrite it in the future.
+            "
+        ]
     ]
 }
