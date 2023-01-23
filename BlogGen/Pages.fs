@@ -178,6 +178,14 @@ let articlePages : PageInfo list = [
         name = "what-the-world-could-be-like"
         page = TextPage InternalArticles.WhatTheWorldCouldBeLike.page
     }
+    {
+        name = "my-values"
+        page = TextPage InternalArticles.MyValues.page
+    }
+    {
+        name = "yyyy-mm-dd"
+        page = TextPage InternalArticles.YyyyMmDd.page
+    }
 ]
 
 let projectPages : PageInfo list = [

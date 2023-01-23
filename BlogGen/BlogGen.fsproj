@@ -14,6 +14,8 @@
 
     <Compile Include="./InternalArticleDef.fs" />
     <Compile Include="./Contents/InternalArticles/what-the-world-could-be-like.fs" />
+    <Compile Include="./Contents/InternalArticles/my-values.fs" />
+    <Compile Include="./Contents/InternalArticles/yyyy-mm-dd.fs" />
 
     <Compile Include="Pages.fs" />
     <Compile Include="View.fs" />

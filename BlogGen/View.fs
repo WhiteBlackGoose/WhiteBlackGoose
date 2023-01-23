@@ -130,9 +130,10 @@ let genPage contents = function
                     ]
                     for content in contents |> Seq.filter contentFilter do
                         match content with
-                        | Article { tags = tags; title = title; link = link; date = date } ->
+                        | Article { tags = tags; title = title; link = link; date = date; previewUrl = previewUrl; } ->
                             div [_class "card"] [
-                                a [_href link] [img [_class "card_image"; _src (getPreviewImage link)]]
+                                if Option.isSome previewUrl then
+                                    a [_href link] [img [_class "card_image"; _src (Option.get previewUrl)]]
                                 div [_class "card_title_container"] [
                                     span [_class "tags"] [ Text date ]
                                     a [_class "card_title"; _href link] [h3 [] [ Text title ]]
