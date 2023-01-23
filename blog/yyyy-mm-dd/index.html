@@ -87,10 +87,10 @@ border: 0.5px solid gray;
             I keep seeing Europeans and Americans arguing on reddit whether
             it should be DD/MM/YYYY or MM/DD/YYYY. I've always disagreed with
             both, let me give you a few reasons why.
-            *Disclaimer: the arguments here are mostly for people who read from left to right*
+            <i>Disclaimer: the arguments here are mostly for people who read from left to right</i>
             </p><br><hr><br><h2>1. Consistency with other measurements</h2><p>
-            First of all, how do we write numbers? Take **645**. Its first
-            (reading from the left) digit is **6**, the most significant digit. So
+            First of all, how do we write numbers? Take <b>645</b>. Its first
+            (reading from the left) digit is <b>6</b>, the most significant digit. So
             when you consider a price of a product, you most likely will care more
             about its major units than those minor (e. g. "six hundred dollars" is not 
             much different from "six hundred fourty five").
@@ -98,7 +98,7 @@ border: 0.5px solid gray;
             Now, let's take something else. For example, time, which we write as
             "15:45" and read starting from its major units. See the pattern?
             </p><p>
-            In **yyyy-mm-dd** it's the same. Starting from the most major unit,
+            In <b>yyyy-mm-dd</b> it's the same. Starting from the most major unit,
             ending with a minormost one.
             </p><h2>2. Universality for daily usage</h2><p>
             An argument for MM/DD/YYYY and DD/MM/YYYY is that they're supposedly
@@ -107,14 +107,14 @@ border: 0.5px solid gray;
             What is our use of date and time? Surely the most basic option would
             be the precise moment in time, e. g. year 2022, month 10, day 20, hour 12, minute 16, second 10. But it's impractical for daily life, it's long, inconvenient, error-prone.
             </p><p>
-            Our universal format allows to *cut* any continuous interval from ISO8601 (**YYYY-MM-DD HH:mm:ss**) which still makes perfect sense. For example, you want to hold a party soon, so you cut (YYYY-**MM-DD HH**:mm:ss). Or you want to research when Napoleon started working on his Napoleonic plans, which would be (**YYYY-MM**-DD HH:mm:ss). Or a lecture starts soon, you're perhaps interested in (YYYY-MM-DD HH:**mm:ss**). Likewise, a full date and a full time are also continuous intervals taken from this universal format!
+            Our universal format allows to <i>cut</i> any continuous interval from ISO8601 (<b>YYYY-MM-DD HH:mm:ss</b>) which still makes perfect sense. For example, you want to hold a party soon, so you cut (YYYY-<b>MM-DD HH</b>:mm:ss). Or you want to research when Napoleon started working on his Napoleonic plans, which would be (<b>YYYY-MM</b>-DD HH:mm:ss). Or a lecture starts soon, you're perhaps interested in (YYYY-MM-DD HH:<b>mm:ss</b>). Likewise, a full date and a full time are also continuous intervals taken from this universal format!
             </p><h3>3. Visual understanding and sorting</h3><p>
-            Which one happened earlier: **10/5/12** or **7/8/12**? Yeah... first of all, is it mm/dd/yy or dd/mm/yy or something else? For either of them, 
+            Which one happened earlier: <b>10/5/12</b> or <b>7/8/12</b>? Yeah... first of all, is it mm/dd/yy or dd/mm/yy or something else? For either of them, 
             you will have to think by which of the sections to compare first.
             </p><p>
-            Now, compare **2012-05-10** and **2012-07-08**. If you read from left to right, all you need to do is to find the leftmost different digit
-            and compare them. Clearly, **2012-07-08** comes after **2012-05-10**, because 7 is greater than 5, and you don't need to pad zeros,
-            go over the date in a random order of "sections". You do it **exactly** as you do it with numbers, time, and other measurements.
+            Now, compare <b>2012-05-10</b> and <b>2012-07-08</b>. If you read from left to right, all you need to do is to find the leftmost different digit
+            and compare them. Clearly, <b>2012-07-08</b> comes after <b>2012-05-10</b>, because 7 is greater than 5, and you don't need to pad zeros,
+            go over the date in a random order of "sections". You do it <b>exactly</b> as you do it with numbers, time, and other measurements.
             </p><p>
             Sorting of dates usually requires understanding of the date. For example, in computers, you need a separate algorithm which would sort by date.
             What if your files contain date in name, by which you want to sort? It becomes a nightmare to re-arrange them.
