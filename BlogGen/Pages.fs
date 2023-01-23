@@ -3,6 +3,7 @@ module Pages
 open Articles
 open Projects
 open Giraffe.ViewEngine
+open InternalArticleDef
 
 type Content =
     | Article of ArticleTile
@@ -16,11 +17,6 @@ type FilterPage = {
     contentFilter : Content -> bool
     description : XmlNode list
     title : string
-}
-
-type TextPage = {
-    title : string
-    contents : XmlNode list
 }
 
 type Page =
@@ -177,6 +173,18 @@ let articlePages : PageInfo list = [
                 p [] []
             ]
         }
+    }
+    {
+        name = "what-the-world-could-be-like"
+        page = TextPage InternalArticles.WhatTheWorldCouldBeLike.page
+    }
+    {
+        name = "my-values"
+        page = TextPage InternalArticles.MyValues.page
+    }
+    {
+        name = "yyyy-mm-dd"
+        page = TextPage InternalArticles.YyyyMmDd.page
     }
 ]
 

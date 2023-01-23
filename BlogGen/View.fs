@@ -90,7 +90,19 @@ let commonHead font =
                 "text-decoration-style", "solid"
                 "text-decoration-color", "gray"
             ]
-            
+            cssClass "article-body" [
+                "font-family", "Overpass Mono"
+                "padding", "60px"
+                "padding-left", "20%"
+                "padding-right", "20%"
+                "line-height", "1.7"
+                "text-align", "justify"
+            ]
+            cssFilter "hr" [
+                "width", "20%"
+                "background-color", "gray"
+                "border", "0.5px solid gray"
+            ]
         ]
     ]
 
@@ -118,9 +130,10 @@ let genPage contents = function
                     ]
                     for content in contents |> Seq.filter contentFilter do
                         match content with
-                        | Article { tags = tags; title = title; link = link; date = date } ->
+                        | Article { tags = tags; title = title; link = link; date = date; previewUrl = previewUrl; } ->
                             div [_class "card"] [
-                                a [_href link] [img [_class "card_image"; _src (getPreviewImage link)]]
+                                if Option.isSome previewUrl then
+                                    a [_href link] [img [_class "card_image"; _src (Option.get previewUrl)]]
                                 div [_class "card_title_container"] [
                                     span [_class "tags"] [ Text date ]
                                     a [_class "card_title"; _href link] [h3 [] [ Text title ]]
@@ -176,11 +189,20 @@ let genPage contents = function
             ]
         ]
     | TextPage { title = pageTitle; contents = contents } ->
+        let _a url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
         html [] [
             title [] [ Text pageTitle ]
             commonHead "sans-seriff"
-            body [inplaceStyle [ "max_width", "1000px" ]] [
+            body [] [
+                let sp = span [_style "color: gray;"] [ Text "|" ] |> RenderView.AsString.htmlNode
+                let comp f = f [_style "padding: 12px; color: gray;"] [
+                    Text $"""{_a "/blog/index.html" "🏠 Home"} {sp} Blog of WhiteBlackGoose {sp} This website is {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen" "free software"} (GPLv3) {sp} The {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen/Contents/InternalArticles" "content"} is under CC BY-NC 4.0"""
+                ]
+                comp header
+                div [_class "article-body"] [
                 h1 [] [ Text pageTitle ]
                 yield! contents
+                ]
+                comp footer
             ]
         ]
