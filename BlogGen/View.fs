@@ -93,9 +93,10 @@ let commonHead font =
             cssClass "article-body" [
                 "font-family", "Overpass Mono"
                 "padding", "60px"
-                "padding-left", "100px"
-                "padding-right", "100px"
+                "padding-left", "20%"
+                "padding-right", "20%"
                 "line-height", "1.7"
+                "text-align", "justify"
             ]
             cssFilter "hr" [
                 "width", "20%"
@@ -187,11 +188,19 @@ let genPage contents = function
             ]
         ]
     | TextPage { title = pageTitle; contents = contents } ->
+        let _a url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
         html [] [
             title [] [ Text pageTitle ]
             commonHead "sans-seriff"
-            body [_class "article-body"] [
+            body [] [
+                let comp f = f [_style "padding: 12px;"] [
+                    Text $"""Blog of WhiteBlackGoose | This website is {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen" "free software"} (GPLv3) | The {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen/Contents/InternalArticles" "content"} is under CC BY-NC 4.0"""
+                ]
+                comp header
+                div [_class "article-body"] [
                 h1 [] [ Text pageTitle ]
                 yield! contents
+                ]
+                comp footer
             ]
         ]
