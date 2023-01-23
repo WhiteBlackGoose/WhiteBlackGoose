@@ -60,7 +60,7 @@ let page = {
             """
         ]
 
-        h3 [] [ Text $"""3. Visual understanding and sorting""" ]
+        h2 [] [ Text $"""3. Visual understanding and sorting""" ]
         p [] [
             Text $"""
             Which one happened earlier: {bo "10/5/12"} or {bo "7/8/12"}? Yeah... first of all, is it mm/dd/yy or dd/mm/yy or something else? For either of them, 
