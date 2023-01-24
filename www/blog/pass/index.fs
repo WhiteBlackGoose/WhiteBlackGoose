@@ -1,10 +1,11 @@
 module www.blog.pass.index
 
 open Giraffe.ViewEngine
-open InternalArticleDef
+open Page
 
-let page = {
+let page = PageWrap.wrap www.``static``.styles.css {
     title = "Pass - password manager for geeks"
+    depth = 2
     contents = [
         h2 [] [ anc "why"; Text "Why?" ]
         p [] [

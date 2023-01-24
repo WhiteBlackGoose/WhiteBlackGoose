@@ -1,19 +1,12 @@
-module InternalArticleDef
+module Page
 
 open Giraffe.ViewEngine
 
-type TextPage = {
+type Page = {
     title : string
+    depth : int
     contents : XmlNode list
 }
-
-// thought of making ** and __ preprocessor
-// let md = 
-//     let bold = System.Text.RegularExpressions.Regex(@"\*\*(.*?)\*\*")
-//     let italics = System.Text.RegularExpressions.Regex(@"__(.*?)__")
-//     fun text ->
-//         text
-//         |> bold.Repla
 
 // Regexes
 // Bold:

@@ -1,9 +1,9 @@
-module www.blog.what-the-world-could-be-like.index
+module www.blog.what_the_world_could_be_like.index
 
 open Giraffe.ViewEngine
-open InternalArticleDef
+open Page
 
-let page = {
+let html = PageWrap.wrap www.``static``.styles.css {
     title = "What the world could be like";
     contents = [
         p [] [

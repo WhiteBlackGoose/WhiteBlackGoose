@@ -1,4 +1,4 @@
-module Projects
+module www.projects.index
 
 type ProgrammingLanguage = CSharp | FSharp | FStar | Bash | Rust
 
@@ -12,56 +12,61 @@ type ProjectTile =
 
 let projects = [
     { name = "AngouriMath"; url = "https://github.com/asc-community/AngouriMath";
-    langs = [ CSharp; FSharp ]; date = "2022-09-29" }
+    langs = [ CSharp; FSharp ] }
 
     { name = "CodegenAnalysis"; url = "https://github.com/WhiteBlackGoose/CodegenAnalysis";
-    langs = [ CSharp ]; date = "2022-08-19" }
+    langs = [ CSharp ] }
 
     { name = "GenericTensor"; url = "https://github.com/asc-community/GenericTensor";
-    langs = [ CSharp ]; date = "2022-06-10" }
+    langs = [ CSharp ] }
 
     { name = "HonkSharp"; url = "https://github.com/WhiteBlackGoose/HonkSharp";
-    langs = [ CSharp ]; date = "2022-10-05" }
+    langs = [ CSharp ] }
 
     { name = "HonkPerf.NET"; url = "https://github.com/asc-community/HonkPerf.NET";
-    langs = [ CSharp ]; date = "2022-06-10" }
+    langs = [ CSharp ] }
 
     { name = "nix-utils"; url = "https://github.com/WhiteBlackGoose/nix-utils";
-    langs = [ Bash ]; date = "2022-11-09" }
+    langs = [ Bash ] }
 
     { name = "brownian-motion-chart"; url = "https://github.com/WhiteBlackGoose/brownian-motion-chart";
-    langs = [ Rust ]; date = "2022-10-22" }
+    langs = [ Rust ] }
 
     { name = "LambdaCalculusFSharp"; url = "https://github.com/WhiteBlackGoose/LambdaCalculusFSharp";
-    langs = [ FSharp ]; date = "2022-07-01" }
+    langs = [ FSharp ] }
 
     { name = "FStar.Lib.NET"; url = "https://github.com/WhiteBlackGoose/FStar.Lib.NET";
-    langs = [ FSharp; FStar ]; date = "2022-06-10" }
+    langs = [ FSharp; FStar ] }
 
     { name = "FsMinimalWebpageTemplate"; url = "https://github.com/WhiteBlackGoose/FsMinimalWebpageTemplate";
-    langs = [ FSharp ]; date = "2022-02-14" }
+    langs = [ FSharp ] }
 
     { name = "json2fs"; url = "https://github.com/WhiteBlackGoose/json2fs";
-    langs = [ FSharp ]; date = "2022-02-09" }
+    langs = [ FSharp ] }
 
     { name = "AsmToDelegate"; url = "https://github.com/WhiteBlackGoose/AsmToDelegate";
-    langs = [ CSharp; FSharp ]; date = "2022-02-06" }
+    langs = [ CSharp; FSharp ] }
 
     { name = "InductiveVariadics"; url = "https://github.com/WhiteBlackGoose/InductiveVariadics";
-    langs = [ CSharp ]; date = "2022-01-30" }
+    langs = [ CSharp ] }
 
     { name = "dotnet-proj"; url = "https://github.com/WhiteBlackGoose/dotnet-proj";
-    langs = [ FSharp ]; date = "2022-01-18" }
+    langs = [ FSharp ] }
 
     { name = "MoreFuncUI"; url = "https://github.com/WhiteBlackGoose/MoreFuncUI";
-    langs = [ FSharp ]; date = "2022-01-09" }
+    langs = [ FSharp ] }
 
     { name = "UnitsOfMeasure"; url = "https://github.com/WhiteBlackGoose/UnitsOfMeasure";
-    langs = [ CSharp ]; date = "2021-12-23" }
+    langs = [ CSharp ] }
 
     { name = "ConsoleGameEngine"; url = "https://github.com/WhiteBlackGoose/ConsoleGameEngine";
-    langs = [ CSharp ]; date = "2021-10-23" }
+    langs = [ CSharp ] }
 
     { name = "GuessBigO"; url = "https://github.com/WhiteBlackGoose/GuessBigO";
-    langs = [ CSharp ]; date = "2021-09-16" }
+    langs = [ CSharp ] }
 ]
+
+let page = {
+    title = "List of projects"
+    contents = []
+}

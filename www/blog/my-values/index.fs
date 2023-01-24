@@ -1,10 +1,12 @@
 module www.blog.my_values.index
 
 open Giraffe.ViewEngine
-open InternalArticleDef
+open Page
+open PageWrap
 
-let page = {
+let html = wrap www.``static``.styles.css {
     title = "My values"
+    depth = 2
     contents = [
         p [] [
             Text "

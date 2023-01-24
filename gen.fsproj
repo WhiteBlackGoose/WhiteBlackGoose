@@ -6,18 +6,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Css.fs" />
+    <Compile Include="./generation/Page.fs" />
+    <Compile Include="./generation/PageWrap.fs" />
 
-    <Compile Include="./InternalArticleDef.fs" />
-    <Compile Include="./www/blog/what-the-world-could-be-like.fs" />
-    <Compile Include="./www/blog/my-values.fs" />
-    <Compile Include="./www/blog/yyyy-mm-dd.fs" />
-    <Compile Include="./www/blog/pass.fs" />
+    <Compile Include="./www/static/media/icons.fs" />
+    <Compile Include="./www/static/styles/styles.fs" />
+
+    <Compile Include="./www/blog/what-the-world-could-be-like/index.fs" />
+    <Compile Include="./www/blog/my-values/index.fs" />
+    <Compile Include="./www/blog/yyyy-mm-dd/index.fs" />
+    <Compile Include="./www/blog/pass/index.fs" />
+    <Compile Include="./www/blog/index.fs" />
+
+    <Compile Include="./www/projects/index.fs" />
+
     <Compile Include="./index.fs" />
 
-
-    <Compile Include="Pages.fs" />
-    <Compile Include="View.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
