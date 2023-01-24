@@ -19,7 +19,9 @@ type TextPage = {
 // Bold:
 // %s/\*\*\(.\{-}\)\*\*/{bo "\1"}/g
 // Italics:
-// %s/\*\(.\{-}\)\*/{bo "\1"}/g
+// %s/\*\(.\{-}\)\*/{it "\1"}/g
+// Backticks:
+// %s/\`\(.\{-}\)\*/{bo "\1"}/g
 
 let bo text = b [] [ Text text ] |> RenderView.AsString.htmlNode
 let it text = i [] [ Text text ] |> RenderView.AsString.htmlNode
