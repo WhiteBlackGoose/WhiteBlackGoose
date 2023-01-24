@@ -186,6 +186,25 @@ let page = {
                         Text $"""{bo "A"}: Yes. But even if you generate the key randomly on every new device, the hacker will access the data the same way. It is important to encrypt the private key itself, but if the hacker somehow got access to private key, encryption passphrase, and the repo with passwords - it's over. At least, in my setup. """
                     ]
                 ]
+                li [] [
+                    p [] [
+                        Text $"""{bo "Q"}: Why not KeePassXc, BitWarden, and alike?"""
+                    ]
+                    p [] [
+                        Text $"""{bo "A"}: First of all I should say, that these are great options. They both are free and self-hosted. But I prefer {co "pass"}. """
+                    ]
+                    p [] [
+                        Text $"""{co "pass"} follows Unix philosophy, as it is entirely modular. It is originally just a small bash script, which utilizes GnuPG, tree, and git. That means, you're entirely free to replace those "dependencies" with whatever you like. It also means that you're not really {it "dependent"} on {co "pass"}, because the generated "key database" is literally a folder with .gpg files and a file with Key IDs listed. So you can decrypt your passwords without {co "pass"}. Thanks to its modularity, it is very easy to write a {co "pass"} client for any OS. As a result, we got clients for all OS, even iOS."""
+                    ]
+                ]
+                li [] [
+                    p [] [
+                        Text $"""{bo "Q"}: What are advantages over other password managers in terms of security?"""
+                    ]
+                    p [] [
+                        Text $"""{bo "A"}: Assymetric encryption. Unlike most if not all other password managers, this one allows you to encrypt files assymetrically - it means, that even having both your primary password {it "and"} the folder with encrypted passwords, nobody will be able to access them. So unlike regular pw managers, there are three components in your password workflow: folder with passwords, private key, password from the key. It is necessary to have all three components to unlock a password. """
+                    ]
+                ]
             ]
         ]
     ]
