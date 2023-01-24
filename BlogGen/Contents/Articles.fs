@@ -15,8 +15,8 @@ type ArticleTile =
 
 let articles = [
     { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "linux" ]; title = "Cheatsheet on configuring fully FOSS highly secure pass with sync-ing";
-        link = "https://gist.github.com/WhiteBlackGoose/8ffb7123b991dcc4cdafcdd574bdc3c6";
-        previewUrl = Some "https://github.githubassets.com/images/modules/gists/gist-og-image.png" }
+        link = "./pass/index.html";
+        previewUrl = None }
 
     { lang = EN; date = "2022-10-10"; tags = [ "life" ]; title = "Why YYYY-MM-DD is the best date format?";
         link = "https://wbg.angouri.org/blog/yyyy-mm-dd/index.html";

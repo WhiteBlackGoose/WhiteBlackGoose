@@ -205,7 +205,7 @@ let genPage contents = function
             body [] [
                 let sp = span [_style "color: gray;"] [ Text "|" ] |> RenderView.AsString.htmlNode
                 let comp f = f [_style "padding: 12px; color: gray;"] [
-                    Text $"""{_a "/blog/index.html" "🏠 Home"} {sp} Blog of WhiteBlackGoose {sp} This website is {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen" "free software"} (GPLv3) {sp} The {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen/Contents/InternalArticles" "content"} is under CC BY-NC 4.0"""
+                    Text $"""{_a "../index.html" "🏠 Home"} {sp} Blog of WhiteBlackGoose {sp} This website is {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen" "free software"} (GPLv3) {sp} The {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen/Contents/InternalArticles" "content"} is under CC BY-NC 4.0"""
                 ]
                 comp header
                 div [_class "article-body"] [
