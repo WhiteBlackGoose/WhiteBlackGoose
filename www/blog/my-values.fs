@@ -1,4 +1,4 @@
-module InternalArticles.MyValues
+module www.blog.my_values.index
 
 open Giraffe.ViewEngine
 open InternalArticleDef

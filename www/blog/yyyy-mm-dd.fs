@@ -1,4 +1,4 @@
-module InternalArticles.YyyyMmDd
+module www.blog.yyyy_mm_dd.index
 
 open Giraffe.ViewEngine
 open InternalArticleDef

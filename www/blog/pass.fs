@@ -1,4 +1,4 @@
-module InternalArticles.Pass
+module www.blog.pass.index
 
 open Giraffe.ViewEngine
 open InternalArticleDef

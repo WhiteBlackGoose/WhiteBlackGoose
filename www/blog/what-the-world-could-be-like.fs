@@ -1,4 +1,4 @@
-module InternalArticles.WhatTheWorldCouldBeLike
+module www.blog.what-the-world-could-be-like.index
 
 open Giraffe.ViewEngine
 open InternalArticleDef
