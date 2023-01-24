@@ -16,7 +16,10 @@ type TextPage = {
 //         |> bold.Repla
 
 // Regexes
-// %s/\*\*\(.*\)\*\*/{bo "\1"}/g
+// Bold:
+// %s/\*\*\(.\{-}\)\*\*/{bo "\1"}/g
+// Italics:
+// %s/\*\(.\{-}\)\*/{bo "\1"}/g
 
 let bo text = b [] [ Text text ] |> RenderView.AsString.htmlNode
 let it text = i [] [ Text text ] |> RenderView.AsString.htmlNode

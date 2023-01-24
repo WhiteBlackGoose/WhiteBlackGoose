@@ -32,7 +32,7 @@ let page = {
             Text "Get started:"
             ul [] [
                 li [] [ 
-                    Text $"""`gpg --full-generate-key` to generate key using GPG. In the end it will return something like `myname <mymail@quack.org>`, remember this, it's your {bo "Key ID"}. Let it be `user1` for now (assuming you skipped mail). You will be asked to input a passphrase - that's what your private key will be decrypted with, make sure to remember it!""" ]
+                    Text $"""`gpg --full-generate-key` to generate key using GPG. In the end it will return something like `myname <mymail@quack.org>`, remember this, it's your {it "Key ID"}. Let it be `user1` for now (assuming you skipped mail). You will be asked to input a passphrase - that's what your private key will be decrypted with, make sure to remember it!""" ]
                 li [] [ 
                     Text $"""`pass init user1` inits your password store (input the key ID from the previous step).""" ]
                 li [] [ 
@@ -130,7 +130,7 @@ let page = {
                 li [] [ 
                     Text $"""Create keys"""
                     ol [] [
-                        li [] [ Text $"""Make up some {bo "very"} secret passphrase. It should be long and stored somewhere very secure. This will be a generation seed for your keys""" ]
+                        li [] [ Text $"""Make up some {it "very"} secret passphrase. It should be long and stored somewhere very secure. This will be a generation seed for your keys""" ]
                         li [] [
                             Text $"""Run `passphrase2pgp --subkey --protect=2 --uid "user-d" | gpg --import`"""
                             ul [] [
