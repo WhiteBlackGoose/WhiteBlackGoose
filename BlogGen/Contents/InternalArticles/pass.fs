@@ -126,7 +126,7 @@ let page = {
         p [] [ Text $"""That is why we're taking the middle ground. We do NOT transfer private keys over network, but we generate then deterministically. That means, that all you need to remember is {bo "how"} you generated that key. Then, you will be able to recover access to your data from any device even if all devices you had are lost.""" ]
         p [] [
             ol [] [
-                li [] [ Text $"""Install [passphrase2pgp](https://github.com/skeeto/passphrase2pgp) on both computers, it allows to create deterministic keys""" ]
+                li [] [ Text $"""Install {ur "https://github.com/skeeto/passphrase2pgp" "passphrase2pgp"} on both computers, it allows to create deterministic keys""" ]
                 li [] [ 
                     Text $"""Create keys"""
                     ol [] [
@@ -159,7 +159,7 @@ let page = {
         p [] [
             ol [] [
                 li [] [ Text $"""Install [Password Store](https://github.com/android-password-store/Android-Password-Store#readme)""" ]
-                li [] [ Text $"""Install [OpenkeyChain](https://www.openkeychain.org)""" ]
+                li [] [ Text $"""Install {ur "https://www.openkeychain.org" "OpenkeyChain"}""" ]
                 li [] [ Text $"""Open Password Store app, generate SSH and GPG keys (make sure to encrypt both)""" ]
                 li [] [ Text $"""Upload your {bo "public"} SSH key to github or whatever your remote server is""" ]
                 li [] [ 

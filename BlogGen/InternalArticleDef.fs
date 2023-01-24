@@ -22,6 +22,8 @@ type TextPage = {
 // %s/\*\(.\{-}\)\*/{it "\1"}/g
 // Backticks:
 // %s/\`\(.\{-}\)\*/{co "\1"}/g
+// Links:
+// %s/\[\([A-z0-9\s]\{-}\)\](\(.\{-}\))/{ur "\2" "\1"}/g
 
 let bo text = b [] [ Text text ] |> RenderView.AsString.htmlNode
 let it text = i [] [ Text text ] |> RenderView.AsString.htmlNode
