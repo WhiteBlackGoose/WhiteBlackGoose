@@ -119,5 +119,74 @@ let page = {
             ]
         ]
         p [] [ Text $"""Done. You can now retrieve passwords and sync them between two computers, see how simple & user-friendly it all is?""" ]
+
+        h2 [] [ anc "another-comp"; Text $"""2. How to sync your passwords with your other computer?""" ]
+        p [] [ Text $"""Sending private keys is a security thread. That is why the recommended approach is always to generate a new keypair on a new device and add its public key to the list of "trusted" keys.""" ]
+        p [] [ Text $"""However, it is of course inconvenient. It is also not very reliable, because you will lose all your encrypted data.""" ]
+        p [] [ Text $"""That is why we're taking the middle ground. We do NOT transfer private keys over network, but we generate then deterministically. That means, that all you need to remember is **how** you generated that key. Then, you will be able to recover access to your data from any device even if all devices you had are lost.""" ]
+        p [] [
+            ol [] [
+                li [] [ Text $"""Install [passphrase2pgp](https://github.com/skeeto/passphrase2pgp) on both computers, it allows to create deterministic keys""" ]
+                li [] [ 
+                    Text $"""Create keys"""
+                    ol [] [
+                        li [] [ Text $"""Make up some *very* secret passphrase. It should be long and stored somewhere very secure. This will be a generation seed for your keys""" ]
+                        li [] [
+                            Text $"""Run `passphrase2pgp --subkey --protect=2 --uid "user-d" | gpg --import`"""
+                            ul [] [
+                                li [] [ Text $"""It will ask you for a passphrase - input the one you made it twice""" ]
+                                li [] [ Text $"""It will then ask you about `passphrase [protection]` - it's the password you're going to write whenever you access your passwords/gpg files""" ]
+                                li [] [ Text $"""`--subkey` is needed to encrypt and decrypt. `--protect=2` is needed to create a generation passphrase different from the protection one""" ]
+                            ]
+                        ]
+                        li [] [ Text $"""Same way generate them on the other computer (using the same passphrase, but don't transfer it over network)""" ]
+                    ]
+                ]
+                li [] [ 
+                    Text $"""Re-init `pass` using new Key ID (you can keep the old key ID)"""
+                    ol [] [
+                        li [] [ Text $"""`pass init "user1" "user-d"`""" ]
+                        li [] [ Text $"""That allows to keep your old key ID just in case, but it's also now encrypted with deterministic key""" ]
+                    ]
+                ]
+                li [] [ Text $"""Push your changes, pull to another computer, test""" ]
+            ]
+        ]
+        p [] [ Text $"""Push your changes, pull to another computer, test""" ]
+
+
+        h2 [] [ anc "mobile"; Text $"""3. Access & add passwords from your android phone""" ]
+        p [] [
+            ol [] [
+                li [] [ Text $"""Install [Password Store](https://github.com/android-password-store/Android-Password-Store#readme)""" ]
+                li [] [ Text $"""Install [OpenkeyChain](https://www.openkeychain.org)""" ]
+                li [] [ Text $"""Open Password Store app, generate SSH and GPG keys (make sure to encrypt both)""" ]
+                li [] [ Text $"""Upload your **public** SSH key to github or whatever your remote server is""" ]
+                li [] [ 
+                    Text $"""Upload your GPG key to your PC and re-encrypt your passwords by adding your newly generated key""" 
+                    ol [] [
+                        li [] [ Text $"""E. g. `pass init "johny-pc <johny@member.fsf.org>"` -> `pass init "johny-pc <johny@member.fsf.org>" "johny-phone <johny@member.fsf.org>"`""" ]
+                        li [] [ Text $"""Sync from your PC to remote server""" ]
+                    ]
+                ]
+                li [] [ Text $"""Sync from remote server""" ]
+                li [] [ Text $"""You're set""" ]
+            ]
+        ]
+
+
+        h2 [] [ anc "faq"; Text "FAQ" ]
+        p [] [
+            ul [] [
+                li [] [ 
+                    p [] [
+                        Text $"""**Q**: But wait, what **if** the hacker somehow stole one of my devices with this private key. Then he will access to the most important key that I deterministically generated, and thus, all data!"""
+                    ]
+                    p [] [
+                        Text $"""**A**: Yes. But even if you generate the key randomly on every new device, the hacker will access the data the same way. It is important to encrypt the private key itself, but if the hacker somehow got access to private key, encryption passphrase, and the repo with passwords - it's over. At least, in my setup. """
+                    ]
+                ]
+            ]
+        ]
     ]
 }
