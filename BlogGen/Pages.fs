@@ -186,6 +186,10 @@ let articlePages : PageInfo list = [
         name = "yyyy-mm-dd"
         page = TextPage InternalArticles.YyyyMmDd.page
     }
+    {
+        name = "pass"
+        page = TextPage InternalArticles.Pass.page
+    }
 ]
 
 let projectPages : PageInfo list = [
