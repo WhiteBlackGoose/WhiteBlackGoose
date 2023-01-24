@@ -21,12 +21,12 @@ type TextPage = {
 // Italics:
 // %s/\*\(.\{-}\)\*/{it "\1"}/g
 // Backticks:
-// %s/\`\(.\{-}\)\*/{bo "\1"}/g
+// %s/\`\(.\{-}\)\*/{co "\1"}/g
 
 let bo text = b [] [ Text text ] |> RenderView.AsString.htmlNode
 let it text = i [] [ Text text ] |> RenderView.AsString.htmlNode
 let ur url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
-let co text = span [_style "background: gray; font-family: mono;"] [ Text text ]
+let co text = span [_style "background: gray; font-family: mono;"] [ Text text ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
 
 let anc tag = a [_href $"#{tag}"; _name tag] [ Text ">" ]
 let refanc tag text = a [_href $"#{tag}"] [ Text text ]

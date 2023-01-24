@@ -96,7 +96,7 @@ let commonHead font =
                 "padding-left", "20%"
                 "padding-right", "20%"
                 "line-height", "1.7"
-                "text-align", "justify"
+                // "text-align", "justify"
             ]
             cssFilter "hr" [
                 "width", "20%"
