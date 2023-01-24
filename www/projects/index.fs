@@ -76,7 +76,7 @@ let projectsListHtml = [
 let html = PageWrap.wrap www.``static``.styles.css {
     title = "List of projects"
     url = "projects"
-    filename = "projects"
+    filename = "projects.html"
     contents = [
         yield! projectsListHtml
     ]

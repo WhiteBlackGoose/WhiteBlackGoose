@@ -1,7 +1,10 @@
 ﻿open System.IO
 open Giraffe.ViewEngine
 
+open Page
+
 let rootDir = "out"
+let sourceDir = "www"
 
 let pages = [
     www.blog.what_the_world_could_be_like.index.html
@@ -17,6 +20,9 @@ for page in pages do
     Directory.CreateDirectory(rootDir </> page.url) |> ignore
     File.WriteAllText(
         rootDir </> page.url </> page.filename,
-        RenderView.AsString.htmlNode page)
+        RenderView.AsString.htmlNode page.contents)
     printfn $"Generated page {page.url}"
+
+Directory.Cop(sourceDir </> "media", rootDir </> "media")
+
 printfn $"Finished."
