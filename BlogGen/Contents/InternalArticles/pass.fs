@@ -32,7 +32,7 @@ let page = {
             Text "Get started:"
             ul [] [
                 li [] [ 
-                    Text $"""`gpg --full-generate-key` to generate key using GPG. In the end it will return something like `myname <mymail@quack.org>`, remember this, it's your *Key ID*. Let it be `user1` for now (assuming you skipped mail). You will be asked to input a passphrase - that's what your private key will be decrypted with, make sure to remember it!""" ]
+                    Text $"""`gpg --full-generate-key` to generate key using GPG. In the end it will return something like `myname <mymail@quack.org>`, remember this, it's your {bo "Key ID"}. Let it be `user1` for now (assuming you skipped mail). You will be asked to input a passphrase - that's what your private key will be decrypted with, make sure to remember it!""" ]
                 li [] [ 
                     Text $"""`pass init user1` inits your password store (input the key ID from the previous step).""" ]
                 li [] [ 
@@ -84,7 +84,7 @@ let page = {
                 ]
             ]
         ]
-        p [] [ Text $"""I personally use both. Your passwords can only decrypted using your private keys that **you never send** to anyone. We can sync your passwords without them. As for now, we set up git, let's proceed by adding another device.""" ]
+        p [] [ Text $"""I personally use both. Your passwords can only decrypted using your private keys that {bo "you never send"} to anyone. We can sync your passwords without them. As for now, we set up git, let's proceed by adding another device.""" ]
 
         h3 [] [ anc "add-comp"; Text "2.2 Add new computer" ]
         p [] [ Text $"""Let your current computer be `A` and the new one is `B`.""" ]
@@ -93,9 +93,9 @@ let page = {
                 li [] [ 
                     Text $"""Key setup""" 
                     ol [] [
-                        li [] [ Text $"""Generate a new GPG key on computer `B` with a **different** key ID (`gpg --full-generate-key`)""" ]
-                        li [] [ Text $"""Export **public** key, e. g. `gpg --export "user2" > pub.k` and copy `user2.pub` to computer `A`""" ]
-                        li [] [ Text $"""Export **public** key of computer **A** to computer `B` (like step 2-3, but the other way around)""" ]
+                        li [] [ Text $"""Generate a new GPG key on computer `B` with a {bo "different"} key ID (`gpg --full-generate-key`)""" ]
+                        li [] [ Text $"""Export {bo "public"} key, e. g. `gpg --export "user2" > pub.k` and copy `user2.pub` to computer `A`""" ]
+                        li [] [ Text $"""Export {bo "public"} key of computer {bo "A"} to computer `B` (like step 2-3, but the other way around)""" ]
                         li [] [ Text $"""On computer `A`, import this key: `gpg --import user2.pub`""" ]
                     ]
                 ]
@@ -109,7 +109,7 @@ let page = {
                 ]
                 li [] [ Text $"""Init the password store and git repo on computer `B` (`pass init "user1" "user2" && pass git init`)""" ]
                 li [] [ 
-                    Text $"""Add remote (same as in **2.1**)""" 
+                    Text $"""Add remote (same as in {bo "2.1"})""" 
                     ol [] [
                         li [] [ Text $"""For github: `pass git remote add github https://github.com/user1/myrepo`""" ]
                         li [] [ Text $"""For local computer: `pass git remote add home ssh://user1@your-ip:your-ssh-port/path/to/pass-repo""" ]
@@ -123,14 +123,14 @@ let page = {
         h2 [] [ anc "another-comp"; Text $"""2. How to sync your passwords with your other computer?""" ]
         p [] [ Text $"""Sending private keys is a security thread. That is why the recommended approach is always to generate a new keypair on a new device and add its public key to the list of "trusted" keys.""" ]
         p [] [ Text $"""However, it is of course inconvenient. It is also not very reliable, because you will lose all your encrypted data.""" ]
-        p [] [ Text $"""That is why we're taking the middle ground. We do NOT transfer private keys over network, but we generate then deterministically. That means, that all you need to remember is **how** you generated that key. Then, you will be able to recover access to your data from any device even if all devices you had are lost.""" ]
+        p [] [ Text $"""That is why we're taking the middle ground. We do NOT transfer private keys over network, but we generate then deterministically. That means, that all you need to remember is {bo "how"} you generated that key. Then, you will be able to recover access to your data from any device even if all devices you had are lost.""" ]
         p [] [
             ol [] [
                 li [] [ Text $"""Install [passphrase2pgp](https://github.com/skeeto/passphrase2pgp) on both computers, it allows to create deterministic keys""" ]
                 li [] [ 
                     Text $"""Create keys"""
                     ol [] [
-                        li [] [ Text $"""Make up some *very* secret passphrase. It should be long and stored somewhere very secure. This will be a generation seed for your keys""" ]
+                        li [] [ Text $"""Make up some {bo "very"} secret passphrase. It should be long and stored somewhere very secure. This will be a generation seed for your keys""" ]
                         li [] [
                             Text $"""Run `passphrase2pgp --subkey --protect=2 --uid "user-d" | gpg --import`"""
                             ul [] [
@@ -161,7 +161,7 @@ let page = {
                 li [] [ Text $"""Install [Password Store](https://github.com/android-password-store/Android-Password-Store#readme)""" ]
                 li [] [ Text $"""Install [OpenkeyChain](https://www.openkeychain.org)""" ]
                 li [] [ Text $"""Open Password Store app, generate SSH and GPG keys (make sure to encrypt both)""" ]
-                li [] [ Text $"""Upload your **public** SSH key to github or whatever your remote server is""" ]
+                li [] [ Text $"""Upload your {bo "public"} SSH key to github or whatever your remote server is""" ]
                 li [] [ 
                     Text $"""Upload your GPG key to your PC and re-encrypt your passwords by adding your newly generated key""" 
                     ol [] [
@@ -180,10 +180,10 @@ let page = {
             ul [] [
                 li [] [ 
                     p [] [
-                        Text $"""**Q**: But wait, what **if** the hacker somehow stole one of my devices with this private key. Then he will access to the most important key that I deterministically generated, and thus, all data!"""
+                        Text $"""{bo "Q"}: But wait, what {bo "if"} the hacker somehow stole one of my devices with this private key. Then he will access to the most important key that I deterministically generated, and thus, all data!"""
                     ]
                     p [] [
-                        Text $"""**A**: Yes. But even if you generate the key randomly on every new device, the hacker will access the data the same way. It is important to encrypt the private key itself, but if the hacker somehow got access to private key, encryption passphrase, and the repo with passwords - it's over. At least, in my setup. """
+                        Text $"""{bo "A"}: Yes. But even if you generate the key randomly on every new device, the hacker will access the data the same way. It is important to encrypt the private key itself, but if the hacker somehow got access to private key, encryption passphrase, and the repo with passwords - it's over. At least, in my setup. """
                     ]
                 ]
             ]
