@@ -17,3 +17,7 @@ type TextPage = {
 
 let bo text = b [] [ Text text ] |> RenderView.AsString.htmlNode
 let it text = i [] [ Text text ] |> RenderView.AsString.htmlNode
+let ur url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
+let anc tag = a [_href $"#{tag}"] [ Text ">" ]
+let refanc tag text = a [_href $"#{tag}"] [ Text text ]
+
