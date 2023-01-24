@@ -1,5 +1,8 @@
 module www.blog.index
 
+open Giraffe.ViewEngine
+open Page
+
 type Lang = EN | RU
 
 type ArticleTile = 
@@ -8,9 +11,7 @@ type ArticleTile =
       link : string
       title : string
       date : string
-      }
-    interface Wbg.IDated with
-        member self.date = self.date
+    }
 
 let articles = [
     { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "linux" ]; title = "Cheatsheet on configuring fully FOSS highly secure pass with sync-ing";
@@ -122,8 +123,23 @@ let articles = [
         link = "https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction" }
 ]
 
+let articlesListHtml = 
+    [
+        for lang in [ EN; RU ] do
+            h2 [] [ anc (lang.ToString().ToLower()); Text $"Articles in lang" ]
+            table [] [
+                tr [] [ th [] [ Text "Date" ]; th [] [ Text "Url" ] ]
+                for article in List.filter (fun a -> a.lang = lang) articles do
+                    tr [] [ td [] [ Text article.date ]; td [] [ a [_href article.link ] [ Text article.title ] ] ]
+            ]
+    ]
+
 let html = PageWrap.wrap www.``static``.styles.css {
     title = "List of articles"
-    depth = 1
-    contents = []
+    url = "blog"
+    filename = "index.html"
+    contents = [
+        h1 [] [ Text "List of articles" ]
+        yield! articlesListHtml 
+    ]
 }

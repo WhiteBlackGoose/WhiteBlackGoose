@@ -5,7 +5,8 @@ open Page
 
 let html = PageWrap.wrap www.``static``.styles.css {
     title = "yyyy-mm-dd is the best date format"
-    depth = 2
+    url = "blog/yyyy-mm-dd"
+    filename = "index.html"
     contents = [
         p [] [
             Text $"""

@@ -6,10 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="./www/static/media/icons.fs" />
+
     <Compile Include="./generation/Page.fs" />
     <Compile Include="./generation/PageWrap.fs" />
 
-    <Compile Include="./www/static/media/icons.fs" />
     <Compile Include="./www/static/styles/styles.fs" />
 
     <Compile Include="./www/blog/what-the-world-could-be-like/index.fs" />

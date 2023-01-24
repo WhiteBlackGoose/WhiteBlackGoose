@@ -6,7 +6,8 @@ open PageWrap
 
 let html = wrap www.``static``.styles.css {
     title = "My values"
-    depth = 2
+    url = "blog/my-values"
+    filename = "index.html"
     contents = [
         p [] [
             Text "

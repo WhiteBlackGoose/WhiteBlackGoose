@@ -5,6 +5,8 @@ open Page
 
 let html = PageWrap.wrap www.``static``.styles.css {
     title = "What the world could be like";
+    url = "blog/what-the-world-could-be-like"
+    filename = "index.html"
     contents = [
         p [] [
             Text " ... if we didn't have social bias. But first, what <i>is</i> bias?"

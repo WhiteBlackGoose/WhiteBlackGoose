@@ -3,9 +3,10 @@ module www.blog.pass.index
 open Giraffe.ViewEngine
 open Page
 
-let page = PageWrap.wrap www.``static``.styles.css {
+let html = PageWrap.wrap www.``static``.styles.css {
     title = "Pass - password manager for geeks"
-    depth = 2
+    url = "blog/pass"
+    filename = "index.html"
     contents = [
         h2 [] [ anc "why"; Text "Why?" ]
         p [] [

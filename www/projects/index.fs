@@ -1,14 +1,14 @@
 module www.projects.index
 
+open Giraffe.ViewEngine
+open Page
+
 type ProgrammingLanguage = CSharp | FSharp | FStar | Bash | Rust
 
 type ProjectTile =
     { name : string
       url : string
-      langs : ProgrammingLanguage list
-      date : string }
-    interface Wbg.IDated with
-        member self.date = self.date
+      langs : ProgrammingLanguage list }
 
 let projects = [
     { name = "AngouriMath"; url = "https://github.com/asc-community/AngouriMath";
@@ -66,7 +66,16 @@ let projects = [
     langs = [ CSharp ] }
 ]
 
-let page = {
+let projectsListHtml = [
+    ul [] [
+    for prj in projects do
+        li [] [ a [_href prj.url] [ Text prj.name ] ]
+    ]
+]
+
+let html = {
     title = "List of projects"
-    contents = []
+    contents = [
+        h1 [] [ Text "List of projects" ]
+    ]
 }
