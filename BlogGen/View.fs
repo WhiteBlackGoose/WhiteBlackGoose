@@ -33,6 +33,9 @@ let commonHead font =
                 cssFilter "a" [
                     "color", "#333"
                 ]
+                cssClass "code-inline" [
+                    "background", "lightgray"
+                ]
             ]
             darkTheme [
                 cssFilter "body" [
@@ -49,6 +52,12 @@ let commonHead font =
                 cssFilter "a" [
                     "color", "#BBB"
                 ]
+                cssClass "code-inline" [
+                    "background", "#333"
+                ]
+            ]
+            cssClass "code-inline" [
+                "font-family", "mono"
             ]
             cssFilter ".header h1" [
                 "margin", "0 auto"

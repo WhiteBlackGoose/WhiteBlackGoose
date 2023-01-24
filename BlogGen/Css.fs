@@ -4,8 +4,6 @@ open Giraffe.ViewEngine
 
 type Attributes = (string * string) seq
 
-
-
 let inplaceStyle (attrs : Attributes) =
     let inner =
         attrs
