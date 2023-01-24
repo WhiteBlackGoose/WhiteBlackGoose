@@ -1,44 +1,47 @@
 module www.``static``.styles
 
-let css = 
-    type Attributes = (string * string) seq
+open Giraffe.ViewEngine
 
-    let inplaceStyle (attrs : Attributes) =
-        let inner =
-            attrs
-            |> Seq.map (fun (a, b) -> $"{a}: {b};")
-            |> String.concat ""
-        attr "style" $"{inner}"
+type Attributes = (string * string) seq
 
-    let cssFilter filter attrs =
-        let inner =
-            attrs
-            |> Seq.map (fun (a, b) -> $"{a}: {b};")
-            |> String.concat "\n"
-        $"{filter} {{\n{inner}\n}}\n"
+let inplaceStyle (attrs : Attributes) =
+    let inner =
+        attrs
+        |> Seq.map (fun (a, b) -> $"{a}: {b};")
+        |> String.concat ""
+    attr "style" $"{inner}"
 
-    let cssClass name attrs = cssFilter $".{name}" attrs
+let cssFilter filter attrs =
+    let inner =
+        attrs
+        |> Seq.map (fun (a, b) -> $"{a}: {b};")
+        |> String.concat "\n"
+    $"{filter} {{\n{inner}\n}}\n"
 
-    let theme themeName attrs =
-        let inner = attrs |> String.concat ""
-        $"@media (prefers-color-scheme: {themeName}) {{\n{inner}\n}}"
+let cssClass name attrs = cssFilter $".{name}" attrs
 
-    let sizeNoBiggerThan size attrs =
-        let inner = attrs |> String.concat ""
-        $"@media only screen and (max-width: {size}px) {{\n{inner}\n}}"
+let theme themeName attrs =
+    let inner = attrs |> String.concat ""
+    $"@media (prefers-color-scheme: {themeName}) {{\n{inner}\n}}"
 
-    let lightTheme attrs = theme "light" attrs
+let sizeNoBiggerThan size attrs =
+    let inner = attrs |> String.concat ""
+    $"@media only screen and (max-width: {size}px) {{\n{inner}\n}}"
 
-    let darkTheme attrs = theme "dark" attrs
+let lightTheme attrs = theme "light" attrs
 
-    let phoneDevice attrs = sizeNoBiggerThan 1000 attrs
+let darkTheme attrs = theme "dark" attrs
 
-    let tabletDevice attrs = sizeNoBiggerThan 1600 attrs
+let phoneDevice attrs = sizeNoBiggerThan 1000 attrs
 
-    let makeStyle attrs (contents : seq<string>) =
-        style attrs [ contents |> String.concat "" |> Text ]
+let tabletDevice attrs = sizeNoBiggerThan 1600 attrs
+
+let makeStyle attrs (contents : seq<string>) =
+    style attrs [ contents |> String.concat "" |> Text ]
 
 
+
+let css : XmlNode = 
     makeStyle [] [
         lightTheme [
             cssFilter "body" [

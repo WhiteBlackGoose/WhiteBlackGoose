@@ -11,7 +11,7 @@ let wrap css { title = pageTitle; url = url; filename = filename; contents = con
             link [_rel "icon"; _type "image/png"; _href "https://avatars.githubusercontent.com/u/31178401"]
             link [_rel "stylesheet"; _type "text/css"; _href "https://fonts.googleapis.com/css?family=Overpass+Mono"]
             link [_rel "stylesheet"; _type "text/css"; _href "https://fonts.googleapis.com/css?family=Ubuntu+Mono"]
-            yield! css
+            css
         ]
         body [] [
             let sp = span [_style "color: gray;"] [ Text "|" ] |> RenderView.AsString.htmlNode
