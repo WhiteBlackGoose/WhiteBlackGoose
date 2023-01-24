@@ -139,7 +139,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
     url = "blog"
     filename = "index.html"
     contents = [
-        h1 [] [ Text "List of articles" ]
         yield! articlesListHtml 
     ]
 }

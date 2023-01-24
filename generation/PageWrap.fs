@@ -1,8 +1,9 @@
 module PageWrap
 
 open Giraffe.ViewEngine
+open Page
 
-let wrap css { title = title; depth = depth; contents = contents } = 
+let wrap css { title = pageTitle; url = url; filename = filename; contents = contents } : XmlNode = 
     let _a url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
     html [] [
         title [] [ Text pageTitle ]
