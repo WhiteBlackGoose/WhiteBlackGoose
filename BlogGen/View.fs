@@ -33,6 +33,9 @@ let commonHead font =
                 cssFilter "a" [
                     "color", "#333"
                 ]
+                cssClass "code-inline" [
+                    "background", "lightgray"
+                ]
             ]
             darkTheme [
                 cssFilter "body" [
@@ -49,6 +52,12 @@ let commonHead font =
                 cssFilter "a" [
                     "color", "#BBB"
                 ]
+                cssClass "code-inline" [
+                    "background", "#333"
+                ]
+            ]
+            cssClass "code-inline" [
+                "font-family", "mono"
             ]
             cssFilter ".header h1" [
                 "margin", "0 auto"
@@ -96,7 +105,7 @@ let commonHead font =
                 "padding-left", "20%"
                 "padding-right", "20%"
                 "line-height", "1.7"
-                "text-align", "justify"
+                // "text-align", "justify"
             ]
             cssFilter "hr" [
                 "width", "20%"
@@ -196,7 +205,7 @@ let genPage contents = function
             body [] [
                 let sp = span [_style "color: gray;"] [ Text "|" ] |> RenderView.AsString.htmlNode
                 let comp f = f [_style "padding: 12px; color: gray;"] [
-                    Text $"""{_a "/blog/index.html" "🏠 Home"} {sp} Blog of WhiteBlackGoose {sp} This website is {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen" "free software"} (GPLv3) {sp} The {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen/Contents/InternalArticles" "content"} is under CC BY-NC 4.0"""
+                    Text $"""{_a "../index.html" "🏠 Home"} {sp} Blog of WhiteBlackGoose {sp} This website is {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen" "free software"} (GPLv3) {sp} The {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen/Contents/InternalArticles" "content"} is under CC BY-NC 4.0"""
                 ]
                 comp header
                 div [_class "article-body"] [
