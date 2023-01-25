@@ -23,6 +23,7 @@ let pages = [
     www.gpg.index.html
     www.projects.index.html
     www.index.html
+    www.README.html
 ]
 
 for page in pages do

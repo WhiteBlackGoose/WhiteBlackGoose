@@ -26,6 +26,7 @@
     <Compile Include="./www/projects/index.fs" />
 
     <Compile Include="./www/index.fs" />
+    <Compile Include="./www/README.fs" />
 
     <Compile Include="./generation/Program.fs" />
   </ItemGroup>
