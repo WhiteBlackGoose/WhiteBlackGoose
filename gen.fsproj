@@ -21,6 +21,8 @@
     <Compile Include="./www/blog/pass/index.fs" />
     <Compile Include="./www/blog/index.fs" />
 
+    <Compile Include="./www/gpg/index.fs" />
+
     <Compile Include="./www/projects/index.fs" />
 
     <Compile Include="./www/index.fs" />

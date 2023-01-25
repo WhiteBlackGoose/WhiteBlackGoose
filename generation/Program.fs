@@ -20,6 +20,7 @@ let pages = [
     www.blog.my_values.index.html
     www.blog.pass.index.html
     www.blog.index.html
+    www.gpg.index.html
     www.projects.index.html
     www.index.html
 ]

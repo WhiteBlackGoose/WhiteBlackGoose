@@ -15,7 +15,6 @@ let wrap css ({ title = pageTitle; url = url; filename = filename; contents = co
       filename = filename
       title = pageTitle
       contents = 
-        let _a url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
         html [] [
             title [] [ Text pageTitle ]
             head [] [

@@ -8,7 +8,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
     url = "."
     filename = "index.html"
     contents = [
-        let _a url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
         p [] [ Text $"""Hello. This is WhiteBlackGoose.""" ]
         p [] [ 
             Text $"""
@@ -19,6 +18,9 @@ let html = PageWrap.wrap www.``static``.styles.css {
             Text $"""
             I'm a member of {_a "https://angouri.org/" "Angouri"}, {_a "http://dotnetfoundation.org/" ".NET Foundation"}, and {_a "https://www.fsf.org/" "Free Software Foundation"}, and author of {_a "http://github.com/asc-community/AngouriMath" "AngouriMath"}.
             """
+        ]
+        p [] [
+            Text $"""{_a (Utils.locAwarePath www.gpg.index.html.url) "My GPG key"}"""
         ]
         h2 [] [ anc "articles"; Text "My Articles" ]
         yield! www.blog.index.articlesListHtml
