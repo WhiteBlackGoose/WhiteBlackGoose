@@ -67,7 +67,7 @@ let projects = [
 ]
 
 let projectsListHtml = [
-    ul [] [
+    ul [_style "column-count: 3"] [
     for prj in projects do
         li [] [ a [_href prj.url] [ Text prj.name ] ]
     ]

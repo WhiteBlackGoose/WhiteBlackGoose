@@ -40,11 +40,12 @@ let html = PageWrap.wrap www.``static``.styles.css {
                 td [] [ icon ]
             ]]
         ]
-        h2 [] [ anc "articles"; Text "My Articles" ]
-        yield! www.blog.index.articlesListHtml
 
         h2 [] [ anc "projects"; Text "My Projects" ]
         yield! www.projects.index.projectsListHtml
+
+        h2 [] [ anc "articles"; Text "My Articles" ]
+        yield! www.blog.index.articlesListHtml
 
         h2 [] [ anc "contacts"; Text "Contacts" ]
         p [] [
