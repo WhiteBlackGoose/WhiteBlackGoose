@@ -23,8 +23,8 @@ let articles = [
     { lang = EN; date = "2022-07-20"; tags = [ "web"; "F#" ]; title = "Create static website yourself. No 3rd party services";
         link = "https://dev.to/whiteblackgoose/create-static-website-yourself-no-3rd-party-services-1314" }
 
-    { lang = EN; date = "2022-06-02"; tags = [ "politics"; "philosophy" ]; title = "What the World could be Like";
-        link = "https://wbg.angouri.org/blogs/what-the-world-could-be-like/index.html" }
+    { lang = EN; date = "2022-06-02"; tags = [ "politics"; "philosophy" ]; title = www.blog.what_the_world_could_be_like.index.html.title;
+        link = Utils.locAwarePath www.blog.what_the_world_could_be_like.index.html.url }
 
     { lang = EN; date = "2022-05-28"; tags = [ "python"; "investing" ]; title = "20 Random Stocks Investment Strategy";
         link = "https://wbg.angouri.org/media/20_random_stocks.html" }
