@@ -2,6 +2,7 @@ module www.index
 
 open Giraffe.ViewEngine
 open Page
+open www.``static``.media
 
 let html = PageWrap.wrap www.``static``.styles.css {
     title = "WBG's"
@@ -21,6 +22,9 @@ let html = PageWrap.wrap www.``static``.styles.css {
         ]
         p [] [
             Text $"""{_a (Utils.locAwarePath www.gpg.index.html.url) "My GPG key"}"""
+        ]
+        p [] [
+            icons.NixOS; icons.GNU; icons.NeoVim "."; icons.CSharp; icons.FSharp; icons.git; icons.bitcoin
         ]
         h2 [] [ anc "articles"; Text "My Articles" ]
         yield! www.blog.index.articlesListHtml
