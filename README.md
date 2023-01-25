@@ -1,10 +1,13 @@
-## Hi there. I'm [**WhiteBlackGoose**](https://wbg.angouri.org).
+## wbg.angouri.org sources
 
-I'm a member of <a href="https://angouri.org">**Angouri**</a>, <a href="http://dotnetfoundation.org">**.NET Foundation**</a>, and <a href="https://www.fsf.org">**Free Software Foundation**</a>, and author of [**AngouriMath**](http://github.com/asc-community/AngouriMath). 
+Here you can view sources of my personal website. You can also modify and distribute the source code, as it is free software (GPLv3). You can also share the content of the articles, which is under CC BY-NC 4.0.
 
-I'm a Free Software enthusiast and mainly work on FOSS projects.
+To run the website locally, do
+```
+dotnet run
+```
+(assuming you have .NET 6 SDK)
 
-The rest please see my [personal website](https://wbg.angouri.org) (requires no javascript).
+This way you can have your own copy of this website which doesn't require internet.
 
-
-![](./github-metrics.svg)
+Feel free to submit PRs against this repo (sources are in F#, make sure you don't edit HTML directly).
