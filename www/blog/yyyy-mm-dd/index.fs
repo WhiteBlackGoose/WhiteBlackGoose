@@ -1,10 +1,12 @@
-module InternalArticles.YyyyMmDd
+module www.blog.yyyy_mm_dd.index
 
 open Giraffe.ViewEngine
-open InternalArticleDef
+open Page
 
-let page = {
+let html = PageWrap.wrap www.``static``.styles.css {
     title = "yyyy-mm-dd is the best date format"
+    url = "blog/yyyy-mm-dd"
+    filename = "index.html"
     contents = [
         p [] [
             Text $"""

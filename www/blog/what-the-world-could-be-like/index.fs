@@ -1,10 +1,12 @@
-module InternalArticles.WhatTheWorldCouldBeLike
+module www.blog.what_the_world_could_be_like.index
 
 open Giraffe.ViewEngine
-open InternalArticleDef
+open Page
 
-let page = {
+let html = PageWrap.wrap www.``static``.styles.css {
     title = "What the world could be like";
+    url = "blog/what-the-world-could-be-like"
+    filename = "index.html"
     contents = [
         p [] [
             Text " ... if we didn't have social bias. But first, what <i>is</i> bias?"

@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="./generation/Utils.fs" />
+
+    <Compile Include="./www/static/media/icons.fs" />
+
+    <Compile Include="./generation/Page.fs" />
+    <Compile Include="./generation/PageWrap.fs" />
+
+    <Compile Include="./www/static/styles/styles.fs" />
+
+    <Compile Include="./www/blog/what-the-world-could-be-like/index.fs" />
+    <Compile Include="./www/blog/my-values/index.fs" />
+    <Compile Include="./www/blog/yyyy-mm-dd/index.fs" />
+    <Compile Include="./www/blog/pass/index.fs" />
+    <Compile Include="./www/blog/index.fs" />
+
+    <Compile Include="./www/projects/index.fs" />
+
+    <Compile Include="./www/index.fs" />
+
+    <Compile Include="./generation/Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="4.2.7" />
+    <PackageReference Include="Giraffe.ViewEngine" Version="2.0.0-alpha-1" />
+  </ItemGroup>
+
+</Project>
