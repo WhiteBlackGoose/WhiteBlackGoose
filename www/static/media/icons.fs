@@ -13,3 +13,6 @@ let CSharp = img [_src "https://cdn.svgporn.com/logos/c-sharp.svg?response-conte
 let git = img [_src "https://cdn.svgporn.com/logos/git-icon.svg?response-content-disposition=attachment%3Bfilename%3Dgit-icon.svg"; _width logoSize; _height logoSize]
 let GNU = img [_src "https://cdn.svgporn.com/logos/gnu.svg?response-content-disposition=attachment%3Bfilename%3Dgnu.svg"; _width logoSize; _height logoSize]
 let bitcoin = img [_src "https://cdn.svgporn.com/logos/bitcoin.svg?response-content-disposition=attachment%3Bfilename%3Dbitcoin.svg"; _width logoSize; _height logoSize]
+let dotnet = img [_src "https://cdn.svgporn.com/logos/dotnet.svg?response-content-disposition=attachment%3Bfilename%3Ddotnet.svg"; _width logoSize; _height logoSize]
+
+let noFacebook = img [_src "https://stallman.org/no-facebook.svg"; _width "200"; _style "float: right;"]
