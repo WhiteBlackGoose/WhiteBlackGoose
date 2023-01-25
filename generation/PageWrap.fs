@@ -37,8 +37,11 @@ let wrap css ({ title = pageTitle; url = url; filename = filename; contents = co
                             let homePath = Utils.locAwarePath elevation
                             let upPath = Utils.locAwarePath ".."
                             $"""{_a homePath "Home"} {sp} {_a upPath "Up"} {sp}"""
+
+                    let edit =
+                        a [_href ("https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www" </> url </> "index.fs")] [ Text "Edit" ] |> RenderView.AsString.htmlNode
                             
-                    Text $"""Blog of WhiteBlackGoose {sp} {navig} This website is {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen" "free software"} (GPLv3) {sp} The {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen/Contents/InternalArticles" "content"} is under CC BY-NC 4.0"""
+                    Text $"""WhiteBlackGoose' website {sp} {navig} {edit} {sp} The content is under CC BY-NC 4.0 and source code is under GPLv3"""
                 ]
                 comp header
                 div [_class "article-body"] [

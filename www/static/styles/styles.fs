@@ -69,6 +69,8 @@ let css : XmlNode =
         ]
         cssClass "code-inline" [
             "font-family", "mono"
+            "padding", "2px"
+            "border-radius", "4px"
         ]
         cssFilter ".header h1" [
             "margin", "0 auto"
