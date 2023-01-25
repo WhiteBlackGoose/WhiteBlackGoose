@@ -1,23 +1,15 @@
-module www.gpg.index
+module www.gpg.pubkey
 
 open Giraffe.ViewEngine
-open Page
+open PageWrap
 
-let html = PageWrap.wrap www.``static``.styles.css {
-    title = "My GPG key"
+let txt : WrappedPage = {
+    title = "My public key"
     url = "gpg"
-    filename = "index.html"
-    contents = [
-        h2 [] [ anc "fingerprint"; Text "Fingerprint" ]
-        p [] [ Text "Key ID: goose-new &lt;wbg at angouri.org&gt; (replace at with @)" ]
-        p [] [ Text "Value: 640BEDDE9734310ABFA3B25752EDAE6A3995AFAB" ]
-        p [] [ Text $"""Key server: {_a "https://keys.openpgp.org/search?q=640BEDDE9734310ABFA3B25752EDAE6A3995AFAB" "keys.openpgp.org" } """ ]
-
-        h2 [] [ anc "key"; Text "Key" ]
-        p [] [
-            a [_href "pubkey.txt" ] [ Text "Download" ]
-            pre [] [ code [] [
-            Text """-----BEGIN PGP PUBLIC KEY BLOCK-----
+    filename = "pubkey.txt"
+    contents =
+        Text """
+-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGNGceQBEACnfgdj8Dyv/GO5ZlucGowy1UyLzI1AA3OEu6/53Nt4cSA/hgNA
 lqXDOB8dEfp6+WNzBn/+T1yOi7EHDJ88af0XKQJ0SNvqD0eFyRJ93z+qBgRhos2S
@@ -111,8 +103,5 @@ ZL/Xte1Jjnne107Odk+nAQCXaCYZXf3/nmjZlL2B1ChsV2WrGuVOjWR6TwuNZp+P
 Bw==
 =hY1T
 -----END PGP PUBLIC KEY BLOCK-----
-        """
-        ]]
-        ]
-    ]
+"""
 }

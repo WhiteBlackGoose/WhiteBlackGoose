@@ -21,6 +21,7 @@ let pages = [
     www.blog.pass.index.html
     www.blog.index.html
     www.gpg.index.html
+    www.gpg.pubkey.txt
     www.projects.index.html
     www.index.html
     www.README.html
