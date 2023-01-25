@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="./generation/Utils.fs" />
+
     <Compile Include="./www/static/media/icons.fs" />
 
     <Compile Include="./generation/Page.fs" />

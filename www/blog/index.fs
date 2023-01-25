@@ -14,11 +14,11 @@ type ArticleTile =
     }
 
 let articles = [
-    { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "linux" ]; title = "Cheatsheet on configuring fully FOSS highly secure pass with sync-ing";
-        link = "./pass/index.html" }
+    { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "linux" ]; title = www.blog.pass.index.html.title;
+        link = Utils.locAwarePath www.blog.pass.index.html.url }
 
-    { lang = EN; date = "2022-10-10"; tags = [ "life" ]; title = "Why YYYY-MM-DD is the best date format?";
-        link = "https://wbg.angouri.org/blog/yyyy-mm-dd/index.html" }
+    { lang = EN; date = "2022-10-10"; tags = [ "life" ]; title = www.blog.yyyy_mm_dd.index.html.title;
+        link = Utils.locAwarePath www.blog.yyyy_mm_dd.index.html.url }
 
     { lang = EN; date = "2022-07-20"; tags = [ "web"; "F#" ]; title = "Create static website yourself. No 3rd party services";
         link = "https://dev.to/whiteblackgoose/create-static-website-yourself-no-3rd-party-services-1314" }
@@ -126,7 +126,7 @@ let articles = [
 let articlesListHtml = 
     [
         for lang in [ EN; RU ] do
-            h2 [] [ anc (lang.ToString().ToLower()); Text $"Articles in lang" ]
+            h2 [] [ anc (lang.ToString().ToLower()); Text $"Articles in lang {lang}" ]
             table [] [
                 tr [] [ th [] [ Text "Date" ]; th [] [ Text "Url" ] ]
                 for article in List.filter (fun a -> a.lang = lang) articles do

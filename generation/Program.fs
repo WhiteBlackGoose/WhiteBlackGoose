@@ -3,6 +3,14 @@ open Giraffe.ViewEngine
 
 open Page
 
+let rec ensureExists srcDir dstDir =
+    if Directory.Exists(dstDir) |> not then
+        Directory.CreateDirectory(dstDir) |> ignore
+    for dir in Directory.GetDirectories(srcDir) do
+        ensureExists dir (dstDir </> Path.GetFileName dir)
+    for file in Directory.GetFiles srcDir do
+        File.Copy(file, dstDir </> Path.GetFileName file)
+
 let rootDir = "out"
 let sourceDir = "www"
 
@@ -23,6 +31,8 @@ for page in pages do
         RenderView.AsString.htmlNode page.contents)
     printfn $"Generated page {page.url}"
 
-Directory.Cop(sourceDir </> "media", rootDir </> "media")
+if Directory.Exists(rootDir </> "static" </> "media") then
+    Directory.Delete(rootDir </> "static" </> "media", true)
+ensureExists(sourceDir </> "static" </> "media") (rootDir </> "static" </> "media")
 
 printfn $"Finished."

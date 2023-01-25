@@ -7,11 +7,13 @@ type WrappedPage = {
     url : string
     filename : string
     contents : XmlNode
+    title : string
 }
 
-let wrap css { title = pageTitle; url = url; filename = filename; contents = contents } : WrappedPage = 
+let wrap css ({ title = pageTitle; url = url; filename = filename; contents = contents } : Page) : WrappedPage = 
     { url = url
       filename = filename
+      title = pageTitle
       contents = 
         let _a url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
         html [] [
@@ -25,7 +27,18 @@ let wrap css { title = pageTitle; url = url; filename = filename; contents = con
             body [] [
                 let sp = span [_style "color: gray;"] [ Text "|" ] |> RenderView.AsString.htmlNode
                 let comp f = f [_style "padding: 12px; color: gray;"] [
-                    Text $"""{_a "../index.html" "🏠 Home"} {sp} Blog of WhiteBlackGoose {sp} This website is {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen" "free software"} (GPLv3) {sp} The {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen/Contents/InternalArticles" "content"} is under CC BY-NC 4.0"""
+                    let navig = 
+                        if url = "." then 
+                            ""
+                        else
+                            let elevationCount = url |> String.filter ((=) '/') |> String.length
+                            let elevation = 
+                                [ for _ in 1 .. elevationCount + 1 do "../" ] |> String.concat ""
+                            let homePath = Utils.locAwarePath elevation
+                            let upPath = Utils.locAwarePath ".."
+                            $"""{_a homePath "Home"} {sp} {_a upPath "Up"} {sp}"""
+                            
+                    Text $"""Blog of WhiteBlackGoose {sp} {navig} This website is {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen" "free software"} (GPLv3) {sp} The {_a "https://github.com/WhiteBlackGoose/WhiteBlackGoose/tree/master/BlogGen/Contents/InternalArticles" "content"} is under CC BY-NC 4.0"""
                 ]
                 comp header
                 div [_class "article-body"] [
