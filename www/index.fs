@@ -41,10 +41,28 @@ let html = PageWrap.wrap www.``static``.styles.css {
             ]]
         ]
 
-        h2 [] [ anc "projects"; Text "My Projects" ]
-        yield! www.projects.index.projectsListHtml
+        h2 [] [ anc "projects"; Text "Projects I made" ]
+        yield! www.projects.index.projectsListHtml www.projects.index.myProjects
 
-        h2 [] [ anc "articles"; Text "My Articles" ]
+        h2 [] [ anc "projects"; Text "Projects I contributed to" ]
+        yield! www.projects.index.projectsListHtml www.projects.index.contributedProjects
+
+        h2 [] [ anc "pulls"; Text "Pull requests" ]
+        pre [] [
+        Text $"""
+{_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged&s=updated&type=Issues" "All"} 
+├─ {_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aasc-community&s=updated&type=Issues" "Angouri"} 
+│  ├─ {_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+repo%3Aasc-community%2FAngouriMath&s=updated&type=Issues" "AngouriMath"} 
+│  └─ {_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-repo%3Aasc-community%2FAngouriMath+org%3Aasc-community&s=updated&type=Issues" "Other"} 
+├─ {_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Adotnet&s=updated&type=Issues" ".NET"} 
+│  ├─ {_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+repo%3Adotnet%2FSilk.NET&s=updated&type=Issues" "Silk.NET"} 
+│  └─ {_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-repo%3Adotnet%2FSilk.NET+org%3Adotnet&s=updated&type=Issues" "Other"} 
+└─ {_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aplotly&s=updated&type=Issues" "Plotly"} 
+   ├─ {_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+org%3Aplotly+repo%3Aplotly%2FPlotly.NET&s=updated&type=Issues" "Plotly.NET"} 
+   └─ {_a "https://github.com/search?o=desc&q=is%3Aclosed+is%3Apull-request+author%3AWhiteBlackGoose+archived%3Afalse+is%3Amerged+-org%3Aasc-community+-org%3Adotnet+-org%3Aplotly&s=updated&type=Issues" "Other"} 
+        """
+        ]
+
         yield! www.blog.index.articlesListHtml
 
         h2 [] [ anc "contacts"; Text "Contacts" ]

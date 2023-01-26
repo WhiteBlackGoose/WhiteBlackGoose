@@ -3,14 +3,14 @@ module www.projects.index
 open Giraffe.ViewEngine
 open Page
 
-type ProgrammingLanguage = CSharp | FSharp | FStar | Bash | Rust
+type ProgrammingLanguage = CSharp | FSharp | FStar | Bash | Rust | Nix
 
 type ProjectTile =
     { name : string
       url : string
       langs : ProgrammingLanguage list }
 
-let projects = [
+let myProjects = [
     { name = "AngouriMath"; url = "https://github.com/asc-community/AngouriMath";
     langs = [ CSharp; FSharp ] }
 
@@ -20,14 +20,8 @@ let projects = [
     { name = "GenericTensor"; url = "https://github.com/asc-community/GenericTensor";
     langs = [ CSharp ] }
 
-    { name = "HonkSharp"; url = "https://github.com/WhiteBlackGoose/HonkSharp";
-    langs = [ CSharp ] }
-
     { name = "HonkPerf.NET"; url = "https://github.com/asc-community/HonkPerf.NET";
     langs = [ CSharp ] }
-
-    { name = "nix-utils"; url = "https://github.com/WhiteBlackGoose/nix-utils";
-    langs = [ Bash ] }
 
     { name = "brownian-motion-chart"; url = "https://github.com/WhiteBlackGoose/brownian-motion-chart";
     langs = [ Rust ] }
@@ -58,17 +52,26 @@ let projects = [
 
     { name = "UnitsOfMeasure"; url = "https://github.com/WhiteBlackGoose/UnitsOfMeasure";
     langs = [ CSharp ] }
-
-    { name = "ConsoleGameEngine"; url = "https://github.com/WhiteBlackGoose/ConsoleGameEngine";
-    langs = [ CSharp ] }
-
-    { name = "GuessBigO"; url = "https://github.com/WhiteBlackGoose/GuessBigO";
-    langs = [ CSharp ] }
 ]
 
-let projectsListHtml = [
+let contributedProjects = [
+    { name = "Silk.NET"; url = "https://github.com/dotnet/Silk.NET";
+      langs = [ CSharp ] }
+
+    { name = "Plotly.NET"; url = "https://github.com/plotly/Plotly.NET/"; 
+      langs = [ FSharp ] }
+
+    { name = "nixpkgs"; url = "https://github.com/NixOS/nixpkgs";
+      langs = [ Nix ]}
+
+    { name = ".NET Interactive"; url = "https://github.com/dotnet/interactive"; langs = [ CSharp ] }
+
+    { name = "Draco"; url = "https://github.com/Draco-lang/Language-suggestions"; langs = [ ] }
+]
+
+let projectsListHtml prjList = [
     ul [_style "column-count: 3"] [
-    for prj in projects do
+    for prj in prjList do
         li [] [ a [_href prj.url] [ Text prj.name ] ]
     ]
 ]
@@ -78,6 +81,10 @@ let html = PageWrap.wrap www.``static``.styles.css {
     url = "projects"
     filename = "index.html"
     contents = [
-        yield! projectsListHtml
+        h2 [] [ Text "I made..." ]
+        yield! projectsListHtml myProjects
+
+        h2 [] [ Text "I contributed to..." ]
+        yield! projectsListHtml contributedProjects
     ]
 }
