@@ -40,7 +40,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    """
   ]
 
-  h2 [] [ anc "repro"; orderedHeader "2. Reproducibility" ]
+  h2 [] [ anc "repro"; orderedHeader "Reproducibility" ]
   p [] [
    Text $"""
     Nix is pure, given the same input (configuration) - it produces the same output. That means, you can easily try something out, and rollback - the rolled back system will be the same as it was before you tried it.
@@ -52,7 +52,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    """
   ]
 
-  h2 [] [ anc "sandbox"; orderedHeader "3. Package sandboxing" ]
+  h2 [] [ anc "sandbox"; orderedHeader "Package sandboxing" ]
   p [] [
    Text $"""
     All packages and dependencies have unique paths (hashes) generated for them by {co "nix"}. That means, we could really go wild with packages. We could have multiple deps of different versions - or we could have multiple apps of different versions - or even multiple core libraries like glibc! Hell, we could quite literally have non-conflicting instances of every program in all their available versions. All you need is to run them by figuring out the path - but remember, path is just a hash of the program+version! You can calculate it even before you "install" it.
@@ -64,7 +64,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    """
   ]
 
-  h2 [] [ anc "shell"; orderedHeader "4. Shell" ]
+  h2 [] [ anc "shell"; orderedHeader "Shell" ]
   p [] [
    Text $"""With {co "nix-shell -p"} you can try packages without "installing" them. For example, you want to run {co "neofetch"}, but you don't want to keep it in PATH constantly. So you do {co "nix-shell -p neofetch"}, now you're in a shell. There you can run it, then exit - and neofetch is entirely inaccessible. No, {co "nix"} didn't delete it. It's just that it made it accessible for your session."""
   ]
@@ -72,7 +72,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    Text $"""But we didn't really cover the actual power of {co "nix-shell"}. Yes you can try out packages with it - but you can as well build an entire development environment! You can create *.nix files for your projects, and configure all toolchains, buildtools, compilers, SDKs, packages and dependencies that your project needs - so that new teammates could easily immerse into your process by {it "just"} typing {co "nix-shell amazing-project.nix"}, and others - synchronize your SDKs."""
   ]
 
-  h2 [] [ anc "easy-use"; orderedHeader "5. Easy to use" ]
+  h2 [] [ anc "easy-use"; orderedHeader "Easy to use" ]
   p [] [
    Text $"""Not in the same way as Linux Mint or Ubuntu (it's actually quite the opposite). But when you start somewhat getting into it - a lot of things get much easier. For instance, configuring services, or swapping linux kernels. You {it "just"} replace the corresponding line in your config with the kernel you want. For most simple cases, you can just copy stuff from wiki and get away with it.
    """
@@ -111,7 +111,19 @@ let html = PageWrap.wrap www.``static``.styles.css {
    Text $"""See? I just replaced a few attributes. Now I use my fork. I didn't even read nvim's guide on how to build it. And I didn't bother installing its build and runtime dependencies either."""
   ]
 
-  h2 [] [ anc "easy-contrib"; orderedHeader "6. Easy to contribute" ]
+  h2 [] [ anc "app-avail"; orderedHeader "Software availability" ]
+  p [] [
+   Text $"""You may have expected, that some obscure OS which nobody has heard of has almost no packages, and you're forced to escape the package manager with regular builds very soon? Haha. According to {_a "https://repology.org/repositories/statistics/total" "repology.org"}, it has quite literally the {bo "richest"} softare repository in the world, superceding AUR - and we haven't even talked about NUR (NixOS User Repository) yet, only about the official one!
+   """
+  ]
+  p [] [
+   Text $"""Of course, you should take that source with a grain of salt. Not because they lie - but because there's no objective way to calculate the number of packages. For example, do multiple versions count? Do python packages count (and they exist in nix)? How do we really know if many packages = rich? Maybe your favourite program is only available for Trisquel?"""
+  ]
+  p [] [
+   Text $"""Nonetheless, by {it "my"} experience I could find many more packages in NixOS than, let's say, in debian. One of the reasons - beacuse it's {refanc "easy-contrib" "so easy to contribute"}."""
+  ]
+
+  h2 [] [ anc "easy-contrib"; orderedHeader "Easy to contribute" ]
   p [] [
    Text $"""It's orders of magnitude easier to package an app for NixOS than, let's say, for debian. The package is a *.nix file, which creates a {it "derivation"} (that's what the packages you install are, too). It declares dependencies and all that - somewhat similar to other package managers, but unlike them, nix guarantees that all dependencies are well-defined, and you didn't mutate something accidentally to make it build, because it reproduces everything from scratch on rebuild.
    """
@@ -126,9 +138,9 @@ let html = PageWrap.wrap www.``static``.styles.css {
    Text $"""As a bonus of that repo management, you can keep your own fork of {co "nixpkgs"} and pull packages from there - or {it "some"} packages from there, and others from upstream - or however you wish, honestly."""
   ]
 
-  h2 [] [ anc "app-avail"; orderedHeader "7. Software availability" ]
+  h1 [] [ Text "Disadvantages" ]
   p [] [
-   
+   Text $"""Of course, there are disadvantages. Will write about them later."""
   ]
  ]
 }
