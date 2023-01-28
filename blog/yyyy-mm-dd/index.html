@@ -48,44 +48,44 @@ background-color: gray;
 border: 0.5px solid gray;
 }
 </style></head><body><header style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="../../">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/yyyy-mm-dd/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</header><div class="article-body"><h1>yyyy-mm-dd is the best date format</h1><p>
-            I keep seeing Europeans and Americans arguing on reddit whether
-            it should be DD/MM/YYYY or MM/DD/YYYY. I've always disagreed with
-            both, let me give you a few reasons why.
-            <i>Disclaimer: the arguments here are mostly for people who read from left to right</i>
-            </p><br><hr><br><h2>1. Consistency with other measurements</h2><p>
-            First of all, how do we write numbers? Take <b>645</b>. Its first
-            (reading from the left) digit is <b>6</b>, the most significant digit. So
-            when you consider a price of a product, you most likely will care more
-            about its major units than those minor (e. g. "six hundred dollars" is not 
-            much different from "six hundred fourty five").
-            </p><p>
-            Now, let's take something else. For example, time, which we write as
-            "15:45" and read starting from its major units. See the pattern?
-            </p><p>
-            In <b>yyyy-mm-dd</b> it's the same. Starting from the most major unit,
-            ending with a minormost one.
-            </p><h2>2. Universality for daily usage</h2><p>
-            An argument for MM/DD/YYYY and DD/MM/YYYY is that they're supposedly
-            easier to work with for people in everyday life. I disagree with it.
-            </p><p>
-            What is our use of date and time? Surely the most basic option would
-            be the precise moment in time, e. g. year 2022, month 10, day 20, hour 12, minute 16, second 10. But it's impractical for daily life, it's long, inconvenient, error-prone.
-            </p><p>
-            Our universal format allows to <i>cut</i> any continuous interval from ISO8601 (<b>YYYY-MM-DD HH:mm:ss</b>) which still makes perfect sense. For example, you want to hold a party soon, so you cut (YYYY-<b>MM-DD HH</b>:mm:ss). Or you want to research when Napoleon started working on his Napoleonic plans, which would be (<b>YYYY-MM</b>-DD HH:mm:ss). Or a lecture starts soon, you're perhaps interested in (YYYY-MM-DD HH:<b>mm:ss</b>). Likewise, a full date and a full time are also continuous intervals taken from this universal format!
-            </p><h2>3. Visual understanding and sorting</h2><p>
-            Which one happened earlier: <b>10/5/12</b> or <b>7/8/12</b>? Yeah... first of all, is it mm/dd/yy or dd/mm/yy or something else? For either of them, 
-            you will have to think by which of the sections to compare first.
-            </p><p>
-            Now, compare <b>2012-05-10</b> and <b>2012-07-08</b>. If you read from left to right, all you need to do is to find the leftmost different digit
-            and compare them. Clearly, <b>2012-07-08</b> comes after <b>2012-05-10</b>, because 7 is greater than 5, and you don't need to pad zeros,
-            go over the date in a random order of "sections". You do it <b>exactly</b> as you do it with numbers, time, and other measurements.
-            </p><p>
-            Sorting of dates usually requires understanding of the date. For example, in computers, you need a separate algorithm which would sort by date.
-            What if your files contain date in name, by which you want to sort? It becomes a nightmare to re-arrange them.
-            </p><p>
-            Unlike other date formats, sorting this one is the same as sorting alphabetically, because in the alphabet with digits, lower digits come first
-            - and that's all you need. Sort by name, and voila, they all sorted.
-            </p><br><hr><br><h2>FAQ / how to</h2><p><h3>What about separator? Does it have to be dash "-"?</h3><p>
-                No, it doesn't, it could be anything (but stay consistent with your choice!). I would prefer dashes because it's ISO8601 and because
-                dot "." and slash "/" may have special meaning in different contexts (of course so may have dash "-", but less often to my experience).
-                </p></p></div><footer style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="../../">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/yyyy-mm-dd/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</footer></body></html>
+   I keep seeing Europeans and Americans arguing on reddit whether
+   it should be DD/MM/YYYY or MM/DD/YYYY. I've always disagreed with
+   both, let me give you a few reasons why.
+   <i>Disclaimer: the arguments here are mostly for people who read from left to right</i>
+   </p><br><hr><br><h2><a href="#consistency" name="consistency" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>1. Consistency with other measurements</h2><p>
+   First of all, how do we write numbers? Take <b>645</b>. Its first
+   (reading from the left) digit is <b>6</b>, the most significant digit. So
+   when you consider a price of a product, you most likely will care more
+   about its major units than those minor (e. g. "six hundred dollars" is not 
+   much different from "six hundred fourty five").
+   </p><p>
+   Now, let's take something else. For example, time, which we write as
+   "15:45" and read starting from its major units. See the pattern?
+   </p><p>
+   In <b>yyyy-mm-dd</b> it's the same. Starting from the most major unit,
+   ending with a minormost one.
+   </p><h2><a href="#daily" name="daily" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>2. Universality for daily usage</h2><p>
+   An argument for MM/DD/YYYY and DD/MM/YYYY is that they're supposedly
+   easier to work with for people in everyday life. I disagree with it.
+   </p><p>
+   What is our use of date and time? Surely the most basic option would
+   be the precise moment in time, e. g. year 2022, month 10, day 20, hour 12, minute 16, second 10. But it's impractical for daily life, it's long, inconvenient, error-prone.
+   </p><p>
+   Our universal format allows to <i>cut</i> any continuous interval from ISO8601 (<span class="code-inline">YYYY-MM-DD HH:mm:ss</span>) which still makes perfect sense. For example, you want to hold a party soon, so you cut month, day, and hour (YYYY-<span class="code-inline">MM-DD HH</span>:mm:ss). Or you want to research when Napoleon started working on his Napoleonic plans, which would be year and month (<span class="code-inline">YYYY-MM</span>-DD HH:mm:ss). Or a lecture starts soon, you're perhaps interested in (YYYY-MM-DD <span class="code-inline">HH:mm</span>:ss). Likewise, a full date and a full time are also continuous intervals taken from this universal format!
+   </p><p>Ok, let's compare these examples against mm/dd/yyyy and dd/mm/yyyy:<table><tr><td style="padding: 15px; border: 2px solid">Case</td><td style="padding: 15px; border: 2px solid">YYYY-MM-DD HH:mm:ss</td><td style="padding: 15px; border: 2px solid">MM/DD/YYYY HH:mm:ss</td><td style="padding: 15px; border: 2px solid">DD/MM/YYYY HH:mm:ss</td></tr><tr><td style="padding: 15px; border: 1px solid">Embassy invitation</td><td style="padding: 15px; border: 1px solid">YYYY-MM-<span class="code-inline">DD HH:mm</span>:ss</td><td style="padding: 15px; border: 1px solid">MM/<span class="code-inline">DD</span>/YYYY <span class="code-inline">HH:mm</span>:ss</td><td style="padding: 15px; border: 1px solid"><span class="code-inline">DD</span>/MM/YYYY <span class="code-inline">HH:mm</span>:ss</td></tr><tr><td style="padding: 15px; border: 1px solid">Party</td><td style="padding: 15px; border: 1px solid">YYYY-<span class="code-inline">MM-DD HH</span>:mm:ss</td><td style="padding: 15px; border: 1px solid"><span class="code-inline">MM/DD</span>/YYYY <span class="code-inline">HH</span>:mm:ss</td><td style="padding: 15px; border: 1px solid"><span class="code-inline">DD/MM</span>/YYYY <span class="code-inline">HH</span>:mm:ss</td></tr><tr><td style="padding: 15px; border: 1px solid">Napoleon plans</td><td style="padding: 15px; border: 1px solid"><span class="code-inline">YYYY-MM</span>-DD HH:mm:ss</td><td style="padding: 15px; border: 1px solid"><span class="code-inline">MM</span>/DD<span class="code-inline">/YYYY</span> HH:mm:ss</td><td style="padding: 15px; border: 1px solid">DD/<span class="code-inline">MM/YYYY</span> HH:mm:ss</td></tr><tr><td style="padding: 15px; border: 1px solid">Lecture start</td><td style="padding: 15px; border: 1px solid">YYYY-MM-DD <span class="code-inline">HH:mm</span>:ss</td><td style="padding: 15px; border: 1px solid">MM/DD/YYYY <span class="code-inline">HH:mm</span>:ss</td><td style="padding: 15px; border: 1px solid">DD/MM/YYYY <span class="code-inline">HH:mm</span>:ss</td></tr></table></p><p>See? In our format, you always cut out a continuous interval. In other formats, you have to cut out a few pieces.</p><h2><a href="#visual" name="visual" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>3. Visual understanding and sorting</h2><p>
+   Which one happened earlier: <b>10/5/12</b> or <b>7/8/12</b>? Yeah... first of all, is it mm/dd/yy or dd/mm/yy or something else? For either of them, 
+   you will have to think by which of the sections to compare first.
+   </p><p>
+   Now, compare <b>2012-05-10</b> and <b>2012-07-08</b>. If you read from left to right, all you need to do is to find the leftmost different digit
+   and compare them. Clearly, <b>2012-07-08</b> comes after <b>2012-05-10</b>, because 7 is greater than 5, and you don't need to pad zeros,
+   go over the date in a random order of "sections". You do it <b>exactly</b> as you do it with numbers, time, and other measurements.
+   </p><p>
+   Sorting of dates usually requires understanding of the date. For example, in computers, you need a separate algorithm which would sort by date.
+   What if your files contain date in name, by which you want to sort? It becomes a nightmare to re-arrange them.
+   </p><p>
+   Unlike other date formats, sorting this one is the same as sorting alphabetically, because in the alphabet with digits, lower digits come first
+   - and that's all you need. Sort by name, and voila, they all sorted.
+   </p><br><hr><br><h2>FAQ / how to</h2><p><h3>What about separator? Does it have to be dash "-"?</h3><p>
+    No, it doesn't, it could be anything (but stay consistent with your choice!). I would prefer dashes because it's ISO8601 and because
+    dot "." and slash "/" may have special meaning in different contexts (of course so may have dash "-", but less often to my experience).
+    </p></p></div><footer style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="../../">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/yyyy-mm-dd/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</footer></body></html>
