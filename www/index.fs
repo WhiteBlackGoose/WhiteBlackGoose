@@ -27,6 +27,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
                 $"""{_a (Utils.locAwarePath www.projects.index.html.url) "Projects"}"""
                 $"""{_a "https://github.com/WhiteBlackGoose" "Github"}"""
                 $"""{_a (Utils.locAwarePath www.gpg.index.html.url) "My GPG key"}"""
+                $"""{_a (Utils.locAwarePath www.good_links.index.html.url) "Good links"}"""
             ]
             Text "•&nbsp;"
             for url in urls do
@@ -64,15 +65,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
         ]
 
         yield! www.blog.index.articlesListHtml
-
-        h2 [] [ anc "friends"; Text "Friendly websites" ]
-        p [] [
-            ul [] [
-                li [] [ a [_href "https://stallman.org/"] [ Text "stallman.org" ] ]
-                li [] [ a [_href "https://ashley143.gay/"] [ Text "ashley143.gay" ] ]
-                li [] [ a [_href "https://michael.stapelberg.ch/"] [ Text "michael.stapelberg.ch" ] ]
-            ]
-        ]
 
         h2 [] [ anc "contacts"; Text "Contacts" ]
         p [] [

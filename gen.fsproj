@@ -24,6 +24,8 @@
     <Compile Include="./www/gpg/pubkey.fs" />
     <Compile Include="./www/gpg/index.fs" />
 
+    <Compile Include="./www/good-links/index.fs" />
+
     <Compile Include="./www/projects/index.fs" />
 
     <Compile Include="./www/index.fs" />
