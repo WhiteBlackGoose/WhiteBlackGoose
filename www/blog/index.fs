@@ -14,7 +14,10 @@ type ArticleTile =
     }
 
 let articles = [
-    { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "linux" ]; title = www.blog.pass.index.html.title;
+    { lang = EN; date = "2023-01-28"; tags = [ "gnu"; "nixos" ]; title = www.blog.nixos.index.html.title;
+        link = Utils.locAwarePath www.blog.nixos.index.html.url }
+
+    { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "gnu" ]; title = www.blog.pass.index.html.title;
         link = Utils.locAwarePath www.blog.pass.index.html.url }
 
     { lang = EN; date = "2022-10-10"; tags = [ "life" ]; title = www.blog.yyyy_mm_dd.index.html.title;
