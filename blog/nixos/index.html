@@ -1,0 +1,85 @@
+<html><title>Why I love NixOS</title><head><link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/31178401"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"><style>@media (prefers-color-scheme: light) {
+body {
+background: rgb(230, 230, 230);
+color: #333;
+}
+a {
+color: #333;
+}
+.code-inline {
+background: lightgray;
+}
+
+}@media (prefers-color-scheme: dark) {
+body {
+background: rgb(30, 30, 30);
+color: #BBB;
+}
+a {
+color: #BBB;
+}
+.code-inline {
+background: #333;
+}
+
+}.code-inline {
+font-family: mono;
+padding: 2px;
+border-radius: 4px;
+}
+.header h1 {
+margin: 0 auto;
+}
+a {
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-color: gray;
+}
+.article-body {
+font-family: Overpass Mono;
+padding: 60px;
+padding-left: 20%;
+padding-right: 20%;
+line-height: 1.7;
+}
+hr {
+width: 20%;
+background-color: gray;
+border: 0.5px solid gray;
+}
+</style></head><body><header style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="../../">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/nixos/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</header><div class="article-body"><h1>Why I love NixOS</h1><p>
+   As of 2023-01-28, NixOS is my favourite operating system, and here's why. (this article is WIP)
+   </p><br><hr><br><h2><a href="#text" name="text" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>1. Text configuration</h2><p>
+    The entire system is configured through text. And by config I mean, not time zone or host name - everything. All systemd services, grub, keyboard, drivers, kernel modules, dns resolvers, installed software - oh, list of software is also configured through text.
+   </p><p>
+    Text configuration has a lot of benefits. Besides the fact, that everything is under your control in one place and not stretched by all kinds of things, it also makes <i>your entire system</i> git-friendly - that is, you can pretty much version control your system configuration, and thus, spend just a few minutes recovering your whole system if something happens to your hardware.
+      </p><p>
+    It also means you can easily share your configuration. Instead of following imperative steps of some guide, you just copy-paste some piece of configuration and rebuild the system - boom, it works.
+   </p><h2><a href="#repro" name="repro" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>2. Reproducibility</h2><p>
+    Nix is pure, given the same input (configuration) - it produces the same output. That means, you can easily try something out, and rollback - the rolled back system will be the same as it was before you tried it.
+   </p><p>
+    Moreover, Nix will take care of package dependencies when you're creating a nix package, to ensure that the build is reproducible. If it builds for you - it builds for everyone else (at least, with the same architecture and OS). That opposed to traditional OS like Debian, where you have to ensure that you listed all dependencies for the package, and not miss a few which are installed on your system, but you forgot that they're needed.
+   </p><h2><a href="#sandbox" name="sandbox" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>3. Package sandboxing</h2><p>
+    All packages and dependencies have unique paths (hashes) generated for them by <span class="code-inline">nix</span>. That means, we could really go wild with packages. We could have multiple deps of different versions - or we could have multiple apps of different versions - or even multiple core libraries like glibc! Hell, we could quite literally have non-conflicting instances of every program in all their available versions. All you need is to run them by figuring out the path - but remember, path is just a hash of the program+version! You can calculate it even before you "install" it.
+   </p><p>
+    Although we probably don't normally want to have 16 versions of firefox, we might want to partially upgrade some packages - which is impossible in "linear" OS like debian, arch, ubuntu, and others. Here - you're free to. 
+   </p><h2><a href="#shell" name="shell" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>4. Shell</h2><p>With <span class="code-inline">nix-shell -p</span> you can try packages without "installing" them. For example, you want to run <span class="code-inline">neofetch</span>, but you don't want to keep it in PATH constantly. So you do <span class="code-inline">nix-shell -p neofetch</span>, now you're in a shell. There you can run it, then exit - and neofetch is entirely inaccessible. No, <span class="code-inline">nix</span> didn't delete it. It's just that it made it accessible for your session.</p><p>But we didn't really cover the actual power of <span class="code-inline">nix-shell</span>. Yes you can try out packages with it - but you can as well build an entire development environment! You can create *.nix files for your projects, and configure all toolchains, buildtools, compilers, SDKs, packages and dependencies that your project needs - so that new teammates could easily immerse into your process by <i>just</i> typing <span class="code-inline">nix-shell amazing-project.nix</span>, and others - synchronize your SDKs.</p><h2><a href="#easy-use" name="easy-use" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>5. Easy to use</h2><p>Not in the same way as Linux Mint or Ubuntu (it's actually quite the opposite). But when you start somewhat getting into it - a lot of things get much easier. For instance, configuring services, or swapping linux kernels. You <i>just</i> replace the corresponding line in your config with the kernel you want. For most simple cases, you can just copy stuff from wiki and get away with it.
+   </p><p>Besides what I listed, here's a practical example of what I mean. I use my own fork of neovim. On other OS I'd need to remove the original <span class="code-inline">neovim</span> from my system with the package manager, then clone my repo, and build it. On NixOS, I replace my original config:
+   </p><pre><code>environment.systemPackages = with pkgs; [
+    neovim
+]</code></pre><p>With a "fork" of this package, with git url and commit hash overriden:</p><pre><code>environment.systemPackages = with pkgs; [
+    (
+      neovim-unwrapped.overrideAttrs (oldAttrs: {
+        src = fetchFromGitHub {
+          owner = "WhiteBlackGoose";
+          repo = "neovim-goose";
+          rev = "5c9bf0ea74aa9297227242f17058a9f0c4c0c115";
+          hash = "sha256-s+c745H4D9hTOWTmPKG0emp4TMiJlFhhF9zCeqnIDB4=";
+        };
+      })
+    )
+]</code></pre><p>See? I just replaced a few attributes. Now I use my fork. I didn't even read nvim's guide on how to build it. And I didn't bother installing its build and runtime dependencies either.</p><h2><a href="#app-avail" name="app-avail" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>6. Software availability</h2><p>You may have expected, that some obscure OS which nobody has heard of has almost no packages, and you're forced to escape the package manager with regular builds very soon? Haha. According to <a href="https://repology.org/repositories/statistics/total">repology.org</a>, it has quite literally the <b>richest</b> softare repository in the world, superceding AUR - and we haven't even talked about NUR (NixOS User Repository) yet, only about the official one!
+   </p><p>Of course, you should take that source with a grain of salt. Not because they lie - but because there's no objective way to calculate the number of packages. For example, do multiple versions count? Do python packages count (and they exist in nix)? How do we really know if many packages = rich? Maybe your favourite program is only available for Trisquel?</p><p>Nonetheless, by <i>my</i> experience I could find many more packages in NixOS than, let's say, in debian. One of the reasons - beacuse it's ParentNode
+  (struct ("a", [KeyValue ("href", "#easy-contrib")]),
+   [Text "so easy to contribute"]).</p><h2><a href="#easy-contrib" name="easy-contrib" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>7. Easy to contribute</h2><p>It's orders of magnitude easier to package an app for NixOS than, let's say, for debian. The package is a *.nix file, which creates a <i>derivation</i> (that's what the packages you install are, too). It declares dependencies and all that - somewhat similar to other package managers, but unlike them, nix guarantees that all dependencies are well-defined, and you didn't mutate something accidentally to make it build, because it reproduces everything from scratch on rebuild.
+   </p><p>Of course, you don't want to rebuild every single time you just want to see if it builds. So you can enter ParentNode (struct ("a", [KeyValue ("href", "#shell")]), [Text "shell"]) - with all dependencies available, but without building the app itself, so you can tinker and mutate while you're at it - and then see, if it actually reproduces from clean state</p><p>Not only that, but it's also very easy to send the new package upstream. Unlike other OS, NixOS' repository, nixpkgs, is <a href="https://github.com/nixOS/nixpkgs/">managed on github</a>. That means, uploading a package is as hard as creating a pull request.</p><p>As a bonus of that repo management, you can keep your own fork of <span class="code-inline">nixpkgs</span> and pull packages from there - or <i>some</i> packages from there, and others from upstream - or however you wish, honestly.</p><h1>Disadvantages</h1><p>Of course, there are disadvantages. Will write about them later.</p></div><footer style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="../../">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/nixos/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</footer></body></html>
