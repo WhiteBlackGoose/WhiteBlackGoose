@@ -9,6 +9,9 @@ let orderedHeader =
         counter <- counter + 1
         Text $"{counter}. {text}"
 
+let refancs anc text =
+    refanc anc text |> RenderView.AsString.htmlNode
+
 let html = PageWrap.wrap www.``static``.styles.css {
  title = "Why I love NixOS"
  url = "blog/nixos"
@@ -120,7 +123,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    Text $"""Of course, you should take that source with a grain of salt. Not because they lie - but because there's no objective way to calculate the number of packages. For example, do multiple versions count? Do python packages count (and they exist in nix)? How do we really know if many packages = rich? Maybe your favourite program is only available for Trisquel?"""
   ]
   p [] [
-   Text $"""Nonetheless, by {it "my"} experience I could find many more packages in NixOS than, let's say, in debian. One of the reasons - beacuse it's {refanc "easy-contrib" "so easy to contribute"}."""
+   Text $"""Nonetheless, by {it "my"} experience I could find many more packages in NixOS than, let's say, in debian. One of the reasons - beacuse it's {refancs "easy-contrib" "so easy to contribute"}."""
   ]
 
   h2 [] [ anc "easy-contrib"; orderedHeader "Easy to contribute" ]
@@ -129,7 +132,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    """
   ]
   p [] [
-   Text $"""Of course, you don't want to rebuild every single time you just want to see if it builds. So you can enter {refanc "shell" "shell"} - with all dependencies available, but without building the app itself, so you can tinker and mutate while you're at it - and then see, if it actually reproduces from clean state"""
+   Text $"""Of course, you don't want to rebuild every single time you just want to see if it builds. So you can enter {refancs "shell" "shell"} - with all dependencies available, but without building the app itself, so you can tinker and mutate while you're at it - and then see, if it actually reproduces from clean state"""
   ]
   p [] [
    Text $"""Not only that, but it's also very easy to send the new package upstream. Unlike other OS, NixOS' repository, nixpkgs, is {_a "https://github.com/nixOS/nixpkgs/" "managed on github"}. That means, uploading a package is as hard as creating a pull request."""
