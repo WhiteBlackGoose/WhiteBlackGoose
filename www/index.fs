@@ -65,6 +65,15 @@ let html = PageWrap.wrap www.``static``.styles.css {
 
         yield! www.blog.index.articlesListHtml
 
+        h2 [] [ anc "friends"; Text "Friendly websites" ]
+        p [] [
+            ul [] [
+                li [] [ a [_href "https://stallman.org/"] [ Text "stallman.org" ] ]
+                li [] [ a [_href "https://ashley143.gay/"] [ Text "ashley143.gay" ] ]
+                li [] [ a [_href "https://michael.stapelberg.ch/"] [ Text "michael.stapelberg.ch" ] ]
+            ]
+        ]
+
         h2 [] [ anc "contacts"; Text "Contacts" ]
         p [] [
             a [_href "https://stallman.org/facebook.html"; _style "text-align: right;"] [icons.noFacebook]
