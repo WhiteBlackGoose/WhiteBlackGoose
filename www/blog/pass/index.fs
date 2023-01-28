@@ -160,7 +160,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
         h2 [] [ anc "mobile"; Text $"""3. Access & add passwords from your android phone""" ]
         p [] [
             ol [] [
-                li [] [ Text $"""Install [Password Store](https://github.com/android-password-store/Android-Password-Store#readme)""" ]
+                li [] [ Text $"""Install {_a "https://github.com/android-password-store/Android-Password-Store#readme" "Password Store"}""" ]
                 li [] [ Text $"""Install {ur "https://www.openkeychain.org" "OpenkeyChain"}""" ]
                 li [] [ Text $"""Open Password Store app, generate SSH and GPG keys (make sure to encrypt both)""" ]
                 li [] [ Text $"""Upload your {bo "public"} SSH key to github or whatever your remote server is""" ]
