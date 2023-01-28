@@ -10,15 +10,26 @@ let html = PageWrap.wrap www.``static``.styles.css {
     filename = "index.html"
     contents = [
         p [] [ Text $"""Hello. This is WhiteBlackGoose.""" ]
-        p [] [ 
-            Text $"""
-            I'm a {_a "https://www.gnu.org/philosophy/free-sw.en.html" "Free Software"} enthusiast,
-            contributor and maintainer of a couple of Free and Open-Source projects.
-            """ ]
-        p [] [
-            Text $"""
-            I'm a member of {_a "https://angouri.org/" "Angouri"}, {_a "http://dotnetfoundation.org/" ".NET Foundation"}, and {_a "https://www.fsf.org/" "Free Software Foundation"}, and author of {_a "http://github.com/asc-community/AngouriMath" "AngouriMath"}.
-            """
+        div [_style "float: right"] [
+            h3 [] [ Text "Recently added" ]
+            p [] [
+                ul [] [
+                    li [] [ a [_href "https://stallman.org/facebook.html"] [ Text "About Facebook" ] ]
+                    li [] [ a [_href (Utils.locAwarePath www.blog.yyyy_mm_dd.index.html.url) ] [ Text "yyyy-mm-dd is best" ] ]
+                ]
+            ]
+        ]
+        div [] [
+            p [] [ 
+                Text $"""
+                I'm a {_a "https://www.gnu.org/philosophy/free-sw.en.html" "Free Software"} enthusiast,
+                contributor and maintainer of a couple of Free and Open-Source projects.
+                """ ]
+            p [] [
+                Text $"""
+                I'm a member of {_a "https://angouri.org/" "Angouri"}, {_a "http://dotnetfoundation.org/" ".NET Foundation"}, and {_a "https://www.fsf.org/" "Free Software Foundation"}, and author of {_a "http://github.com/asc-community/AngouriMath" "AngouriMath"}.
+                """
+            ]
         ]
         hr []
         p [_style "text-align: center;"] [
