@@ -49,9 +49,9 @@ let html = PageWrap.wrap www.``static``.styles.css {
         ]
         hr []
         p [] [
-            table [_style "width: 80%; padding-left: 10%;"] [ tr [] [
-            for icon in [icons.NixOS; icons.GNU; icons.NeoVim "."; icons.CSharp; icons.FSharp; icons.dotnet; icons.git; icons.bitcoin] do
-                td [] [ icon ]
+            table [_style "width: 100%"] [ tr [] [
+            for icon in [icons.NixOS; icons.GNU; icons.NeoVim "."; icons.LaTeX; icons.CSharp; icons.FSharp; icons.dotnet; icons.git; icons.bitcoin] do
+                td [] [ icon "30" ]
             ]]
         ]
 
