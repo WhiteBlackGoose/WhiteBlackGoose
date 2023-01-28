@@ -4,9 +4,9 @@ Here you can view sources of my personal website. You can also modify and distri
 
 To run the website locally, do
 ```
+nix-shell   # if you don't have nix, install stuff manually
 dotnet run
 ```
-(assuming you have .NET 6 SDK)
 
 This way you can have your own copy of this website which doesn't require internet.
 
