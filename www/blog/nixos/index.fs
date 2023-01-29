@@ -147,7 +147,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    Text $"""As a bonus of that repo management, you can keep your own fork of {co "nixpkgs"} and pull packages from there - or {it "some"} packages from there, and others from upstream - or however you wish, honestly."""
   ]
 
-  h1 [] [ Text "Disadvantages" ]
+  h1 [] [ anc "disadvantages"; Text "Disadvantages" ]
   p [] [
    Text $"""Nobody expected that, but NixOS also has disadvantages."""
   ]
@@ -175,6 +175,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
   
   h2 [] [ anc "not-everything"; orderedHeader2 "Not everything is reproducible" ]
   p [] [
-   Text $"""I {refancs "repro" "described"} reproducibility - and it is 100% true for {co "/nix/store"}. However, a lot of things are not. Most major one would be {co "~/.config"} - user configuration of software. Some of software can be configured through home-manager, but most of it cannot, so you either have to generate that file manually through nix - or not bother and create it in that path manually, as you'd do on other distros."""
+   Text $"""I {refancs "repro" "described"} reproducibility - and it is 100%% true for {co "/nix/store"}. However, a lot of things are not. Most major one would be {co "~/.config"} - user configuration of software. Some of software can be configured through home-manager, but most of it cannot, so you either have to generate that file manually through nix - or not bother and create it in that path manually, as you'd do on other distros."""
   ]
+ ]
 }
