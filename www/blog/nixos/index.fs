@@ -9,6 +9,12 @@ let orderedHeader =
         counter <- counter + 1
         Text $"{counter}. {text}"
 
+let orderedHeader2 =
+    let mutable counter = 0
+    fun text ->
+        counter <- counter + 1
+        Text $"{counter}. {text}"
+
 let refancs anc text =
     refanc anc text |> RenderView.AsString.htmlNode
 
@@ -123,7 +129,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    Text $"""Of course, you should take that source with a grain of salt. Not because they lie - but because there's no objective way to calculate the number of packages. For example, do multiple versions count? Do python packages count (and they exist in nix)? How do we really know if many packages = rich? Maybe your favourite program is only available for Trisquel?"""
   ]
   p [] [
-   Text $"""Nonetheless, by {it "my"} experience I could find many more packages in NixOS than, let's say, in debian. One of the reasons - beacuse it's {refancs "easy-contrib" "so easy to contribute"}."""
+   Text $"""Nonetheless, by {it "my"} experience I could find many more packages in NixOS than, let's say, in debian. One of the reasons - because it's {refancs "easy-contrib" "so easy to contribute"}."""
   ]
 
   h2 [] [ anc "easy-contrib"; orderedHeader "Easy to contribute" ]
@@ -143,7 +149,32 @@ let html = PageWrap.wrap www.``static``.styles.css {
 
   h1 [] [ Text "Disadvantages" ]
   p [] [
-   Text $"""Of course, there are disadvantages. Will write about them later."""
+   Text $"""Nobody expected that, but NixOS also has disadvantages."""
   ]
- ]
+
+  h2 [] [ anc "learn"; orderedHeader2 "A lot to learn" ]
+  p [] [
+   Text $"""This is really super-different from other GNU/Linux and Unix-like operating systems. Your configuration is managed through pure functional language {co "nix"}, which you will have to learn eventually. The language is far less complicated than, let's say, Haskell, but nonetheless - it's just for system configuration, and not everyone expects that."""
+  ]
+
+  h2 [] [ anc "docs"; orderedHeader2 "Docs could be better" ]
+  p [] [
+   Text $"""One of advantages of Arch and Ubuntu - is how large their community is, how advanced docs or wiki are. Arch is famous for its archwiki, which is referred by wikis of other OS - like debian, gentoo, and NixOS too. However, NixOS' wiki is far from it. Although for many things you will find help there, for the rest - you're on your own, most of the time. """
+  ]
+  p [] [
+   Text $"""For the sake of completeness, {_a "https://github.com/nix-community/awesome-nix#resources" "here"} you can see the list of resources to learn from."""
+  ]
+
+  h2 [] [ anc "sometimes-hard"; orderedHeader2 "Many things may be harder" ]
+  p [] [
+   Text $"""... than in other OS. For instance, .NET SDK doesn't always work for me (skill issue?), because SDK resolution tool is getting lost in installed .NETs. Although I'm sure I'll figure it out (and it will be even better than on other distros), it already took me some time that you could've spent on developing the app on Ubuntu or Windows."""
+  ]
+  p [] [
+   Text $"""Some rare programs (e. g. user-contributed drivers) are (naturally) written for mutable distros, so they'd write a service file, invoke systemctl, write there and there. For NixOS, you will have to write that in your text configuration. So many things are NixOS-only, and you cannot just use the same thing."""
+  ]
+  
+  h2 [] [ anc "not-everything"; orderedHeader2 "Not everything is reproducible" ]
+  p [] [
+   Text $"""I {refancs "repro" "described"} reproducibility - and it is 100% true for {co "/nix/store"}. However, a lot of things are not. Most major one would be {co "~/.config"} - user configuration of software. Some of software can be configured through home-manager, but most of it cannot, so you either have to generate that file manually through nix - or not bother and create it in that path manually, as you'd do on other distros."""
+  ]
 }
