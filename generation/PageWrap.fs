@@ -33,8 +33,8 @@ let wrap css ({ title = pageTitle; url = url; filename = filename; contents = co
                             let elevationCount = url |> String.filter ((=) '/') |> String.length
                             let elevation = 
                                 [ for _ in 1 .. elevationCount + 1 do "../" ] |> String.concat ""
-                            let homePath = Utils.locAwarePath elevation
-                            let upPath = Utils.locAwarePath ".."
+                            let homePath = Utils.locAwarePath "." elevation
+                            let upPath = Utils.locAwarePath ".." "."
                             $"""{_a homePath "Home"} {sp} {_a upPath "Up"} {sp}"""
 
                     let edit =

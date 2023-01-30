@@ -1,4 +1,8 @@
 module Utils
 
 let useLocally = System.Environment.GetEnvironmentVariable("PROD") = null
-let locAwarePath path = if useLocally then System.IO.Path.Combine(path, "index.html") else path
+let locAwarePath elev path = 
+    if useLocally then
+        System.IO.Path.Combine(elev, path, "index.html") 
+    else 
+        System.IO.Path.Combine(elev, path) 
