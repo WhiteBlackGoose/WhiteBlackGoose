@@ -1,0 +1,71 @@
+<html><title>My tier list of operating systems</title><head><link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/31178401"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"><style>@media (prefers-color-scheme: light) {
+body {
+background: rgb(230, 230, 230);
+color: #333;
+}
+a {
+color: #333;
+}
+.code-inline {
+background: lightgray;
+}
+
+}@media (prefers-color-scheme: dark) {
+body {
+background: rgb(30, 30, 30);
+color: #BBB;
+}
+a {
+color: #BBB;
+}
+.code-inline {
+background: #333;
+}
+
+}.code-inline {
+font-family: mono;
+padding: 2px;
+border-radius: 4px;
+}
+.header h1 {
+margin: 0 auto;
+}
+a {
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-color: gray;
+}
+.article-body {
+font-family: Overpass Mono;
+padding: 60px;
+padding-left: 20%;
+padding-right: 20%;
+line-height: 1.7;
+}
+hr {
+width: 20%;
+background-color: gray;
+border: 0.5px solid gray;
+}
+</style></head><body><header style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="/.">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/misc/naot/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</header><div class="article-body"><h1>My tier list of operating systems</h1><p>Size and single file script</p><p>Normal Multiline</p><pre><code>
+dotnet publish \
+-c release \
+-p:PublishAot=true \
+-o ./published \
+-p:SelfContained=true \
+-p:PublishTrimmed=true \
+-p:TrimMode=full \
+-p:StripSymbols=true \
+-p:IlcInvariantGlobalization=true</code></pre><p>Normal Single line</p><pre><code>
+dotnet publish -c release -p:PublishAot=true -o ./published -p:SelfContained=true -p:PublishTrimmed=true -p:TrimMode=full -p:StripSymbols=true -p:IlcInvariantGlobalization=true</code></pre><p>No reflection Multiline</p><pre><code>
+dotnet publish \
+-c release \
+-p:PublishAot=true \
+-o ./published \
+-p:SelfContained=true \
+-p:PublishTrimmed=true \
+-p:TrimMode=full \
+-p:StripSymbols=true \
+-p:IlcInvariantGlobalization=true\
+-p:IlcDisableReflection=true</code></pre><p>No reflection Single line</p><pre><code>
+dotnet publish -c release -p:PublishAot=true -o ./published -p:SelfContained=true -p:PublishTrimmed=true -p:TrimMode=full -p:StripSymbols=true -p:IlcInvariantGlobalization=true-p:IlcDisableReflection=true</code></pre></div><footer style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="/.">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/misc/naot/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</footer></body></html>
