@@ -12,8 +12,8 @@ let targetRoot =
     else
         "/"
 
-let fixUrlEnding path =
-    if useLocally then
+let fixUrlEnding (path : string) =
+    if useLocally && not (System.IO.Path.HasExtension path) then
         path </> "index.html"
     else 
         path

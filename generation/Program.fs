@@ -24,6 +24,7 @@ let pages = [
     www.gpg.pubkey.txt
     www.projects.index.html
     www.good_links.index.html
+    www.misc.os_tierlist.index.html
     www.index.html
     www.README.html
 ]

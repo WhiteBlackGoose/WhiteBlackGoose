@@ -51,7 +51,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
   hr []
   p [] [
    table [_style "width: 100%"] [ tr [] [
-   for icon in [icons.NixOS; icons.GNU; icons.NeoVim "."; icons.LaTeX; icons.CSharp; icons.FSharp; icons.dotnet; icons.git; icons.bitcoin] do
+   for icon in [icons.NixOS; icons.GNU; icons.NeoVim; icons.LaTeX; icons.CSharp; icons.FSharp; icons.dotnet; icons.git; icons.bitcoin] do
     td [] [ icon "30" ]
    ]]
   ]
@@ -83,6 +83,13 @@ let html = PageWrap.wrap www.``static``.styles.css {
    ul [_style "column-count: 2"] [
     for { link = url; shortTitle = title; } in www.blog.index.articles do
      li [] [ a [_href url] [ Text title ] ]
+   ]
+  ]
+
+  h2 [] [ anc "fun"; Text "Fun" ]
+  p [] [
+   ul [] [
+    li [] [ a [_href (Utils.locAwarePath www.misc.os_tierlist.index.html.url)] [Text "My OS tier list"] ]
    ]
   ]
 
