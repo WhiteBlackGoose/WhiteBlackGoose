@@ -78,7 +78,13 @@ let html = PageWrap.wrap www.``static``.styles.css {
   """
   ]
 
-  yield! www.blog.index.articlesListHtml
+  h2 [] [ anc "articles"; Text "My articles" ]
+  p [] [
+   ul [_style "column-count: 2"] [
+    for { link = url; shortTitle = title; } in www.blog.index.articles do
+     li [] [ a [_href url] [ Text title ] ]
+   ]
+  ]
 
   h2 [] [ anc "contacts"; Text "Contacts" ]
   p [] [
