@@ -5,7 +5,7 @@ open Page
 open www.``static``.media.icons
 
 let html = PageWrap.wrap www.``static``.styles.css {
- title = "My tier list of operating systems"
+ title = "NativeAOT with single file and self-contained"
  url = "misc/naot"
  filename = "index.html"
  contents = [
