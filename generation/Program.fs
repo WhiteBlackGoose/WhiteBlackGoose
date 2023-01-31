@@ -25,6 +25,7 @@ let pages = [
     www.projects.index.html
     www.good_links.index.html
     www.misc.os_tierlist.index.html
+    www.misc.naot.index.html
     www.index.html
     www.README.html
 ]
