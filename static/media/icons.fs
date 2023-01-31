@@ -3,15 +3,28 @@ module www.``static``.media.icons
 open Giraffe.ViewEngine
 
 let link = """<svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg>"""
+let mkImg src logoSize = img [_src src; _width logoSize; _height logoSize ]
 
-let NixOS logoSize = img [_src "https://raw.githubusercontent.com/NixOS/nixos-artwork/c1dc75611042b57a385c80495d3728724c35cfee/logo/nix-snowflake.svg"; _width logoSize; _height logoSize ]
-let NeoVim elev logoSize = img [_src (System.IO.Path.Combine(elev, "static/media/neovim.png")); _width logoSize; _height logoSize]
-let FSharp logoSize = img [_src "https://cdn.svgporn.com/logos/fsharp.svg?response-content-disposition=attachment%3Bfilename%3Dfsharp.svg"; _width logoSize; _height logoSize]
-let CSharp logoSize = img [_src "https://cdn.svgporn.com/logos/c-sharp.svg?response-content-disposition=attachment%3Bfilename%3Dc-sharp.svg"; _width logoSize; _height logoSize]
-let git logoSize = img [_src "https://cdn.svgporn.com/logos/git-icon.svg?response-content-disposition=attachment%3Bfilename%3Dgit-icon.svg"; _width logoSize; _height logoSize]
-let GNU logoSize = img [_src "https://cdn.svgporn.com/logos/gnu.svg?response-content-disposition=attachment%3Bfilename%3Dgnu.svg"; _width logoSize; _height logoSize]
-let bitcoin logoSize = img [_src "https://cdn.svgporn.com/logos/bitcoin.svg?response-content-disposition=attachment%3Bfilename%3Dbitcoin.svg"; _width logoSize; _height logoSize]
-let dotnet logoSize = img [_src "https://cdn.svgporn.com/logos/dotnet.svg?response-content-disposition=attachment%3Bfilename%3Ddotnet.svg"; _width logoSize; _height logoSize]
-let LaTeX logoSize = img [_src "https://user-images.githubusercontent.com/31178401/209452465-57d86bc4-e02d-4a10-9acd-f52a1e5c6062.png"; _width logoSize; _height logoSize]
+let NeoVim = mkImg (Utils.locAwarePath "static/media/neovim.png")
+let FSharp = mkImg "https://cdn.svgporn.com/logos/fsharp.svg?response-content-disposition=attachment%3Bfilename%3Dfsharp.svg"
+let CSharp = mkImg "https://cdn.svgporn.com/logos/c-sharp.svg?response-content-disposition=attachment%3Bfilename%3Dc-sharp.svg"
+let git = mkImg "https://cdn.svgporn.com/logos/git-icon.svg?response-content-disposition=attachment%3Bfilename%3Dgit-icon.svg"
+let GNU = mkImg "https://cdn.svgporn.com/logos/gnu.svg?response-content-disposition=attachment%3Bfilename%3Dgnu.svg"
+let bitcoin = mkImg "https://cdn.svgporn.com/logos/bitcoin.svg?response-content-disposition=attachment%3Bfilename%3Dbitcoin.svg"
+let dotnet = mkImg "https://cdn.svgporn.com/logos/dotnet.svg?response-content-disposition=attachment%3Bfilename%3Ddotnet.svg"
+let LaTeX = mkImg "https://user-images.githubusercontent.com/31178401/209452465-57d86bc4-e02d-4a10-9acd-f52a1e5c6062.png"
+
+let NixOS = mkImg "https://raw.githubusercontent.com/NixOS/nixos-artwork/c1dc75611042b57a385c80495d3728724c35cfee/logo/nix-snowflake.svg"
+let fedora = mkImg "https://linux-man.org/wp-content/uploads/2021/09/Fedora_logo.svg"
+let debian = mkImg "https://linux-man.org/wp-content/uploads/2021/09/openlogo.svg"
+let ubuntu = mkImg "https://linux-man.org/wp-content/uploads/2021/09/cof_orange_hex.svg"
+let arch = mkImg "https://cdn.svgporn.com/logos/archlinux.svg?response-content-disposition=attachment%3Bfilename%3Darchlinux.svg"
+let mint = mkImg "https://cdn.svgporn.com/logos/linux-mint.svg?response-content-disposition=attachment%3Bfilename%3Dlinux-mint.svg"
+let FreeBSD = mkImg "https://cdn.svgporn.com/logos/freebsd.svg?response-content-disposition=attachment%3Bfilename%3Dfreebsd.svg"
+let xubuntu = mkImg "https://upload.wikimedia.org/wikipedia/commons/a/a0/Xubuntu-logo.svg"
+let kubuntu = mkImg "https://upload.wikimedia.org/wikipedia/commons/1/1f/Kubuntu_logo.svg"
+let Windows = mkImg "https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg"
+let iOS = mkImg "https://static.wikia.nocookie.net/logopedia/images/b/b6/IOS.svg/revision/latest?cb=20210628102722"
+let Android = mkImg "https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg"
 
 let noFacebook = img [_src "https://stallman.org/no-facebook.svg"; _width "200"; _style "float: right;"]
