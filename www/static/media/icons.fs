@@ -24,7 +24,7 @@ let FreeBSD = mkImg "https://cdn.svgporn.com/logos/freebsd.svg?response-content-
 let xubuntu = mkImg "https://upload.wikimedia.org/wikipedia/commons/a/a0/Xubuntu-logo.svg"
 let kubuntu = mkImg "https://upload.wikimedia.org/wikipedia/commons/1/1f/Kubuntu_logo.svg"
 let Windows = mkImg "https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg"
-let iOS = mkImg "https://static.wikia.nocookie.net/logopedia/images/b/b6/IOS.svg/revision/latest?cb=20210628102722"
+let iOS = mkImg "https://upload.wikimedia.org/wikipedia/commons/c/ca/IOS_logo.svg"
 let Android = mkImg "https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg"
 
 let noFacebook = img [_src "https://stallman.org/no-facebook.svg"; _width "200"; _style "float: right;"]
