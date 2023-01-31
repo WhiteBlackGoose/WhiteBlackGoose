@@ -1,7 +1,7 @@
 ﻿open System.IO
 open Giraffe.ViewEngine
 
-open Page
+open Utils
 
 let rec ensureExists srcDir dstDir =
     if Directory.Exists(dstDir) |> not then
@@ -11,7 +11,6 @@ let rec ensureExists srcDir dstDir =
     for file in Directory.GetFiles srcDir do
         File.Copy(file, dstDir </> Path.GetFileName file)
 
-let rootDir = "out"
 let sourceDir = "www"
 
 let pages = [
@@ -30,14 +29,15 @@ let pages = [
 ]
 
 for page in pages do
-    Directory.CreateDirectory(rootDir </> page.url) |> ignore
+    Directory.CreateDirectory(sourceRoot </> page.url) |> ignore
     File.WriteAllText(
-        rootDir </> page.url </> page.filename,
+        sourceRoot </> page.url </> page.filename,
         RenderView.AsString.htmlNode page.contents)
     printfn $"Generated page {page.url}"
 
-if Directory.Exists(rootDir </> "static" </> "media") then
-    Directory.Delete(rootDir </> "static" </> "media", true)
-ensureExists(sourceDir </> "static" </> "media") (rootDir </> "static" </> "media")
+if Directory.Exists(sourceRoot </> "static" </> "media") then
+    Directory.Delete(sourceRoot </> "static" </> "media", true)
+ensureExists(sourceDir </> "static" </> "media") (sourceRoot </> "static" </> "media")
 
 printfn $"Finished."
+

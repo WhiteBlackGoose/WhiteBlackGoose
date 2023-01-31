@@ -2,6 +2,7 @@ module PageWrap
 
 open Giraffe.ViewEngine
 open Page
+open Utils
 
 type WrappedPage = {
     url : string
@@ -33,8 +34,8 @@ let wrap css ({ title = pageTitle; url = url; filename = filename; contents = co
                             let elevationCount = url |> String.filter ((=) '/') |> String.length
                             let elevation = 
                                 [ for _ in 1 .. elevationCount + 1 do "../" ] |> String.concat ""
-                            let homePath = Utils.locAwarePath "." elevation
-                            let upPath = Utils.locAwarePath ".." "."
+                            let homePath = Utils.locAwarePath "."
+                            let upPath = Utils.fixUrlEnding ".."
                             $"""{_a homePath "Home"} {sp} {_a upPath "Up"} {sp}"""
 
                     let edit =

@@ -13,21 +13,21 @@ type ArticleTile =
       date : string
     }
 
-let articles elev = [
+let articles = [
     { lang = EN; date = "2023-01-28"; tags = [ "gnu"; "nixos" ]; title = www.blog.nixos.index.html.title;
-        link = Utils.locAwarePath elev www.blog.nixos.index.html.url }
+        link = Utils.locAwarePath www.blog.nixos.index.html.url }
 
     { lang = EN; date = "2022-10-12"; tags = [ "cybersecurity"; "gnu" ]; title = www.blog.pass.index.html.title;
-        link = Utils.locAwarePath elev www.blog.pass.index.html.url }
+        link = Utils.locAwarePath www.blog.pass.index.html.url }
 
     { lang = EN; date = "2022-10-10"; tags = [ "life" ]; title = www.blog.yyyy_mm_dd.index.html.title;
-        link = Utils.locAwarePath elev www.blog.yyyy_mm_dd.index.html.url }
+        link = Utils.locAwarePath www.blog.yyyy_mm_dd.index.html.url }
 
     { lang = EN; date = "2022-07-20"; tags = [ "web"; "F#" ]; title = "Create static website yourself. No 3rd party services";
         link = "https://dev.to/whiteblackgoose/create-static-website-yourself-no-3rd-party-services-1314" }
 
     { lang = EN; date = "2022-06-02"; tags = [ "politics"; "philosophy" ]; title = www.blog.what_the_world_could_be_like.index.html.title;
-        link = Utils.locAwarePath elev www.blog.what_the_world_could_be_like.index.html.url }
+        link = Utils.locAwarePath www.blog.what_the_world_could_be_like.index.html.url }
 
     { lang = EN; date = "2022-05-28"; tags = [ "python"; "investing" ]; title = "20 Random Stocks Investment Strategy";
         link = "https://wbg.angouri.org/media/20_random_stocks.html" }
@@ -126,13 +126,13 @@ let articles elev = [
         link = "https://dzone.com/articles/a-simple-simulation-of-custom-physical-interaction" }
 ]
 
-let articlesListHtml elev = 
+let articlesListHtml = 
     [
         for lang in [ EN; RU ] do
             h2 [] [ anc (lang.ToString().ToLower()); Text $"Articles in lang {lang}" ]
             table [] [
                 tr [] [ th [] [ Text "Date" ]; th [] [ Text "Url" ] ]
-                for article in List.filter (fun a -> a.lang = lang) (articles elev) do
+                for article in List.filter (fun a -> a.lang = lang) articles do
                     tr [] [ td [] [ Text article.date ]; td [] [ a [_href article.link ] [ Text article.title ] ] ]
             ]
     ]
@@ -142,6 +142,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
     url = "blog"
     filename = "index.html"
     contents = [
-        yield! articlesListHtml ".."
+        yield! articlesListHtml
     ]
 }

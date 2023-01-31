@@ -1,8 +1,21 @@
 module Utils
 
+let (</>) p1 p2 = System.IO.Path.Combine(p1, p2)
+
 let useLocally = System.Environment.GetEnvironmentVariable("PROD") = null
-let locAwarePath elev path = 
+
+let currDir = System.Environment.CurrentDirectory
+let sourceRoot = currDir </> "out"
+let targetRoot = 
     if useLocally then
-        System.IO.Path.Combine(elev, path, "index.html") 
+        sourceRoot
+    else
+        "/"
+
+let fixUrlEnding path =
+    if useLocally then
+        path </> "index.html"
     else 
-        System.IO.Path.Combine(elev, path) 
+        path
+
+let locAwarePath path = fixUrlEnding (targetRoot </> path)

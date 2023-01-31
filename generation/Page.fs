@@ -9,8 +9,6 @@ type Page = {
     contents : XmlNode list
 }
 
-let (</>) p1 p2 = System.IO.Path.Combine(p1, p2)
-
 // Regexes
 // Bold:
 // %s/\*\*\(.\{-}\)\*\*/{bo "\1"}/g

@@ -27,9 +27,9 @@ let html = PageWrap.wrap www.``static``.styles.css {
     h3 [] [ Text "Recently added" ]
     p [] [
      ul [] [
-      li [] [ a [_href (Utils.locAwarePath "." www.blog.nixos.index.html.url) ] [ Text "I love NixOS" ] ]
+      li [] [ a [_href (Utils.locAwarePath www.blog.nixos.index.html.url) ] [ Text "I love NixOS" ] ]
       li [] [ a [_href "https://stallman.org/facebook.html"] [ Text "About Facebook" ] ]
-      li [] [ a [_href (Utils.locAwarePath "." www.blog.yyyy_mm_dd.index.html.url) ] [ Text "yyyy-mm-dd is best" ] ]
+      li [] [ a [_href (Utils.locAwarePath www.blog.yyyy_mm_dd.index.html.url) ] [ Text "yyyy-mm-dd is best" ] ]
      ]
     ]
    ]
@@ -37,11 +37,11 @@ let html = PageWrap.wrap www.``static``.styles.css {
   hr []
   p [_style "text-align: center;"] [
    let urls = [
-    $"""{_a (Utils.locAwarePath "." www.blog.index.html.url) "Blog"}"""
-    $"""{_a (Utils.locAwarePath "." www.projects.index.html.url) "Projects"}"""
+    $"""{_a (Utils.locAwarePath www.blog.index.html.url) "Blog"}"""
+    $"""{_a (Utils.locAwarePath www.projects.index.html.url) "Projects"}"""
     $"""{_a "https://github.com/WhiteBlackGoose" "Github"}"""
-    $"""{_a (Utils.locAwarePath "." www.gpg.index.html.url) "My GPG key"}"""
-    $"""{_a (Utils.locAwarePath "." www.good_links.index.html.url) "Good links"}"""
+    $"""{_a (Utils.locAwarePath www.gpg.index.html.url) "My GPG key"}"""
+    $"""{_a (Utils.locAwarePath www.good_links.index.html.url) "Good links"}"""
    ]
    Text "•&nbsp;"
    for url in urls do
@@ -78,7 +78,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
   """
   ]
 
-  yield! www.blog.index.articlesListHtml "."
+  yield! www.blog.index.articlesListHtml
 
   h2 [] [ anc "contacts"; Text "Contacts" ]
   p [] [
