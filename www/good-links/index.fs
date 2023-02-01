@@ -16,6 +16,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
                 li [] [ a [_href "https://stallman.org/"] [ Text "stallman.org" ] ]
                 li [] [ a [_href "https://ashley143.gay/"] [ Text "ashley143.gay" ] ]
                 li [] [ a [_href "https://michael.stapelberg.ch/"] [ Text "michael.stapelberg.ch" ] ]
+                li [] [ a [_href "https://stop-using-nix-env.privatevoid.net/"] [ Text "Stop using nix-env" ] ]
             ]
         ]
     ]
