@@ -20,6 +20,7 @@
     <Compile Include="./www/blog/yyyy-mm-dd/index.fs" />
     <Compile Include="./www/blog/pass/index.fs" />
     <Compile Include="./www/blog/nixos/index.fs" />
+    <Compile Include="./www/blog/ux3402za-review/index.fs" />
     <Compile Include="./www/blog/index.fs" />
 
     <Compile Include="./www/gpg/pubkey.fs" />
