@@ -23,10 +23,12 @@ let html = PageWrap.wrap www.``static``.styles.css {
                     "https://wikileaks.org/", "Leaks of governments"
                     "https://www.gnu.org/software/librejs/", "LibreJS"
                     "https://www.torproject.org/", "Tor Browser"
+                    "https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/", "About peoples' names in software"
                 ]
                 for url, name in links do
                     li [] [ a [_href url] [ Text name ] ]
             ]
         ]
+        p [] [ Text "If you think something belongs to this list, feel free to add it by pressing button 'Edit'" ]
     ]
 }
