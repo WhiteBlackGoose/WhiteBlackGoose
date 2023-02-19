@@ -17,7 +17,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
             li [] [ Text "Keep your tab open" ]
         ]
         h3 [] [ Text "Am I safe running it?" ]
-        p [] [ "Quote: \"There is no need to worry about which websites people are accessing through your Snowflake proxy. Their visible browsing IP address will match their Tor exit node, not yours.\"" ]
+        p [] [ Text "Quote: \"There is no need to worry about which websites people are accessing through your Snowflake proxy. Their visible browsing IP address will match their Tor exit node, not yours.\"" ]
         p [] [ a [_href "https://snowflake.torproject.org/"] [ Text "More info" ] ]
     ]
 }
