@@ -23,7 +23,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    ul [] [
     li [] [ Text "Free internet" ]
     li [] [ Text "Press button enable" ]
-    li [] [ Text "Keep your tab open" ]
+    li [] [ Text "Keep this tab open" ]
    ]
    h3 [] [ Text "Am I safe running it?" ]
    p [] [ Text "Quote: \"There is no need to worry about which websites people are accessing through your Snowflake proxy. Their visible browsing IP address will match their Tor exit node, not yours.\"" ]
