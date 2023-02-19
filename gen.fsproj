@@ -26,6 +26,8 @@
     <Compile Include="./www/gpg/pubkey.fs" />
     <Compile Include="./www/gpg/index.fs" />
 
+    <Compile Include="./www/snowflake/index.fs" />
+
     <Compile Include="./www/misc/os-tierlist/index.fs" />
     <Compile Include="./www/misc/naot/index.fs" />
 

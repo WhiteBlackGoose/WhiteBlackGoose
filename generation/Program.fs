@@ -22,6 +22,7 @@ let pages = [
     www.blog.index.html
     www.gpg.index.html
     www.gpg.pubkey.txt
+    www.snowflake.index.html
     www.projects.index.html
     www.good_links.index.html
     www.misc.os_tierlist.index.html
