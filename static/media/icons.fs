@@ -13,6 +13,8 @@ let GNU = mkImg "https://cdn.svgporn.com/logos/gnu.svg?response-content-disposit
 let bitcoin = mkImg "https://cdn.svgporn.com/logos/bitcoin.svg?response-content-disposition=attachment%3Bfilename%3Dbitcoin.svg"
 let dotnet = mkImg "https://cdn.svgporn.com/logos/dotnet.svg?response-content-disposition=attachment%3Bfilename%3Ddotnet.svg"
 let LaTeX = mkImg "https://user-images.githubusercontent.com/31178401/209452465-57d86bc4-e02d-4a10-9acd-f52a1e5c6062.png"
+let Tor = mkImg "https://dl2.macupdate.com/images/icons256/17679.png?d=1522354611"
+let eth = mkImg "https://cdn.svgporn.com/logos/ethereum-color.svg?response-content-disposition=attachment%3Bfilename%3Dethereum-color.svg"
 
 let NixOS = mkImg "https://raw.githubusercontent.com/NixOS/nixos-artwork/c1dc75611042b57a385c80495d3728724c35cfee/logo/nix-snowflake.svg"
 let fedora = mkImg "https://linux-man.org/wp-content/uploads/2021/09/Fedora_logo.svg"
