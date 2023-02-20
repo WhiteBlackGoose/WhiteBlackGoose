@@ -52,7 +52,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
   hr []
   p [] [
    table [_style "width: 100%"] [ tr [] [
-   for icon in [icons.NixOS; icons.GNU; icons.NeoVim; icons.LaTeX; icons.CSharp; icons.FSharp; icons.dotnet; icons.git; icons.bitcoin] do
+   for icon in [icons.NixOS; icons.GNU; icons.Tor; icons.NeoVim; icons.LaTeX; icons.CSharp; icons.FSharp; icons.dotnet; icons.git; icons.bitcoin; icons.eth] do
     td [] [ icon "30" ]
    ]]
   ]
