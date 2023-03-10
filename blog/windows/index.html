@@ -1,0 +1,68 @@
+<html><title>Why I hate Windows</title><head><link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/31178401"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"><style>@media (prefers-color-scheme: light) {
+body {
+background: rgb(230, 230, 230);
+color: #333;
+}
+a {
+color: #333;
+}
+.code-inline {
+background: lightgray;
+}
+
+}@media (prefers-color-scheme: dark) {
+body {
+background: rgb(30, 30, 30);
+color: #BBB;
+}
+a {
+color: #BBB;
+}
+.code-inline {
+background: #333;
+}
+
+}.code-inline {
+font-family: mono;
+padding: 2px;
+border-radius: 4px;
+}
+.header h1 {
+margin: 0 auto;
+}
+a {
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-color: gray;
+}
+.article-body {
+font-family: Overpass Mono;
+padding: 60px;
+padding-left: 20%;
+padding-right: 20%;
+line-height: 1.7;
+}
+hr {
+width: 20%;
+background-color: gray;
+border: 0.5px solid gray;
+}
+</style></head><body><header style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="/.">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/windows/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</header><div class="article-body"><h1>Why I hate Windows</h1><p>
+   This is my rant about Windows. What I use instead is <a href="/blog/nixos">NixOS</a>.
+   </p><br><hr><br><h2><a href="#controlled" name="controlled" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>1. Proprietary and controlled single-handedly</h2><p>
+   They will decide what you want. They will try by default to trick you into creating a Microsoft account (upon installation). Later they decide, which software can or can't be installed or uninstalled. For example, you can't easily remove Edge, MS Store, XBox something, Explorer, etc.
+   </p><h2><a href="#monolithic" name="monolithic" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>2. Monolithic nature</h2><p>
+   Windows seems to be designed in a way, that things like Task Bar, Start Menu, Desktop, Window Manager, Login Screen and others are integral parts of it. So naturally, you can't replace them, or it will be a workaround or hacky solution. <a href="https://github.com/lars-berger/GlazeWM">GlazeWM</a> is doing a good job providing users a tiling WM experience. But it works on top of the existing ones, and things aren't always synced (e. g. entries on your desktop may as well overlap with the bar provided by this WM).
+   </p><h2><a href="#updates" name="updates" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>3. Updates</h2><p>
+   This is the most intrusive issue. They're automatic and you can't <i>disable</i> them. At most - postpone. You're forced to choose active hours, which are supposedly fixed for every person (which isn't true at all), and you can't choose them more than some fixed amount of hours.
+   </p><p>
+    Real life story. I turn my laptop into sleep mode and go sleep myself. It decides to wake up at 02:00 and starts updating stuff, waking me up as well (bc it runs loud fans). I'm annoyed and sleeping suspending it again... and guess what, in 5-30 minutes (I don't remember exactly) it wakes up again. What a fucking annoying piece of shit.
+    </p><p>
+    Another pain point with forced updates is that I can't leave my laptop doing something for a night. I tried a few times just to find out every time that Windows decided to shut down killing all my processes for an update.
+    </p><p>
+    It's also trying to push updates through power buttons. You want to restart? "Restart and update". You want to shut down? "Shut down and update". Or you decided to shut down some time ago, now turn your laptop on before a conference, and Windows decided to update...
+    </p><h2><a href="#packages" name="packages" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>4. Package management</h2><p>
+    Most software for Windows is installed through installers. It has a whole bunch of drawbacks:
+    <ul><li>You have to find these installers on the internet</li><li>Installers are not audited, unless you build your own</li><li>Software makers have to work on installers besides the app</li><li>You have to rely on uninstallers to delete unnecessary stuff</li><li>Installers cannot manage dependencies in a single way and duplicate dependencies</li></ul></p><p>
+    Choco, WinGet exist and provide some relief to it. But next most popular way (after installers) for app distribution is MS Store. Which is proprietary, paid, and not moderated properly, allowing <a href="https://answers.microsoft.com/en-us/windows/forum/all/why-microsoft-store-is-full-of-scam-apps/8c759f96-44a8-40e0-b987-7db7c0f711da">tons of scam</a>. So naturally it's a hassle for both users and developers to use MS Store.
+    </p><h2><a href="#config" name="config" style="fill: gray;"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>5. Configuration</h2><p>It's good to have GUI for configuration. But in Windows, many things are GUI-only. For example, registry (it has API for editing, but no "just text file").</p><p style="text-align: center">Work In Progress...</p></div><footer style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="/.">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/windows/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</footer></body></html>
