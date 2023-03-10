@@ -15,6 +15,11 @@ type ArticleTile =
     }
 
 let articles = [
+    { lang = EN; date = "2023-03-10"; tags = [ "windows"; "rant" ];
+        title = www.blog.windows.index.html.title;
+        shortTitle = "Windows is terrible";
+        link = Utils.locAwarePath www.blog.windows.index.html.url }
+
     { lang = EN; date = "2023-01-28"; tags = [ "gnu"; "nixos" ];
         title = www.blog.nixos.index.html.title;
         shortTitle = "I love NixOS";

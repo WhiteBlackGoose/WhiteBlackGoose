@@ -20,6 +20,7 @@ let pages = [
     www.blog.pass.index.html
     www.blog.nixos.index.html
     www.blog.index.html
+    www.blog.windows.index.html
     www.gpg.index.html
     www.gpg.pubkey.txt
     www.snowflake.index.html
