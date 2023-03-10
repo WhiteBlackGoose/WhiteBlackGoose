@@ -90,8 +90,11 @@ let html = PageWrap.wrap www.``static``.styles.css {
 
   h2 [] [ anc "config"; orderedHeader "Configuration" ]
   p [] [
-    Text $"""It's good to have GUI for configuration. But in Windows, many things are GUI-only. For example, registry (it has API for editing, but no "just text file"). """
+    Text $"""It's good to have GUI for configuration. But in Windows, many things are GUI-only. For example, registry (it has API for editing, but no "just text file")."""
   ]
 
+  p [_style "text-align: center"] [
+   Text "Work In Progress..."
+  ]
  ]
 }
