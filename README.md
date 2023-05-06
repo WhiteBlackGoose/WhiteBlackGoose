@@ -4,7 +4,7 @@ Here you can view sources of my personal website. You can also modify and distri
 
 To run the website locally, do
 ```
-nix-shell   # if you don't have nix, install stuff manually
+nix develop   # if you don't have nix, install stuff manually
 dotnet run
 ```
 
