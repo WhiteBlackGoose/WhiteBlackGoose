@@ -73,14 +73,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
    """
   ]
 
-  h2 [] [ anc "shell"; orderedHeader "Shell" ]
-  p [] [
-   Text $"""With {co "nix-shell -p"} you can try packages without "installing" them. For example, you want to run {co "neofetch"}, but you don't want to keep it in PATH constantly. So you do {co "nix-shell -p neofetch"}, now you're in a shell. There you can run it, then exit - and neofetch is entirely inaccessible. No, {co "nix"} didn't delete it. It's just that it made it accessible for your session."""
-  ]
-  p [] [
-   Text $"""But we didn't really cover the actual power of {co "nix-shell"}. Yes you can try out packages with it - but you can as well build an entire development environment! You can create *.nix files for your projects, and configure all toolchains, buildtools, compilers, SDKs, packages and dependencies that your project needs - so that new teammates could easily immerse into your process by {it "just"} typing {co "nix-shell amazing-project.nix"}, and others - synchronize your SDKs."""
-  ]
-
   h2 [] [ anc "easy-use"; orderedHeader "Easy to use" ]
   p [] [
    Text $"""Not in the same way as Linux Mint or Ubuntu (it's actually quite the opposite). But when you start somewhat getting into it - a lot of things get much easier. For instance, configuring services, or swapping linux kernels. You {it "just"} replace the corresponding line in your config with the kernel you want. For most simple cases, you can just copy stuff from wiki and get away with it.
@@ -130,6 +122,28 @@ let html = PageWrap.wrap www.``static``.styles.css {
   ]
   p [] [
    Text $"""Nonetheless, by {it "my"} experience I could find many more packages in NixOS than, let's say, in debian. One of the reasons - because it's {refancs "easy-contrib" "so easy to contribute"}."""
+  ]
+
+  h2 [] [ anc "shell"; orderedHeader "Shell and Develop" ]
+  p [] [
+   Text $"""With {co "nix-shell -p"} you can try packages without "installing" them. For example, you want to run {co "neofetch"}, but you don't want to keep it in PATH constantly. So you do {co "nix-shell -p neofetch"}, now you're in a shell. There you can run it, then exit - and neofetch is entirely inaccessible. No, {co "nix"} didn't delete it. It's just that it made it accessible for your session."""
+  ]
+  p [] [
+   Text $"""But we didn't really cover the actual power of {co "nix-shell"}. Yes you can try out packages with it - but you can as well build an entire development environment! You can create *.nix files for your projects, and configure all toolchains, buildtools, compilers, SDKs, packages and dependencies that your project needs - so that new teammates could easily immerse into your process by {it "just"} typing {co "nix-shell amazing-project.nix"}, and others - synchronize your SDKs."""
+  ]
+
+  h2 [] [ anc "flakes"; orderedHeader "Flakes" ]
+  p [] [
+    Text $"""Now there are flakes. Although they're still in the experimental phase, the community is actively using them. So am I (this project uses a flake btw). Flake is just a whole different level."""
+  ]
+  p [] [
+    Text $"""Flake is like a hub with inputs and outputs. Physically, flake is a directory (most of the time, git repo) with two files: {co "flake.nix"} and {co "flake.lock"}. {co "flake.lock"} pins exact hashes for inputs, supplied to {co "flake.nix"}. Now {co "flake.nix"} is a file, which defines inputs and outputs. Inputs are other flakes! Outputs are entirely up to you, you can return anything. For example, you can take in a flake which defines a factorial function and return a factorial of 5. Now someone else can use your flake."""
+  ]
+  p [] [
+    Text $"""For software development, you will probably use flakes with software derivations. The largest nix repo is {co "nixpkgs"}, maintained by the NixOS team. You simply pull it and you will be able to use these packages in your development environment."""
+  ]
+  p [] [
+    Text $"""Now what's the benefit? Well, the flake's output, besides just pure expressions (we aren't doing an FP course here), can also be interpreted for useful stuff. First, system configuration. If your output has system configuration type, your whole system will be rebuilt according to it. Second, development environment. Once you meet the criteria so to say, running {co "nix develop"} will get you into development shell with the tooling you need (and whatever you specified). And finally, same with {co "nix shell"} for actually trying out the package. So you can have development environment and user environment in your project, and while your team simply pulls in your flake without having to install the software on their own, any user can simply pull the flake as well for installation!"""
   ]
 
   h2 [] [ anc "easy-contrib"; orderedHeader "Easy to contribute" ]
