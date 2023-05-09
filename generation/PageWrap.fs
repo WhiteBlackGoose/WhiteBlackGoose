@@ -25,6 +25,19 @@ let wrap css ({ title = pageTitle; url = url; filename = filename; contents = co
                 css
             ]
             body [] [
+                div [
+                    _style """
+                        width: 100%;
+                        height: 10px;
+                        padding: 0;
+                        margin: 0;
+                        float: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(90deg, rgb(0, 87, 183) 49%, rgb(255, 215, 0) 49%, rgb(255, 215, 0) 49%);
+                    """
+                ] []
                 let sp = span [_style "color: gray;"] [ Text "|" ] |> RenderView.AsString.htmlNode
                 let comp f = f [_style "padding: 12px; color: gray;"] [
                     let navig = 
