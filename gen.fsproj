@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,6 +22,7 @@
     <Compile Include="./www/blog/nixos/index.fs" />
     <Compile Include="./www/blog/windows/index.fs" />
     <Compile Include="./www/blog/ux3402za-review/index.fs" />
+    <Compile Include="./www/blog/nix-flakes/index.fs" />
     <Compile Include="./www/blog/index.fs" />
 
     <Compile Include="./www/gpg/pubkey.fs" />
