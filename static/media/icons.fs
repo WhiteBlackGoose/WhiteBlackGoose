@@ -15,6 +15,9 @@ let dotnet = mkImg "https://cdn.svgporn.com/logos/dotnet.svg?response-content-di
 let LaTeX = mkImg "https://user-images.githubusercontent.com/31178401/209452465-57d86bc4-e02d-4a10-9acd-f52a1e5c6062.png"
 let Tor = mkImg "https://dl2.macupdate.com/images/icons256/17679.png?d=1522354611"
 let eth = mkImg "https://cdn.svgporn.com/logos/ethereum-color.svg?response-content-disposition=attachment%3Bfilename%3Dethereum-color.svg"
+let rust = mkImg "https://github.com/rust-lang/rust-artwork/blob/bf0b3272f9ba8d22f7fd45e408496d05621b3b5c/logo/rust-logo-128x128-blk-v2.png?raw=true"
+let haskell = mkImg "https://wiki.haskell.org/wikiupload/4/4a/HaskellLogoStyPreview-1.png"
+let ens = mkImg "https://coindoo.com/wp-content/uploads/2019/02/ens-logo.png"
 
 let NixOS = mkImg "https://raw.githubusercontent.com/NixOS/nixos-artwork/c1dc75611042b57a385c80495d3728724c35cfee/logo/nix-snowflake.svg"
 let fedora = mkImg "https://linux-man.org/wp-content/uploads/2021/09/Fedora_logo.svg"
