@@ -35,7 +35,7 @@ let wrap css ({ title = pageTitle; url = url; filename = filename; contents = co
                         position: absolute;
                         top: 0;
                         left: 0;
-                        background: linear-gradient(90deg, rgb(0, 87, 183) 49%, rgb(255, 215, 0) 49%, rgb(255, 215, 0) 49%);
+                        background: linear-gradient(90deg, rgb(0, 87, 183) 50%, rgb(255, 215, 0) 50%, rgb(255, 215, 0) 50%);
                     """
                 ] []
                 let sp = span [_style "color: gray;"] [ Text "|" ] |> RenderView.AsString.htmlNode
