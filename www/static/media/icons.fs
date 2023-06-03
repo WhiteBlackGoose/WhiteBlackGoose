@@ -8,6 +8,8 @@ let mkImg src logoSize = img [_src src; _width logoSize; _height logoSize ]
 let NeoVim = mkImg (Utils.locAwarePath "static/media/neovim.png")
 let FSharp = mkImg "https://cdn.svgporn.com/logos/fsharp.svg?response-content-disposition=attachment%3Bfilename%3Dfsharp.svg"
 let CSharp = mkImg "https://cdn.svgporn.com/logos/c-sharp.svg?response-content-disposition=attachment%3Bfilename%3Dc-sharp.svg"
+let FStar = mkImg "https://www.fstar-lang.org/i/fstar-new.png"
+let Bash = mkImg "https://github.com/odb/official-bash-logo/blob/61eff022f2dad3c7468f5deb4f06652d15f2c143/assets/Logos/Icons/PNG/128x128.png?raw=true"
 let git = mkImg "https://cdn.svgporn.com/logos/git-icon.svg?response-content-disposition=attachment%3Bfilename%3Dgit-icon.svg"
 let GNU = mkImg "https://cdn.svgporn.com/logos/gnu.svg?response-content-disposition=attachment%3Bfilename%3Dgnu.svg"
 let bitcoin = mkImg "https://cdn.svgporn.com/logos/bitcoin.svg?response-content-disposition=attachment%3Bfilename%3Dbitcoin.svg"
@@ -18,6 +20,8 @@ let eth = mkImg "https://cdn.svgporn.com/logos/ethereum-color.svg?response-conte
 let rust = mkImg "https://github.com/rust-lang/rust-artwork/blob/bf0b3272f9ba8d22f7fd45e408496d05621b3b5c/logo/rust-logo-128x128-blk-v2.png?raw=true"
 let haskell = mkImg "https://wiki.haskell.org/wikiupload/4/4a/HaskellLogoStyPreview-1.png"
 let ens = mkImg "https://coindoo.com/wp-content/uploads/2019/02/ens-logo.png"
+let Draco = mkImg "https://avatars.githubusercontent.com/u/112573644?s=200&v=4"
+let lua = mkImg "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg"
 
 let NixOS = mkImg "https://raw.githubusercontent.com/NixOS/nixos-artwork/c1dc75611042b57a385c80495d3728724c35cfee/logo/nix-snowflake.svg"
 let fedora = mkImg "https://linux-man.org/wp-content/uploads/2021/09/Fedora_logo.svg"

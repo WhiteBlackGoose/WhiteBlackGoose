@@ -45,3 +45,6 @@ ensureExists(sourceDir </> "static" </> "media") (sourceRoot </> "static" </> "m
 
 printfn $"Finished."
 
+let fullPathToIndex = Path.GetFullPath (sourceRoot </> "index.html")
+printfn $"URL: {fullPathToIndex}"
+

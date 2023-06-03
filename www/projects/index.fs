@@ -3,7 +3,17 @@ module www.projects.index
 open Giraffe.ViewEngine
 open Page
 
-type ProgrammingLanguage = CSharp | FSharp | FStar | Bash | Rust | Nix
+type ProgrammingLanguage = 
+    | CSharp 
+    | FSharp
+    | FStar 
+    | Bash
+    | Rust
+    | Nix
+    | Haskell
+    | Draco
+    | Lua
+    | LaTeX
 
 type ProjectTile =
     { name : string
@@ -30,7 +40,7 @@ let myProjects = [
     langs = [ FSharp ] }
 
     { name = "FStar.Lib.NET"; url = "https://github.com/WhiteBlackGoose/FStar.Lib.NET";
-    langs = [ FSharp; FStar ] }
+    langs = [ FStar; FSharp ] }
 
     { name = "FsMinimalWebpageTemplate"; url = "https://github.com/WhiteBlackGoose/FsMinimalWebpageTemplate";
     langs = [ FSharp ] }
@@ -52,27 +62,65 @@ let myProjects = [
 
     { name = "UnitsOfMeasure"; url = "https://github.com/WhiteBlackGoose/UnitsOfMeasure";
     langs = [ CSharp ] }
+
+    { name = "tri"; url = "https://github.com/WhiteBlackGoose/tri"; 
+    langs = [ Rust ] }
+
+    { name = "lamca"; url = "https://github.com/WhiteBlackGoose/lamca"; 
+    langs = [ Haskell ] }
+
+    { name = "frac-hs"; url = "https://github.com/WhiteBlackGoose/frac-hs"; 
+    langs = [ Haskell ] }
+
+    { name = "my-nix"; url = "https://github.com/WhiteBlackGoose/my-nix";
+    langs = [ Nix ]}
+
+    { name = "draco-nvim"; url = "https://github.com/Draco-lang/draco-nvim";
+    langs = [ Draco; Lua ] }
 ]
 
 let contributedProjects = [
     { name = "Silk.NET"; url = "https://github.com/dotnet/Silk.NET";
-      langs = [ CSharp ] }
+    langs = [ CSharp ] }
 
     { name = "Plotly.NET"; url = "https://github.com/plotly/Plotly.NET/"; 
-      langs = [ FSharp ] }
+    langs = [ FSharp ] }
 
     { name = "nixpkgs"; url = "https://github.com/NixOS/nixpkgs";
-      langs = [ Nix ]}
+    langs = [ Nix ]}
 
-    { name = ".NET Interactive"; url = "https://github.com/dotnet/interactive"; langs = [ CSharp ] }
+    { name = ".NET Interactive"; url = "https://github.com/dotnet/interactive";
+    langs = [ CSharp ] }
 
-    { name = "Draco"; url = "https://github.com/Draco-lang/Language-suggestions"; langs = [ ] }
+    { name = "Draco"; url = "https://github.com/Draco-lang/Language-suggestions";
+    langs = [ Draco ] }
+
+    { name = "ts-advanced-git-search"; url = "https://github.com/WhiteBlackGoose/ts-advanced-git-search.nvim";
+    langs = [ Lua ]}
+
+    { name = "nvim-latex-preconfig"; url = "https://github.com/WhiteBlackGoose/nvim-latex-preconfig";
+    langs = [ Lua; LaTeX ] }
 ]
 
+let lang2icon = function
+    | CSharp  -> www.``static``.media.icons.CSharp
+    | FSharp  -> www.``static``.media.icons.FSharp
+    | FStar   -> www.``static``.media.icons.FStar
+    | Bash    -> www.``static``.media.icons.Bash
+    | Rust    -> www.``static``.media.icons.rust
+    | Nix     -> www.``static``.media.icons.NixOS
+    | Haskell -> www.``static``.media.icons.haskell
+    | Draco   -> www.``static``.media.icons.Draco
+    | Lua     -> www.``static``.media.icons.lua
+    | LaTeX   -> www.``static``.media.icons.LaTeX
+
 let projectsListHtml prjList = [
-    ul [_style "column-count: 3"] [
-    for prj in prjList do
-        li [] [ a [_href prj.url] [ Text prj.name ] ]
+    ul [_style "column-count: 3; list-style-type: none"] [
+    for prj in (prjList |> List.sortBy (fun p -> p.name.ToLower())) do
+        li [] [ 
+            for ic in List.map lang2icon prj.langs do
+                ic "15"
+            a [_href prj.url; _style "margin-left: 5px"] [ Text prj.name ] ]
     ]
 ]
 
