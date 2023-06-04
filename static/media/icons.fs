@@ -4,6 +4,7 @@ open Giraffe.ViewEngine
 
 let link = """<svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg>"""
 let mkImg src logoSize = img [_src src; _width logoSize; _height logoSize ]
+let mkImgInv src logoSize = img [_src src; _width logoSize; _height logoSize; _class "inv" ]
 
 let NeoVim = mkImg (Utils.locAwarePath "static/media/neovim.png")
 let FSharp = mkImg "https://cdn.svgporn.com/logos/fsharp.svg?response-content-disposition=attachment%3Bfilename%3Dfsharp.svg"
@@ -11,13 +12,13 @@ let CSharp = mkImg "https://cdn.svgporn.com/logos/c-sharp.svg?response-content-d
 let FStar = mkImg "https://www.fstar-lang.org/i/fstar-new.png"
 let Bash = mkImg "https://github.com/odb/official-bash-logo/blob/61eff022f2dad3c7468f5deb4f06652d15f2c143/assets/Logos/Icons/PNG/128x128.png?raw=true"
 let git = mkImg "https://cdn.svgporn.com/logos/git-icon.svg?response-content-disposition=attachment%3Bfilename%3Dgit-icon.svg"
-let GNU = mkImg "https://cdn.svgporn.com/logos/gnu.svg?response-content-disposition=attachment%3Bfilename%3Dgnu.svg"
+let GNU = mkImgInv "https://cdn.svgporn.com/logos/gnu.svg?response-content-disposition=attachment%3Bfilename%3Dgnu.svg"
 let bitcoin = mkImg "https://cdn.svgporn.com/logos/bitcoin.svg?response-content-disposition=attachment%3Bfilename%3Dbitcoin.svg"
 let dotnet = mkImg "https://cdn.svgporn.com/logos/dotnet.svg?response-content-disposition=attachment%3Bfilename%3Ddotnet.svg"
 let LaTeX = mkImg "https://user-images.githubusercontent.com/31178401/209452465-57d86bc4-e02d-4a10-9acd-f52a1e5c6062.png"
 let Tor = mkImg "https://dl2.macupdate.com/images/icons256/17679.png?d=1522354611"
 let eth = mkImg "https://cdn.svgporn.com/logos/ethereum-color.svg?response-content-disposition=attachment%3Bfilename%3Dethereum-color.svg"
-let rust = mkImg "https://github.com/rust-lang/rust-artwork/blob/bf0b3272f9ba8d22f7fd45e408496d05621b3b5c/logo/rust-logo-128x128-blk-v2.png?raw=true"
+let rust = mkImgInv "https://github.com/rust-lang/rust-artwork/blob/bf0b3272f9ba8d22f7fd45e408496d05621b3b5c/logo/rust-logo-128x128-blk-v2.png?raw=true"
 let haskell = mkImg "https://wiki.haskell.org/wikiupload/4/4a/HaskellLogoStyPreview-1.png"
 let ens = mkImg "https://coindoo.com/wp-content/uploads/2019/02/ens-logo.png"
 let Draco = mkImg "https://avatars.githubusercontent.com/u/112573644?s=200&v=4"
