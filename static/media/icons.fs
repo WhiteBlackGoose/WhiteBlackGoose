@@ -6,6 +6,7 @@ let link = """<svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1
 let mkImg src logoSize = img [_src src; _width logoSize; _height logoSize ]
 let mkImgInv src logoSize = img [_src src; _width logoSize; _height logoSize; _class "inv" ]
 
+let wbg = mkImg "https://avatars.githubusercontent.com/u/31178401?v=4"
 let NeoVim = mkImg (Utils.locAwarePath "static/media/neovim.png")
 let FSharp = mkImg "https://cdn.svgporn.com/logos/fsharp.svg?response-content-disposition=attachment%3Bfilename%3Dfsharp.svg"
 let CSharp = mkImg "https://cdn.svgporn.com/logos/c-sharp.svg?response-content-disposition=attachment%3Bfilename%3Dc-sharp.svg"
