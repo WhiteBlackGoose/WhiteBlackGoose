@@ -9,7 +9,10 @@ let html = PageWrap.wrap www.``static``.styles.css {
  url = "."
  filename = "index.html"
  contents = [
-  div [_style "display: grid; grid-template-columns: 5fr 2fr; grid-gap: 20px;"] [
+  div [_style "display: grid; grid-template-columns: 3fr 10fr; grid-gap: 20px;"] [
+   aside [] [
+    icons.wbg "160"
+   ]
    main [] [
     p [] [ Text $"""Hello. This is WhiteBlackGoose.""" ]
     p [] [
@@ -22,9 +25,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
      I'm a member of {_a "https://angouri.org/" "Angouri"}, {_a "http://dotnetfoundation.org/" ".NET Foundation"}, and {_a "https://www.fsf.org/" "Free Software Foundation"}, and author of {_a "http://github.com/asc-community/AngouriMath" "AngouriMath"}.
      """
     ]
-   ]
-   aside [] [
-    icons.wbg "160"
    ]
   ]
   hr []
