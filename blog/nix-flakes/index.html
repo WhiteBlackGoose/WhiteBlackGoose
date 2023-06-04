@@ -68,11 +68,11 @@ display: block;
                         left: 0;
                         background: linear-gradient(90deg, rgb(0, 87, 183) 50%, rgb(255, 215, 0) 50%, rgb(255, 215, 0) 50%);
                     "></div><header style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="/.">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/nix-flakes/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</header><div class="article-body"><h1>Intro in Nix & Flakes</h1><p>This is yet another attempt to explain flakes based on what I personally used to misunderstand.</p><br><hr><br><h2>flake.nix is just a simple set</h2><p>What some people fail to explain that the set described by flake.nix, to be precise,<pre><code>{
- inputs.quack1.url = "aaa";
- inputs.quack2.url = "aaa";
- outputs = { quack1, quack2, ... }: {
-  ...
- }
+  inputs.quack1.url = "aaa";
+  inputs.quack2.url = "aaa";
+  outputs = { quack1, quack2, ... }: {
+    ...
+  }
 }</code></pre>is merely an actual set. Not special. You can add any fields there.</p><br><hr><br><h2>But nix3 commands interpret certain fields specially</h2><p>Flake is merely a set, but nix3 commands, like <span class="code-inline">nix develop</span>, <span class="code-inline">nix shell</span>, and so on, interpret it in a certain way. When they <i>evaluate</i> a flake, they collect all input URLs, fetch them, evaluate them, and substitute into <span class="code-inline">outputs</span>. The evaluated value of <span class="code-inline">outputs</span> is the evaluated value of flake according to nix3 commands.</p><br><hr><br><h2>Let's play around flake</h2><p>Let's create a very simple flake:<pre><code>{
   outputs = { self, ... }: {
     sum-of-two = a: b: a + b;
