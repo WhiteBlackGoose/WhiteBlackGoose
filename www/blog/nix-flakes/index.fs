@@ -22,11 +22,11 @@ let html = wrap www.``static``.styles.css {
    Text "What some people fail to explain that the set described by flake.nix, to be precise,"
    precode [
     Text """{
- inputs.quack1.url = "aaa";
- inputs.quack2.url = "aaa";
- outputs = { quack1, quack2, ... }: {
-  ...
- }
+  inputs.quack1.url = "aaa";
+  inputs.quack2.url = "aaa";
+  outputs = { quack1, quack2, ... }: {
+    ...
+  }
 }"""
    ]
    Text "is merely an actual set. Not special. You can add any fields there."
