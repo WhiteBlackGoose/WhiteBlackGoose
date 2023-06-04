@@ -12,7 +12,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
   div [_style "display: grid; grid-template-columns: 5fr 2fr; grid-gap: 20px;"] [
    main [] [
     p [] [ Text $"""Hello. This is WhiteBlackGoose.""" ]
-    p [] [ 
+    p [] [
      Text $"""
      I'm a {_a "https://www.gnu.org/philosophy/free-sw.en.html" "Free Software"} enthusiast,
      contributor and maintainer of a couple of Free and Open-Source projects.
@@ -21,16 +21,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
      Text $"""
      I'm a member of {_a "https://angouri.org/" "Angouri"}, {_a "http://dotnetfoundation.org/" ".NET Foundation"}, and {_a "https://www.fsf.org/" "Free Software Foundation"}, and author of {_a "http://github.com/asc-community/AngouriMath" "AngouriMath"}.
      """
-    ]
-   ]
-   aside [] [
-    h3 [] [ Text "Recently added" ]
-    p [] [
-     ul [] [
-      li [] [ a [_href (Utils.locAwarePath www.blog.nixos.index.html.url) ] [ Text "I love NixOS" ] ]
-      li [] [ a [_href "https://stallman.org/facebook.html"] [ Text "About Facebook" ] ]
-      li [] [ a [_href (Utils.locAwarePath www.blog.yyyy_mm_dd.index.html.url) ] [ Text "yyyy-mm-dd is best" ] ]
-     ]
     ]
    ]
   ]

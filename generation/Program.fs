@@ -19,6 +19,7 @@ let pages = [
     www.blog.my_values.index.html
     www.blog.pass.index.html
     www.blog.nixos.index.html
+    www.blog.nix_flakes.index.html
     www.blog.index.html
     www.blog.windows.index.html
     www.gpg.index.html

@@ -95,4 +95,11 @@ let css : XmlNode =
    "background-color", "gray"
    "border", "0.5px solid gray"
   ]
+  cssFilter "code" [
+   "background-color", "#3F3F3F"
+   "padding", "4px"
+   "border-radius", "3px"
+   "color", "white"
+   "display", "block"
+  ]
  ]
