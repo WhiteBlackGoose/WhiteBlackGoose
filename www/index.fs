@@ -23,6 +23,9 @@ let html = PageWrap.wrap www.``static``.styles.css {
      """
     ]
    ]
+   aside [] [
+    icons.wbg "160"
+   ]
   ]
   hr []
   p [_style "text-align: center;"] [
