@@ -66,6 +66,9 @@ let css : XmlNode =
    cssClass "code-inline" [
     "background", "#333"
    ]
+   cssClass "inv" [
+    "filter", "invert(100%)"
+   ]
   ]
   cssClass "code-inline" [
    "font-family", "mono"
