@@ -1,0 +1,111 @@
+<html><title>Intro in Nix & Flakes</title><head><link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/31178401"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"><style>@media (prefers-color-scheme: light) {
+body {
+background: rgb(230, 230, 230);
+color: #333;
+}
+a {
+color: #333;
+}
+.code-inline {
+background: lightgray;
+}
+
+}@media (prefers-color-scheme: dark) {
+body {
+background: rgb(30, 30, 30);
+color: #BBB;
+}
+a {
+color: #BBB;
+}
+.code-inline {
+background: #333;
+}
+.inv {
+filter: invert(100%);
+}
+
+}.code-inline {
+font-family: mono;
+padding: 2px;
+border-radius: 4px;
+}
+.header h1 {
+margin: 0 auto;
+}
+a {
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-color: gray;
+}
+.article-body {
+font-family: Overpass Mono;
+padding: 60px;
+padding-left: 20%;
+padding-right: 20%;
+line-height: 1.7;
+}
+hr {
+width: 20%;
+background-color: gray;
+border: 0.5px solid gray;
+}
+code {
+background-color: #3F3F3F;
+padding: 4px;
+border-radius: 3px;
+color: white;
+display: block;
+}
+</style></head><body><div style="
+                        width: 100%;
+                        height: 10px;
+                        padding: 0;
+                        margin: 0;
+                        float: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(90deg, rgb(0, 87, 183) 50%, rgb(255, 215, 0) 50%, rgb(255, 215, 0) 50%);
+                    "></div><header style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="/.">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/nix-flakes/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</header><div class="article-body"><h1>Intro in Nix & Flakes</h1><p>This is yet another attempt to explain flakes</p><br><hr><br><h2>flake.nix is just a simple set</h2><p>What some people fail to explain that the set described by flake.nix, to be precise,<pre><code>{
+ inputs.quack1.url = "aaa";
+ inputs.quack2.url = "aaa";
+ outputs = { quack1, quack2, ... }: {
+  ...
+ }
+}</code></pre>is merely an actual set. Not special. You can add any fields there.</p><h2>But nix3 commands interpret certain fields specially</h2><p>Flake is merely a set, but nix3 commands, like <span class="code-inline">nix develop</span>, <span class="code-inline">nix shell</span>, and so on, interpret it in a certain way. When they <i>evaluate</i> a flake, they collect all input URLs, fetch them, evaluate them, and substitute into <span class="code-inline">outputs</span>. The evaluated value of <span class="code-inline">outputs</span> is the evaluated value of flake according to nix3 commands.</p><h2>Let's play around flake</h2><p>Let's create a very simple flake:<pre><code>{
+  outputs = { self, ... }: {
+    sum-of-two = a: b: a + b;
+  };
+}</code></pre>There's no inputs, and there's only one output field. Let's import it as a nix file if you don't believe me:<pre><code>$> nix repl
+
+nix-repl> f = import ./flake.nix
+
+nix-repl> f
+{ outputs = «lambda @ /home/goose/trash/flake-playground/sum-of-two/flake.nix:2:13»; }
+</code></pre>See? This is exactly how we define it. We defined it as a set with one attribute. Outputs is a function, just like we defined. We can even evaluate it ourselves, manually. Look:<pre><code>nix-repl> (f.outputs { self = f; }).sum-of-two 4 5
+9</code></pre>But all because it has a special format (and name flake.nix), we can also load it as flake into our repl:<pre><code>nix-repl> :lf .
+Added 9 variables.</code></pre>It evaluated the flake and put its evaluated value into variable called <span class="code-inline">outputs</span>. Let's see its value:<pre><code>nix-repl> outputs
+{ sum-of-two = «lambda @ /nix/store/qzf8wd8nj8ajsrrxazs338ysz62f9yai-source/flake.nix:3:18»; }
+
+nix-repl> outputs.sum-of-two 4 5
+9</code></pre>Yep, it evaluted to what we expected. We didn't depend on the input, so it just returned the set that we return in function <span class="code-inline">outputs</span>.</p><h2>What about inputs?</h2><p>Let's create another flake in another folder. I call the older one <span class="code-inline">two-of-sum</span> and the new one <span class="code-inline">main</span>. The folder structure is:<pre><code>$> find .
+.
+./sum-of-two
+./sum-of-two/flake.nix
+./main
+./main/flake.nix</code></pre>And <span class="code-inline">./main/flake.nix</span> is defined:<pre><code>$> cat flake.nix
+{
+  inputs.sum.url = "path:/home/goose/trash/flake-playground/sum-of-two";
+  outputs = { sum, ... }: {
+    heh = sum.sum-of-two 4 5;
+  };
+}</code></pre>Now we added the other flake as input and return an set where one field is sum of 4 and 5 taken from the other flake. Now we need to lock the file to ensure that the inputs don't change on their own:<pre><code>$> nix flake lock
+warning: creating lock file '/home/goose/trash/flake-playground/main/flake.lock'</code></pre>Now let's enter the flake, evaluate it, and see the value:<pre><code>$> nix repl
+Welcome to Nix 2.13.3. Type :? for help.
+
+nix-repl> :lf .
+Added 9 variables.
+
+nix-repl> outputs
+{ heh = 9; }</code></pre>See? <span class="code-inline">sum</span> input was evaluated and substituted into <span class="code-inline">outputs</span>. The evaluated flake <span class="code-inline">sum</span> has field <span class="code-inline">sum-of-two</span>, which is what we call inside in ours.</p><h2>What's up with shells and nixosConfigurations and packages?</h2><p>Basically, commands like <span class="code-inline">nix develop</span>, <span class="code-inline">nix shell</span> etc. merely evaluate the flake and interpret certain fields. Which fields? Depends on the command. For example, <span class="code-inline">nix develop</span> looks for field/attribute <span class="code-inline">devShells</span>. To see which commands expect which fields, <a href="https://nixos.wiki/wiki/Flakes#Output_schema">see output schema</a>.</p></div><footer style="padding: 12px; color: gray;">WhiteBlackGoose' website <span style="color: gray;">|</span> <a href="/.">Home</a> <span style="color: gray;">|</span> <a href="..">Up</a> <span style="color: gray;">|</span> <a href="https://github.com/WhiteBlackGoose/WhiteBlackGoose/blob/master/www/blog/nix-flakes/index.fs">Edit</a> <span style="color: gray;">|</span> The content is under CC BY-NC 4.0 and source code is under GPLv3</footer></body></html>
