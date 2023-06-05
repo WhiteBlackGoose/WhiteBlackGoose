@@ -17,7 +17,7 @@ let html = wrap www.``static``.styles.css {
   br []
   hr []
   br []
-  h2 [] [ Text "flake.nix is just a simple set" ]
+  h2 [] [ anc "simple-set"; Text "flake.nix is just a simple set" ]
   p [] [
    Text "What some people fail to explain that the set described by flake.nix, to be precise,"
    precode [
@@ -32,13 +32,13 @@ let html = wrap www.``static``.styles.css {
    Text "is merely an actual set. Not special. You can add any fields there."
   ]
   br []; hr []; br []
-  h2 [] [ Text "But nix3 commands interpret certain fields specially" ]
+  h2 [] [ anc "special-fields"; Text "But nix3 commands interpret certain fields specially" ]
   p [] [
    Text $"""Flake is merely a set, but nix3 commands, like {co "nix develop"}, {co "nix shell"}, and so on, interpret it in a certain way. When they {it "evaluate"} a flake, they collect all input URLs, fetch them, evaluate them, and substitute into {co "outputs"}. The evaluated value of {co "outputs"} is the evaluated value of flake according to nix3 commands."""
   ]
 
   br []; hr []; br []
-  h2 [] [ Text "Let's play around flake" ]
+  h2 [] [ anc "playground"; Text "Let's play around flake" ]
   p [] [
    Text "Let's create a very simple flake:"
    precode [
@@ -80,7 +80,7 @@ nix-repl> outputs.sum-of-two 4 5
   ]
 
   br []; hr []; br []
-  h2 [] [ Text "What about inputs?" ]
+  h2 [] [ anc "inputs"; Text "What about inputs?" ]
   p [] [
    Text $"""Let's create another flake in another folder. I call the older one {co "two-of-sum"} and the new one {co "main"}. The folder structure is:"""
    precode [
@@ -121,7 +121,7 @@ nix-repl> outputs
   ]
 
   br []; hr []; br []
-  h2 [] [ Text "What's up with shells and nixosConfigurations and packages?" ]
+  h2 [] [ anc "shells"; Text "What's up with shells and nixosConfigurations and packages?" ]
   p [] [
    Text $"""Basically, commands like {co "nix develop"}, {co "nix shell"} etc. merely evaluate the flake and interpret certain fields. Which fields? Depends on the command. For example, {co "nix develop"} looks for field/attribute {co "devShells"}. To see which commands expect which fields, {_a "https://nixos.wiki/wiki/Flakes#Output_schema" "see output schema"}."""
   ]
