@@ -51,6 +51,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
      "https://michael.stapelberg.ch/", "i3wm author's blog" 
      "https://stop-using-nix-env.privatevoid.net/", "Stop using nix-env" 
      "https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/", "About peoples' names in software"
+     "https://tim.dreamwidth.org/1762846.html", "How To Exclude Women From Your Technical Community"
     ]
     for url, name in links do
      li [] [ a [_href url] [ Text name ] ]
