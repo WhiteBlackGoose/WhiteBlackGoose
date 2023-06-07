@@ -8,6 +8,19 @@ let html = PageWrap.wrap www.``static``.styles.css {
  url = "good-links"
  filename = "index.html"
  contents = [
+  h2 [] [ Text "Justice" ]
+  p [] [
+   ul [] [
+    let links = [
+     "https://tim.dreamwidth.org/1762846.html", "How To Exclude Women From Your Technical Community"
+     "https://996.icu/#/en_US", "996 - unfair work schedule in Mainland China"
+     "https://wikileaks.org/", "Governments"
+    ]
+    for url, name in links do
+     li [] [ a [_href url] [ Text name ] ]
+   ]
+  ]
+
   h2 [] [ Text "Privacy &amp; Security" ]
   p [] [
    ul [] [
@@ -27,7 +40,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    ]
   ]
 
-  h2 [] [ Text "These disrespect your freedom" ]
+  h2 [] [ Text "This software disrespects your freedom" ]
   p [] [
    ul [] [
     let links = [
@@ -35,7 +48,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
      "https://stallman.org/apple.html" , "Apple" 
      "https://stallman.org/microsoft.html" , "Microsoft" 
      "https://contrachrome.com/", "Google Chrome"
-     "https://wikileaks.org/", "Governments"
     ]
     for url, name in links do
      li [] [ a [_href url] [ Text name ] ]
@@ -51,7 +63,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
      "https://michael.stapelberg.ch/", "i3wm author's blog" 
      "https://stop-using-nix-env.privatevoid.net/", "Stop using nix-env" 
      "https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/", "About peoples' names in software"
-     "https://tim.dreamwidth.org/1762846.html", "How To Exclude Women From Your Technical Community"
     ]
     for url, name in links do
      li [] [ a [_href url] [ Text name ] ]
