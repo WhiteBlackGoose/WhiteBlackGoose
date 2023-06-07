@@ -36,7 +36,7 @@ let myProjects = [
     { name = "brownian-motion-chart"; url = "https://github.com/WhiteBlackGoose/brownian-motion-chart";
     langs = [ Rust ] }
 
-    { name = "LambdaCalculusFSharp"; url = "https://github.com/WhiteBlackGoose/LambdaCalculusFSharp";
+    { name = "LambdaCalculusFSharp"; url = "https://lambda.wbg.gg";
     langs = [ FSharp ] }
 
     { name = "FStar.Lib.NET"; url = "https://github.com/WhiteBlackGoose/FStar.Lib.NET";
