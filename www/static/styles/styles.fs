@@ -80,7 +80,7 @@ let css : XmlNode =
   ]
   cssFilter "a" [
    "text-decoration-line", "underline"
-   "text-decoration-style", "solid"
+   "text-decoration-style", "dotted"
    "text-decoration-color", "gray"
   ]
   cssClass "article-body" [

@@ -50,11 +50,8 @@ let html = PageWrap.wrap www.``static``.styles.css {
    ]]
   ]
 
-  h2 [] [ anc "projects"; Text "Projects I made" ]
+  h2 [] [ anc "projects"; Text "Projects I was involved in" ]
   yield! www.projects.index.projectsListHtml www.projects.index.myProjects
-
-  h2 [] [ anc "projects"; Text "Projects I contributed to" ]
-  yield! www.projects.index.projectsListHtml www.projects.index.contributedProjects
 
   h2 [] [ anc "pulls"; Text "Pull requests" ]
   pre [] [
