@@ -95,11 +95,26 @@ let contributedProjects = [
     { name = "Draco"; url = "https://github.com/Draco-lang/Language-suggestions";
     langs = [ Draco ] }
 
-    { name = "ts-advanced-git-search"; url = "https://github.com/WhiteBlackGoose/ts-advanced-git-search.nvim";
+]
+
+let neovimProjects = [
+    { name = "advanced-git-search"; url = "https://github.com/WhiteBlackGoose/advanced-git-search.nvim";
     langs = [ Lua ]}
 
     { name = "nvim-latex-preconfig"; url = "https://github.com/WhiteBlackGoose/nvim-latex-preconfig";
     langs = [ Lua; LaTeX ] }
+
+    { name = "nvim-web-icons"; url = "https://github.com/nvim-tree/nvim-web-devicons";
+    langs = [ Lua ]}
+
+    { name = "orgmode"; url = "https://github.com/nvim-orgmode/orgmode";
+    langs = [ Lua ]}
+
+    { name = "TWIN"; url = "https://github.com/phaazon/this-week-in-neovim-contents";
+    langs = [ ]}
+
+    { name = "barbar.nvim"; url = "https://github.com/romgrk/barbar.nvim";
+    langs = [ Lua ] }
 ]
 
 let lang2icon = function
@@ -134,5 +149,8 @@ let html = PageWrap.wrap www.``static``.styles.css {
 
         h2 [] [ Text "I contributed to..." ]
         yield! projectsListHtml contributedProjects
+
+        h2 [] [ Text "Neovim-related" ]
+        yield! projectsListHtml neovimProjects
     ]
 }
