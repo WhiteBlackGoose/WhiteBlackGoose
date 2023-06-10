@@ -33,7 +33,7 @@ type ProjectTile =
       contrib : Contribution }
 
 let myProjects = [
-    { name = "AngouriMath"; url = "https://github.com/asc-community/AngouriMath";
+    { name = "AngouriMath"; url = "https://am.angouri.org";
     langs = [ CSharp; FSharp ]; value = High; contrib = Created }
 
     { name = "CodegenAnalysis"; url = "https://github.com/WhiteBlackGoose/CodegenAnalysis";
