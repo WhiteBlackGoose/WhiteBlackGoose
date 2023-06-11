@@ -24,6 +24,7 @@ let haskell = mkImg "https://wiki.haskell.org/wikiupload/4/4a/HaskellLogoStyPrev
 let ens = mkImg "https://coindoo.com/wp-content/uploads/2019/02/ens-logo.png"
 let Draco = mkImg "https://avatars.githubusercontent.com/u/112573644?s=200&v=4"
 let lua = mkImg "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg"
+let python = mkImg "https://www.pngmart.com/files/7/Python-PNG-File.png"
 
 let NixOS = mkImg "https://raw.githubusercontent.com/NixOS/nixos-artwork/c1dc75611042b57a385c80495d3728724c35cfee/logo/nix-snowflake.svg"
 let fedora = mkImg "https://linux-man.org/wp-content/uploads/2021/09/Fedora_logo.svg"
