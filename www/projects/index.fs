@@ -126,6 +126,9 @@ let myProjects = [
 
     { name = "magma-nvim"; url = "https://github.com/WhiteBlackGoose/magma-nvim-goose";
     langs = [ Python ]; value = High; contrib = Major }
+
+    { name = "gpt4all.nvim"; url = "https://github.com/WhiteBlackGoose/gpt4all.nvim/";
+    langs = [ Lua ]; value = Low; contrib = Major }
 ]
 
 let lang2icon = function
