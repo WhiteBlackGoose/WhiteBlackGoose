@@ -14,6 +14,7 @@ type ProgrammingLanguage =
     | Draco
     | Lua
     | LaTeX
+    | Python
 
 type Value =
     | High
@@ -122,6 +123,9 @@ let myProjects = [
 
     { name = "barbar.nvim"; url = "https://github.com/romgrk/barbar.nvim";
     langs = [ Lua ]; value = High; contrib = Minor }
+
+    { name = "magma-nvim"; url = "https://github.com/WhiteBlackGoose/magma-nvim-goose";
+    langs = [ Python ]; value = High; contrib = Major }
 ]
 
 let lang2icon = function
@@ -135,6 +139,7 @@ let lang2icon = function
     | Draco   -> www.``static``.media.icons.Draco
     | Lua     -> www.``static``.media.icons.lua
     | LaTeX   -> www.``static``.media.icons.LaTeX
+    | Python  -> www.``static``.media.icons.python
 
 let projectsListHtml prjList = [
     ul [_style "column-count: 3; list-style-type: none"] [
