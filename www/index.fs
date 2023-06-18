@@ -45,7 +45,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
   hr []
   p [] [
    table [_style "display: flex; justify-content: center"] [ tr [] [
-   for icon in [icons.NixOS; icons.GNU; icons.Tor; icons.NeoVim; icons.LaTeX; icons.FSharp; icons.rust; icons.haskell; icons.git; icons.ens; icons.eth] do
+   for icon in [icons.NixOS; icons.GNU; icons.Tor; icons.NeoVim; icons.LaTeX; icons.FSharp; icons.rust; icons.haskell; icons.git; icons.ens; icons.eth; icons.mastadon; icons.lemmy; icons.matrix] do
     td [] [ icon "30" ]
    ]]
   ]
