@@ -89,6 +89,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    a [_href "https://stallman.org/facebook.html"; _style "text-align: right;"] [icons.noFacebook]
    ul [] [
     li [] [ Text $"""E-mail: wbg at angouri.org""" ]
+    li [] [ Text $"""Matrix: whiteblackgoose at matrix.org""" ]
     li [] [ a [_rel "me"; _href "https://mastodon.sdf.org/@WhiteBlackGoose"] [ Text "mastodon" ] ]
     li [] [ a [_rel "me"; _href "https://programming.dev/u/WhiteBlackGoose"] [ Text "programming.dev" ] ]
     li [] [ a [_rel "me"; _href "https://codeberg.org/WhiteBlackGoose"] [ Text "codeberg.org" ] ]
