@@ -51,7 +51,7 @@ let articles = [
 
     { lang = EN; date = "2022-05-28"; tags = [ "python"; "investing" ]; title = "20 Random Stocks Investment Strategy";
         shortTitle = "20 random stocks";
-        link = "https://wbg.angouri.org/media/20_random_stocks.html" }
+        link = "https://wbg.gg/static/media/20_random_stocks.html" }
 
     { lang = EN; date = "2022-02-22"; tags = [ "best"; "recursion" ]; title = "Don’t underestimate Recursion: it’s far more powerful, than most people think";
         shortTitle = "Recursion is amazing";

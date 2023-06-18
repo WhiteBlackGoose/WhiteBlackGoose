@@ -22,6 +22,8 @@ let pages = [
     www.blog.nix_flakes.index.html
     www.blog.index.html
     www.blog.windows.index.html
+    yield! www.comics.index.htmls
+    www.comics.index.html
     www.gpg.index.html
     www.gpg.pubkey.txt
     www.snowflake.index.html
@@ -40,9 +42,9 @@ for page in pages do
         RenderView.AsString.htmlNode page.contents)
     printfn $"Generated page {page.url}"
 
-if Directory.Exists(sourceRoot </> "static" </> "media") then
-    Directory.Delete(sourceRoot </> "static" </> "media", true)
-ensureExists(sourceDir </> "static" </> "media") (sourceRoot </> "static" </> "media")
+if Directory.Exists(sourceRoot </> "static") then
+    Directory.Delete(sourceRoot </> "static", true)
+ensureExists(sourceDir </> "static") (sourceRoot </> "static")
 
 printfn $"Finished."
 

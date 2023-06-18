@@ -25,6 +25,8 @@
     <Compile Include="./www/blog/nix-flakes/index.fs" />
     <Compile Include="./www/blog/index.fs" />
 
+    <Compile Include="./www/comics/index.fs" />
+
     <Compile Include="./www/gpg/pubkey.fs" />
     <Compile Include="./www/gpg/index.fs" />
 
