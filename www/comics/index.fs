@@ -25,6 +25,7 @@ let htmlsMap (_, comicName, comicUrl) =
 
 let comics = [
  ("2023-06-18", "For the Nerds", "for-nerds")
+ ("2022-05-22", "Foggy weather", "fr-weather")
 ]
 
 let htmls = List.map htmlsMap comics
