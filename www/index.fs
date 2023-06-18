@@ -33,9 +33,9 @@ let html = PageWrap.wrap www.``static``.styles.css {
     $"""{_a (Utils.locAwarePath www.blog.index.html.url) "Blog"}"""
     $"""{_a (Utils.locAwarePath www.projects.index.html.url) "Projects"}"""
     $"""{_a "https://github.com/WhiteBlackGoose" "Github"}"""
+    $"""{_a (Utils.locAwarePath www.comics.index.html.url) "Comics"}"""
     $"""{_a (Utils.locAwarePath www.gpg.index.html.url) "My GPG key"}"""
     $"""{_a (Utils.locAwarePath www.good_links.index.html.url) "Good links"}"""
-    $"""{_a (Utils.locAwarePath www.snowflake.index.html.url) "Snowflake"}"""
    ]
    Text "•&nbsp;"
    for url in urls do

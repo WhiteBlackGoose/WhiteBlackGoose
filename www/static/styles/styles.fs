@@ -84,7 +84,7 @@ let css : XmlNode =
    "text-decoration-color", "gray"
   ]
   cssClass "article-body" [
-   "font-family", "Overpass Mono"
+   "font-family", "'FantasqueSansMonoRegular'"
    "padding", "60px"
    "padding-left", "20%"
    "padding-right", "20%"
