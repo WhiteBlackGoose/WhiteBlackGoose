@@ -4,7 +4,14 @@ open Giraffe.ViewEngine
 open Page
 
 
-let htmlsMap (_, comicName, comicUrl) = PageWrap.wrap www.``static``.styles.css {
+let htmlsMap (_, comicName, comicUrl) =
+ PageWrap.wrap 
+  (www.``static``.styles.css
+  |> List.append [
+   meta [_property "og:image"; _content (Utils.locAwarePath $"static/comics/{comicUrl}.png") ]
+   meta [_property "og:title"; _content comicName ]
+  ]
+  ) {
  title = comicName
  url = "comics/" + comicUrl
  filename = "index.html"

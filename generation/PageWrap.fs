@@ -11,7 +11,7 @@ type WrappedPage = {
     title : string
 }
 
-let wrap css ({ title = pageTitle; url = url; filename = filename; contents = contents } : Page) : WrappedPage = 
+let wrap addHeads ({ title = pageTitle; url = url; filename = filename; contents = contents } : Page) : WrappedPage = 
     { url = url
       filename = filename
       title = pageTitle
@@ -21,7 +21,7 @@ let wrap css ({ title = pageTitle; url = url; filename = filename; contents = co
             head [] [
                 link [_rel "icon"; _type "image/png"; _href "https://avatars.githubusercontent.com/u/31178401"]
                 link [_rel "stylesheet"; _type "text/css"; _href "https://fontlibrary.org//face/fantasque-sans-mono"]
-                css
+                yield! addHeads
             ]
             body [] [
                 div [
