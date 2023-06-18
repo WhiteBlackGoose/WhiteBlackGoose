@@ -41,7 +41,7 @@ let makeStyle attrs (contents : seq<string>) =
 
 
 
-let css : XmlNode = 
+let css : XmlNode list = [
  makeStyle [] [
   lightTheme [
    cssFilter "body" [
@@ -103,3 +103,4 @@ let css : XmlNode =
    "display", "block"
   ]
  ]
+]
