@@ -102,5 +102,14 @@ let css : XmlNode list = [
    "color", "white"
    "display", "block"
   ]
+  cssFilter ".noborder-table table,tr,td" [
+   "border", "none"
+  ]
+  cssFilter ".noborder-table tr" [
+   "line-height", "29px"
+  ]
+  cssFilter ".noborder-table td" [
+   "padding-right", "10px"
+  ]
  ]
 ]

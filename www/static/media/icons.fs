@@ -28,6 +28,7 @@ let python = mkImg "https://www.pngmart.com/files/7/Python-PNG-File.png"
 let mastadon = mkImg "https://joinmastodon.org/logos/logo-purple.svg"
 let lemmy = mkImg "https://upload.wikimedia.org/wikipedia/commons/5/52/Lemmy_logo.svg"
 let matrix = mkImgInv "https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg"
+let thunderbird = mkImg "https://blog.thunderbird.net/files/2023/05/1024x1024@2x.png"
 
 let NixOS = mkImg "https://raw.githubusercontent.com/NixOS/nixos-artwork/c1dc75611042b57a385c80495d3728724c35cfee/logo/nix-snowflake.svg"
 let fedora = mkImg "https://linux-man.org/wp-content/uploads/2021/09/Fedora_logo.svg"

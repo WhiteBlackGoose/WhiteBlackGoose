@@ -87,13 +87,13 @@ let html = PageWrap.wrap www.``static``.styles.css {
   h2 [] [ anc "contacts"; Text "Contacts" ]
   p [] [
    a [_href "https://stallman.org/facebook.html"; _style "text-align: right;"] [icons.noFacebook]
-   ul [] [
-    li [] [ Text $"""E-mail: wbg at angouri.org""" ]
-    li [] [ Text $"""Matrix: whiteblackgoose at matrix.org""" ]
-    li [] [ a [_rel "me"; _href "https://mastodon.sdf.org/@WhiteBlackGoose"] [ Text "mastodon" ] ]
-    li [] [ a [_rel "me"; _href "https://lemmy.ml/u/WhiteBlackGoose@programming.dev"] [ Text "lemmy" ] ]
-    li [] [ a [_rel "me"; _href "https://github.com/WhiteBlackGoose"] [ Text "github" ] ]
-    li [] [ a [_rel "me"; _href "https://codeberg.org/WhiteBlackGoose"] [ Text "codeberg.org" ] ]
+   table [_class "noborder-table"] [
+    tr [] [td [] [ icons.thunderbird "25" ]; td [] [ Text "wbg at angouri.org" ] ]
+    tr [] [td [] [ icons.matrix "25" ]; td [] [ Text "whiteblackgoose at matrix.org" ] ]
+    tr [] [td [] [ icons.mastadon "25" ]; td [] [ a [_rel "me"; _href "https://mastodon.sdf.org/@WhiteBlackGoose"] [ Text "mastodon" ] ] ]
+    tr [] [td [] [ icons.lemmy "25" ]; td [] [ a [_rel "me"; _href "https://lemmy.ml/u/WhiteBlackGoose@programming.dev"] [ Text "lemmy" ] ] ]
+    tr [] [td [] [ ]; td [] [ a [_rel "me"; _href "https://github.com/WhiteBlackGoose"] [ Text "github" ] ] ]
+    tr [] [td [] [ ]; td [] [ a [_rel "me"; _href "https://codeberg.org/WhiteBlackGoose"] [ Text "codeberg.org" ] ] ]
    ]
   ]
  ]
