@@ -92,8 +92,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
     tr [] [td [] [ icons.matrix "25" ]; td [] [ Text "whiteblackgoose at matrix.org" ] ]
     tr [] [td [] [ icons.mastadon "25" ]; td [] [ a [_rel "me"; _href "https://mastodon.sdf.org/@WhiteBlackGoose"] [ Text "mastodon" ] ] ]
     tr [] [td [] [ icons.lemmy "25" ]; td [] [ a [_rel "me"; _href "https://lemmy.ml/u/WhiteBlackGoose@programming.dev"] [ Text "lemmy" ] ] ]
-    tr [] [td [] [ ]; td [] [ a [_rel "me"; _href "https://github.com/WhiteBlackGoose"] [ Text "github" ] ] ]
-    tr [] [td [] [ ]; td [] [ a [_rel "me"; _href "https://codeberg.org/WhiteBlackGoose"] [ Text "codeberg.org" ] ] ]
    ]
   ]
  ]
