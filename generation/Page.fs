@@ -25,6 +25,6 @@ let ur url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.A
 let co text = span [_class "code-inline"] [ Text text ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
 let _a url name = a [_href url] [ Text name ] |> Giraffe.ViewEngine.RenderView.AsString.htmlNode
 
-let anc tag = a [_href $"#{tag}"; _name tag; _style "fill: gray;"] [ Text www.``static``.media.icons.link ]
+let anc tag = a [_href $"#{tag}"; _name tag; _style "fill: gray;"; attr "aria-label" $"Jump to header {tag}"] [ Text www.``static``.media.icons.link ]
 let refanc tag text = a [_href $"#{tag}"] [ Text text ]
 
