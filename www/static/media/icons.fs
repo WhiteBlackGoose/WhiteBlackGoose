@@ -29,6 +29,10 @@ let mastadon = mkImg    "mastodon logo"    "https://joinmastodon.org/logos/logo-
 let lemmy = mkImg       "lemmy logo"       "https://upload.wikimedia.org/wikipedia/commons/5/52/Lemmy_logo.svg"
 let matrix = mkImgInv   "matrix logo"      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg"
 let thunderbird = mkImg "thunderbird logo" "https://blog.thunderbird.net/files/2023/05/1024x1024@2x.png"
+let reddit = mkImg      "reddit logo"      "https://www.redditinc.com/assets/images/site/reddit-logo.png"
+let github = mkImgInv   "github logo"      "https://cdn-icons-png.flaticon.com/512/733/733609.png?w=1380&t=st=1688370805~exp=1688371405~hmac=4d3720770a5a37a50e36bc5db20d60916f1bd63802e75329f74ed57c14ff40ac"
+let twitter = mkImg     "twitter logo"     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1024px-Logo_of_Twitter.svg.png?20220821125553"
+let discord = mkImgInv  "discord logo"     "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg"
 
 let NixOS = mkImg       "NixOS logo"       "https://raw.githubusercontent.com/NixOS/nixos-artwork/c1dc75611042b57a385c80495d3728724c35cfee/logo/nix-snowflake.svg"
 let fedora = mkImg      "Fedora logo"      "https://linux-man.org/wp-content/uploads/2021/09/Fedora_logo.svg"

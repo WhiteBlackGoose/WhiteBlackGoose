@@ -94,5 +94,14 @@ let html = PageWrap.wrap www.``static``.styles.css {
     tr [] [td [] [ icons.lemmy "25" ]; td [] [ a [_rel "me"; _href "https://lemmy.ml/u/WhiteBlackGoose@programming.dev"] [ Text "lemmy" ] ] ]
    ]
   ]
+  h4 [] [ Text "Less preferred" ]
+  p [] [
+   table [_class "noborder-table"] [
+    tr [] [td [] [ icons.github "25" ]; td [] [ a [_rel "me"; _href "https://github.com/WhiteBlackGoose/"] [ Text "github" ] ]]
+    tr [] [td [] [ icons.reddit "25" ]; td [] [ a [_rel "me"; _href "https://reddit.com/u/WhiteBlackGoose/"] [ Text "reddit" ] ]]
+    tr [] [td [] [ icons.twitter "25" ]; td [] [ a [_rel "me"; _href "https://twitter.com/WhiteBlackGoose/"] [ Text "twitter" ] ]]
+    tr [] [td [] [ icons.discord "25" ]; td [] [ Text "whiteblackgoose" ]]
+   ]
+  ]
  ]
 }
