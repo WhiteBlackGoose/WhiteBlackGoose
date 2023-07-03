@@ -88,7 +88,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
   p [] [
    a [_href "https://stallman.org/facebook.html"; _style "text-align: right;"] [icons.noFacebook]
    table [_class "noborder-table"] [
-    tr [] [td [] [ icons.thunderbird "25" ]; td [] [ Text "wbg at angouri.org" ] ]
+    tr [] [td [] [ icons.thunderbird "25" ]; td [] [ Text "wbg at angouri.org "; a [ _href (Utils.locAwarePath www.gpg.index.html.url) ] [ Text "(GPG)" ] ] ]
     tr [] [td [] [ icons.matrix "25" ]; td [] [ Text "whiteblackgoose at matrix.org" ] ]
     tr [] [td [] [ icons.mastadon "25" ]; td [] [ a [_rel "me"; _href "https://mastodon.sdf.org/@WhiteBlackGoose"] [ Text "mastodon" ] ] ]
     tr [] [td [] [ icons.lemmy "25" ]; td [] [ a [_rel "me"; _href "https://lemmy.ml/u/WhiteBlackGoose@programming.dev"] [ Text "lemmy" ] ] ]
