@@ -77,9 +77,9 @@ let html = PageWrap.wrap www.``static``.styles.css {
    ]
   ]
 
-  h2 [] [ anc "donations"; Text "My sponsorship" ]
+  h2 [] [ anc "donations"; Text "My sponsorships" ]
   p [] [
-   script [ _src "https://opencollective.com/WhiteBlackGoose/collectives.js" ] []
+   yield! www.donations.index.info
   ]
 
   h2 [] [ anc "fun"; Text "Fun" ]
