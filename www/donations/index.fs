@@ -36,8 +36,8 @@ let setup =
   ] |> List.sortBy (fun d -> -toUsd d.amount d.currency)
 
 let toUsdFormat amount = function
- | USD -> $"${amount}/mo"
- | EUR -> $"{amount}€ (${toUsd amount EUR})/mo"
+ | USD -> td [] [ Text $"${amount} /mo" ]
+ | EUR -> td [_title $"${toUsd amount EUR}"] [ Text $"{amount}€ /mo" ]
 
 let sum =
  setup
@@ -50,7 +50,7 @@ let info = [
    for { amount = amount; currency = currency; name = name; url = url } in setup do
     tr [] [
      td [] [ a [ _href url ] [ Text name ] ]
-     td [] [ Text (toUsdFormat amount currency) ]
+     toUsdFormat amount currency
     ]
   ]
  ]
