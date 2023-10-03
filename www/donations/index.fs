@@ -33,6 +33,7 @@ let setup =
    { amount = 20.0m; currency = EUR; name = "NixOS"; url = "https://opencollective.com/nixos" }
    { amount = 10.0m; currency = USD; name = "FSF"; url = "https://www.fsf.org/" }
    { amount = 5.7m; currency = EUR; name = "Mozilla"; url = "https://www.mozilla.org" }
+   { amount = 10.0m; currency = EUR; name = "VoltEuropa"; url = "https://www.volteuropa.org/fundraising" }
   ] |> List.sortBy (fun d -> -toUsd d.amount d.currency)
 
 let toUsdFormat amount = function
