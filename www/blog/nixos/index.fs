@@ -145,6 +145,67 @@ let html = PageWrap.wrap www.``static``.styles.css {
   p [] [
     Text $"""Now what's the benefit? Well, the flake's output, besides just pure expressions (we aren't doing an FP course here), can also be interpreted for useful stuff. First, system configuration. If your output has system configuration type, your whole system will be rebuilt according to it. Second, development environment. Once you meet the criteria so to say, running {co "nix develop"} will get you into development shell with the tooling you need (and whatever you specified). And finally, same with {co "nix shell"} for actually trying out the package. So you can have development environment and user environment in your project, and while your team simply pulls in your flake without having to install the software on their own, any user can simply pull the flake as well for installation!"""
   ]
+  p [] [
+   Text $"""I like thinking of flakes as of a way to distribute and redistribute nix expressions. In the end of the day what you get with nix is a complete working system or environment. And thanks to flakes, you can share and exchange parts of those environments with others! In particular, some projects are "distributed" via flakes. Instead of them instructing you how to build a program, they do it themselves in a flake. For you, what you do is you fetch a flake which instructs nix how to install an app (as such, flakes don't have to be in the same repo, you can create your own flake which installs gimp + krita at a time and provides a desktop entry which calls them both)."""
+  ]
+
+  h2 [] [ anc "ext"; orderedHeader "Extensible" ]
+  p [] [
+   Text $"""The line between installed software and the OS is more blurry than on other OS, since you have more control over how this software is invoked and configured. For example, you can wrap running certain programs into custom scripts directly in desktop entries. You can extend and override some packages as covered in {refancs "easy-use" "one of the previous sections"}. For example, if you want working OCR in your system, you can create the following {it "module"}:"""
+  ]
+  pre [] [
+   code [] [
+    Text """{ pkgs, ... }: {
+  xdg.desktopEntries = 
+    let 
+      ocr = lang: {
+        name = "OCR image: ${lang}";
+        exec = "${pkgs.writeScript "ocr" ''
+          ${pkgs.xfce.xfce4-screenshooter}/bin/xfce4-screenshooter -r --save /dev/stdout | \
+          ${pkgs.tesseract}/bin/tesseract -l ${lang} - - | \
+          ${pkgs.xclip}/bin/xclip -sel clip
+        ''}";
+      };
+      ocr-trans = lang-src: lang-dst: {
+        name = "OCR translate: ${lang-src} -> eng";
+        exec = "${pkgs.writeScript "tr" ''
+          ${pkgs.xfce.xfce4-screenshooter}/bin/xfce4-screenshooter -r --save /dev/stdout | \
+          ${pkgs.tesseract}/bin/tesseract -l ${lang-src} - - | \
+          tr '\n' ' ' |\
+          ${pkgs.translate-shell}/bin/trans -t "${lang-dst}" -b | \
+          ${pkgs.writeScript "stdin-to-yad" "
+            text=
+            while read line
+            do
+              text=\"$text $line\"
+            done
+            ${pkgs.yad}/bin/yad --text \"$text\" --no-buttons --escape-ok --text-align=center
+          "}
+        ''}";
+      };
+    in
+  {
+    ocr-en = ocr "eng";
+    ocr-ru = ocr "rus";
+    ocr-de = ocr "deu";
+    ocr-all = ocr "eng+rus+deu";
+    ocr-tr-deu = ocr-trans "deu" "en";
+    ocr-tr-jpn = ocr-trans "jpn+eng" "en";
+  };
+}
+
+    """
+   ]
+  ]
+  p [] [
+   Text $"""This code is plug-and-play module for NixOS that I wrote for myself to achieve """; a [_href "https://www.reddit.com/r/NixOS/comments/13uboa6/text_from_image_to_clipboard_nix_tip/"] [Text "this"]; Text ".";
+  ]
+  p [] [
+   Text $"""What I mean by plug-and-play is that it's not just a plain script that you could otherwise do yourself. On regular OS like Ubuntu you'd need to write this script file, install all needed software, and create a .desktop file to make it available on the app launcher."""
+  ]
+  p [] [
+   Text $"""This is why I call it an "extension" of the OS. You aren't really managing separate packages, they will be automatically "installed" as they are referenced by this module. Moreover, because it's written in the nix programming language, you can enjoy actual programming in it. In particular, in this example I create multiple desktop entries for different langauges. And you can easily share this module with someone too!"""
+  ]
 
   h2 [] [ anc "easy-contrib"; orderedHeader "Easy to contribute" ]
   p [] [
