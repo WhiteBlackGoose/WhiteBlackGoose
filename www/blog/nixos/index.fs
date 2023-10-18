@@ -31,6 +31,11 @@ let html = PageWrap.wrap www.``static``.styles.css {
   br []
   hr []
   br []
+  img [_src (Utils.locAwarePath "static/media/my-desktop.png"); _style "width: 100%"]
+  p [_style "text-align: center"] [ Text $"""{it "Screenshot of my desktop for no reason"}""" ]
+  br []
+  hr []
+  br []
 
   h2 [] [ anc "text"; orderedHeader $"""Text configuration""" ]
   p [] [
