@@ -204,7 +204,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    Text $"""What I mean by plug-and-play is that it's not just a plain script that you could otherwise do yourself. On regular OS like Ubuntu you'd need to write this script file, install all needed software, and create a .desktop file to make it available on the app launcher."""
   ]
   p [] [
-   Text $"""This is why I call it an "extension" of the OS. You aren't really managing separate packages, they will be automatically "installed" as they are referenced by this module. Moreover, because it's written in the nix programming language, you can enjoy actual programming in it. In particular, in this example I create multiple desktop entries for different langauges. And you can easily share this module with someone too!"""
+   Text $"""This is why I call it an "extension" of the OS. You aren't really managing separate packages, they will be automatically "installed" as they are referenced by this module. Moreover, because it's written in the nix programming language, you can enjoy actual programming in it. In particular, in this example I create multiple desktop entries for different langauges. And you can easily share this module with someone too! Which is what I did, """; a [_href "https://codeberg.org/WhiteBlackGoose/ocr4nix"] [ Text """that's why you can have those entries too""" ]; Text "."
   ]
 
   h2 [] [ anc "easy-contrib"; orderedHeader "Easy to contribute" ]
