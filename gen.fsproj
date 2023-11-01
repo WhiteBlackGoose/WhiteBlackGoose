@@ -21,6 +21,7 @@
     <Compile Include="./www/blog/pass/index.fs" />
     <Compile Include="./www/blog/nixos/index.fs" />
     <Compile Include="./www/blog/windows/index.fs" />
+    <Compile Include="./www/blog/fair-os/index.fs" />
     <Compile Include="./www/blog/ux3402za-review/index.fs" />
     <Compile Include="./www/blog/nix-flakes/index.fs" />
     <Compile Include="./www/blog/index.fs" />
