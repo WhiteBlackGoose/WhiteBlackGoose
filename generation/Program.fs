@@ -22,6 +22,7 @@ let pages = [
     www.blog.nix_flakes.index.html
     www.blog.index.html
     www.blog.windows.index.html
+    www.blog.fair_os.index.html
     yield! www.comics.index.htmls
     www.comics.index.html
     www.gpg.index.html

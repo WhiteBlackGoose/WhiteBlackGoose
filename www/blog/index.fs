@@ -15,6 +15,11 @@ type ArticleTile =
     }
 
 let articles = [
+    { lang = EN; date = "2023-11-01"; tags = [ "foss"; "gnu" ];
+        title = www.blog.fair_os.index.html.title;
+        shortTitle = "Fair OS approach";
+        link = Utils.locAwarePath www.blog.fair_os.index.html.url }
+
     { lang = EN; date = "2023-06-04"; tags = [ "nixos" ];
         title = www.blog.nix_flakes.index.html.title;
         shortTitle = "Intro into Nix with Flakes";
