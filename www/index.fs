@@ -22,7 +22,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
      """ ]
     p [] [
      Text $"""
-     I'm a member of {_a "https://angouri.org/" "Angouri"}, {_a "http://dotnetfoundation.org/" ".NET Foundation"}, and {_a "https://www.fsf.org/" "Free Software Foundation"}, and author of {_a "http://github.com/asc-community/AngouriMath" "AngouriMath"}.
+     I'm a member of {_a "https://angouri.org/" "Angouri"} and {_a "https://www.fsf.org/" "Free Software Foundation"}, and author of {_a "http://github.com/asc-community/AngouriMath" "AngouriMath"}.
      """
     ]
    ]
