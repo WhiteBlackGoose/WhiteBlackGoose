@@ -4,7 +4,7 @@ open Giraffe.ViewEngine
 open Page
 
 let html = PageWrap.wrap www.``static``.styles.css {
- title = "UX3402ZA review"
+ title = "Asus UX3402ZA review"
  url = "blog/ux3402za-review"
  filename = "index.html"
  contents = [

@@ -20,6 +20,11 @@ let html = PageWrap.wrap www.``static``.styles.css {
   hr []
   br []
 
+  let QQ = span [_style "color: red; text-decoration: bold"] [ Text "??" ]
+
+  p [] [
+   Text $"""I'm going to mark with double red bold question mark ("""; QQ; Text ") open questions and issues, solutions for which I'm not ready to propose (please propose too)."
+  ]
   h2 [] [ anc "problem"; Text $"""Problem""" ]
   p [] [
    Text $"""
@@ -47,13 +52,13 @@ let html = PageWrap.wrap www.``static``.styles.css {
    ul [] [
     li [] [ Text "Every laptop sold with Windows is also offered without non-free software." ]
     li [] [ Text "The price of the laptop with Windows is higher by the price of the corresponding Windows license (but no more than 20%)." ]
-    li [] [ Text $"""macOS: {it "TODO"}""" ]
+    li [] [ Text $"""macOS: """; QQ ]
    ]
   ]
   h3 [] [ anc "carrot"; Text "Reward" ]
   p [] [
    ul [] [
-    li [] [ Text $"""Let {it "L"} be the difference in prices of the laptop with and without Windows. Then, for every sold laptopt without, the company gets {it "L/3"} subsidy.""" ]
+    li [] [ Text $"""Let {it "L"} be the difference in prices of the laptop with and without Windows. Then, for every sold laptopt without, the company gets {it "L/3"} ("""; QQ; Text """) subsidy.""" ]
    ]
   ]
 
