@@ -5,7 +5,7 @@ open Page
 
 let html = PageWrap.wrap www.``static``.styles.css {
     title = "AngouriMath Deprecation: End of Journey"
-    url = "angourimath-deprecation"
+    url = "blog/angourimath-deprecation"
     filename = "index.html"
     contents = [
         p [] [ Text "It has been a fun journey. AngouriMath was started as a school project in 2019. I learned a lot about C#, .NET, and programming during this time. Sadly, I haven't had time to maintain it for two last years and I don't see it change any time soon, so I'm deprecating it." ]
