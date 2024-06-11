@@ -15,6 +15,7 @@
 
     <Compile Include="./www/static/styles/styles.fs" />
 
+    <Compile Include="./www/blog/angourimath-deprecation/index.fs" />
     <Compile Include="./www/blog/what-the-world-could-be-like/index.fs" />
     <Compile Include="./www/blog/my-values/index.fs" />
     <Compile Include="./www/blog/yyyy-mm-dd/index.fs" />
