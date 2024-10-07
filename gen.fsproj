@@ -40,7 +40,6 @@
     <Compile Include="./www/good-links/index.fs" />
 
     <Compile Include="./www/projects/index.fs" />
-    <Compile Include="./www/donations/index.fs" />
 
     <Compile Include="./www/index.fs" />
     <Compile Include="./www/README.fs" />

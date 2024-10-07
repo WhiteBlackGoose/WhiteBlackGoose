@@ -30,7 +30,6 @@ let pages = [
     www.gpg.pubkey.txt
     www.snowflake.index.html
     www.projects.index.html
-    www.donations.index.html
     www.good_links.index.html
     www.misc.os_tierlist.index.html
     www.misc.naot.index.html
