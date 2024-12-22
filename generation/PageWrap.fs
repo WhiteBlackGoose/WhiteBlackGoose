@@ -17,8 +17,8 @@ let wrap addHeads ({ title = pageTitle; url = url; filename = filename; contents
       title = pageTitle
       contents = 
         html [] [
-            title [] [ Text pageTitle ]
             head [] [
+                title [] [ Text pageTitle ]
                 link [_rel "icon"; _type "image/png"; _href "https://avatars.githubusercontent.com/u/31178401"]
                 link [_rel "stylesheet"; _type "text/css"; _href "https://fontlibrary.org/en/face/fantasque-sans-mono"]
                 yield! addHeads

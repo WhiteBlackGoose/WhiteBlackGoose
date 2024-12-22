@@ -41,7 +41,7 @@ for page in pages do
     Directory.CreateDirectory(sourceRoot </> page.url) |> ignore
     File.WriteAllText(
         sourceRoot </> page.url </> page.filename,
-        RenderView.AsString.htmlNode page.contents)
+        "<!DOCTYPE html>" + RenderView.AsString.htmlNode page.contents)
     printfn $"Generated page {page.url}"
 
 if Directory.Exists(sourceRoot </> "static") then
