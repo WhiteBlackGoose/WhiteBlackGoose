@@ -18,7 +18,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
   ]
   p [] [
    Text $"""
-   Neovim is my by far favourite text editor. I've been using it for a few years now, and I've never looked back. I'm lazy to write a full review, so here's a gallery.
+   Neovim is my favourite text/code/everything editor. I've been using it for a few years now, and I've never looked back. I'm lazy to write a full review, so here's a gallery.
    """
   ]
   br []
