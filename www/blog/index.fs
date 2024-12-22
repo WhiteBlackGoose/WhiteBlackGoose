@@ -15,6 +15,16 @@ type ArticleTile =
     }
 
 let articles = [
+    { lang = EN; date = "2024-12-22"; tags = [ ];
+        title = www.blog.neovim.index.html.title;
+        shortTitle = "Neovim";
+        link = Utils.locAwarePath www.blog.neovim.index.html.url }
+
+    { lang = EN; date = "2024-11-16"; tags = [ ];
+        title = www.blog.true_oop_is_fp.index.html.title;
+        shortTitle = "🚧 OOP = FP 🚧";
+        link = Utils.locAwarePath www.blog.true_oop_is_fp.index.html.url }
+
     { lang = EN; date = "2024-06-11"; tags = [ "foss"; "C#" ];
         title = www.blog.angourimath_deprecation.index.html.title;
         shortTitle = "AngouriMath Deprecation";

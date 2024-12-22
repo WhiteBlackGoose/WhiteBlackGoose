@@ -20,10 +20,12 @@ let pages = [
     www.blog.pass.index.html
     www.blog.nixos.index.html
     www.blog.nix_flakes.index.html
+    www.blog.neovim.index.html
     www.blog.index.html
     www.blog.windows.index.html
     www.blog.fair_os.index.html
     www.blog.angourimath_deprecation.index.html
+    www.blog.true_oop_is_fp.index.html
     yield! www.comics.index.htmls
     www.comics.index.html
     www.gpg.index.html

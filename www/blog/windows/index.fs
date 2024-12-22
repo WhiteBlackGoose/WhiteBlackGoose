@@ -32,6 +32,11 @@ let html = PageWrap.wrap www.``static``.styles.css {
   hr []
   br []
 
+  h2 [] [ anc "install"; orderedHeader "Annoying installation" ]
+  p [] [
+   Text "The newest versions will try to force you to connect to the internet and then login with a Microsoft account. If you don't have internet, there's no button to avoid it, you must find a way to connect to the internet. There's a hack: you need to press Shift+F10 in that page and type OOBE\BYPASSNRO. Really?"
+  ]
+
   h2 [] [ anc "controlled"; orderedHeader $"""Proprietary and controlled single-handedly""" ]
   p [] [
    Text $"""
@@ -79,7 +84,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
       li [] [ Text "Installers are not audited, unless you build your own" ]
       li [] [ Text "Software makers have to work on installers besides the app" ]
       li [] [ Text "You have to rely on uninstallers to delete unnecessary stuff" ]
-      li [] [ Text "Installers cannot manage dependencies in a single way and duplicate dependencies" ]
+      li [] [ Text "Installers cannot manage dependencies in a single way and have to duplicate dependencies" ]
     ]
   ]
   p [] [
@@ -87,10 +92,18 @@ let html = PageWrap.wrap www.``static``.styles.css {
     Choco, WinGet exist and provide some relief to it. But next most popular way (after installers) for app distribution is MS Store. Which is proprietary, paid, and not moderated properly, allowing {_a "https://answers.microsoft.com/en-us/windows/forum/all/why-microsoft-store-is-full-of-scam-apps/8c759f96-44a8-40e0-b987-7db7c0f711da" "tons of scam"}. So naturally it's a hassle for both users and developers to use MS Store.
     """
   ]
+  p [] [
+    Text $"""Then again, WinGet is also not the ultimate solution. There's no ultimate convention on how software should be consumed by users. 'C:/Program Files' exists, but every app is packed in its own folder, so you have to add the full path to it in the $PATH variable yourself. As a result, if you, for example, install neovim via winget, you won't be able to invoke it with just 'nvim'. You need to add it to $PATH."""
+  ]
 
   h2 [] [ anc "config"; orderedHeader "Configuration" ]
   p [] [
     Text $"""It's good to have GUI for configuration. But in Windows, many things are GUI-only. For example, registry (it has API for editing, but no "just text file")."""
+  ]
+
+  h2 [] [ anc "tech"; orderedHeader "Not tech friendly" ]
+  p [] [
+    Text $"""Now this is not a fault of Windows per se, but stil a reason why I don't want to use it. I'm an SWE and a massive nerd. ...."""
   ]
 
   p [_style "text-align: center"] [
