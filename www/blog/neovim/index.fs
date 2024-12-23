@@ -59,6 +59,8 @@ let html = PageWrap.wrap www.``static``.styles.css {
         li [] [ Text "Language-specific features (running tests, etc.)"; ref <| Plugin ("mrcjkb", "rustaceanvim"); ref <| Plugin ("ionide", "Ionide-vim"); Text " ..." ]
         li [] [ Text "Debugger"; ref <| Plugin ("mfussenegger", "nvim-dap"); ref <| Plugin ("rcarriga", "nvim-dap-ui") ]
         li [] [ Text "Diff (for merging and just diff-ing)"; ref <| Builtin; ref <| Plugin ("AndrewRadev", "linediff.vim") ]
+        li [] [ Text "Sticky scroll"; ref <| Plugin ("nvim-treesitter", "nvim-treesitter-context") ]
+        li [] [ Text "Inlay Hints"; ref <| Builtin ]
        ]
       ]
       li [] [
