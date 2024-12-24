@@ -96,6 +96,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
      ul [] [
       li [] [ Text "Github CoPilot autocompletion in any file"; ref <| Plugin ("github", "copilot.vim") ]
       li [] [ Text "Keyboard-only snappy window management" ]
+      li [] [ Text "Fuzzy search over files to go to" ]
       li [] [ Text "gf and gx to go over paths" ]
       li [] [ Text "Util to pick colors in place"; ref <| Plugin ("nvim-colortils", "colortils.nvim") ]
      ]
