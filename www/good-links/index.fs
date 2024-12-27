@@ -4,10 +4,57 @@ open Giraffe.ViewEngine
 open Page
 
 let html = PageWrap.wrap www.``static``.styles.css {
- title = "Good links"
+ title = "Good links/resources"
  url = "good-links"
  filename = "index.html"
  contents = [
+  h2 [] [ Text "Programming" ]
+  p [] [
+   Text "These articles/books I read and can personally recommend self-educating."
+  ]
+  p [] [
+   h3 [] [ Text "General" ]
+   ul [] [
+    li [] [ a [_href "https://en.wikibooks.org/wiki/X86_Assembly"] [ Text "x86 Assembly" ] ]
+    li [] [
+     a [_href "https://eli.thegreenplace.net/2011/01/23/how-debuggers-work-part-1/"] [
+      Text "How Debuggers Work"
+     ]
+     Text " ("
+     a [_href "https://eli.thegreenplace.net/2011/01/23/how-debuggers-work-part-1/"] [ Text "part I" ]
+     Text ", "
+     a [_href "https://eli.thegreenplace.net/2011/01/27/how-debuggers-work-part-2-breakpoints/"] [ Text "part II" ]
+     Text ", "
+     a [_href "https://eli.thegreenplace.net/2011/02/07/how-debuggers-work-part-3-debugging-information"] [ Text "part III" ]
+     Text ")"
+    ]
+   ]
+   h3 [] [ Text "Rust" ]
+   ul [] [
+    let links = [
+     "https://marabos.nl/atomics/", "Atomics"
+     "https://rust-lang.github.io/async-book/intro.html", "Async book"
+     "https://veykril.github.io/tlborm/", "Macros book"
+    ]
+    for url, name in links do
+     li [] [ a [_href url] [ Text name ] ]
+   ]
+   h3 [] [ Text ".NET" ]
+   ul [] [
+    let links = [
+     None, "CLR via C# 4-th edition"
+     None, "Pro .NET Memory Management"
+     None, "Pro .NET Benchmarking"
+    ]
+    for url, name in links do
+     match url with
+     | Some(url) -> li [] [ a [_href url] [ Text name ] ]
+     | None -> li [] [ Text name ]
+   ]
+  ]
+  br []
+  hr []
+  br []
   h2 [] [ Text "Justice" ]
   p [] [
    ul [] [
