@@ -106,7 +106,6 @@ let html = PageWrap.wrap www.``static``.styles.css {
    ul [] [
     let links = [
      "https://stallman.org/", "stallman.org - author of GNU" 
-     "https://ashley143.gay/", "ashley143.gay - author of poketube.fun" 
      "https://michael.stapelberg.ch/", "i3wm author's blog" 
      "https://stop-using-nix-env.privatevoid.net/", "Stop using nix-env" 
      "https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/", "About peoples' names in software"
