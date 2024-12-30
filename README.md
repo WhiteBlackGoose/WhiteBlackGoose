@@ -1,7 +1,6 @@
-<!DOCTYPE html><p><h1>Hi, it's WhiteBlackGoose</h1>
-I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="https://www.fsf.org">Free Software Foundation</a>, and author of <a href="http://github.com/asc-community/AngouriMath">AngouriMath</a>. 
+# Hi, it's WhiteBlackGoose
+I'm a member of [Angouri](https://angouri.org) and [Free Software Foundation](https://www.fsf.org), also the author of [AngouriMath](http://github.com/asc-community/AngouriMath)
 
 I'm a Free Software enthusiast and mainly work on FOSS projects.
 
-The rest please see my [personal website](https://wbg.angouri.org) (requires no javascript).
-        </p>
+The rest please see my [personal website](https://angouri.org) (no javascript required!1!).
