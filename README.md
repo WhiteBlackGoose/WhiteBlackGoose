@@ -3,5 +3,5 @@ I'm a member of <a href="https://angouri.org">Angouri</a> and <a href="https://w
 
 I'm a Free Software enthusiast and mainly work on FOSS projects.
 
-The rest please see my [personal website](https://wbg.angouri.org) (requires no javascript).
+The rest please see my [personal website](https://wbg.gg) (requires no javascript).
         </p>
