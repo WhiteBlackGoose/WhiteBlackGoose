@@ -129,6 +129,9 @@ let myProjects = [
 
     { name = "gpt4all.nvim"; url = "https://github.com/WhiteBlackGoose/gpt4all.nvim/";
     langs = [ Lua ]; value = Low; contrib = Major }
+
+    { name = "Libre DISC"; url = "https://disc.wbg.gg";
+    langs = [ ]; value = Medium; contrib = Created }
 ]
 
 let lang2icon = function
