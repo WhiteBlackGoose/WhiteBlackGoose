@@ -4,8 +4,8 @@ open Giraffe.ViewEngine
 open Utils
 
 let rec ensureExists srcDir dstDir =
-    if Directory.Exists(dstDir) |> not then
-        Directory.CreateDirectory(dstDir) |> ignore
+    if Directory.Exists dstDir |> not then
+        Directory.CreateDirectory dstDir |> ignore
     for dir in Directory.GetDirectories(srcDir) do
         ensureExists dir (dstDir </> Path.GetFileName dir)
     for file in Directory.GetFiles srcDir do
