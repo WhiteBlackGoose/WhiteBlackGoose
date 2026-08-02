@@ -32,6 +32,7 @@ let html = PageWrap.wrap www.``static``.styles.css {
    let urls = [
     $"""{_a (Utils.locAwarePath www.blog.index.html.url) "Blog"}"""
     $"""{_a (Utils.locAwarePath www.projects.index.html.url) "Projects"}"""
+    $"""{_a (Utils.locAwarePath www.tools.index.html.url) "Tools"}"""
     $"""{_a "https://github.com/WhiteBlackGoose" "Github"}"""
     $"""{_a (Utils.locAwarePath www.comics.index.html.url) "Comics"}"""
     $"""{_a (Utils.locAwarePath www.gpg.index.html.url) "My GPG key"}"""
