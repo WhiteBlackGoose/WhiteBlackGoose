@@ -132,6 +132,15 @@ let myProjects = [
 
     { name = "Libre DISC"; url = "https://disc.wbg.gg";
     langs = [ ]; value = Medium; contrib = Created }
+
+    { name = "germany-finances"; url = "https://finances-de.wbg.gg";
+    langs = [ ]; value = Medium; contrib = Created }
+
+    { name = "super-trader"; url = "https://supertrader.wbg.gg";
+    langs = [ Rust ]; value = Medium; contrib = Created }
+
+    { name = "travel-map"; url = "https://travel-map.wbg.gg";
+    langs = [ ]; value = Medium; contrib = Created }
 ]
 
 let lang2icon = function
