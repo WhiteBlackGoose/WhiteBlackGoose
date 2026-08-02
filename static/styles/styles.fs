@@ -111,5 +111,50 @@ let css : XmlNode list = [
   cssFilter ".noborder-table td" [
    "padding-right", "10px"
   ]
+  cssClass "tool-grid" [
+   "display", "grid"
+   "grid-template-columns", "repeat(auto-fill, minmax(220px, 1fr))"
+   "gap", "16px"
+   "margin", "20px 0"
+  ]
+  cssClass "tool-card" [
+   "display", "block"
+   "border", "1px solid gray"
+   "border-radius", "10px"
+   "padding", "14px 16px"
+   "text-decoration", "none"
+   "transition", "transform 0.15s ease, box-shadow 0.15s ease"
+  ]
+  cssClass "tool-card:hover" [
+   "transform", "translateY(-3px)"
+   "box-shadow", "0 6px 16px rgba(0, 0, 0, 0.2)"
+  ]
+  cssClass "tool-card .tool-name" [
+   "display", "block"
+   "font-weight", "bold"
+   "font-size", "1.1em"
+  ]
+  cssClass "tool-card .tool-domain" [
+   "display", "block"
+   "font-family", "mono"
+   "font-size", "0.8em"
+   "color", "gray"
+   "margin-top", "2px"
+  ]
+  cssClass "tool-card .tool-desc" [
+   "display", "block"
+   "font-size", "0.85em"
+   "margin-top", "8px"
+   "line-height", "1.4"
+  ]
+  cssClass "tool-badge" [
+   "display", "inline-block"
+   "font-size", "0.7em"
+   "border", "1px solid gray"
+   "border-radius", "6px"
+   "padding", "1px 6px"
+   "margin-top", "8px"
+   "color", "gray"
+  ]
  ]
 ]
