@@ -147,14 +147,5 @@ let css : XmlNode list = [
    "margin-top", "8px"
    "line-height", "1.4"
   ]
-  cssClass "tool-badge" [
-   "display", "inline-block"
-   "font-size", "0.7em"
-   "border", "1px solid gray"
-   "border-radius", "6px"
-   "padding", "1px 6px"
-   "margin-top", "8px"
-   "color", "gray"
-  ]
  ]
 ]
